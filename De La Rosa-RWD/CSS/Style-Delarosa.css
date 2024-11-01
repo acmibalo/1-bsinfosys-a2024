@@ -1,114 +1,126 @@
 * {
     box-sizing: border-box;
-}
-
-body {
-    font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
 }
 
-/* Style for the header */
-header {
-    background-color: #4A4A4A; /* Darker shade for better contrast */
-    padding: 40px;
-    text-align: center;
-    font-size: 35px;
-    color: white;
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f0f0f0;
+    color: #333;
 }
 
-/* Navigation styling */
-nav {
-    width: 25%;
-    background: #2E8BFF; /* Bright blue for contrast */
-    padding: 20px;
-    float: left; /* Keep navigation floating to the left */
+header {
+    background: #35424a;
+    color: #ffffff;
+    padding: 1.5rem 0;
+    text-align: center;
 }
 
 nav ul {
-    list-style-type: none;
+    list-style: none;
     padding: 0;
 }
 
 nav ul li {
-    margin-bottom: 10px;
+    display: inline;
+    margin: 0 1.5rem;
 }
 
 nav ul li a {
+    color: #ffffff;
     text-decoration: none;
-    color: white; /* White text for contrast */
-    font-weight: bold;
 }
 
-nav ul li a:hover {
-    color: #FFD700; /* Gold color on hover for a striking effect */
+.hero h2 {
+    font-size: 2.5rem;
 }
 
-/* Main article styling */
-article {
-    width: 70%;
-    padding: 20px;
-    background-color: #ffffff; /* White background for articles */
-    float: right; /* Align articles to the right */
-    border: 1px solid #ccc; /* Add a light border for definition */
-}
-
-/* Image styling */
-.city-image {
-    width: 100%;
-    max-width: 500px;
-    height: auto;
-    border-radius: 8px;
-    margin: 20px 0;
-}
-
-/* Layout container */
-section {
+.container {
     display: flex;
-    justify-content: flex-end; /* Align content to the right */
+    max-width: 1200px;
+    margin: 20px auto;
     padding: 20px;
-    gap: 20px;
-    margin-top: 20px; /* Add margin to push the section down */
 }
 
-/* Clear floats after the columns */
-section::after {
-    content: "";
-    display: table;
-    clear: both;
+.city-highlights {
+    flex: 3;
+    padding: 20px;
 }
 
-/* Style the footer */
-footer {
-    background-color: #444; /* Darker background for the footer */
-    padding: 15px;
+.city-highlights h2 {
+    margin-bottom: 20px;
+}
+
+.city-card {
+    background: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.city-card:hover {
+    transform: scale(1.05);
+}
+
+.city-card img {
+    width: 100%;
+    height: auto;
+}
+
+.city-card h3 {
+    padding: 10px;
+    font-size: 1.5rem;
+}
+
+.city-card p {
+    padding: 0 10px 10px;
+}
+
+.map {
+    flex: 2;
+    padding: 20px;
+    background: #ffffff;
+    margin-left: 20px;
     text-align: center;
-    color: white;
-    font-size: 14px;
+	
 }
 
-/* Responsive adjustments */
-@media (max-width: 900px) {
-    nav, article {
-        width: 100%;
-        padding: 15px;
-        float: none; /* Clear float for smaller screens */
-    }
-    .city-image {
-        max-width: 100%;
-    }
+.map:hover {
+    transform: scale(1.05);
+}
+.map img {
+    width: 100%;
+    border-radius: 8px;
 }
 
-@media (max-width: 600px) {
-    header {
-        font-size: 28px;
-        padding: 20px;
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    background: #35424a;
+    color: #ffffff;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
     }
+
+    .map {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+
     nav ul li {
-        margin-bottom: 8px;
+        display: block;
+        margin: 10px 0;
     }
-    footer {
-        font-size: 12px;
-        padding: 10px;
+
+    .hero h2 {
+        font-size: 2rem;
     }
 }
