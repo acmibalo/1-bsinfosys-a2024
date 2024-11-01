@@ -1,0 +1,67 @@
+*{
+    margin: 5px;
+    box-sizing :border-box;
+  
+  }
+  body{
+    height: 95vh;
+    background: bisque;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    color:black;
+    display:flex;
+    flex-direction: column;
+  
+  }
+  
+  header{
+    background-color: #ffb8b1; 
+    padding: 3em 0 3em 0;
+  
+  }
+  .nav{
+    display: flex;
+    flex:1;
+  }
+  .left {
+    background-color: #efb298;
+    padding: 3em 0 3em 0;
+    flex: 1 1 100px;
+  }
+  main{
+    background-color: #ceb5b7;
+    padding: 3em 0 3em 0;
+    flex: 5 5 150px;
+  }
+  .right {
+    background-color: #e69597;
+    padding: 3em 0 3em 0;
+    flex: 1 1 100px;
+  }
+  .img-ska{
+    width:500px;
+    height:300px;
+    background-image: url(../skorea.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  .img-svt{
+    width:300px;
+    height:300px;
+    background-image: url(../svt.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  footer{
+    background-color: #e48d8f;
+    padding:1em 0 1em 0x;
+  }
+  @media all and (max-width: 550px){
+    .nav{
+      flex-direction: column;
+    }
+    main{
+      padding: 20px;
+    }
+  }
+  
