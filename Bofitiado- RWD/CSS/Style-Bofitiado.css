@@ -1,0 +1,114 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Style for the header */
+header {
+    background-color: #4A4A4A; /* Darker shade for better contrast */
+    padding: 40px;
+    text-align: center;
+    font-size: 35px;
+    color: white;
+}
+
+/* Navigation styling */
+nav {
+    width: 25%;
+    background: #2E8BFF; /* Bright blue for contrast */
+    padding: 20px;
+    float: left; /* Keep navigation floating to the left */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    margin-bottom: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white; /* White text for contrast */
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #FFD700; /* Gold color on hover for a striking effect */
+}
+
+/* Main article styling */
+article {
+    width: 70%;
+    padding: 20px;
+    background-color: #ffffff; /* White background for articles */
+    float: right; /* Align articles to the right */
+    border: 1px solid #ccc; /* Add a light border for definition */
+}
+
+/* Image styling */
+.city-image {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 8px;
+    margin: 20px 0;
+}
+
+/* Layout container */
+section {
+    display: flex;
+    justify-content: flex-end; /* Align content to the right */
+    padding: 20px;
+    gap: 20px;
+    margin-top: 20px; /* Add margin to push the section down */
+}
+
+/* Clear floats after the columns */
+section::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Style the footer */
+footer {
+    background-color: #444; /* Darker background for the footer */
+    padding: 15px;
+    text-align: center;
+    color: white;
+    font-size: 14px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 900px) {
+    nav, article {
+        width: 100%;
+        padding: 15px;
+        float: none; /* Clear float for smaller screens */
+    }
+    .city-image {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+    header {
+        font-size: 28px;
+        padding: 20px;
+    }
+    nav ul li {
+        margin-bottom: 8px;
+    }
+    footer {
+        font-size: 12px;
+        padding: 10px;
+    }
+}
