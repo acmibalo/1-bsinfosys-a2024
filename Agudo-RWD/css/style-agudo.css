@@ -1,126 +1,136 @@
 * {
-	box-sizing: border-box;
-	margin: 0;
-	padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
+
 body {
-	font-family: Arial, Helvetica, sans-serif;
-	line-height: 1.6;
+    background-image: url('../images/background.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+		font-family: Arial, Helvetica, sans-serif;
+		line-height: 1.6;
 }
 
 header {
-	background-color: #666;
-	padding: 30px;
-	text-align: center;
-	font-size: 35px;
-	color: white;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+    background-color: #666;
+    padding: 30px;
+    text-align: center;
+    font-size: 35px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
 h1 {
-	background-color: #d8d8d8;
-	padding: 5px;
-	border-radius: 3px;
-	margin-bottom: 14px;
+    background-color: #d8d8d8;
+    padding: 5px;
+    border-radius: 3px;
+    margin-bottom: 14px;
 }
+
 p {
-	color: white;
-	background-color: #666;
-	padding: 10px;
-	margin-bottom: 5px;
+    color: white;
+    background-color: #666;
+    padding: 10px;
+    margin-bottom: 5px;
 }
 
 nav {
-	width: 25%;
-	background: #cccccc;
-	padding: 20px;
-	position: fixed;
-	top: 0;
-	left: 0;
-	height: 100vh;
-	overflow-y: auto;
+    width: 25%;
+    background: #cccccc;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    overflow-y: auto;
 }
 
 nav ul {
-	list-style-type: none;
-	padding: 0;
+    list-style-type: none;
+    padding: 0;
 }
 
 nav ul li {
-	margin-bottom: 10px;
+    margin-bottom: 10px;
 }
 
 nav ul li a {
-	text-decoration: none;
-	color: #333;
-	font-size: 18px;
-	padding: 8px 16px;
-	display: block;
-	background-color: #eaeaea;
-	border-radius: 4px;
-	transition: background-color 0.3s;
-	text-align: center;
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+    padding: 8px 16px;
+    display: block;
+    background-color: #eaeaea;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+    text-align: center;
 }
 
 nav ul li a:hover {
-	background-color: #ddd;
+    background-color: #ddd;
 }
 
 section {
-	width: 70%;
-	margin-left: 30%;
-	padding: 20px;
-	float: right;
+    width: 70%;
+    margin-left: 30%;
+    padding: 20px;
+    float: right;
 }
 
 section article {
-	background-color: #f1f1f1;
-	margin-bottom: 20px;
-	padding: 20px;
-	border-radius: 4px;
+    background-color: #f1f1f1;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 4px;
 }
+
 .youtube {
-	aspect-ratio: 16 / 9;
-	width: 100%;
-  }
+    aspect-ratio: 16 / 9;
+    width: 100%;
+}
+
 footer {
-	background-color: #666;
-	padding: 10px;
-	text-align: center;
-	color: white;
-	clear: both;
-	margin-top: 20px;
+    background-color: #666;
+    padding: 10px;
+    text-align: center;
+    color: white;
+    clear: both;
+    margin-top: 20px;
 }
 
 @media (max-width: 768px) {
-	nav {
-		position: relative;
-		width: 100%;
-		height: auto;
-		margin-bottom: 20px;
-	}
+    nav {
+        position: relative;
+        width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+    }
 
-	section {
-		width: 100%;
-		margin-left: 0;
-		float: none;
-		padding: 10px;
-	}
+    section {
+        width: 100%;
+        margin-left: 0;
+        float: none;
+        padding: 10px;
+    }
 }
 
 @media (max-width: 600px) {
-	header {
-		font-size: 28px;
-		padding: 20px;
-	} 
-	iframe {
-		width: 560;
-		height: 315;
-	}
+    header {
+        font-size: 28px;
+        padding: 20px;
+    } 
+    iframe {
+        width: 560;
+        height: 315;
+    }
 
-	nav ul li a {
-		font-size: 16px;
-		padding: 6px 12px;
-	}
+    nav ul li a {
+        font-size: 16px;
+        padding: 6px 12px;
+    }
 }
