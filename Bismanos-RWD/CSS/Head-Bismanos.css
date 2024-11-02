@@ -2,6 +2,7 @@
 <html lang="en">
 	<head>
 		<title>My CSS Design</title>
+    <link rel="icon" type="image/x-icon" href="images/logo.ico">
 		<link rel="stylesheet" href="css/Head-Bismanos.css">
 		<link rel="stylesheet" href="css/Style-Bismanos.css">
 		<meta charset="utf-8">
@@ -14,15 +15,15 @@
         <body>
         
         <header>
-          <h2>Cities</h2>
+          <h2>My Favorite Countries</h2>
         </header>
         
         <section>
           <nav>
             <ul>
-              <li><a href="#">London</a></li>
-              <li><a href="#">Paris</a></li>
-              <li><a href="#">Tokyo</a></li>
+              <li><a href="london.html">London</a></li>
+              <li><a href="paris.html">Paris</a></li>
+              <li><a href="tokyo.html">Tokyo</a></li>
             </ul>
           </nav>
           
