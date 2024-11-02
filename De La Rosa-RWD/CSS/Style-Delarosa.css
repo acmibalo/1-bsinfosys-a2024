@@ -1,0 +1,126 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+header {
+    background: #35424a;
+    color: #ffffff;
+    padding: 1.5rem 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 1.5rem;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+}
+
+.container {
+    display: flex;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.city-highlights {
+    flex: 3;
+    padding: 20px;
+}
+
+.city-highlights h2 {
+    margin-bottom: 20px;
+}
+
+.city-card {
+    background: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.city-card:hover {
+    transform: scale(1.05);
+}
+
+.city-card img {
+    width: 100%;
+    height: auto;
+}
+
+.city-card h3 {
+    padding: 10px;
+    font-size: 1.5rem;
+}
+
+.city-card p {
+    padding: 0 10px 10px;
+}
+
+.map {
+    flex: 2;
+    padding: 20px;
+    background: #ffffff;
+    margin-left: 20px;
+    text-align: center;
+	
+}
+
+.map:hover {
+    transform: scale(1.05);
+}
+.map img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    background: #35424a;
+    color: #ffffff;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .map {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .hero h2 {
+        font-size: 2rem;
+    }
+}
