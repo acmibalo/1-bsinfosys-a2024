@@ -18,14 +18,19 @@ body {
 
 /* Header Style */
 header {
+    top: 0;
     background-color: #666;
-    padding: 30px;
+    padding: 10px;
+    top: 0;
     text-align: center;
     font-size: 35px;
     color: white;
     display: flex;
+    width: 100%;
     justify-content: center;
     align-items: center;
+    z-index: 1000;
+
 }
 
 /* Text Styles  */
@@ -49,9 +54,8 @@ nav {
     background: #cccccc;
     padding: 20px;
     position: fixed;
-    top: 0;
     left: 0;
-    height: 100vh;
+    height: 68vh;
     overflow-y: auto;
 }
 
