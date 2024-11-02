@@ -1,135 +1,74 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: Arial, sans-serif;
+body {
+    width: 100%; /* Fixed missing unit */
+    height: 100vh; /* Adjusted to cover viewport height */
+    font-family: sans-serif;
+    font-size: 20px;	
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Corrected property name */
+    background-image: url('mp100_bg.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
 }
 
-/* Header */
 header {
-  background: #333;
-  color: #fff;
-  padding: 1em 2em;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+    background: #eb9191;
+    font-family: 'Broadway', sans-serif; /* Added a fallback font */
+    font-size: 2.5rem; /* Fixed missing semicolon and adjusted size */
+    color: white;
+    background-image: url('Mob_best_boy.jfif');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    text-align: center;
+    padding: 1em;
 }
 
-.navbar .logo {
-  font-size: 1.5em;
-  font-weight: bold;
+nav {
+    background: #2f345c;
+    color: white;
+    padding: 1em;
+    text-align: center;
 }
 
-.nav-links {
-  list-style: none;
-  display: flex;
-  gap: 1em;
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
 }
 
-.nav-links a {
-  color: #fff;
-  text-decoration: none;
+main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; /* Makes content wrap on smaller screens */
+    padding: 1em;
 }
 
-.nav-links a:hover {
-  text-decoration: underline;
+section {
+    flex: 3;
+    padding: 1em;
+    background: #2f345c;
 }
 
-/* Hero Section */
-.hero {
-  background-image: url('hero-image.jpg');
-  background-size: cover;
-  background-position: center;
-  color: #fff;
-  padding: 4em 2em;
-  text-align: center;
+aside {
+    flex: 1;
+    padding: 1em;
+    background: #BF40BF;
+    margin-left: 1em;
 }
 
-.hero-content h1 {
-  font-size: 2.5em;
-  margin-bottom: 0.5em;
+article {
+    margin-bottom: 1em;
+    padding: 1em;
+    background: #5D3FD3;
+    border: 1px solid #ddd;
 }
 
-.hero-content p {
-  font-size: 1.2em;
-  margin-bottom: 1em;
-}
-
-.cta-button {
-  display: inline-block;
-  padding: 0.8em 1.5em;
-  background: #007bff;
-  color: #fff;
-  text-decoration: none;
-  border-radius: 5px;
-}
-
-.cta-button:hover {
-  background: #0056b3;
-}
-
-/* Destinations Section */
-.destinations {
-  padding: 2em;
-  text-align: center;
-}
-
-.destinations h2 {
-  font-size: 2em;
-  margin-bottom: 1em;
-}
-
-.destinations-grid {
-  display: flex;
-  gap: 1.5em;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-.destination-card {
-  background: #f9f9f9;
-  border-radius: 8px;
-  overflow: hidden;
-  max-width: 300px;
-  text-align: left;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s;
-}
-
-.destination-card img {
-  width: 100%;
-  height: auto;
-}
-
-.destination-card h3 {
-  padding: 0.5em 1em;
-}
-
-.destination-card p {
-  padding: 0 1em 1em;
-  color: #666;
-}
-
-.destination-card:hover {
-  transform: translateY(-5px);
-}
-
-/* Footer */
 footer {
-  background: #333;
-  color: #fff;
-  text-align: center;
-  padding: 1em;
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 1em;
 }
-
-/* Responsive Design */
-@media (max-width: 768px) {
-  .hero-content h1 {
-    font-size: 2em;
-  }
-
-  .destinations-grid {
-    flex-direction: column;
-    align-items: center;
-  }
-}
+		
