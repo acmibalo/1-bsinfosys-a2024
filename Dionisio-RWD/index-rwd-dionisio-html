@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Traveling Website</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">TravelMore</div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#destinations">Destinations</a></li>
+        <li><a href="#tours">Tours</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <h1>Explore the World</h1>
+      <p>Discover new places, cultures, and adventures.</p>
+      <a href="#destinations" class="cta-button">Start Your Journey</a>
+    </div>
+  </section>
+
+  <!-- Destinations Section -->
+  <section class="destinations" id="destinations">
+    <h2>Featured Destinations</h2>
+    <div class="destinations-grid">
+      <div class="destination-card">
+        <img src="paris.jpg" alt="Paris">
+        <h3>Paris</h3>
+        <p>The city of light and romance.</p>
+      </div>
+      <div class="destination-card">
+        <img src="tokyo.jpg" alt="Tokyo">
+        <h3>Tokyo</h3>
+        <p>A blend of tradition and modernity.</p>
+      </div>
+      <div class="destination-card">
+        <img src="new-york.jpg" alt="New York">
+        <h3>New York</h3>
+        <p>The city that never sleeps.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 TravelMore. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
