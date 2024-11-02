@@ -1,0 +1,136 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Header */
+header {
+  background: #333;
+  color: #fff;
+  padding: 1em 2em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar .logo {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1em;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+  background-image: url('hero-image.jpg');
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  padding: 4em 2em;
+  text-align: center;
+}
+
+.hero-content h1 {
+  font-size: 2.5em;
+  margin-bottom: 0.5em;
+}
+
+.hero-content p {
+  font-size: 1.2em;
+  margin-bottom: 1em;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 0.8em 1.5em;
+  background: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.cta-button:hover {
+  background: #0056b3;
+}
+
+/* Destinations Section */
+.destinations {
+  padding: 2em;
+  text-align: center;
+}
+
+.destinations h2 {
+  font-size: 2em;
+  margin-bottom: 1em;
+}
+
+.destinations-grid {
+  display: flex;
+  gap: 1.5em;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.destination-card {
+  background: #f9f9f9;
+  border-radius: 8px;
+  overflow: hidden;
+  max-width: 300px;
+  text-align: left;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.destination-card img {
+  width: 100%;
+  height: auto;
+}
+
+.destination-card h3 {
+  padding: 0.5em 1em;
+}
+
+.destination-card p {
+  padding: 0 1em 1em;
+  color: #666;
+}
+
+.destination-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Footer */
+footer {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1em;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 2em;
+  }
+
+  .destinations-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+}
