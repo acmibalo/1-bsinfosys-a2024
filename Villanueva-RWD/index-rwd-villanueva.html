@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top 10 Places in the Philippines</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <style> body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f0f0f0;
+    }
+    
+    header {
+        background: #007BFF;
+        color: white;
+        padding: 20px;
+        text-align: center;
+    }
+    
+    main {
+        padding: 20px;
+    }
+    
+    .place {
+        background: white;
+        margin: 10px 0;
+        padding: 15px;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    
+    footer {
+        text-align: center;
+        padding: 10px;
+        background: #007BFF;
+        color: white;
+    }
+    </style>
+    <header>
+        <h1>Top 10 Places in the Philippines</h1>
+    </header>
+
+    <main>
+        <section id="places">
+            <!-- Place entries will be dynamically added here by JavaScript -->
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Top Places in the Philippines</p>
+    </footer>
+
+    <!-- JavaScript Code -->
+    <script>
+        const places = [
+            {
+                name: "Boracay",
+                description: "Famous for its white-sand beaches and vibrant nightlife.",
+                image: "https://www.google.com/imgres?imgurl=https%3A%2F%2Fpinaywise.com%2Fwp-content%2Fuploads%2F2024%2F05%2Fboracay-map-guide.jpg&tbnid=TXYW5sQ01CtKjM&vet=1&imgrefurl=https%3A%2F%2Fpinaywise.com%2Fphilippines-travel%2Fboracay-island%2Fboracay-map-guide-explore-top-attractions-easily%2F&docid=Rk-42v2OlGOWeM&w=1344&h=768&hl=en-us&source=sh%2Fx%2Fim%2Fm1%2F3&kgs=c6e919d85b774719&shem=abme%2Ctrie",
+                link: "https://pinaywise.com/philippines-travel/boracay-island/"
+            },
+            {
+                name: "Palawan",
+                description: "Known for its stunning landscapes, limestone cliffs, and clear waters.",
+                image: "https://images.app.goo.gl/WbrGYbkvqX8T7aXm9",
+                link: "https://www.palawan.gov.ph/"
+            },
+            {
+                name: "Cebu",
+                description: "A historical city with beautiful beaches and rich culture.",
+                image: "https://images.app.goo.gl/mynRtFk3eoBsVcwN9",
+                link: "https://www.cebu.gov.ph/"
+            },
+            {
+                name: "Bohol",
+                description: "Home to the Chocolate Hills and tarsiers.",
+                image: "https://example.com/bohol.jpg",
+                link: "https://www.bohol.gov.ph/"
+            },
+            {
+                name: "Siargao",
+                description: "Surfing capital of the Philippines, known for Cloud 9.",
+                image: "https://example.com/siargao.jpg",
+                link: "https://www.siargao.com/"
+            },
+            {
+                name: "Vigan",
+                description: "A UNESCO World Heritage Site known for its preserved Spanish colonial and Asian architecture.",
+                image: "https://example.com/vigan.jpg",
+                link: "https://vigan.ph/"
+            },
+            {
+                name: "Batanes",
+                description: "Famous for its rolling hills and unique Ivatan culture.",
+                image: "https://example.com/batanes.jpg",
+                link: "https://www.batanes.gov.ph/"
+            },
+            {
+                name: "Sagada",
+                description: "Known for its hanging coffins and stunning caves.",
+                image: "https://example.com/sagada.jpg",
+                link: "https://www.sagada.gov.ph/"
+            },
+            {
+                name: "Dumaguete",
+                description: "A charming coastal city known as the 'City of Gentle People.'",
+                image: "https://example.com/dumaguete.jpg",
+                link: "https://dumaguetecity.gov.ph/"
+            },
+            {
+                name: "Manila",
+                description: "The capital city, rich in history and culture.",
+                image: "https://example.com/manila.jpg",
+                link: "https://manila.gov.ph/"
+            }
+        ];
+
+        const placesContainer = document.getElementById('places');
+
+        places.forEach(place => {
+            const placeDiv = document.createElement('div');
+            placeDiv.classList.add('place');
+            
+            placeDiv.innerHTML = `
+                <h2><a href="${place.link}" target="_blank" rel="noopener noreferrer">${place.name}</a></h2>
+                <img src="${place.image}" alt="${place.name}" width="300">
+                <p>${place.description}</p>
+            `;
+            
+            placesContainer.appendChild(placeDiv);
+        });
+    </script>
+</body>
+</html>
+
