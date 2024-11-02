@@ -1,0 +1,110 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Style for the header */
+header {
+    background-color: #4A4A4A;
+    padding: 20px;
+    text-align: center;
+    font-size: 30px;
+    color: white;
+}
+
+/* Navigation styling */
+nav {
+    width: 100%; /* Full width for vertical stacking */
+    background: #2E8BFF;
+    padding: 15px;
+    margin-bottom: 10px; /* Reduce space below nav */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    margin-bottom: 5px; /* Reduce spacing between list items */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #FFD700;
+}
+
+/* Main article styling */
+article {
+    width: 100%; /* Full width for vertical stacking */
+    padding: 15px;
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    margin-top: 10px; /* Reduce space above article */
+}
+
+/* Image styling */
+.city-image {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 8px;
+    margin: 15px 0; /* Reduce vertical spacing around images */
+}
+
+/* Layout container */
+section {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center;
+    padding: 15px; /* Reduce section padding */
+    gap: 10px; /* Reduce space between nav and article */
+    margin-top: 10px;
+}
+
+/* Style the footer */
+footer {
+    background-color: #444;
+    padding: 10px; /* Reduce footer padding */
+    text-align: center;
+    color: white;
+    font-size: 14px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 900px) {
+    section {
+        align-items: center;
+    }
+    nav, article {
+        width: 100%;
+        padding: 10px; /* Reduced padding for nav and article */
+    }
+    .city-image {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+    header {
+        font-size: 24px; /* Adjusted font size for smaller screens */
+        padding: 15px;
+    }
+    nav ul li {
+        margin-bottom: 5px;
+    }
+    footer {
+        font-size: 12px;
+        padding: 8px;
+    }
+}
