@@ -1,0 +1,93 @@
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Georgia, Times, sans-serif;
+
+}
+
+header {
+  background-color: PINK;
+ font-family: Georgia;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+nav {
+  float: left;
+  width: 30%;
+  height: 300px;
+  background: purple;
+opacity 
+  padding: 20px;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: deep pink;
+  height: 300px; 
+}
+
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+footer {
+  background-color: pink;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+@media (max-width: 800px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <h2>aesthetics</h2>
+</header>
+
+<section>
+  <nav>
+  <ul>
+<li><a href="file:///storage/emulated/0/Serfino%20-%20RWD/index-rpw-serfino.html"> HOME </a></li>
+      <li><a href="file:///storage/emulated/0/Serfino%20-%20RWD/cottagecore.html">Cottagecore</a></li>
+href="file:///storage/emulated/0/Serfino%20-%20RWD/fairycore.html">Fairycore <a></li>
+    <li><a href="file:///storage/emulated/0/Serfino%20-%20RWD/softgirl.html">Soft girl <a></li>
+ <li><a href="file:///storage/emulated/0/Serfino%20-%20RWD/VSCO.html">VSCO </a></li>
+    </ul>
+  </nav>
+  
+  <article>
+    <h1>E-girl aesthetic</h1>
+
+<p>E-Girl, an abbreviation of "electronic girl", is a stereotype and online subculture consisting of girls who "only exist online". The conventional E-Girl takes part in anime, gaming, K-Pop, and underground alternative music circles, although enjoying all of them is not necessary. The E-Girl aesthetic is expressed through assuming an ‘alt’ persona on trending social media platforms such as Tiktok with memes and video formulas. The E-Girl is the opposite counterpart to the Soft Girl (which influences the Kawaii Gamer/pastel E-Girl subtype). </p>
+  </article>
+</section>
+
+<footer>
+  <p>@2024</p>
+</footer>
+
+</body>
+</html>
+
