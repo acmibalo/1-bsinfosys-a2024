@@ -1,0 +1,74 @@
+body {
+    width: 100%; /* Fixed missing unit */
+    height: 100vh; /* Adjusted to cover viewport height */
+    font-family: sans-serif;
+    font-size: 20px;	
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Corrected property name */
+    background-image: url('mp100_bg.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+header {
+    background: #eb9191;
+    font-family: 'Broadway', sans-serif; /* Added a fallback font */
+    font-size: 2.5rem; /* Fixed missing semicolon and adjusted size */
+    color: white;
+    background-image: url('Mob_best_boy.jfif');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    text-align: center;
+    padding: 1em;
+}
+
+nav {
+    background: #2f345c;
+    color: white;
+    padding: 1em;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; /* Makes content wrap on smaller screens */
+    padding: 1em;
+}
+
+section {
+    flex: 3;
+    padding: 1em;
+    background: #2f345c;
+}
+
+aside {
+    flex: 1;
+    padding: 1em;
+    background: #BF40BF;
+    margin-left: 1em;
+}
+
+article {
+    margin-bottom: 1em;
+    padding: 1em;
+    background: #5D3FD3;
+    border: 1px solid #ddd;
+}
+
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 1em;
+}
+		
