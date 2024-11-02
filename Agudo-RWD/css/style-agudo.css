@@ -4,6 +4,7 @@
     padding: 0;
 }
 
+/* Body Style */
 body {
     background-image: url('../images/background.jpg');
     background-repeat: no-repeat;
@@ -14,6 +15,7 @@ body {
     line-height: 1.6;
 }
 
+/* Header Style */
 header {
     background-color: #666;
     padding: 30px;
@@ -25,6 +27,7 @@ header {
     align-items: center;
 }
 
+/* Text Styles  */
 h1 {
     background-color: #d8d8d8;
     padding: 5px;
@@ -39,6 +42,7 @@ p {
     margin-bottom: 5px;
 }
 
+/* Navbar Style */
 nav {
     width: 25%;
     background: #cccccc;
@@ -75,6 +79,7 @@ nav ul li a:hover {
     background-color: #ddd;
 }
 
+/* Content Styles */
 section {
     width: 70%;
     margin-left: 30%;
@@ -89,11 +94,13 @@ section article {
     border-radius: 4px;
 }
 
+/* Embed youtube video responsinve */
 .youtube {
     aspect-ratio: 16 / 9;
     width: 100%;
 }
 
+/* Footer Style */
 footer {
     background-color: #666;
     padding: 10px;
@@ -103,6 +110,7 @@ footer {
     margin-top: 20px;
 }
 
+/* Responsive Layout */
 @media (max-width: 768px) {
     nav {
         position: relative;
@@ -128,7 +136,6 @@ footer {
         width: 560;
         height: 315;
     }
-
     nav ul li a {
         font-size: 16px;
         padding: 6px 12px;
