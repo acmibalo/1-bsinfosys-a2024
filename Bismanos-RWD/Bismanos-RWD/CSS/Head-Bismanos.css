@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>My CSS Design</title>
+    <link rel="icon" type="image/x-icon" href="images/logo.ico">
+		<link rel="stylesheet" href="css/Head-Bismanos.css">
+		<link rel="stylesheet" href="css/Style-Bismanos.css">
+		<meta charset="utf-8">
+		<meta name="keywords" content="layout, design,">
+		<meta name="this is section where you can see my layout design">
+		<meta name="author" content="Grace P. Bismanos">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+        </head>
+        <body>
+        
+        <header>
+          <h2>My Favorite Countries</h2>
+        </header>
+        
+        <section>
+          <nav>
+            <ul>
+              <li><a href="london.html">London</a></li>
+              <li><a href="paris.html">Paris</a></li>
+              <li><a href="tokyo.html">Tokyo</a></li>
+            </ul>
+          </nav>
+          
+          <article>
+            <h1>London</h1>
+            <p>London, the capital of England and the United Kingdom, is a 21st-century city with history stretching back to Roman times.
+             At its centre stand the imposing Houses of Parliament, the iconic ‘Big Ben’ clock tower and Westminster Abbey, site of British monarch coronations. 
+             Across the Thames River, the London Eye observation wheel provides panoramic views of the South Bank cultural complex, and the entire city.</p>
+          </article>
+        </section>
+        
+        <footer>
+          <p>Footer</p>
+        </footer>
+        
+        </body>
+        </html>
+        
+        
