@@ -38,8 +38,12 @@ article {
   height: 300px; /* only for demonstration, should be removed */
   overflow-y: scroll;
 }
-div {
+div.content {
   padding: 30px 0 20px 0;
+}
+
+img {
+  width: 15%;
 }
 
 /* Clear floats after the columns */
