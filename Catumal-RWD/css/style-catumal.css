@@ -1,0 +1,101 @@
+* {
+  box-sizing: border-box; 
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif; 
+  margin: 0; 
+}
+
+header {
+  background-color: #666; 
+  background-size: cover; 
+  background-position: center;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: black;
+}
+
+nav {
+  float: left; 
+  width: 30%; 
+  height: 339px; 
+  background: #ccc;
+  padding: 20px; 
+  color: black;
+}
+
+nav ul {
+  list-style-type: none; 
+  padding: 0; 
+  color: black;
+}
+
+#Beatiful-Places-Around-The-World-article {
+  background-image: url("C:/GithubInfo/1-bsinfosys-a2024/Catumal-RWD/images/cities.jpg"); 
+  float: left; 
+  width: 70%; 
+  padding: 20px; 
+  background-size: cover; 
+  background-position: center;  
+  position: relative; 
+  color: black; 
+}
+
+#Tokyo-article {
+  background-image: url("C:/GithubInfo/1-bsinfosys-a2024/Catumal-RWD/images/tokyo.jpg"); 
+  float: left;
+  padding: 40px; 
+  width: 70%; 
+  background-size: cover; 
+  background-position: center;
+  color: white;
+}
+
+#London-article {
+  background-image: url("C:/GithubInfo/1-bsinfosys-a2024/Catumal-RWD/images/london.jpg"); 
+  float: left; 
+  padding: 30px; 
+  width: 70%; 
+  background-size: cover; 
+  background-position: center; 
+  color: white; 
+}
+
+#Paris-article {
+  background-image: url("C:/GithubInfo/1-bsinfosys-a2024/Catumal-RWD/images/paris.jpg"); 
+  float: left; 
+  padding: 20px; 
+  width: 70%; 
+  background-size: cover; 
+  background-position: center; 
+  color: black; 
+}
+
+
+section::after {
+  content: ""; 
+  display: table; 
+  clear: both; 
+}
+
+footer {
+  background-color: #777; 
+  padding: 20px; 
+  text-align: center; 
+  color: white; 
+  font-size: 20px; 
+  position: relative; 
+  bottom: 0; 
+  width: 100%; 
+}
+
+
+@media (max-width: 600px) {
+  nav, #Cities-of-the-world-article {
+    width: 100%; 
+    height: auto; 
+    float: none; 
+  }
+}
