@@ -1,0 +1,98 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #CDC1FF;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Create two columns/boxes that float next to each other */
+nav {
+  float: left;
+  width: 20%;
+  background: #BFECFF;
+  padding: 78px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav ul li a {
+  display: block;
+  padding: 10px;
+  background-color: #FBFBFB;
+  margin-bottom: 5px;
+  text-decoration: none;
+  color: black;
+}
+
+nav ul li a:hover {
+  background-color: #FBFBFB;
+}
+
+article {
+  display: none;
+  float: left;
+  padding: 20px;
+  width: 50%;
+  background-color: #FFF6E3;
+}
+
+article:target {
+  display: block;
+}
+
+/* New section for images */
+.images {
+  float: left;
+  width: 30%;
+  background: #F0F0F0;
+  padding: 6px;
+}
+
+.images img {
+  display: none;
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+#London:target ~ .images #LondonImage,
+#Paris:target ~ .images #ParisImage,
+#Tokyo:target ~ .images #TokyoImage {
+  display: block;
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #FFCCEA;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+@media (max-width: 600px) {
+  nav, article, .images {
+    width: 100%;
+    height: auto;
+  }
+}
