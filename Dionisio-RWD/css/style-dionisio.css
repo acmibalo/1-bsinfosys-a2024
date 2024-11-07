@@ -1,11 +1,10 @@
 body {
-    width: 100%; /* Fixed missing unit */
-    height: 100vh; /* Adjusted to cover viewport height */
+    
     font-family: sans-serif;
     font-size: 20px;	
     margin: 0;
     padding: 0;
-    overflow-x: hidden; /* Corrected property name */
+    overflow-x: hidden; 
     background-image: url('mp100_bg.png');
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -14,8 +13,8 @@ body {
 
 header {
     background: #eb9191;
-    font-family: 'Broadway', sans-serif; /* Added a fallback font */
-    font-size: 2.5rem; /* Fixed missing semicolon and adjusted size */
+    font-family: 'Broadway', sans-serif; 
+    font-size: 2.5rem; 
     color: white;
     background-image: url('Mob_best_boy.jfif');
     background-repeat: no-repeat;
@@ -41,7 +40,7 @@ nav a {
 main {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap; /* Makes content wrap on smaller screens */
+    flex-wrap: wrap; 
     padding: 1em;
 }
 
