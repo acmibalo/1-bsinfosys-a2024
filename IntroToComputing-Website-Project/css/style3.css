@@ -1,0 +1,22 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 9%;
+    background: rgba(0, 0, 0, 0.7);
+    filter: drop-shadow(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+.navbar {
+    font-size: 30px;
+    margin-left: 40px;
+    font-weight: 500;
+    border-bottom: 3px solid transparent;
+}
+.footer {
+    background-color: blue;
+}
