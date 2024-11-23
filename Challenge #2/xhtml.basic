@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Sucrose's Pharmacy </title>
+</head>
+<body>
+
+<h1>About Me</h1>
+<p> <b><i>Sucrose's Pharmacy<b></i> is your reliable local pharmacy, <br />
+committed to providing a wide array of health and wellness products.</p>
+<p> We take pride in our professional and friendly service, ensuring that every <br />
+ customer finds the right products to meet their healthcare needs.</p>
+<img src="happy.gif" alt="Happy face" />
+
+
+<a href="https://www.sucrosepharm.com/>Visit my Store</a>
+
+</body>
+</html>
