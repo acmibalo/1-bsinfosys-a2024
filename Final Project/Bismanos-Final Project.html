@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Final Project</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/w3css/4/w3.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+<head>
+<title>My Final Project</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/style1.css">
+<link rel="stylesheet" href="css/style2.css">
+<link rel="stylesheet" href="css/style3.css">
+<link rel="icon" type="image/x-icon" href="images/favicon.ico">
 
 <style>
-body,h1,h2,h3,h4,h5 {font-family: Arial, sans-serif}
+body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
 </style>
 </head>
 <body class="w3-light-grey">
@@ -19,9 +20,9 @@ and is wrapped around the whole page content, except for the footer in this exam
 <div class="w3-content" style="max-width:1400px">
 
 <!-- Header -->
-<header style="text-align:center padding:32"> 
-  <h1><b>MY BLOG</b></h1>
-  <p>Welcome to the world of <span class="tag" font-family: sans-serif>Anime</span></p>
+<header class="w3-container w3-center w3-padding-32"> 
+  <h1><b>My Website</b></h1>
+  <p>Welcome to the world of <span class="w3-tag">Anime</span></p>
 </header>
 
 <!-- Grid -->
@@ -31,22 +32,30 @@ and is wrapped around the whole page content, except for the footer in this exam
 <div class="w3-col l8 s12">
   <!-- Blog entry -->
   <div class="w3-card-4 w3-margin w3-white">
-    <img src="images/anime collage.jpg" alt="anime" style="width:100%">
+    <img src="images/anime collage.jpg" alt="Nature" style="width:100%">
     <div class="w3-container">
-      <h3><b>Anime History</b></h3>
+      <h3><b>Who invented anime?</b></h3>
+      <p>Manga artists <em>Oten Shimokawa</em> and <em>Junichi Kouchi</em>, as well as painter Seitaro Kitayama were fascinated by this new medium.
+        Hired by existing film studios and working with very small crews, these three men were responsible for the 
+        remarkable output that first year and have been nicknamed <i>"the fathers of anime"</p>
     </div>
 
     <div class="w3-container">
-      <h4>Who invented anime?</h4>
-      <p>Manga artists <em>Oten Shimokawa</em> and <em>Junichi Kouchi</em>, as well as painter Seitaro Kitayama were fascinated by this new medium.
-         Hired by existing film studios and working with very small crews, these three men were responsible for the 
-         remarkable output that first year and have been nicknamed <i>"the fathers of anime"</i></p>
+      <p>Countless anime and manga series from Japan have captured the hearts of millions all around the globe,
+         but where did it all start? Tezuka Osamu is one of the most important persons in the history of Japanese anime,
+          which is defined as all animated content from Japan, and he is regarded as the father of Japanese anime.</p>
+      <div class="w3-row">
+        <div class="w3-col m8 s12">
+          <p><a href="see more.html" class="w3-bar-item w3-button" onclick="toggleFunction()"><button class="w3-button w3-padding-large w3-white w3-border"><b>READ MORE »</b></button></a></p>
+        </div>
+      </div>
+    </div>
   </div>
   <hr>
 
   <!-- Blog entry -->
   <div class="w3-card-4 w3-margin w3-white">
-  <img src="images/bridge.jpg" alt="Norway" style="width:800% height:auto">
+  <img src="/w3images/bridge.jpg" alt="Norway" style="width:100%">
     <div class="w3-container">
       <h3><b>BLOG ENTRY</b></h3>
       <h5>Title description, <span class="w3-opacity">April 2, 2014</span></h5>
@@ -55,6 +64,15 @@ and is wrapped around the whole page content, except for the footer in this exam
     <div class="w3-container">
       <p>Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies mi non congue ullam corper. Praesent tincidunt sed
         tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+      <div class="w3-row">
+        <div class="w3-col m8 s12">
+          <p><button class="w3-button w3-padding-large w3-white w3-border"><b>READ MORE »</b></button></p>
+        </div>
+        <div class="w3-col m4 w3-hide-small">
+          <p><span class="w3-padding-large w3-right"><b>Comments  </b> <span class="w3-badge">2</span></span></p>
+        </div>
+      </div>
+    </div>
   </div>
 <!-- END BLOG ENTRIES -->
 </div>
@@ -62,43 +80,39 @@ and is wrapped around the whole page content, except for the footer in this exam
 <!-- Introduction menu -->
 <div class="w3-col l4">
   <!-- About Card -->
-  <div class="card margin margin:top">
-  <img src="images/profile.jpg" style="width:50% height:auto">
+  <div class="w3-card w3-margin w3-margin-top">
+  <img src="images/profile.jpg" style="width:100%">
     <div class="w3-container w3-white">
       <h4><b>Grace Bismanos</b></h4>
-      <p>Hi everyone!!! Welcome to my blog where you'll see all my favorites animes. As you can see I am person who is obsessed 
-        in animes. Making this blog really excites me because I was given the chance to flex my favorites animes which you guys must watch.
-        Animes are very fun to watch so i suggest you watch them and I promise you you guys will never regret it.
-      <p>So just scroll down and see and i promise you will like them....Enjoyyy!!!!</p>
-      </p>
+      <p>Just me, myself and I, exploring the universe of uknownment. I have a heart of love and a interest of lorem ipsum and mauris neque quam blog. I want to share my world with you.</p>
     </div>
   </div><hr>
   
   <!-- Posts -->
   <div class="w3-card w3-margin">
     <div class="w3-container w3-padding">
-      <h4>Popular</h4>
+      <h4>Popular Posts</h4>
     </div>
     <ul class="w3-ul w3-hoverable w3-white">
       <li class="w3-padding-16">
-        <img src="images/let this grieving soul retire.jpg" alt="Image" class="float:left margin-right" style="width:50px">
-        <span class="w3-large">Fantasy</span><br>
-        <span><a href="let this grieving soul retire.html">Let this grieving soul retire</a></span>
+        <img src="/w3images/workshop.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+        <span class="w3-large">Lorem</span><br>
+        <span>Sed mattis nunc</span>
       </li>
       <li class="w3-padding-16">
-        <img src="images/i parry everything.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
-        <span class="w3-large">Fantasy</span><br>
-        <span>I Parry Everythig</span>
+        <img src="/w3images/gondol.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+        <span class="w3-large">Ipsum</span><br>
+        <span>Praes tinci sed</span>
       </li> 
       <li class="w3-padding-16">
-        <img src="images/welcome to demon school.webp" alt="Image" class="w3-left w3-margin-right" style="width:50px">
-        <span class="w3-large">Fantasy</span><br>
-        <span>Welcome to demon school Iruma-kun!</span>
+        <img src="/w3images/skies.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+        <span class="w3-large">Dorum</span><br>
+        <span>Ultricies congue</span>
       </li>   
       <li class="w3-padding-16 w3-hide-medium w3-hide-small">
-        <img src="images/tower of god.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
-        <span class="w3-large">Action</span><br>
-        <span>Tower of god</span>
+        <img src="/w3images/rock.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+        <span class="w3-large">Mingsum</span><br>
+        <span>Lorem ipsum dipsum</span>
       </li>  
     </ul>
   </div>
@@ -107,15 +121,33 @@ and is wrapped around the whole page content, except for the footer in this exam
   <!-- Labels / tags -->
   <div class="w3-card w3-margin">
     <div class="w3-container w3-padding">
-      <h4>Genre</h4>
+      <h4>Tags</h4>
     </div>
     <div class="w3-container w3-white">
-    <p><a href="romance.html">Romance</a>
-        <a href="action.html">Action</a>
-        <a href="fantasy.html">Fantasy</a>
+    <p><span class="w3-tag w3-black w3-margin-bottom">Travel</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">New York</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">London</span>
+      <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">IKEA</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">NORWAY</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">DIY</span>
+      <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Ideas</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Baby</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Family</span>
+      <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">News</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Clothing</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Shopping</span>
+      <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Sports</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Games</span>
     </p>
     </div>
   </div>
   
-</boby>
+<!-- END Introduction Menu -->
+</div>
+
+<!-- END GRID -->
+</div><br>
+
+<!-- END w3-content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-dark-grey w3-padding-32 w3-margin-top">
+  <button class="w3-button w3-black w3-disabled w3-padding-large w3-margin-bottom">Previous</button>
+  <button class="w3-button w3-black w3-padding-large w3-margin-bottom">Next »</button>
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+</footer>
+
+</body>
 </html>
