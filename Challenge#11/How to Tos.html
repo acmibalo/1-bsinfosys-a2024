@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Page</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></script>
+</head>
+<body>
+
+
+<div class="w3-content w3-display-container" style="max-width:100%">
+    <img class="mySlides" src="images/1st.jpg" style="width:100%">
+    <img class="mySlides" src="images/2nd.jpg" style="width:100%">
+    <img class="mySlides" src="images/3rd.jpg" style="width:100%">
+
+    <script>
+        var slideIndex = 0;
+        showSlides();
+        function showSlides() {
+            var slides = document.getElementsByClassName("mySlides");
+            for (var i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {slideIndex = 1}
+            slides[slideIndex-1].style.display = "block";
+            setTimeout(showSlides, 2000);
+        }
+    </script>
+</div>
+
+<button class="w3-button w3-block w3-dark-grey w3-left-align" onclick="myFunction('Demo1')">
+    <i class="fa fa-caret-down"></i> Section 1
+</button>
+<div id="Demo1" class="w3-container w3-hide">
+    <p>SJHBSHIABSAGIHAVBSHABHIS.</p>
+</div>
+
+<button class="w3-button w3-block w3-dark-grey w3-left-align" onclick="myFunction('Demo2')">
+    <i class="fa fa-caret-down"></i> Section 2
+</button>
+<div id="Demo2" class="w3-container w3-hide">
+    <p>random line idk.</p>
+</div>
+
+<script>
+    function myFunction(id) {
+        var x = document.getElementById(id);
+        if (x.className.indexOf("w3-show") == -1) {
+            x.className += " w3-show";
+        } else {
+            x.className = x.className.replace(" w3-show", "");
+        }
+    }
+</script>
+
+
+<div class="w3-dropdown-click">
+    <button class="w3-button">Dropdown</button>
+    <div class="w3-dropdown-content w3-bar-block w3-card-4">
+        <a href="#" class="w3-bar-item w3-button">Link 1</a>
+        <a href="#" class="w3-bar-item w3-button">Link 2</a>
+        <a href="#" class="w3-bar-item w3-button">Link 3</a>
+    </div>
+</div>
+
+<script>
+    document.querySelector(".w3-dropdown-click").addEventListener("click", function() {
+        var dropdownContent = this.querySelector(".w3-dropdown-content");
+        dropdownContent.classList.toggle("w3-show");
+    });
+</script>
+
+
+<button class="w3-button w3-dark-grey" onclick="document.getElementById('id01').style.display='block'">Open Modal</button>
+
+<div id="id01" class="w3-modal">
+    <div class="w3-modal-content w3-animate-zoom">
+        <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-large w3-display-topright">&times;</span>
+        <h2>Modal Content</h2>
+        <p>nye nye nye nye i wanna sleep !</p>
+    </div>
+</div>
+
+<script>
+    var modal = document.getElementById('id01');
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+</script>
+
+
+<button onclick="topFunction()" id="myBtn" class="w3-button w3-dark-grey w3-large" title="Go to top">Top</button>
+
+<script>
+    var mybutton = document.getElementById("myBtn");
+    window.onscroll = function() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+        } else {
+            mybutton.style.display = "none";
+        }
+    };
+
+    function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    }
+</script>
+
+</body>
+</html>
