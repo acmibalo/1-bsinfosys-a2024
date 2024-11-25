@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge #9 - Video and Forms</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header class="header">
+        <h1>Challenge #9</h1>
+        <p>Embedded Videos Layout</p>
+    </header>
+    <main class="main-content">
+        <!-- Video Embedding Section -->
+        <section class="video-section">
+            <h2>Embedded Videos</h2>
+            <!-- Video from YouTube -->
+            <iframe 
+                width="560" 
+                height="315" 
+                src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
+                title="YouTube video player" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen>
+            </iframe>
+        </section>
+
+        <!-- Contact Form Section -->
+        <section class="form-section">
+            <h2>Contact Us</h2>
+            <form action="#" method="POST" class="contact-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Your Email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </main>
+    <footer class="footer">
+        <p>&copy; 2024 Challenge #9 Example</p>
+    </footer>
+</body>
+</html>
