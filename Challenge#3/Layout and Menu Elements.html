@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SOLO.C - Multimedia Creative Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet" />
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Bebas Neue', sans-serif;
+            margin: 0;
+            background-color: #141414;
+            color: #FFFFFF;
+        }
+        h1, h2 {
+            color: #E50914;
+        }
+        p {
+            font-size: 18px;
+        }
+
+        /* Layout */
+        .container {
+            display: grid;
+            grid-template-areas:
+                "header"
+                "menu"
+                "content"
+                "footer";
+            grid-template-columns: 1fr;
+            grid-template-rows: auto auto 1fr auto;
+            min-height: 100vh;
+        }
+
+        header {
+            grid-area: header;
+            background-color: #E50914;
+            text-align: center;
+            padding: 20px;
+        }
+
+        nav {
+            grid-area: menu;
+            background-color: #1F1F1F;
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+        }
+
+        nav a {
+            color: #FFFFFF;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #E50914;
+        }
+
+        .content {
+            grid-area: content;
+            padding: 20px;
+        }
+
+        footer {
+            grid-area: footer;
+            background-color: #1F1F1F;
+            text-align: center;
+            padding: 10px 0;
+            color: #888888;
+        }
+
+     
+        @media (min-width: 768px) {
+            .container {
+                grid-template-areas:
+                    "header header"
+                    "menu menu"
+                    "content sidebar"
+                    "footer footer";
+                grid-template-columns: 3fr 1fr;
+            }
+
+            .content {
+                padding-right: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>SOLO.C</h1>
+            <p>Your gateway to multimedia creativity</p>
+        </header>
+
+        <nav>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <div class="content">
+            <section id="about">
+                <h2>About</h2>
+                <p>SOLO.C is a multimedia creative hub specializing in photography, graphic design, videography, and journalism. We aim to bring your ideas to life through professional and personalized services.</p>
+            </section>
+
+            <section id="services">
+                <h2>Services</h2>
+                <ul>
+                    <li>Graphic Design: Logos, posters, branding materials</li>
+                    <li>Photography: Event coverage, portraits, ID photos</li>
+                    <li>Videography: Event highlights, promotional videos</li>
+                    <li>Journalism: News coverage and creative writing</li>
+                </ul>
+            </section>
+        </div>
+
+        <footer>
+            <p>&copy; 2024 SOLO.C. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
