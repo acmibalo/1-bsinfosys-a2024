@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>SOLO.C</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="web/images">
+<link rel="stylesheet" href="css/style-bahaynon.css">
+ <link rel="icon" type="image/gif" href="images/grit.gif">
+<style>
+
+body,h1, h2, h3, h4, h5, h6{
+  font-family: 'Bebas Neue', sans-serif;
+  color: #E50914;
+ } 
+body,h3, h4, h5, h6 {
+  font-family: 'Montserrat', sans-serif;
+  color: #E50914;
+  
+}
+.w3-sidebar {
+  width: 100px;
+  background-color: #141414; /* Netflix-style dark background */
+  padding-top: 20px;
+}
+.w3-bar-item {
+  padding: 20px 0; /* Consistent spacing */
+  color: # E50914; /* Subtle text color */
+}
+.w3-bar-item:hover {
+  color: #E50914;
+  background-color: #E50914; 
+  transition: color 0.3s, background-color 0.3s;
+}
+.w3-bar-item .fa {
+  font-size: 24px;
+}
+.w3-sidebar img {
+  width: 60px;
+  border-radius: 50%; 
+  margin: 0 auto 20px; 
+}
+.w3-bar-item p {
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+.organization-entry {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+    padding: 8px 0;
+    border-bottom: 1px solid #444;
+}
+
+.organization-entry img {
+    margin-right: 16px;
+    flex-shrink: 0;
+}
+
+.organization-info {
+    color: #ccc;
+}
+
+.organization-info p {
+    margin: 4px 0;
+}
+
+    .w3-row-padding img {
+      transition: transform 0.5s ease, box-shadow 0.5s ease;
+      transform: scale(1);
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+      cursor: pointer; /* Show pointer to indicate that the image is clickable */
+    }
+
+    .w3-row-padding img:hover {
+      transform: scale(1.08);
+      box-shadow: 0 10px 50px rgba(0, 0, 0, 0.3);
+    }
+
+    /* Style the modal (lightbox) */
+    .modal {
+      display: none; /* Hidden by default */
+      position: fixed;
+      z-index: 1; /* Sit on top */
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: rgba(0, 0, 0, 0.8); /* Black with transparency */
+      padding-top: 60px;
+    }
+
+    /* Modal Content (Image) */
+    .modal-content {
+      margin: auto;
+      display: block;
+      width: 80%;
+      max-width: 700px;
+    }
+
+    /* Caption for the image */
+    #caption {
+      text-align: center;
+      padding: 10px;
+      color: #fff;
+      font-size: 18px;
+    }
+
+    /* Close Button */
+    .close {
+      position: absolute;
+      top: 15px;
+      right: 35px;
+      color: #f1f1f1;
+      font-size: 40px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .close:hover,
+    .close:focus {
+      color: #bbb;
+      text-decoration: none;
+      cursor: pointer;
+    }
+	  /* Style the video container */
+    .video-container {
+      max-width: 100%;
+      margin: 40px 0;
+      text-align: center;
+    }
+
+    /* Responsive video styling */
+    .video-container video {
+      width: 100%;
+      max-width: 900px; /* Limit the video width */
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+    }
+
+    /* Add some padding and background color for sections */
+    .section-padding {
+      padding: 40px 0;
+    }
+
+    /* Section titles */
+    h2 {
+      color: #fff;
+      font-size: 30px;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+</style>
+</head>
+<body class="w3-black">
+
+
+<nav class="w3-sidebar w3-bar-block w3-center w3-hide-small">
+
+  <img src="images/mypic.jpg" style="width:100%">
+ 
+  <a href="#home" class="w3-bar-item w3-button">
+    <i class="fa fa-home"></i>
+    <p>Home</p>
+  </a>
+  <a href="#about" class="w3-bar-item w3-button">
+    <i class="fa fa-user"></i>
+    <p>About</p>
+  </a>
+  <a href="#photos" class="w3-bar-item w3-button">
+    <i class="fa fa-eye"></i>
+    <p>Works</p>
+  </a>
+  <a href="#contact" class="w3-bar-item w3-button">
+    <i class="fa fa-envelope"></i>
+    <p>Contact</p>
+  </a>
+</nav>
+
+
+<div class="w3-top w3-hide-large w3-hide-medium w3-black w3-center w3-small">
+  <div class="w3-bar w3-opacity w3-hover-opacity-off">
+    <a href="#home" class="w3-bar-item w3-button" style="width:25%;">Home</a>
+    <a href="#about" class="w3-bar-item w3-button" style="width:25%;">About</a>
+    <a href="#photos" class="w3-bar-item w3-button" style="width:25%;">Works</a>
+    <a href="#contact" class="w3-bar-item w3-button" style="width:25%;">Contact</a>
+  </div>
+</div>
+
+
+<div class="w3-padding-large" id="main">
+
+  <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
+    <h1 class="w3-jumbo"><span class="w3-hide-small">THIS IS</span> SOLO.C</h1>
+    <p>Photographer and Graphic Designer.</p>
+    <img src="images/mypic.jpg" alt="boy" class="w3-image" width="992" height="1108">
+  </header>
+
+
+  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
+    <h2 class="w3-text-light-grey">KIER BENEDICT BAHAYNON</h2>
+    <hr style="width:200px" class="w3-opacity">
+    <p>I’m Kier Benedict, a multimedia creative with skills in graphic design, photography, videography, art, and journalism. I’m currently a member of The Mindanao Tech, and I’ve previously served as the head of Graphic Design and as a sub-photographer and videographer for Spectrum Creatives at NDMU IBED. I’m also a proud member of Pitik South Cotabato and regularly contribute to Manila Bulletin, Daily Inquirer, and Mindanews. My work revolves around blending creativity and storytelling, allowing me to explore different mediums and connect with diverse audiences.
+
+
+    </p>
+    <h3 class="w3-padding-16 w3-text-light-grey">My Skills</h3>
+    <p class="w3-wide">Graphic Design</p>
+    <div class="w3-white">
+      <div class="w3-red" style="height:28px;width:95%"></div>
+    </div>
+    <p class="w3-wide">Photography</p>
+    <div class="w3-white">
+      <div class="w3-red" style="height:28px;width:85%"></div>
+    </div> <br>
+  
+    
+    <div class="w3-row w3-center w3-padding-16 w3-section w3-light-grey">
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">No</span><br>
+        Partners
+      </div>
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">70++</span><br>
+        Projects Done
+      </div>
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">89+</span><br>
+        Happy Clients
+      </div>
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">33,090 Hours</span><br>
+        Experience
+      </div>
+    </div>
+
+   <button class="w3-button w3-light-grey w3-padding-large w3-section">
+  <a href="https://drive.google.com/uc?export=download&id=1z88x8D6eEj5lIU-abcXYZ1234" class="w3-button w3-light-grey w3-padding-large w3-section" download>
+    <i class="fa fa-download"></i> Download Resume
+  </a>
+</button>
+
+    
+<h3 class="w3-padding-16 w3-text-light-grey">GRAPHIC DESIGN</h3>
+<div class="w3-row-padding" style="margin:0 -16px">
+ 
+  <div class="w3-half w3-margin-bottom">
+    <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
+      <li class="w3-dark-grey w3-xlarge w3-padding-32">STUDENT PACKAGES</li>
+      <li class="w3-padding-16">POSTERS</li>
+      <li class="w3-padding-16">PUBMAT</li>
+      <li class="w3-padding-16">Template</li>
+      <li class="w3-padding-16">BASIC PHOTOMANIPULATION</li>
+	  <li class="w3-padding-16">2 FREE REVISIONS (+50 PER REV)</li>
+      <li class="w3-padding-16">
+        <h2>P500</h2>
+        <span class="w3-opacity">PER WORK OF CHOICE</span>
+      </li>
+      <li class="w3-light-grey w3-padding-24">
+        <a href="signup.html" class="w3-button w3-white w3-padding-large w3-hover-black">Sign Up</a>
+      </li>
+    </ul>
+  </div>
+  
+ 
+  <div class="w3-half w3-margin-bottom">
+    <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
+      <li class="w3-dark-grey w3-xlarge w3-padding-32">CREATIVE PACKAGES</li>
+      <li class="w3-padding-16">POSTERS,TEMPLATES,PUBMATS FOR ADS</li>
+      <li class="w3-padding-16">CREATIVE PHOTOSHOOT</li>
+      <li class="w3-padding-16">PHOTOMANIPULATION</li>
+      <li class="w3-padding-16">BRANDING</li>
+	  <li class="w3-padding-16">1 FREE REVISION (+50 PER REV)</li>
+      <li class="w3-padding-16">
+        <h2>P1200</h2>
+        <span class="w3-opacity">PER WORK OF CHOICE</span>
+      </li>
+      <li class="w3-light-grey w3-padding-24">
+        <a href="signup.html" class="w3-button w3-white w3-padding-large w3-hover-black">Sign Up</a>
+      </li>
+    </ul>
+  </div>
+  
+<h3 class="w3-padding-16 w3-text-light-grey">PHOTOGRAPHY</h3>
+<div class="w3-row-padding" style="margin:0 -16px">
+ 
+  <div class="w3-half w3-margin-bottom">
+    <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
+      <li class="w3-dark-grey w3-xlarge w3-padding-32">STUDENT PACKAGES</li>
+      <li class="w3-padding-16">ID PICTURES (WITH LAYOUT)</li>
+      <li class="w3-padding-16">SCHOOL EVENT COVERAGE</li>
+      <li class="w3-padding-16">PHOTO JUDGE</li>
+      <li class="w3-padding-16">MINOR POST PROCESSING</li>
+	  <li class="w3-padding-16">MINOR POST PROCESSING</li>
+      <li class="w3-padding-16">
+        <h2>P600</h2>
+        <span class="w3-opacity">per month</span>
+      </li>
+      <li class="w3-light-grey w3-padding-24">
+        <a href="signup.html" class="w3-button w3-white w3-padding-large w3-hover-black">Sign Up</a>
+      </li>
+    </ul>
+  </div>
+
+
+  <div class="w3-half w3-margin-bottom">
+    <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
+      <li class="w3-dark-grey w3-xlarge w3-padding-32">NORMAL PACKAGES</li>
+      <li class="w3-padding-16">PHOTOWALK LEADER</li>
+      <li class="w3-padding-16">EVENT COVERAGE (Ex. DEBUT, BDAYS)</li>
+      <li class="w3-padding-16">CONCEPT AND CREATIVE PHOTOSHOOT</li>
+	  <li class="w3-padding-16">PHOTO AND VIDEO FOR AD</li>
+      <li class="w3-padding-16">WORKSHOP</li>
+      <li class="w3-padding-16">
+        <h2>P1800</h2>
+        <span class="w3-opacity">PER CHOICE OF WORK</span>
+      </li>
+      <li class="w3-light-grey w3-padding-24">
+        <a href="signup.html" class="w3-button w3-white w3-padding-large w3-hover-black">Sign Up</a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+
+	  
+    
+   
+    <h3 class="w3-padding-24 w3-text-light-grey">MY ORGANIZATIONS</h3> 
+
+<div class="organization-entry">
+    <img src="images/manila.jpg" alt="Avatar" class="w3-circle" style="width:80px;">
+    <div class="organization-info">
+        <p><span class="w3-large">MANILA BULLETIN</span> - NEWS AND MEDIA</p>
+        <p>Contributor - Photojournalist</p>
+    </div>
+</div>
+
+<div class="organization-entry">
+    <img src="images/min.jpg" alt="Avatar" class="w3-circle" style="width:80px;">
+    <div class="organization-info">
+        <p><span class="w3-large">MINDANEWS</span> - NEWS AND MEDIA</p>
+        <p>Contributor - Photojournalist</p>
+    </div>
+</div>
+
+<div class="organization-entry">
+    <img src="images/mt.jpg" alt="Avatar" class="w3-circle" style="width:80px;">
+    <div class="organization-info">
+        <p><span class="w3-large">THE MINDANAO TECH</span> - UNIVERSITY OF SOUTHERN MINDANAO</p>
+        <p>Graphic Designer</p>
+    </div>
+</div>
+
+<div class="organization-entry">
+    <img src="images/pitik.jpg" alt="Avatar" class="w3-circle" style="width:80px;">
+    <div class="organization-info">
+        <p><span class="w3-large">PITIK SOUTH COTABATO</span> - KORONADAL CITY</p>
+        <p>Member and Photographer Hobbyist</p>
+    </div>
+</div>
+
+<div class="organization-entry">
+    <img src="images/specc.jpg" alt="Avatar" class="w3-circle" style="width:80px;">
+    <div class="organization-info">
+        <p><span class="w3-large">SPECTRUM CREATIVES</span> - NDMU-IBED KORONADAL CITY</p>
+        <p>Head of Graphic Design and Sub Photographer/Videographer</p>
+    </div>
+</div>
+
+<div class="organization-entry">
+    <img src="images/himb.jpg" alt="Avatar" class="w3-circle" style="width:80px;">
+    <div class="organization-info">
+        <p><span class="w3-large">HIMBON MARISTA</span> - NDMU-IBED KORONADAL CITY</p>
+        <p>Associate Photojournalist</p>
+    </div>
+</div>
+
+
+
+  <div class="w3-padding-64 w3-content" id="photos">
+    <h2 class="w3-text-light-grey">My Photos</h2>
+    <hr style="width:200px" class="w3-opacity">
+
+
+   <div class="w3-row-padding" style="margin:0 -16px">
+      <div class="w3-half">
+        <img src="images/1st.jpg" style="width:100%" onclick="openModal(this)">
+        <img src="images/2nd.jpg" style="width:100%" onclick="openModal(this)">
+        <img src="images/3rd.jpg" style="width:100%" onclick="openModal(this)">
+        <img src="images/8th.jpg" style="width:100%" onclick="openModal(this)">
+      </div>
+
+      <div class="w3-half">
+        <img src="images/4th.jpg" style="width:100%" onclick="openModal(this)">
+        <img src="images/5th.jpg" style="width:100%" onclick="openModal(this)">
+        <img src="images/6th.jpg" style="width:100%" onclick="openModal(this)">
+        <img src="images/7th.jpg" style="width:100%" onclick="openModal(this)">
+      </div>
+    </div>
+  </div>
+
+  
+  <div id="myModal" class="modal">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <img class="modal-content" id="img01">
+    <div id="caption"></div>
+  </div>
+  
+   <div class="w3-padding-64 w3-content" id="photos">
+    <h2 class="w3-text-light-grey">My Designs</h2>
+    <hr style="width:200px" class="w3-opacity">
+
+
+   <div class="w3-row-padding" style="margin:0 -16px">
+      <div class="w3-half">
+        <img src="images/halloween.png" style="width:100%" onclick="openModal(this)">
+        <img src="images/gd2.png" style="width:100%" onclick="openModal(this)">
+        <img src="images/gd5.jpg" style="width:100%" onclick="openModal(this)">
+        <img src="images/gd1.png" style="width:100%" onclick="openModal(this)">
+        <img src="images/gd5.png" style="width:100%" onclick="openModal(this)">
+        <img src="images/show 1.png" style="width:100%" onclick="openModal(this)">
+      </div>
+
+      <div class="w3-half">
+        <img src="images/kill.png" style="width:100%" onclick="openModal(this)">
+        <img src="images/kill2.png" style="width:100%" onclick="openModal(this)">
+        <img src="images/gd6.jpg" style="width:100%" onclick="openModal(this)">
+        <img src="images/gd4.png" style="width:100%" onclick="openModal(this)">
+        <img src="images/himbon.png" style="width:100%" onclick="openModal(this)">
+        <img src="images/Cute Sapling.png" style="width:100%" onclick="openModal(this)">
+      </div>
+    </div>
+  </div>
+
+<script>
+  
+    function openModal(imgElement) {
+      var modal = document.getElementById("myModal");
+      var modalImg = document.getElementById("img01");
+      var captionText = document.getElementById("caption");
+      
+      modal.style.display = "block";
+      modalImg.src = imgElement.src; 
+      captionText.innerHTML = imgElement.alt; 
+    }
+
+    
+    function closeModal() {
+      var modal = document.getElementById("myModal");
+      modal.style.display = "none";
+    }
+  </script>
+  
+   <div class="w3-padding-large section-padding" id="video">
+    <h2>Watch My Latest Video</h2>
+    
+
+    <div class="video-container">
+      <video controls>
+        <source src="images/vid.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+
+  </div>
+
+  <div class="w3-padding-large" id="main">
+   
+  </div>
+  
+  
+  <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
+    <h2 class="w3-text-light-grey">Contact Me</h2>
+    <hr style="width:200px" class="w3-opacity">
+
+    <div class="w3-section">
+      <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Manila, PH</p>
+      <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Phone: +63 934 892 123</p>
+      <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: benedictkier@gmail.com</p>
+    </div><br>
+    <p>Let's get in touch. Send me a message:</p>
+
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Email" required name="Email"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Subject" required name="Subject"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Message" required name="Message"></p>
+      <p>
+        <button class="w3-button w3-light-grey w3-padding-large" type="submit">
+          <i class="fa fa-paper-plane"></i> SEND MESSAGE
+        </button>
+      </p>
+    </form>
+
+  </div>
+  
+
+
+  <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
+    <a href="https://www.facebook.com/wtfwtftwctfwhahahah.okhshsh/" target="_blank" class="w3-hover-opacity">
+    <i class="fa fa-facebook-official"></i>
+</a>
+<a href="https://www.instagram.com/solo.c_c/" target="_blank" class="w3-hover-opacity">
+    <i class="fa fa-instagram"></i>
+</a>
+    <p class="w3-medium">SOLO.C 2024 </p>
+
+  </footer>
+
+
+</div>
+
+</body>
+</html>

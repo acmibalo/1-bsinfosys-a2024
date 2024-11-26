@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Sign Up</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+.w3-row-padding img {margin-bottom: 12px}
+.w3-sidebar {width: 120px;background: #222;}
+#main {margin-left: 120px}
+@media only screen and (max-width: 600px) {#main {margin-left: 0}}
+</style>
+</head>
+<body class="w3-black">
+
+<!-- Sidebar -->
+<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+  <a href="index.html" class="w3-bar-item w3-button w3-padding-large w3-black">
+    <i class="fa fa-home w3-xxlarge"></i>
+    <p>HOME</p>
+  </a>
+</nav>
+
+<!-- Main content -->
+<div class="w3-padding-large" id="main">
+  <header class="w3-container w3-padding-32 w3-center w3-black">
+    <h1 class="w3-jumbo">Sign Up for a Plan</h1>
+    <p>Choose your plan and get started!</p>
+  </header>
+  
+  <div class="w3-container w3-center w3-padding-64">
+    <form action="/submit_signup" method="post">
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Full Name" required name="name"></p>
+      <p><input class="w3-input w3-padding-16" type="email" placeholder="Email" required name="email"></p>
+      <p><input class="w3-input w3-padding-16" type="password" placeholder="Password" required name="password"></p>
+      <p><button class="w3-button w3-light-grey w3-padding-large" type="submit">Sign Up</button></p>
+    </form>
+  </div>
+
+  <!-- Footer with Back to Home button -->
+  <footer class="w3-container w3-center w3-padding-32">
+    <a href="index.html" class="w3-button w3-light-grey">Back to Home</a>
+  </footer>
+</div>
+
+</body>
+</html>
