@@ -1,62 +1,51 @@
-* {
-			  box-sizing: border-box;
-			}
-
-			body {
-			  font-family: Arial, Helvetica, sans-serif;
-			}
-
-			/* Style the header */
-			header {
-			  background-color: #666;
-			  padding: 30px;
-			  text-align: center;
-			  font-size: 35px;
-			  color: white;
-			}
-
-			/* Create two columns/boxes that floats next to each other */
-			nav {
-			  float: left;
-			  width: 30%;
-			  height: 600px; /* only for demonstration, should be removed */
-			  background: #cccccc;
-			  padding: 20px;
-			}
-
-			/* Style the list inside the menu */
-			nav ul {
-			  list-style-type: none;
-			  padding: 0;
-			}
-
-			article {
-			  float: left;
-			  padding: 20px;
-			  width: 70%;
-			  background-color: #f1f1f1;
-			  height: 600px; /* only for demonstration, should be removed */
-			}
-
-			/* Clear floats after the columns */
-			section::after {
-			  content: "";
-			  display: table;
-			  clear: both;
-			}
-
-			/* Style the footer */
-			footer {
-			  background-color: #777;
-			  padding:10px;
-			  text-align: center;
-			  color: white;
-			}
-
-			/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
-			@media (max-width: 600px) {
-			  nav, article {
-				width: 100%;
-				height: auto;
-			  }
-			}
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background: #444;
+            padding: 0.5rem;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+        nav a:hover {
+            color: #ffd700;
+        }
+        section {
+            padding: 2rem;
+        }
+        .city {
+            background: #f4f4f4;
+            margin: 1rem 0;
+            padding: 1rem;
+            border-radius: 10px;
+        }
+        .city img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+        .city h2 {
+            color: #333;
+        }
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 2rem;
+        }
