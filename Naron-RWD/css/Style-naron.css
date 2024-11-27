@@ -1,0 +1,51 @@
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background: #444;
+            padding: 0.5rem;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+        nav a:hover {
+            color: #ffd700;
+        }
+        section {
+            padding: 2rem;
+        }
+        .city {
+            background: #f4f4f4;
+            margin: 1rem 0;
+            padding: 1rem;
+            border-radius: 10px;
+        }
+        .city img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+        .city h2 {
+            color: #333;
+        }
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 2rem;
+        }
