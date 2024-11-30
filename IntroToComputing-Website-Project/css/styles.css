@@ -9,6 +9,7 @@ body {
     line-height: 1.6;
 }
 
+/* Headings */
 h1, h2, h3, h4, h5, h6 {
     margin: 0;
     font-weight: 600;
@@ -18,7 +19,9 @@ p {
     margin: 0;
 }
 
-/* Header and Navbar */
+/*-----------------------------------------
+        Header and Navbar Styles
+-----------------------------------------*/
 header {
     background-color: #fff;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.05);
@@ -28,6 +31,7 @@ header {
     padding: 10px 0;
 }
 
+/* Navbar Container */
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -37,6 +41,7 @@ header {
     padding: 0 20px;
 }
 
+/* Logo Styles */
 .nav-logo .logo-text {
     font-size: 24px;
     font-weight: 700;
@@ -45,6 +50,7 @@ header {
     letter-spacing: 1px;
 }
 
+/* Navigation Menu */
 .nav-menu {
     list-style: none;
     display: flex;
@@ -67,13 +73,16 @@ header {
     color: #ff6b6b;
 }
 
-/* Hero Section */
+/*-----------------------------------------
+        Hero Section Styles
+-----------------------------------------*/
 .hero-section {
     background: linear-gradient(180deg, #fff1f0, #ffe8e6);
     padding: 50px 20px;
     text-align: center;
 }
 
+/* Hero Text Styles */
 .hero-details .title {
     font-size: 36px;
     color: #ff6b6b;
@@ -92,6 +101,7 @@ header {
     margin-bottom: 30px;
 }
 
+/* Button Styles */
 .buttons {
     display: flex;
     justify-content: center;
@@ -113,6 +123,7 @@ header {
     background-color: #e35d5d;
 }
 
+/* Specific Button Styles */
 .contact-us {
     background-color: #ff9b9b;
 }
@@ -121,13 +132,16 @@ header {
     background-color: #e58888;
 }
 
+/* Hero Image Styles */
 .hero-image {
     max-width: 100%;
     height: auto;
     margin-top: 30px;
 }
 
-/* About Section */
+/*-----------------------------------------
+        About Section Styles
+-----------------------------------------*/
 .about-section {
     padding: 50px 20px;
     background-color: #fff8f7;
@@ -138,6 +152,7 @@ header {
     justify-content: center;
 }
 
+/* About Image Styles */
 .about-image-wrapper {
     flex: 1;
     max-width: 500px;
@@ -150,6 +165,7 @@ header {
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
 }
 
+/* About Text Styles */
 .about-details {
     flex: 1;
     max-width: 500px;
@@ -161,8 +177,11 @@ header {
     margin-bottom: 10px;
 }
 
-/* Responsive Design */
+/*-----------------------------------------
+        Responsive Design
+-----------------------------------------*/
 @media (max-width: 768px) {
+    /* Navbar Layout for Small Screens */
     .navbar {
         flex-direction: column;
     }
@@ -173,12 +192,13 @@ header {
         justify-content: center;
     }
 
+    /* Hero Section Text Alignment */
     .hero-details {
         text-align: center;
     }
 
+    /* Buttons Layout */
     .buttons {
         flex-direction: column;
     }
 }
-
