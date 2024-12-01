@@ -15,7 +15,7 @@ body {
 header {
     width: 100%;
     height: auto; /* Allow the height to adjust based on content */
-    background: #eb9191;
+    background: #453f3d;
     font-family: Garamond;
     font-size: 50px;
     color: #777696;
@@ -34,7 +34,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: gray;
+    background: #453f3d;
     color: white;
     padding: 0 20px;
 }
@@ -97,7 +97,7 @@ nav {
 .Furniture .bar {
     flex-basis: 100%;
     height: 4px;
-    background: blue;
+    background: gray;
     margin: 3px;
 }
 
