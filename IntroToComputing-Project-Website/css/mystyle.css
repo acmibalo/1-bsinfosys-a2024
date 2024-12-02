@@ -34,7 +34,7 @@ section{
 }
 
 .heading span {
-    color: var(--pink);
+    color: rgb(167, 110, 110);
 }
 .btn {
     display: inline-block;
@@ -70,17 +70,17 @@ header .logo {
 }
 
 header .logo span {
-    color: var(--pink);
+    color: rgba(204, 167, 152, 0.897);
 }
 
 header .navbar a {
     font-size: 2rem;
     padding: 0 1.5rem;
-    color: #e97b62ee;
+    color: #e43812ee;
 }
 
 header .navbar a:hover {
-    color: var(--pink);
+    color: rgb(190, 168, 138);
 }
 
 header .icons a {
@@ -149,18 +149,18 @@ header .fa-bars {
     padding-bottom: 3rem;
 }
 
-.about .row .image-container {
+.about .row .video-container {
     flex: 1 1 40rem;
     position: relative;
 }
 
-.about .row .image-container image {
+.about .row .video-container video {
     width: 100%;
     border: 1.5rem solid #fff;
     border-radius: .5rem;
     box-shadow: 0 .5rem 1rem rgba(0,0,0, .1);
 }
-.about .row .image-container h3 {
+.about .row .video-container h3 {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -175,6 +175,21 @@ header .fa-bars {
 .about .row .content {
     flex: 1 1 40rem;
 }
+
+.about .row .content h3 {
+    font-size: 3rem;
+    color: #333;
+}
+
+.about .row .content p {
+    font-size: 1.5rem;
+    color: #1a0e0e57;
+    padding: .5rem 0;
+    padding-top: 1rem;
+    line-height: 1.5;
+}
+
+
 
 
 
