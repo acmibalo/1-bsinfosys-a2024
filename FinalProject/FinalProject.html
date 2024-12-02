@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>The Beeyoungcakes Bakeshoppe</title>
+   <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="path-to-your-stylesheet.css">
+
+  <style>
+    h1, h2, h3, h4, h5, h6 { font-family: "Oswald"; }
+    body {
+        font-family: "Open Sans";
+        background-color: #FFB6C1; /* Light pink color */
+    }
+    .w3-bar {
+        background-color: #D8BFD8; /* Light purple color */
+    }
+    
+    .w3-bar .fa {
+        color: #cd5269; /* Light pink color */
+    }
+
+    .custom-title,
+    .custom-subtitle {
+        color: #7f3b7f; /* Light purple */
+    }
+
+    .light-purple-container {
+  background-color: #D4A5D6 !important; /* Ensures the background color is applied */
+}
+  </style>
+</head>
+
+<body>
+  <!-- Navigation Bar with Dropdowns for Product Categories -->
+  <div class="w3-bar w3-hide-small">
+    <!-- Cakes Category -->
+    <div class="w3-dropdown-click">
+      <a href="javascript:void(0)" class="w3-bar-item w3-button"><i class="fa fa-birthday-cake"></i> Cakes</a>
+      <div class="w3-dropdown-content">
+        <a href="#">Blueberry Cheesecake</a>
+        <a href="#">Chocolate Fudge Cake</a>
+        <a href="#">Vanilla Sponge Cake</a>
+        <a href="#">Red Velvet Cake</a>
+        <a href="#">Lemon Drizzle Cake</a>
+      </div>
+    </div>
+
+    <!-- Coffee Category -->
+    <div class="w3-dropdown-click">
+      <a href="javascript:void(0)" class="w3-bar-item w3-button"><i class="fa fa-coffee"></i> Coffee</a>
+      <div class="w3-dropdown-content">
+        <a href="#">Creamy Caramel Macchiato</a>
+        <a href="#">Espresso</a>
+        <a href="#">Latte</a>
+        <a href="#">Cappuccino</a>
+        <a href="#">Americano</a>
+      </div>
+    </div>
+
+    <!-- Bread Category -->
+    <div class="w3-dropdown-click">
+      <a href="javascript:void(0)" class="w3-bar-item w3-button"><i class="fa fa-bread-slice"></i> Bread</a>
+      <div class="w3-dropdown-content">
+        <a href="#">Sourdough Bread</a>
+        <a href="#">Multigrain Bread</a>
+        <a href="#">Brioche</a>
+        <a href="#">Whole Wheat Bread</a>
+        <a href="#">Ciabatta</a>
+      </div>
+    </div>
+
+    <!-- Cookies Category -->
+    <div class="w3-dropdown-click">
+      <a href="javascript:void(0)" class="w3-bar-item w3-button"><i class="fa fa-cookie"></i> Cookies</a>
+      <div class="w3-dropdown-content">
+        <a href="#">Dark Chocolate Truffles</a>
+        <a href="#">Oatmeal Raisin Cookies</a>
+        <a href="#">Peanut Butter Cookies</a>
+        <a href="#">Sugar Cookies</a>
+        <a href="#">White Chocolate Macadamia Cookies</a>
+      </div>
+    </div>
+
+    <!-- Ice Cream Category -->
+    <div class="w3-dropdown-click">
+      <a href="javascript:void(0)" class="w3-bar-item w3-button"><i class="fa fa-ice-cream"></i> Ice Cream</a>
+      <div class="w3-dropdown-content">
+        <a href="#">Refreshing Strawberry Sorbet</a>
+        <a href="#">Vanilla Bean</a>
+        <a href="#">Chocolate Hazelnut</a>
+        <a href="#">Mint Chocolate Chip</a>
+         <a href="#">Mango Sorbet</a>
+      </div>
+    </div>
+
+    <!-- Right-aligned Home and Contact -->
+    <div class="w3-right">
+      <a href="home.html" class="w3-bar-item w3-button"><i class="fa fa-home"></i> Home</a>
+      <a href="contact.html" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> Contact</a>
+      <a href="#" class="w3-bar-item w3-button"><i class="fa fa-search"></i></a>
+    </div>
+  </div>
+
+  
+<!-- w3-content defines a container for fixed size centered content, 
+and is wrapped around the whole page content, except for the footer in this example -->
+<div class="w3-content" style="max-width:1600px;">
+  <header class="w3-display-container w3-wide" id="home">
+    <!-- Image Header -->
+    <img class="w3-image" src="./coverpage.PNG" alt="Bakeshoppe Cover" width="1600" height="1060">
+    
+    <!-- "ORDER NOW" Button -->
+    <div class="w3-display-bottommiddle w3-padding-large">
+      <button class="w3-button w3-round-large" 
+              style="background-color: #B39DDB; 
+                     color: white; 
+                     padding: 15px 32px; 
+                     font-size: 18px;" 
+              onclick="document.getElementById('OrderNow').style.display='block'">
+        ORDER NOW
+      </button>
+    </div>
+  </header>
+</div>
+
+
+
+<!-- Modal for Order Now -->
+<div id="OrderNow" class="w3-modal">
+  <div class="w3-modal-content w3-animate-zoom">
+    <header class="w3-container" style="background-color: #B39DDB;">
+      <span onclick="document.getElementById('OrderNow').style.display='none'"
+            class="w3-button w3-display-topright">&times;</span>
+      <h2>Place Your Order</h2>
+    </header>
+    <div class="w3-container">
+      <form action="/submit-order" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" class="w3-input w3-margin-bottom" required>
+
+        <label for="item">Item to Order:</label>
+        <select id="item" name="item" class="w3-select w3-margin-bottom" required>
+          <!-- Cakes Category -->
+          <optgroup label="Cakes">
+            <option value="Blueberry Cheesecake">Blueberry Cheesecake</option>
+            <option value="Chocolate Fudge Cake">Chocolate Fudge Cake</option>
+            <option value="Vanilla Sponge Cake">Vanilla Sponge Cake</option>
+            <option value="Red Velvet Cake">Red Velvet Cake</option>
+            <option value="Lemon Drizzle Cake">Lemon Drizzle Cake</option>
+          </optgroup>
+        
+          <!-- Coffee Category -->
+          <optgroup label="Coffee">
+            <option value="Creamy Caramel Macchiato">Creamy Caramel Macchiato</option>
+            <option value="Espresso">Espresso</option>
+            <option value="Latte">Latte</option>
+            <option value="Cappuccino">Cappuccino</option>
+            <option value="Americano">Americano</option>
+          </optgroup>
+        
+          <!-- Bread Category -->
+          <optgroup label="Bread">
+            <option value="Sourdough Bread">Sourdough Bread</option>
+            <option value="Multigrain Bread">Multigrain Bread</option>
+            <option value="Brioche">Brioche</option>
+            <option value="Whole Wheat Bread">Whole Wheat Bread</option>
+            <option value="Ciabatta">Ciabatta</option>
+          </optgroup>
+        
+          <!-- Cookies Category -->
+          <optgroup label="Cookies">
+            <option value="Dark Chocolate Truffles">Dark Chocolate Truffles</option>
+            <option value="Oatmeal Raisin Cookies">Oatmeal Raisin Cookies</option>
+            <option value="Peanut Butter Cookies">Peanut Butter Cookies</option>
+            <option value="Sugar Cookies">Sugar Cookies</option>
+            <option value="White Chocolate Macadamia Cookies">White Chocolate Macadamia Cookies</option>
+          </optgroup>
+        
+          <!-- Ice Cream Category -->
+          <optgroup label="Ice Cream">
+            <option value="Strawberry Sorbet">Refreshing Strawberry Sorbet</option>
+            <option value="Vanilla Bean">Vanilla Bean</option>
+            <option value="Chocolate Hazelnut">Chocolate Hazelnut</option>
+            <option value="Mint Chocolate Chip">Mint Chocolate Chip</option>
+            <option value="Mango Sorbet">Mango Sorbet</option>
+          </optgroup>
+        
+          <!-- Drinks Category -->
+          <optgroup label="Drinks">
+            <option value="Fresh Lemonade">Fresh Lemonade</option>
+            <option value="Iced Tea">Iced Tea</option>
+            <option value="Fruit Smoothie">Fruit Smoothie</option>
+            <option value="Milkshake">Milkshake</option>
+            <option value="Cold Brew Coffee">Cold Brew Coffee</option>
+          </optgroup>
+        </select>
+        
+
+        <label for="quantity">Quantity:</label>
+        <input type="number" id="quantity" name="quantity" class="w3-input w3-margin-bottom" min="1" required>
+
+        <button type="submit" class="w3-button" style="background-color: #B39DDB; color: white; width: 100%;">Submit Order</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- Script to Close Modal When Clicking Outside -->
+<script>
+  var modal = document.getElementById('OrderNow');
+  window.onclick = function(event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  }
+</script>
+
+
+  <!-- Grid -->
+  <div class="w3-row w3-padding w3-border">
+
+    <!-- Blog entries -->
+    <div class="w3-col l8 s12">
+    
+      <!-- Blog entry -->
+<div class="w3-container w3-white w3-margin w3-padding-large">
+  <div class="w3-center">
+    <h3>Christmas Special: Holiday Treats and Gift Boxes</h3>
+    <h5>Celebrate with Sweetness, <span class="w3-opacity">December 1, 2024</span></h5>
+  </div>
+
+  <div class="w3-justify">
+    <img src="./christmas_treats.jpg" alt="Christmas Treats" style="width:100%" class="w3-padding-16">
+    <p><strong>Holiday Delights!</strong> This holiday season, we’re excited to bake up a brand-new selection of festive treats! Enjoy the cozy flavors of spiced apple muffins, cranberry-orange biscotti, dark chocolate truffles, and classic sugar cookies decorated with holiday cheer.</p>
+    <p>Our gift boxes make the perfect present for loved ones! Customize them with a selection of treats like mini fruit tarts, frosted sugar cookies, and our famous cinnamon rolls. Visit The Beeyoungcakes Bakeshoppe to find the perfect holiday treats, ready to bring warmth and smiles to all your loved ones! <p>
+          <p class="w3-left"><button class="w3-button w3-white w3-border" onclick="likeFunction(this)"><b><i class="fa fa-thumbs-up"></i> Like</b></button></p>
+          <p class="w3-right"><button class="w3-button w3-white w3-border" onclick="myFunction('demo1')" id="myBtn"><b>Replies  </b> <span class="w3-tag w3-white">1</span></button></p>
+          <p class="w3-clear"></p>
+          <div class="w3-row w3-margin-bottom" id="demo1" style="display:none">
+            <hr>
+              <div class="w3-col l2 m3">
+                <img src="./customer_avatar2.jpg" style="width:90px;">
+              </div>
+              <div class="w3-col l10 m9">
+                <h4>Bianx Pocot <span class="w3-opacity w3-medium">December 2, 2024, 6:32 PM</span></h4>
+                <p> I can’t wait to try the frosted sugar cookies! Your treats are the best part of my holidays! </p> 
+              </div>
+          </div>
+        </div>
+      </div>
+      <hr>
+
+      <!-- Blog entry -->
+      <div class="w3-container w3-white w3-margin w3-padding-large">
+        <div class="w3-center">
+         <h3>Perfect Pairings: Coffee and Specialty Drinks</h3>
+    <h5>Discover Our Beverage Menu, <span class="w3-opacity">November 9, 2024</span></h5>
+        </div>
+
+        <div class="w3-justify">
+          <img src="./coffee_drinks.jpg" alt="Coffee and Specialty Drinks" style="width:100%" class="w3-padding-16">
+          <p><strong>Hats!</strong> The trend this summer is hats for men!</p>
+          <p><strong>Indulge in the Perfect Cup!</strong> At The Beeyoungcakes Bakeshoppe, we take pride in our carefully crafted coffee and specialty drinks that pair perfectly with our freshly baked treats. From our signature lattes to iced teas, there’s something for everyone to enjoy.</p>
+    <p>Our popular drinks include the classic espresso, creamy caramel macchiato, and our new seasonal pumpkin spice latte. We also offer refreshing options like hibiscus iced tea and matcha latte. Stop by to try them all and find your favorite pairing!</p>
+          <p class="w3-left"><button class="w3-button w3-white w3-border" onclick="likeFunction(this)"><b><i class="fa fa-thumbs-up"></i> Like</b></button></p>
+          <p class="w3-right"><button class="w3-button w3-white w3-border" onclick="myFunction('demo2')"><b>Replies  </b> <span class="w3-tag w3-white">2</span></button></p>
+          <p class="w3-clear"></p>
+          
+          <!-- Example of comment field -->
+          <div id="demo2" style="display:none">
+            <div class="w3-row">
+              <hr>
+              <div class="w3-col l2 m3">
+                <img src="./customer_avatar3.jpg" style="width:90px;">
+              </div>
+              <div class="w3-col l10 m9">
+                <h4>John M. <span class="w3-opacity w3-medium">November 8,2024, 10:52 PM</span></h4>
+                <p> I tried the strawberry shot latte, and it's amazing! Can't wait to come back for more .</p><br>
+              </div>
+            </div>
+            <div class="w3-row w3-margin-bottom">
+              <div class="w3-col l2 m3">
+                <img src="./customer_avatar5.jpg" style="width:90px;">
+              </div>
+              <div class="w3-col l10 m9">
+                <h4>Disney Princesses <span class="w3-opacity w3-medium">November 23, 2015, 9:12 PM</span></h4>
+                <p>Love it!!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Blog entry -->
+      <div class="w3-container w3-white w3-margin w3-padding-large">
+        <div class="w3-center">
+<h3>Sweet Treats: Ice Cream & Signature Desserts</h3>
+    <h5>Indulge Your Sweet Tooth, <span class="w3-opacity">November 9, 2024</span></h5>
+  </div>
+
+        <div class="w3-justify">
+          <img src="./ice_cream_desserts.jpg" alt="Ice Cream and Desserts" style="width:100%" class="w3-padding-16">
+              <p><strong>Cool Delights!</strong> Our dessert menu is filled with delightful treats to satisfy any craving. Enjoy our handmade ice cream flavors, like creamy vanilla bean, rich chocolate fudge, and refreshing strawberry sorbet. Perfect for a warm day or just because!</p>
+    <p>Alongside ice cream, we offer a range of desserts, including gooey chocolate brownies, tiramisu cups, and our best-selling cheesecake with berry topping. Stop by The Beeyoungcakes Bakeshoppe to explore our dessert options and find your favorite sweet indulgence!</p>
+          <p class="w3-left"><button class="w3-button w3-white w3-border" onclick="likeFunction(this)"><b><i class="fa fa-thumbs-up"></i> Like</b></button></p>
+          <p class="w3-right"><button class="w3-button w3-white w3-border" onclick="myFunction('demo3')"><b>Replies  </b> <span class="w3-tag w3-white">3</span></button></p>
+          <p class="w3-clear"></p>
+          
+          <!-- Example of comment field -->
+          <div id="demo3" style="display:none">
+            <hr>
+            <div class="w3-row w3-margin-bottom">
+              <div class="w3-col l2 m3">
+                <img src="./customer_avatar4.jpg" style="width:90px;">
+              </div>
+              <div class="w3-col l10 m9">
+                <h4>Catriona <span class="w3-opacity w3-medium">October 31,2024, 7:22 PM</span></h4>
+                <p> The cheesecake with berry topping is to die for! I’ll be back for more treats soon.</.</p>
+              </div>
+            </div>
+            <div class="w3-row w3-margin-bottom">
+              <div class="w3-col l2 m3">
+                <img src="./customer_avatar6.jpg" style="width:90px;">
+              </div>
+              <div class="w3-col l10 m9">
+                <h4>Zion <span class="w3-opacity w3-medium">October 29,2024, 10:32 PM</span></h4>
+                <p>Delicious!.</p>
+              </div>
+            </div>
+            <div class="w3-row w3-margin-bottom">
+              <div class="w3-col l2 m3">
+                <img src="./customer_avatar7.jpg" style="width:90px;">
+              </div>
+              <div class="w3-col l10 m9">
+                <h4>Angel <span class="w3-opacity w3-medium">October 7, 2015, 9:12 PM</span></h4>
+                <p>Cant wait to try!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    <!-- END BLOG ENTRIES -->
+    </div>
+
+    <!-- About/Information menu -->
+    <div class="w3-col l4"> 
+  <!-- About Card -->
+  <div class="w3-light-purple w3-margin">
+    <img src="./Thebeeyoungcakes.jpg" alt="The beeyoungcakes logo" style="width:100%">
+    <div class="w3-container light-purple-container" style="background-color: #D4A5D6;">
+      <h4>About Us</h4>
+      <div style="max-height: 650px;">
+      <p>Welcome to The Beeyoungcakes Bakeshoppe! where our passion for baking meets creativity and quality. Founded in 2024, we specialize in crafting delightful cakes, pastries, and cookies that are perfect for any occasion, whether it’s a birthday, wedding, or just a sweet treat for yourself.</p>
+      <p>Our team of skilled bakers uses only the finest ingredients to ensure every bite is a burst of flavor. We believe in the art of baking, and we take pride in customizing each order to suit our customers’ unique tastes and preferences.</p>
+      <p>At Beeyoungcakes Bakeshoppe, we are committed to provide not only delicious baked goods but also an exceptional customer experience. Join us on this sweet journey, and let us help you celebrate life's special moments with our delectable creations!</p>
+    </div>
+      </div>
+        <hr>
+      </div>
+      <!-- Posts -->
+        <div class="w3-white w3-margin">
+          <div class="w3-container light-purple-container" style="background-color: #D4A5D6;">
+          <h4>Best Sellers</h4>
+        </div>
+        <ul class="w3-ul w3-hoverable w3-white">
+          <li class="w3-padding-16">
+            <img src="./caramel_macchiato.jpg" alt="Image" class="w3-left w3-margin-right" style="width:55px">
+            <span class="w3-large">Coffee</span>
+            <br>
+            <span>Creamy Caramel Macchiato</span>
+          </li>
+          <li class="w3-padding-16">
+            <img src="./dark chocolate truffles.jpg" alt="Image" class="w3-left w3-margin-right" style="width:55px">
+            <span class="w3-large">Cookies</span>
+            <br>
+            <span>Dark Chocolate Truffles</span>
+          </li>
+          <li class="w3-padding-16">
+            <img src="./strawberry sorbet.jpg" alt="Image" class="w3-left w3-margin-right" style="width:55px">
+            <span class="w3-large">Ice Cream</span>
+            <br>
+            <span>Refreshing Strawberry Sorbet</span>
+          </li>
+          <li class="w3-padding-16">
+            <img src="./blueberry cheesecake.jpg" alt="Image" class="w3-left w3-margin-right w3-sepia" style="width:55px">
+            <span class="w3-large">Cakes</span>
+            <br>
+            <span>Blueberry Cheesecake </span>
+          </li>
+        </ul>
+      </div>
+      <hr>
+
+      <!-- Advertising -->
+<div class="w3-white w3-margin">
+  <div class="w3-container light-purple-container" style="background-color: #D4A5D6;">
+    <h4>Advertisement</h4>
+  </div>
+  <div class="w3-container w3-white">
+    <!-- Embedding YouTube video -->
+    <div class="w3-container w3-display-container w3-white w3-section">
+      <iframe width="100%" height="200" src="https://www.youtube.com/embed/m0ko3pKYPHA?si=_QXst4XL6j1poY77" 
+              title="YouTube video player" frameborder="0" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+              allowfullscreen>
+      </iframe>
+    </div>
+  </div>
+</div>
+<hr>
+
+
+      <!-- Tags -->
+      <div class="w3-white w3-margin">
+        <div class="w3-container light-purple-container" style="background-color: #D4A5D6;">
+          <h4>Tags</h4>
+        </div>
+        <div class="w3-container w3-white">
+          <p>
+            <span class="w3-tag w3-light-grey w3-margin-bottom">Cakes</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Ice Cream</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Chocolate</span>
+            <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Cookies</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Milk</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Crunchy</span>
+            <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Tea</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Sprinkles</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Sweet</span>
+            <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Strawberry</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Caramel</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Bread</span>
+            <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Creamy</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Chewy</span>
+          </p>
+        </div>
+      </div>
+      <hr>
+
+      <!-- Menu -->
+<div class="w3-white w3-margin">
+  <div class="w3-container light-purple-container" style="background-color: #D4A5D6;">
+    <h4>Menu</h4>
+  </div>
+  <div class="w3-content w3-display-container">
+    <!-- Slideshow Images -->
+    <img class="mySlides w3-animate-fading" src="./cakes.jpg" alt="Cakes" style="width:100%">
+    <img class="mySlides w3-animate-fading" src="./drinks.jpg" alt="Drinks" style="width:100%">
+    <img class="mySlides w3-animate-fading" src="./frappe.jpg" alt="Frappe" style="width:100%" class="w3-grayscale">
+    <img class="mySlides w3-animate-fading" src="./pastries.jpg" alt="Pastries" style="width:100%">
+  </div>
+</div>
+
+<!-- Script for Slideshow -->
+<script>
+  let slideIndex = 0;
+
+  function showSlides() {
+    let slides = document.getElementsByClassName("mySlides");
+    for (let i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}
+    slides[slideIndex-1].style.display = "block";
+    setTimeout(showSlides, 3000); // Change image every 3 seconds
+  }
+
+  showSlides(); // Initial call to start slideshow
+</script>
+
+<!-- Modal -->
+<div id="myModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2>Special Offer: 20% Off!</h2>
+    <p>Use code BEEYOUNG20 at checkout.</p>
+  </div>
+</div>
+
+<!-- Modal Script -->
+<script>
+  // Get the modal
+  var modal = document.getElementById("myModal");
+
+  // Open the modal immediately when the page loads
+  window.onload = function() {
+    modal.style.display = "block";
+  };
+
+  // Get the <span> element that closes the modal
+  var span = document.getElementsByClassName("close")[0];
+
+  // When the user clicks on <span> (x), close the modal
+  span.onclick = function() {
+    modal.style.display = "none";
+  }
+
+  // When the user clicks anywhere outside of the modal, close it
+  window.onclick = function(event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  }
+</script>
+
+<!-- CSS for Modal -->
+<style>
+  /* The Modal (background) */
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+
+  /* Modal Content */
+  .modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+    text-align: center;
+  }
+
+  /* The Close Button */
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+</style>
+      <hr>
+      <div class="w3-white w3-margin">
+        <div class="w3-container light-purple-container" style="background-color: #D4A5D6;">
+          <h4>Follow Us</h4>
+        </div>
+        
+        <div class="w3-container w3-white w3-margin">
+          <!-- Facebook -->
+          <a href="https://www.facebook.com/byangkaceleste/" target="_blank" class="w3-hover-opacity" style="display: flex; align-items: center; margin-bottom: 10px; text-decoration: none;">
+            <i class="fa fa-facebook-official" style="margin-right: 8px;"></i>
+            <span>The Beeyoungcakes Bakeshoppe</span>
+          </a>
+          
+          <!-- Instagram -->
+          <a href="https://www.instagram.com/beeyoung_clst" target="_blank" class="w3-hover-opacity" style="display: flex; align-items: center; margin-bottom: 10px; text-decoration: none;">
+            <i class="fa fa-instagram" style="margin-right: 8px;"></i>
+            <span>beeyoung_clst</span>
+          </a>
+      
+          <!-- Twitter -->
+          <a href="https://twitter.com/" target="_blank" class="w3-hover-opacity" style="display: flex; align-items: center; margin-bottom: 10px; text-decoration: none;">
+            <i class="fa fa-twitter" style="margin-right: 8px;"></i>
+            <span>Beeyoung's Shoppe</span>
+          </a>
+      
+          <!-- YouTube -->
+          <a href="https://www.youtube.com/" target="_blank" class="w3-hover-opacity" style="display: flex; align-items: center; margin-bottom: 10px; text-decoration: none;">
+            <i class="fa fa-youtube" style="margin-right: 8px;"></i>
+            <span>The Beeyoungcakes Bakeshoppe</span>
+          </a>
+      
+          <!-- LinkedIn -->
+          <a href="https://www.linkedin.com/" target="_blank" class="w3-hover-opacity" style="display: flex; align-items: center; margin-bottom: 10px; text-decoration: none;">
+            <i class="fa fa-linkedin" style="margin-right: 8px;"></i>
+            <span>beeyoungcakes</span>
+          </a>
+        </div>
+      </div>         
+       
+      <div class="w3-white w3-margin">
+        <div class="w3-container light-purple-container" style="background-color: #D4A5D6;">
+          <h4>Frequently Asked Questions</h4> 
+        </div>
+        <div class="w3-container w3-white">
+          <!-- Accordion Starts Here -->
+          <button class="accordion">What are your opening hours?</button>
+          <div class="panel">
+            <p>We are open from 8 AM to 8 PM every day.</p>
+          </div>
+      
+          <button class="accordion">Do you offer delivery?</button>
+          <div class="panel">
+            <p>Yes, we offer delivery within Kidapawan City.</p>
+          </div>
+      
+          <button class="accordion">Can I customize my cake?</button>
+          <div class="panel">
+            <p>Yes, we offer custom cakes. Please contact us for more details.</p>
+          </div>
+          <!-- Accordion Ends Here -->
+        </div>
+      </div>
+      
+      <!-- CSS for Accordion -->
+      <style>
+          .accordion {
+            background-color: white;
+          color: rgb(0, 0, 0);
+          cursor: pointer;
+          padding: 10px;
+          width: 100%;
+          text-align: left;
+          border: none;
+          outline: none;
+          font-size: 15px;
+          position: relative;
+         }
+
+          /* Add subtle shadow effect to separate the questions */
+          .accordion:not(:last-child)::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 1px;
+            background-color: #D4A5D6;
+            opacity: 0.3; /* Adjust the opacity for a subtle effect */
+        }
+          .panel {
+              padding: 0 18px;
+              display: none;
+              background-color: white;
+              overflow: hidden;
+              margin-bottom: 10px;
+              border: 2px solid #D4A5D6;  /* Add border to the panel */
+              border-radius: 5px; /* Optional: round the corners */
+          }
+      </style>
+      
+      <!-- JavaScript for Accordion functionality -->
+      <script>
+          var acc = document.getElementsByClassName("accordion");
+          for (var i = 0; i < acc.length; i++) {
+              acc[i].addEventListener("click", function() {
+                  this.classList.toggle("active");
+                  var panel = this.nextElementSibling;
+                  if (panel.style.display === "block") {
+                      panel.style.display = "none";
+                  } else {
+                      panel.style.display = "block";
+                  }
+              });
+          }
+      </script>
+      
+      <!-- Subscribe -->
+      <div class="w3-white w3-margin">
+        <div class="w3-container light-purple-container" style="background-color: #D4A5D6;">
+          <h4>Subscribe</h4>
+        </div>
+        <div class="w3-container w3-white">
+          <p>Enter your e-mail below to stay updated on our latest offerings, promotions, and baking tips!</p>
+          <p><input class="w3-input w3-border" type="text" placeholder="Enter e-mail" style="width:100%"></p>
+          <p><button type="button" onclick="document.getElementById('subscribe').style.display='block'" class="w3-button w3-block w3-green">Subscribe</button></p>
+        </div>
+      </div>
+
+    <!-- END About/Intro Menu -->
+    </div>
+
+  <!-- END GRID -->
+  </div>
+
+<!-- END w3-content -->
+</div>
+
+<!-- Subscribe Modal -->
+<div id="subscribe" class="w3-modal w3-animate-opacity">
+  <div class="w3-modal-content" style="padding:32px">
+    <div class="w3-container w3-white">
+      <i onclick="document.getElementById('subscribe').style.display='none'" class="fa fa-remove w3-transparent w3-button w3-xlarge w3-right"></i>
+      <h2 class="w3-wide">SUBSCRIBE</h2>
+      <p>Join our mailing list for updates on our latest menu, limited-time treats, and exclusive discounts!</p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Enter e-mail"></p>
+      <button type="button" class="w3-button w3-block w3-padding-large w3-green w3-margin-bottom" onclick="document.getElementById('subscribe').style.display='none'">Subscribe</button>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-container light-purple-container" style="padding:32px">
+  <a href="#" class="w3-button" style="background-color: #cd5269; padding: 16px 32px; margin-bottom: 10px;">
+    <i class="fa fa-arrow-up w3-margin-right"></i>To the top
+  </a>
+  <p>© 2024 The Beeyoungcakes Bakeshoppe.</p>
+</footer>
+
+
+<script>
+// Toggle between hiding and showing blog replies/comments
+document.getElementById("myBtn").click();
+function myFunction(id) {
+  var x = document.getElementById(id);
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+function likeFunction(x) {
+  x.style.fontWeight = "bold";
+  x.innerHTML = "✓ Liked";
+}
+</script>
+
+</body>
+</html>
