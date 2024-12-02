@@ -1,0 +1,1180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Men's Wear Shop</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="images/favicon (2).ico" type="image/x-icon">
+</head>
+
+<body>
+
+
+    <!-- Sidebar navigation -->
+    <div class="sidebar">
+
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li class="menu-item">
+                <a href="#products">Products</a>
+                <ul class="submenu">
+                    <li><a href="#shirts">Shirts</a></li>
+                    <li><a href="#suits">Suits</a></li>
+                    <li><a href="#pants">Pants</a></li>
+                    <li><a href="#shorts">Shorts</a></li>
+                    <li><a href="#shoes">Shoes</a></li>
+                    <a href="#orders">Orders</a>
+                    <li>
+                        <div id="cart-icon">🛒</div>
+                        <span id="cart-count">0</span>
+                        <div id="cart-section" style="display: none;">
+                            <ul id="cart-items"></ul>
+                            <p id="cart-total">$0.00</p>
+                            <button id="place-order">Place Order</button>
+                        </div>
+
+                        <!-- Payment Method Section -->
+                        <div id="payment-method-section" style="display: none;">
+                            <h2>Payment Method</h2>
+                            <p id="payment-message"></p>
+                            <button class="payment-method">Credit Card</button>
+                            <button class="payment-method">PayPal</button>
+                            <button class="payment-method">Bank Transfer</button>
+                        </div>
+                    </li>
+                </ul>
+            </li>
+            <li class="menu-item">
+                <a href="#blogs">Blogs</a>
+                <ul class="submenu">
+                    <li><a href="#blog1">Blog 1</a></li>
+                    <li><a href="#blog2">Blog 2</a></li>
+                    <li><a href="#blog3">Blog 3</a></li>
+                    <li><a href="#blog4">Blog 4</a></li>
+                    <li><a href="#blog5">Blog 5</a></li>
+                </ul>
+            </li>
+            <li><a href="#about-us">About Us</a></li>
+            <li><a href="#contacts">Contact</a></li>
+        </ul>
+    </div>
+
+
+    <!-- Main content section -->
+    <div class="content">
+        <section id="home">
+            <h1>Welcome to Our Men's Wear Shop</h1>
+            <p>Explore our latest collection of men's fashion.</p>
+            <p>Explore the latest trends in men's fashion and discover high-quality
+                clothing that fits your lifestyle. Whether you're looking for a sharp suit for a special occasion,
+                casual shirts for everyday wear, or comfortable shoes to complete your outfit, we've got you covered.
+                With a curated collection of versatile styles, this website is designed to offer a seamless shopping
+                experience.</p>
+            <p>Our website features a user-friendly interface with easy navigation,
+                ensuring that you can browse our collections effortlessly. With detailed product descriptions and
+                high-quality images, you can make confident choices for your wardrobe. Shop now and experience the
+                convenience of finding everything you need in one place!</p>
+            <div class="video-container" width="100%" height="auto" controls>
+                <iframe width="100%" height="auto" src="https://www.youtube.com/embed/KHpWcp8mk3U" frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+
+        </section>
+
+        <section id="products">
+            <h2>Our Products</h2>
+            <p>Browse through our latest products.</p>
+            <div id="shirts" class="section">
+                <h2>Shirts</h2>
+                <div class="product-grid">
+                    <!-- Shirt 1 -->
+                    <div class="product">
+                        <img src="images/shirt1.jpg" alt="Shirt 1">
+                        <p class="details">Slim Fit White Shirt - A versatile, crisp white shirt tailored to fit the
+                            modern silhouette. Perfect for both formal and semi-formal occasions.</p>
+                        <p class="price">$40.00</p>
+                        <button class="add-to-cart" data-name="Slim Fit White Shirt" data-price="40">
+                            Add to Cart
+                        </button>
+                    </div>
+                    <!-- Shirt 2 -->
+                    <div class="product">
+                        <img src="images/shirt2.jpg" alt="Shirt 2">
+                        <p class="details">Casual Button-Down Shirt - A relaxed fit button-down shirt made of soft
+                            cotton, ideal for casual outings or weekend wear.</p>
+                        <p class="price">$35.00</p>
+                        <button class="add-to-cart" data-name="Casual Button-Down Shirt" data-price="35">
+                            Add to Cart
+                        </button>
+                    </div>
+                    <!-- Shirt 3 -->
+                    <div class="product">
+                        <img src="images/shirt3.jpg" alt="Shirt 3">
+                        <p class="details">Striped Dress Shirt - Elevate your office look with this sharp striped shirt,
+                            offering a stylish balance between business and fashion.</p>
+                        <p class="price">$45.00</p>
+                        <button class="add-to-cart" data-name="Striped Dress Shirt" data-price="45">
+                            Add to Cart
+                        </button>
+                    </div>
+                    <!-- Shirt 4 -->
+                    <div class="product">
+                        <img src="images/shirt4.jpg" alt="Shirt 4">
+                        <p class="details">Plaid Flannel Shirt - Cozy and durable, this flannel shirt brings warmth and
+                            style, making it ideal for colder seasons or casual gatherings.</p>
+                        <p class="price">$50.00</p>
+                        <button class="add-to-cart" data-name="Plaid Flannel Shirt" data-price="50">
+                            Add to Cart
+                        </button>
+                    </div>
+                    <!-- Shirt 5 -->
+                    <div class="product">
+                        <img src="images/shirt5.jpg" alt="Shirt 5">
+                        <p class="details">Denim Shirt - A timeless wardrobe staple, this denim shirt brings rugged
+                            charm to your outfit with its comfortable fit and durable fabric.</p>
+                        <p class="price">$55.00</p>
+                        <button class="add-to-cart" data-name="Denim Shirt" data-price="55">
+                            Add to Cart
+                        </button>
+                    </div>
+                    <!-- Shirt 6 -->
+                    <div class="product">
+                        <img src="images/shirt6.jpg" alt="Shirt 6">
+                        <p class="details">Short-Sleeve Polo Shirt - A stylish alternative to traditional button-downs,
+                            this short-sleeve polo shirt is perfect for warmer weather and casual outings.</p>
+                        <p class="price">$30.00</p>
+                        <button class="add-to-cart" data-name="Short-Sleeve Polo Shirt" data-price="30">
+                            Add to Cart
+                        </button>
+                    </div>
+                    <!-- Shirt 7 -->
+                    <div class="product">
+                        <img src="images/shirt7.jpg" alt="Shirt 7">
+                        <p class="details">Hawaiian Print Shirt - Bring a tropical vibe to your wardrobe with this
+                            vibrant Hawaiian shirt, designed for vacations or casual beach outings.</p>
+                        <p class="price">$35.00</p>
+                        <button class="add-to-cart" data-name="Hawaiian Print Shirt" data-price="35">
+                            Add to Cart
+                        </button>
+                    </div>
+                    <!-- Shirt 8 -->
+                    <div class="product">
+                        <img src="images/shirt8.jpg" alt="Shirt 8">
+                        <p class="details">Vintage Check Shirt - Retro-inspired and perfect for a relaxed look, this
+                            checkered shirt pairs well with jeans or chinos for a laid-back style.</p>
+                        <p class="price">$40.00</p>
+                        <button class="add-to-cart" data-name="Vintage Check Shirt" data-price="40">
+                            Add to Cart
+                        </button>
+                    </div>
+                    <!-- Shirt 9 -->
+                    <div class="product">
+                        <img src="images/shirt9.jpg" alt="Shirt 9">
+                        <p class="details">Oxford Button-Down Shirt - A refined option for both casual and formal wear,
+                            the Oxford shirt features a timeless button-down collar.</p>
+                        <p class="price">$50.00</p>
+                        <button class="add-to-cart" data-name="Oxford Button-Down Shirt" data-price="50">
+                            Add to Cart
+                        </button>
+                    </div>
+                    <!-- Shirt 10 -->
+                    <div class="product">
+                        <img src="images/shirt10.jpg" alt="Shirt 10">
+                        <p class="details">Slim Fit Denim Shirt - Designed with a slimmer profile, this denim shirt
+                            offers a modern take on a classic look, perfect for layered outfits.</p>
+                        <p class="price">$60.00</p>
+                        <button class="add-to-cart" data-name="Slim Fit Denim Shirt" data-price="60">
+                            Add to Cart
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <!-- Suits Section -->
+            <div id="suits" class="section">
+                <h2>Suits</h2>
+                <div class="product-grid">
+                    <!-- Suit 1 -->
+                    <div class="product">
+                        <img src="images/suit1.jpg" alt="Suit 1">
+                        <p class="details">Elegant Black Suit</p>
+                        <p class="details">Sleek and stylish, this suit offers a modern cut with a sharp silhouette,
+                            ideal for formal events, business meetings, and any occasion requiring a polished look.</p>
+                        <p class="price">$150.00</p>
+                        <button class="add-to-cart" data-name="Elegant Black Suit" data-price="150">
+                            Add to Cart
+                        </button>
+                    </div>
+                    <!-- Suit 2 -->
+                    <div class="product">
+                        <img src="images/suit2.jpg" alt="Suit 2">
+                        <p class="details">Slim Fit Gray Suit</p>
+                        <p class="details">Perfect for both office and evening events, this slim fit gray suit brings
+                            elegance and comfort,
+                            with a versatile color that complements a range of shirts and accessories.</p>
+                        <p class="price">$160.00</p>
+                        <button class="add-to-cart" data-name="Slim Fit Gray Suit" data-price="160">
+                            Add to Cart
+                        </button>
+                    </div>
+                    <!-- Suit 3 -->
+                    <div class="product">
+                        <img src="images/suit3.jpg" alt="Suit 3">
+                        <p class="details">Navy Blue Tailored Suit</p>
+                        <p class="details">A tailored masterpiece in navy blue, this suit is designed to fit perfectly,
+                            offering a classic yet modern appeal for formal occasions.</p>
+                        <p class="price">$180.00</p>
+                        <button class="add-to-cart" data-name="Navy Blue Tailored Suit" data-price="180">
+                            Add to Cart
+                        </button>
+                    </div>
+                    <!-- Suit 4 -->
+                    <div class="product">
+                        <img src="images/suit4.jpg" alt="Suit 4">
+                        <p class="details">Classic Charcoal Suit</p>
+                        <p class="details">This timeless charcoal suit offers a refined and sophisticated look, perfect
+                            for weddings, galas, or any high-end event.</p>
+                        <p class="price">$170.00</p>
+                        <button class="add-to-cart" data-name="Classic Charcoal Suit" data-price="170">
+                            Add to Cart
+                        </button>
+                    </div>
+                    <!-- Suit 5 -->
+                    <div class="product">
+                        <img src="images/suit5.jpg" alt="Suit 5">
+                        <p class="details">Double-Breasted Suit</p>
+                        <p class="details">For those who appreciate bold style, this double-breasted suit combines
+                            traditional craftsmanship with a modern touch.</p>
+                        <p class="price">$200.00</p>
+                        <button class="add-to-cart" data-name="Double-Breasted Suit" data-price="200">
+                            Add to Cart
+                        </button>
+                    </div>
+                    <!-- Suit 6 -->
+                    <div class="product">
+                        <img src="images/suit6.jpg" alt="Suit 6">
+                        <p class="details">Slim Fit Tuxedo</p>
+                        <p class="details">This sleek tuxedo features a slim fit and sharp details, perfect for any
+                            formal occasion, from weddings to gala events.</p>
+                        <p class="price">$220.00</p>
+                        <button class="add-to-cart" data-name="Slim Fit Tuxedo" data-price="220">
+                            Add to Cart
+                        </button>
+                    </div>
+                    <!-- Suit 7 -->
+                    <div class="product">
+                        <img src="images/suit7.jpg" alt="Suit 7">
+                        <p class="details">Checkered Pattern Suit</p>
+                        <p class="details">This stylish checkered suit is a modern take on classic patterns, perfect for
+                            fashion-forward individuals looking to stand out.</p>
+                        <p class="price">$190.00</p>
+                        <button class="add-to-cart" data-name="Checkered Pattern Suit" data-price="190">
+                            Add to Cart
+                        </button>
+                    </div>
+                    <!-- Suit 8 -->
+                    <div class="product">
+                        <img src="images/suit8.jpg" alt="Suit 8">
+                        <p class="details">Light Gray Casual Suit</p>
+                        <p class="details">Designed for casual yet polished looks, this light gray suit is the perfect
+                            choice for relaxed business meetings or smart-casual events.</p>
+                        <p class="price">$155.00</p>
+                        <button class="add-to-cart" data-name="Light Gray Casual Suit" data-price="155">
+                            Add to Cart
+                        </button>
+                    </div>
+                    <!-- Suit 9 -->
+                    <div class="product">
+                        <img src="images/suit9.jpg" alt="Suit 9">
+                        <p class="details">Designer Black Suit</p>
+                        <p class="details">This luxurious black suit by a top designer offers ultimate sophistication,
+                            with impeccable tailoring and a perfect fit for any high-profile event.</p>
+                        <p class="price">$250.00</p>
+                        <button class="add-to-cart" data-name="Designer Black Suit" data-price="250">
+                            Add to Cart
+                        </button>
+                    </div>
+                    <!-- Suit 10 -->
+                    <div class="product">
+                        <img src="images/suit10.jpg" alt="Suit 10">
+                        <p class="details">Two-Piece Suit Set</p>
+                        <p class="details">A classic two-piece suit set in a timeless color, ideal for interviews,
+                            office wear, and other professional settings.</p>
+                        <p class="price">$180.00</p>
+                        <button class="add-to-cart" data-name="Two-Piece Suit Set" data-price="180">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pants Section -->
+            <div id="pants" class="section">
+                <h2>Pants</h2>
+                <div class="product-grid">
+                    <!-- Pant 1 -->
+                    <div class="product">
+                        <img src="images/pant1.jpg" alt="Pant 1">
+                        <p class="details">Slim Fit Black Pants</p>
+                        <p class="details">These slim-fit black pants offer a sleek, modern style with a comfortable
+                            fit, perfect for both business and casual occasions.</p>
+                        <p class="price">$50.00</p>
+                        <button class="add-to-cart" data-name="Slim Fit Black Pants" data-price="50">
+                            Add to Cart
+                        </button>
+                    </div>
+                    <!-- Pant 2 -->
+                    <div class="product">
+                        <img src="images/pant2.jpg" alt="Pant 2">
+                        <p class="details">Classic Navy Blue Trousers</p>
+                        <p class="details">A versatile choice for any wardrobe, these navy blue trousers combine classic
+                            styling with comfort for everyday wear.</p>
+                        <p class="price">$55.00</p>
+                        <button class="add-to-cart" data-name="Classic Navy Blue Trousers" data-price="55">
+                            Add to Cart
+                        </button>
+                    </div>
+                    <!-- Pant 3 -->
+                    <div class="product">
+                        <img src="images/pant3.jpg" alt="Pant 3">
+                        <p class="details">Khaki Chinos</p>
+                        <p class="details">These khaki chinos offer a stylish yet relaxed look, ideal for both casual
+                            outings and semi-formal events.</p>
+                        <p class="price">$45.00</p>
+                        <button class="add-to-cart" data-name="Khaki Chinos" data-price="45">
+                            Add to Cart
+                        </button>
+                    </div>
+                    <!-- Pant 4 -->
+                    <div class="product">
+                        <img src="images/pant4.jpg" alt="Pant 4">
+                        <p class="details">Cargo Pants</p>
+                        <p class="details">Designed for practicality and style, these cargo pants offer a relaxed fit
+                            with plenty of pocket space, perfect for outdoor activities.</p>
+                        <p class="price">$60.00</p>
+                        <button class="add-to-cart" data-name="Cargo Pants" data-price="60">
+                            Add to Cart
+                        </button>
+                    </div>
+                    <!-- Pant 5 -->
+                    <div class="product">
+                        <img src="images/pant5.jpg" alt="Pant 5">
+                        <p class="details">Grey Slim Fit Pants</p>
+                        <p class="details">These grey slim fit pants offer a contemporary and clean look, great for both
+                            work and weekend wear.</p>
+                        <p class="price">$50.00</p>
+                        <button class="add-to-cart" data-name="Grey Slim Fit Pants" data-price="50">
+                            Add to Cart
+                        </button>
+                    </div>
+                    <!-- Pant 6 -->
+                    <div class="product">
+                        <img src="images/pant6.jpg" alt="Pant 6">
+                        <p class="details">Light Blue Denim Jeans</p>
+                        <p class="details">Casual and comfortable, these light blue denim jeans are perfect for everyday
+                            wear with a laid-back style.</p>
+                        <p class="price">$40.00</p>
+                        <button class="add-to-cart" data-name="Light Blue Denim Jeans" data-price="40">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Shorts Section -->
+            <div id="shorts" class="section">
+                <h2>Shorts</h2>
+                <div class="product-grid">
+                    <!-- Short 1 -->
+                    <div class="product">
+                        <img src="images/short1.jpg" alt="Short 1">
+                        <p class="details">Casual Khaki Shorts</p>
+                        <p class="details">Relaxed and breathable, these khaki shorts are perfect for a warm day out,
+                            featuring a comfortable fit and easy style.</p>
+                        <p class="price">$30.00</p>
+                        <button class="add-to-cart" data-name="Casual Khaki Shorts" data-price="30">
+                            Add to Cart
+                        </button>
+                    </div>
+                    <!-- Short 2 -->
+                    <div class="product">
+                        <img src="images/short2.jpg" alt="Short 2">
+                        <p class="details">Denim Bermuda Shorts</p>
+                        <p class="details">Stylish denim Bermuda shorts for a casual day out, combining comfort and
+                            modern fashion with every step.</p>
+                        <p class="price">$35.00</p>
+                        <button class="add-to-cart" data-name="Denim Bermuda Shorts" data-price="35">
+                            Add to Cart
+                        </button>
+                    </div>
+                    <!-- Short 3 -->
+                    <div class="product">
+                        <img src="images/short3.jpg" alt="Short 3">
+                        <p class="details">Sporty Gym Shorts</p>
+                        <p class="details">Perfect for workouts and casual wear, these gym shorts offer a flexible fit
+                            with sweat-wicking material to keep you comfortable.</p>
+                        <p class="price">$25.00</p>
+                        <button class="add-to-cart" data-name="Sporty Gym Shorts" data-price="25">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Shoes Section -->
+            <div id="shoes" class="section">
+                <h2>Shoes</h2>
+                <div class="product-grid">
+                    <!-- Shoe 1 -->
+                    <div class="product">
+                        <img src="images/shoe1.jpg" alt="Shoe 1">
+                        <p class="details">Black Leather Loafers</p>
+                        <p class="details">These black leather loafers offer timeless elegance and comfort, perfect for
+                            both business and casual outings.</p>
+                        <p class="price">$80.00</p>
+                        <button class="add-to-cart" data-name="Black Leather Loafers" data-price="80">
+                            Add to Cart
+                        </button>
+                    </div>
+                    <!-- Shoe 2 -->
+                    <div class="product">
+                        <img src="images/shoe2.jpg" alt="Shoe 2">
+                        <p class="details">Running Sneakers</p>
+                        <p class="details">These running sneakers are designed for performance, providing superior
+                            comfort and support for both running and casual use.</p>
+                        <p class="price">$60.00</p>
+                        <button class="add-to-cart" data-name="Running Sneakers" data-price="60">
+                            Add to Cart
+                        </button>
+                    </div>
+                    <!-- Shoe 3 -->
+                    <div class="product">
+                        <img src="images/shoe3.jpg" alt="Shoe 3">
+                        <p class="details">Casual Slip-On Shoes</p>
+                        <p class="details">Comfortable and stylish, these casual slip-ons are perfect for relaxed days
+                            when comfort is a priority.</p>
+                        <p class="price">$45.00</p>
+                        <button class="add-to-cart" data-name="Casual Slip-On Shoes" data-price="45">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- Shoe Section (continued) -->
+            <div id="shoes" class="section">
+                <h2>Shoes</h2>
+                <div class="product-grid">
+                    <!-- Shoe 4 -->
+                    <div class="product">
+                        <img src="images/shoe4.jpg" alt="Shoe 4">
+                        <p class="details">Brown Leather Oxfords</p>
+                        <p class="details">These brown leather Oxfords provide a sophisticated touch to any formal
+                            outfit, offering both style and comfort for long wear.</p>
+                        <p class="price">$90.00</p>
+                        <button class="add-to-cart" data-name="Brown Leather Oxfords" data-price="90">
+                            Add to Cart
+                        </button>
+                    </div>
+                    <!-- Shoe 5 -->
+                    <div class="product">
+                        <img src="images/shoe5.jpg" alt="Shoe 5">
+                        <p class="details">White Low-Top Sneakers</p>
+                        <p class="details">These minimalist white sneakers are perfect for casual wear, adding a clean
+                            and stylish look to any everyday outfit.</p>
+                        <p class="price">$50.00</p>
+                        <button class="add-to-cart" data-name="White Low-Top Sneakers" data-price="50">
+                            Add to Cart
+                        </button>
+                    </div>
+                    <!-- Shoe 6 -->
+                    <div class="product">
+                        <img src="images/shoe6.jpg" alt="Shoe 6">
+                        <p class="details">Suede Desert Boots</p>
+                        <p class="details">These desert boots in suede offer a classic yet comfortable design, ideal for
+                            both casual and semi-formal occasions.</p>
+                        <p class="price">$75.00</p>
+                        <button class="add-to-cart" data-name="Suede Desert Boots" data-price="75">
+                            Add to Cart
+                        </button>
+                    </div>
+                    <!-- Shoe 7 -->
+                    <div class="product">
+                        <img src="images/shoe7.jpg" alt="Shoe 7">
+                        <p class="details">Sports Running Shoes</p>
+                        <p class="details">Lightweight and breathable, these running shoes provide ultimate comfort and
+                            support for high-performance athletic activities.</p>
+                        <p class="price">$65.00</p>
+                        <button class="add-to-cart" data-name="Sports Running Shoes" data-price="65">
+                            Add to Cart
+                        </button>
+                    </div>
+                    <!-- Shoe 8 -->
+                    <div class="product">
+                        <img src="images/shoe8.jpg" alt="Shoe 8">
+                        <p class="details">Slip-On Canvas Shoes</p>
+                        <p class="details">Casual and easy to wear, these slip-on canvas shoes are perfect for relaxed
+                            weekends or a quick, stylish getaway look.</p>
+                        <p class="price">$30.00</p>
+                        <button class="add-to-cart" data-name="Slip-On Canvas Shoes" data-price="30">
+                            Add to Cart
+                        </button>
+                    </div>
+                    <!-- Shoe 9 -->
+                    <div class="product">
+                        <img src="images/shoe9.jpg" alt="Shoe 9">
+                        <p class="details">Leather Chelsea Boots</p>
+                        <p class="details">These sleek leather Chelsea boots add a sharp, sophisticated touch to any
+                            outfit, perfect for both casual and semi-formal wear.</p>
+                        <p class="price">$100.00</p>
+                        <button class="add-to-cart" data-name="Leather Chelsea Boots" data-price="100">
+                            Add to Cart
+                        </button>
+                    </div>
+                    <!-- Shoe 10 -->
+                    <div class="product">
+                        <img src="images/shoe10.jpg" alt="Shoe 10">
+                        <p class="details">Designer High-Top Sneakers</p>
+                        <p class="details">Bold and stylish, these high-top sneakers are designed for fashion-forward
+                            individuals, offering a modern look with premium comfort and support.</p>
+                        <p class="price">$120.00</p>
+                        <button class="add-to-cart" data-name="Designer High-Top Sneakers" data-price="120">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section id="blog">
+            <div class="container">
+                <h2>Our Blogs</h2>
+                <p>Check out our latest blogs about men's fashion.</p>
+                <!-- Blog Menu -->
+                <nav class="blog-menu">
+                    <ul>
+                        <li><a href="#blog1">Blog Post 1</a>
+                            <ul class="sub-menu">
+                                <li><a href="#blog1-1">Sub-topic 1</a></li>
+                                <li><a href="#blog1-2">Sub-topic 2</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#blog2">Blog Post 2</a>
+                            <ul class="sub-menu">
+                                <li><a href="#blog2-1">Sub-topic 1</a></li>
+                                <li><a href="#blog2-2">Sub-topic 2</a></li>
+                                <li><a href="#blog2-3">Sub-topic 3</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#blog3">Blog Post 3</a>
+                            <ul class="sub-menu">
+                                <li><a href="#blog3-1">Sub-topic 1</a></li>
+                                <li><a href="#blog3-2">Sub-topic 2</a></li>
+                                <li><a href="#blog3-3">Sub-topic 3</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#blog4">Blog Post 4</a>
+                            <ul class="sub-menu">
+                                <li><a href="#blog4-1">Sub-topic 1</a></li>
+                                <li><a href="#blog4-2">Sub-topic 2</a></li>
+                                <li><a href="#blog4-3">Sub-topic 3</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#blog5">Blog Post 5</a>
+                            <ul class="sub-menu">
+                                <li><a href="#blog5-1">Sub-topic 1</a></li>
+                                <li><a href="#blog5-2">Sub-topic 2</a></li>
+                                <li><a href="#blog5-3">Sub-topic 3</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </section>
+
+
+        <!-- Blog Posts Section -->
+        <section id="blogs">
+            <div class="blog-posts">
+
+                <section id="blogs">
+                    <div class="blog-posts">
+
+                        <!-- Blog Post 1 -->
+                        <div id="blog1" class="blog-post">
+                            <h2>Top 5 Tips for Styling Your Everyday Outfits</h2>
+                            <p class="blog-excerpt">Discover simple and effective ways to style your daily
+                                outfits
+                                to look trendy yet comfortable.</p>
+
+                            <!-- Sub-topic 1 -->
+                            <div id="blog1-1" class="blog-subtopic">
+                                <h3>The Importance of Color Coordination</h3>
+                                <ul>
+                                    <li><strong>Use the Color Wheel:</strong> Learn to combine complementary
+                                        colors
+                                        (like blue and orange) or analogous colors (like green and blue) for
+                                        balance.</li>
+                                    <li><strong>Stick to Neutrals:</strong> Pair bold pieces with neutral
+                                        colors
+                                        (black, white, beige) to avoid overwhelming your outfit.</li>
+                                    <li><strong>Consider the Occasion:</strong> Bright colors suit casual
+                                        outings,
+                                        while muted tones are ideal for formal settings.</li>
+                                    <li><strong>Add Pops of Color:</strong> A vibrant scarf or shoes can
+                                        liven up a
+                                        monochromatic outfit.</li>
+                                    <li><strong>Test Before Committing:</strong> Try different combinations
+                                        in
+                                        natural light to ensure the colors work well together.</li>
+                                </ul>
+                            </div>
+
+                            <!-- Sub-topic 2 -->
+                            <div id="blog1-2" class="blog-subtopic">
+                                <h3>Accessorizing Smartly</h3>
+                                <ul>
+                                    <li><strong>Choose One Statement Piece:</strong> A bold necklace or
+                                        large
+                                        earrings should stand alone to avoid competing with other
+                                        accessories.</li>
+                                    <li><strong>Match Metals and Materials:</strong> Stick to either gold or
+                                        silver
+                                        tones and pair materials like leather with casual outfits or pearls
+                                        for
+                                        formality.</li>
+                                    <li><strong>Coordinate with Your Outfit's Theme:</strong> Casual outfits
+                                        call
+                                        for simple accessories, while formal looks can handle intricate
+                                        details.
+                                    </li>
+                                    <li><strong>Invest in Versatile Pieces:</strong> Items like a black belt
+                                        or
+                                        neutral handbag can pair with a variety of looks.</li>
+                                    <li><strong>Less Is More:</strong> Always aim for a balanced look—don’t
+                                        over-accessorize!</li>
+                                </ul>
+                            </div>
+
+                            <!-- Additional Tips Section -->
+                            <div id="blog1-3" class="blog-subtopic">
+                                <h3>Additional Tips for Everyday Styling</h3>
+                                <ul>
+                                    <li><strong>Fit Matters:</strong> Tailored clothing looks polished, even
+                                        in
+                                        casual settings. Avoid overly loose or tight fits.</li>
+                                    <li><strong>Layer with Purpose:</strong> A jacket, cardigan, or scarf
+                                        can add
+                                        depth to an outfit while being functional.</li>
+                                    <li><strong>Confidence Is Key:</strong> No matter what you wear, the
+                                        best
+                                        accessory is your confidence.</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+
+
+                <section id="blogs">
+                    <div class="blog-posts">
+
+                        <!-- Blog Post 2 -->
+                        <div id="blog2" class="blog-post">
+                            <h2>The Evolution of Modern Shoes</h2>
+                            <p class="blog-excerpt">Trace the journey of footwear, from traditional styles
+                                to
+                                today's innovative designs.</p>
+
+                            <!-- Sub-topic 1 -->
+                            <div id="blog2-1" class="blog-subtopic">
+                                <h3>Early Footwear Designs</h3>
+                                <p>Shoes have been an essential part of human history, offering protection
+                                    and style
+                                    since ancient times.
+                                    Here's how it all started:</p>
+                                <ul>
+                                    <li><strong>Natural Materials:</strong> Early humans used animal hides,
+                                        leaves,
+                                        and tree bark to protect their feet from rough terrain and harsh
+                                        weather.
+                                    </li>
+                                    <li><strong>Sandals of Ancient Egypt:</strong> The Egyptians crafted
+                                        sandals
+                                        from papyrus and palm leaves, designed to suit their hot climate and
+                                        desert
+                                        landscape.</li>
+                                    <li><strong>Roman Influence:</strong> The Romans introduced durable,
+                                        lace-up
+                                        sandals made of leather, setting the standard for practical and
+                                        stylish
+                                        footwear.</li>
+                                    <li><strong>Medieval European Styles:</strong> Closed shoes became
+                                        popular for
+                                        protection against colder climates, often made of thick leather.
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <!-- Sub-topic 2 -->
+                            <div id="blog2-2" class="blog-subtopic">
+                                <h3>The Impact of Technology on Shoes</h3>
+                                <p>The industrial revolution and modern technologies revolutionized footwear
+                                    production and design. Key advancements include:</p>
+                                <ul>
+                                    <li><strong>Mass Production:</strong> Factories enabled affordable and
+                                        standardized shoe sizes, making quality footwear accessible to the
+                                        masses.
+                                    </li>
+                                    <li><strong>Rubber Soles:</strong> The invention of vulcanized rubber by
+                                        Charles
+                                        Goodyear paved the way for durable and comfortable shoe soles,
+                                        popularized
+                                        in sneakers.</li>
+                                    <li><strong>Fashion-Driven Designs:</strong> Shoes became more than
+                                        functional;
+                                        they turned into fashion statements with high heels, boots, and
+                                        intricate
+                                        designs.</li>
+                                    <li><strong>3D Printing:</strong> Today, 3D printing allows for
+                                        custom-fitted
+                                        shoes with unique designs, reducing waste and advancing
+                                        sustainability.</li>
+                                </ul>
+                            </div>
+
+                            <!-- Additional Insights Section -->
+                            <div id="blog2-3" class="blog-subtopic">
+                                <h3>What Makes Modern Shoes Stand Out?</h3>
+                                <ul>
+                                    <li><strong>Ergonomic Design:</strong> Modern shoes prioritize comfort,
+                                        with
+                                        features like arch support, breathable fabrics, and shock-absorbing
+                                        soles.
+                                    </li>
+                                    <li><strong>Sustainability:</strong> Brands now focus on eco-friendly
+                                        materials,
+                                        including recycled plastics and plant-based alternatives.</li>
+                                    <li><strong>Personalization:</strong> Customizable sneakers and
+                                        limited-edition
+                                        designs give buyers a sense of individuality.</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+
+
+                <section id="blogs">
+                    <div class="blog-posts">
+
+                        <!-- Blog Post 3 -->
+                        <div id="blog3" class="blog-post">
+                            <h2>Why Every Wardrobe Needs Classic Pieces</h2>
+                            <p class="blog-excerpt">Explore the timeless wardrobe essentials that never go
+                                out of
+                                style and how they can elevate your fashion game.</p>
+
+                            <!-- Sub-topic 1 -->
+                            <div id="blog3-1" class="blog-subtopic">
+                                <h3>The Little Black Dress</h3>
+                                <p>The little black dress (LBD) is a timeless classic for every wardrobe.
+                                    It’s
+                                    versatile, elegant, and suitable for nearly any occasion. Here's why you
+                                    need
+                                    one:</p>
+                                <ul>
+                                    <li><strong>Day to Night:</strong> Pair with a blazer for a professional
+                                        look
+                                        during the day, and swap it for statement jewelry for a chic evening
+                                        style.
+                                    </li>
+                                    <li><strong>Always in Style:</strong> The LBD has remained a staple
+                                        since Coco
+                                        Chanel introduced it in the 1920s, proving its timeless appeal.</li>
+                                    <li><strong>Easy to Accessorize:</strong> Whether with pearls, a clutch,
+                                        or
+                                        colorful heels, the LBD provides a blank canvas for creativity.</li>
+                                </ul>
+                                <p><em>Pro Tip:</em> Opt for an LBD made with high-quality fabric that
+                                    flatters your
+                                    figure for a longer-lasting wardrobe piece.</p>
+                            </div>
+
+                            <!-- Sub-topic 2 -->
+                            <div id="blog3-2" class="blog-subtopic">
+                                <h3>The Power of Tailored Suits</h3>
+                                <p>A tailored suit is a symbol of sophistication and confidence. Every
+                                    wardrobe
+                                    should have at least one for these reasons:</p>
+                                <ul>
+                                    <li><strong>Perfect Fit:</strong> Tailored suits are made to complement
+                                        your
+                                        body shape, enhancing your appearance.</li>
+                                    <li><strong>Versatility:</strong> Wear the full suit for formal events
+                                        or pair
+                                        the blazer with jeans for a smart-casual vibe.</li>
+                                    <li><strong>Longevity:</strong> Investing in a well-made suit ensures it
+                                        remains
+                                        a go-to option for years.</li>
+                                </ul>
+                                <p><em>Pro Tip:</em> Choose neutral colors like black, navy, or gray for
+                                    maximum
+                                    versatility, and always ensure the suit is well-maintained.</p>
+                            </div>
+
+                            <!-- Additional Insights Section -->
+                            <div id="blog3-3" class="blog-subtopic">
+                                <h3>Other Must-Have Classic Pieces</h3>
+                                <ul>
+                                    <li><strong>White Button-Down Shirt:</strong> Timeless and practical, it
+                                        pairs
+                                        perfectly with everything from suits to jeans.</li>
+                                    <li><strong>Denim Jacket:</strong> A classic outerwear piece that adds a
+                                        casual
+                                        yet stylish touch to your outfits.</li>
+                                    <li><strong>Neutral Cardigan:</strong> Perfect for layering and adding
+                                        warmth
+                                        without sacrificing style.</li>
+                                </ul>
+                                <p>These classics ensure you’re always prepared, no matter the occasion.
+                                    Building
+                                    your wardrobe around such staples guarantees a timeless and adaptable
+                                    collection.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+
+
+                <!-- Blog Post 4 -->
+                <div id="blog4" class="blog-post">
+                    <h2>How to Choose the Perfect Pair of Pants</h2>
+                    <p class="blog-excerpt">Finding the right pair of pants can elevate your entire look.
+                        Discover
+                        how to choose pants that fit your style, comfort, and occasion.</p>
+
+                    <!-- Sub-topic 1 -->
+                    <div id="blog4-1" class="blog-subtopic">
+                        <h3>Different Styles for Different Occasions</h3>
+                        <p>Pants come in various styles, each suited for specific occasions. Knowing which
+                            to wear
+                            when can make all the difference:</p>
+                        <ul>
+                            <li><strong>Formal Settings:</strong> Opt for tailored trousers or dress pants,
+                                paired
+                                with a button-up shirt or blazer for a polished look.</li>
+                            <li><strong>Casual Days:</strong> Jeans are a classic choice, offering
+                                versatility and
+                                style for relaxed settings.</li>
+                            <li><strong>Outdoor Activities:</strong> Cargo pants or joggers provide comfort
+                                and
+                                functionality for active pursuits.</li>
+                            <li><strong>Summer Vibes:</strong> Linen or lightweight chinos keep you cool and
+                                stylish
+                                during warm weather.</li>
+                        </ul>
+                        <p><em>Pro Tip:</em> Always consider the dress code and setting before selecting
+                            your pants
+                            to ensure appropriateness.</p>
+                    </div>
+
+                    <!-- Sub-topic 2 -->
+                    <div id="blog4-2" class="blog-subtopic">
+                        <h3>Understanding Fit and Comfort</h3>
+                        <p>Comfort should never be sacrificed for style. Finding the right fit ensures you
+                            look good
+                            and feel even better:</p>
+                        <ul>
+                            <li><strong>Slim Fit:</strong> Ideal for a modern and sleek look, but ensure
+                                it’s not
+                                too tight for mobility.</li>
+                            <li><strong>Regular Fit:</strong> Offers a classic silhouette that works for
+                                most body
+                                types and occasions.</li>
+                            <li><strong>Relaxed Fit:</strong> Best for casual settings, providing maximum
+                                comfort
+                                and freedom of movement.</li>
+                        </ul>
+                        <p>Pay attention to the length and waist size to avoid alterations. Comfort should
+                            always
+                            complement style.</p>
+                    </div>
+
+                    <!-- Additional Insights Section -->
+                    <div id="blog4-3" class="blog-subtopic">
+                        <h3>Fabric Choices for Comfort and Durability</h3>
+                        <ul>
+                            <li><strong>Cotton:</strong> Soft, breathable, and perfect for daily wear.</li>
+                            <li><strong>Denim:</strong> Durable and stylish, ideal for both casual and
+                                semi-casual
+                                outfits.</li>
+                            <li><strong>Wool:</strong> Great for formal settings, offering a premium look
+                                and feel.
+                            </li>
+                            <li><strong>Linen:</strong> Lightweight and airy, best for summer or tropical
+                                climates.
+                            </li>
+                        </ul>
+                        <p><em>Pro Tip:</em> Choose fabrics that match the season and occasion to ensure
+                            both
+                            comfort and style.</p>
+                    </div>
+                </div>
+
+
+                <!-- Blog Post 5 -->
+                <div id="blog5" class="blog-post">
+                    <h2>The Rise of Sustainable Fashion</h2>
+                    <p class="blog-excerpt">Sustainable fashion is the future. Learn how to contribute to an
+                        eco-friendly wardrobe while still staying stylish and trendy.</p>
+
+                    <!-- Sub-topic 1 -->
+                    <div id="blog5-1" class="blog-subtopic">
+                        <h3>What Is Sustainable Fashion?</h3>
+                        <p>Sustainable fashion focuses on eco-friendly materials, ethical production
+                            practices, and
+                            reducing waste in the fashion industry. It’s about creating clothing that
+                            doesn’t harm
+                            the planet, from sourcing raw materials to the final product. Here’s why it’s
+                            essential
+                            for the future:</p>
+                        <ul>
+                            <li><strong>Eco-friendly Materials:</strong> Organic cotton, recycled polyester,
+                                and
+                                hemp are more sustainable alternatives to conventional fabrics.</li>
+                            <li><strong>Ethical Production:</strong> Sustainable fashion brands ensure fair
+                                wages
+                                and safe working conditions for workers.</li>
+                            <li><strong>Minimal Environmental Impact:</strong> Sustainable fashion reduces
+                                the
+                                carbon footprint by using renewable resources and reducing waste.</li>
+                        </ul>
+                        <p>As consumers, our choices directly impact the environment, making sustainable
+                            fashion
+                            crucial in combating climate change.</p>
+                    </div>
+
+                    <!-- Sub-topic 2 -->
+                    <div id="blog5-2" class="blog-subtopic">
+                        <h3>Tips for Building a Sustainable Wardrobe</h3>
+                        <p>Building a sustainable wardrobe doesn’t mean you have to give up style or spend a
+                            fortune. Here’s how to make eco-conscious choices while shopping:</p>
+                        <ul>
+                            <li><strong>Buy Less, Choose Wisely:</strong> Focus on quality over quantity.
+                                Invest in
+                                pieces that last longer and can be styled in multiple ways.</li>
+                            <li><strong>Thrift and Vintage Shopping:</strong> Thrift stores and vintage
+                                shops are
+                                great places to find unique, high-quality items at a fraction of the cost.
+                            </li>
+                            <li><strong>Choose Sustainable Brands:</strong> Look for brands that prioritize
+                                sustainability, such as those using organic materials, offering fair wages,
+                                or
+                                employing eco-friendly production methods.</li>
+                            <li><strong>Upcycle and Repair:</strong> Extend the life of your clothes by
+                                repairing or
+                                upcycling old items instead of throwing them away.</li>
+                        </ul>
+                        <p>By making mindful choices, you can create a wardrobe that’s both sustainable and
+                            stylish.
+                        </p>
+                    </div>
+
+                    <!-- Sub-topic 3 -->
+                    <div id="blog5-3" class="blog-subtopic">
+                        <h3>The Future of Fashion: Eco-Innovation</h3>
+                        <p>Eco-innovation in fashion is rapidly evolving, with new technologies paving the
+                            way for a
+                            greener future:</p>
+                        <ul>
+                            <li><strong>Biodegradable Fabrics:</strong> Designers are experimenting with
+                                fabrics
+                                that decompose naturally, reducing landfill waste.</li>
+                            <li><strong>Zero-Waste Design:</strong> Brands are designing clothes without
+                                producing
+                                waste, using every scrap of fabric to create something functional.</li>
+                            <li><strong>Circular Fashion:</strong> A growing trend where clothes are made to
+                                be
+                                reused, repurposed, or recycled at the end of their life cycle.</li>
+                        </ul>
+                        <p>The fashion industry is transforming, and the future is promising for a more
+                            sustainable
+                            and ethical approach to clothing.</p>
+                        <div id="blog5-video" class="blog-video">
+                            <h3>Watch: The Future of Sustainable Fashion</h3>
+                            <p>Discover the latest trends and innovations in sustainable fashion by watching
+                                this
+                                insightful video.</p>
+                            <iframe width="560" height="315"
+                                src="https://www.youtube.com/embed/q0KvtQ0nu8Y?pp=ygUeaG93IHRvIGZpbmQgeW91ciBzdHlsZSBmb3IgbWVu"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen>
+                            </iframe>
+
+                        </div>
+
+                        <div class="local-video">
+                            <h3>Welcome to Our Shop</h3>
+                            <p>Check out what fits on you in this video:</p>
+                            <video width="560" height="315" controls>
+                                <source src="video/How-To-Find-Your-Style.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+        </section>
+
+        <section id="about-us">
+            <h2>About Us</h2>
+            <p>Learn more about our brand and mission.</p>
+            <p>Welcome to our Men's Fashion Store! We are dedicated to providing a diverse range of high-quality
+                men's
+                clothing to ensure that you look sharp and feel comfortable no matter the occasion. Our collection
+                has been
+                thoughtfully curated to cater to every aspect of a modern man’s wardrobe, whether you're in need of
+                something casual for a relaxed day or something formal for important events.</p>
+
+            <p>Our collection includes an extensive variety of <strong>shirts</strong> for any style—from classic
+                button-ups
+                to trendy, casual options. Looking for a suit to impress? Our <strong>suits</strong> section
+                features
+                everything from sleek business attire to elegant tuxedos for special occasions. We also offer a
+                great
+                selection of <strong>pants</strong> that are both comfortable and stylish, perfect for everyday wear
+                or more
+                formal settings.</p>
+
+            <p>If you're looking for something more laid-back, our <strong>shorts</strong> section offers great
+                options for
+                those warmer days, allowing you to stay cool while looking sharp. And of course, no outfit is
+                complete
+                without a great pair of shoes. Our <strong>shoes</strong> section features a range of stylish and
+                comfortable footwear that pairs well with any outfit, whether you're dressing up for a night out or
+                keeping
+                it casual on the weekends.</p>
+
+            <p>At our Men's Fashion Store, we focus not only on variety and style but also on quality and
+                durability. Each
+                item in our store has been carefully selected to meet the highest standards, ensuring that you get
+                the best
+                value for your money. We believe that every man deserves to look and feel his best, no matter the
+                occasion.
+                Our goal is to offer affordable yet trendy options so that everyone can find something that fits
+                their
+                style, needs, and budget.</p>
+
+            <p>We also strive to make shopping with us as convenient as possible. With easy-to-navigate categories,
+                detailed
+                product descriptions, and high-quality images, we make sure that you can confidently shop from the
+                comfort
+                of your home. We believe in offering more than just clothing—we offer a lifestyle that empowers you
+                to
+                express yourself through fashion. Whether you are shopping for work, leisure, or special events, our
+                store
+                is designed to be your go-to destination for all your fashion needs.</p>
+
+            <p>Thank you for choosing us to be a part of your fashion journey. We are committed to bringing you the
+                best in
+                men's fashion and making your shopping experience enjoyable and hassle-free. Stay stylish, stay
+                confident,
+                and let us help you look and feel great every day!</p>
+
+
+
+            <section id="how-tos">
+                <h2>How To Guides</h2>
+                <p>Get expert advice on how to make the most of your wardrobe and shopping experience!</p>
+                <div class="how-to-item">
+                    <h3>How to Find Your Perfect Fit</h3>
+                    <p>Choosing the right fit can make all the difference. Here’s how you can find pants, shirts, and
+                        shoes that are tailored to your needs:</p>
+                    <ul>
+                        <li>Measure your waist and inseam for pants</li>
+                        <li>Check the size guide for shirts and suits</li>
+                        <li>Consider your foot type when selecting shoes</li>
+                    </ul>
+                </div>
+
+                <div class="how-to-item">
+                    <h3>How to Style a Classic Suit</h3>
+                    <p>A suit can be versatile when styled correctly. Here’s how you can rock it for various occasions:
+                    </p>
+                    <ul>
+                        <li>Pair with a white shirt for a professional look</li>
+                        <li>Dress it down with a t-shirt for casual events</li>
+                        <li>Accessorize with a tie or pocket square for a formal vibe</li>
+                    </ul>
+                </div>
+
+                <div class="how-to-item">
+                    <h3>How to Choose Sustainable Fashion</h3>
+                    <p>Want to make eco-conscious choices while shopping? Here are some tips:</p>
+                    <ul>
+                        <li>Look for brands that use organic or recycled materials</li>
+                        <li>Check for ethical production practices</li>
+                        <li>Consider the longevity of items to avoid fast fashion waste</li>
+                    </ul>
+                </div>
+
+                <div class="how-to-item">
+                    <h3>How to Make Your Wardrobe Last Longer</h3>
+                    <p>Caring for your clothing properly will extend its lifespan. Here’s what you can do:</p>
+                    <ul>
+                        <li>Wash clothes in cold water and air dry to preserve fabric</li>
+                        <li>Store your clothes in a cool, dry place</li>
+                        <li>Regularly check for wear and tear, and repair items as needed</li>
+                    </ul>
+                </div>
+
+                <div class="how-to-item">
+                    <h3>How to Use Our Online Store</h3>
+                    <p>Making the most of your shopping experience with us is simple:</p>
+                    <ul>
+                        <li>Browse by category: shirts, suits, shoes, pants</li>
+                        <li>Use the filter options to narrow down by size, color, or price</li>
+                        <li>Add your favorite items to the cart and proceed to checkout</li>
+                    </ul>
+                </div>
+            </section>
+
+        </section>
+
+        <section id="contacts">
+            <h2>Contact Us</h2>
+            <p>Get in touch with us for any inquiries.</p>
+            <section id="contact">
+                <div class="w3-col m8 w3-panel">
+                    <div class="w3-large w3-margin-bottom">
+                        <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i>
+                        <b>Location:</b> <span>Carmen, North Cotabato, Philippines</span><br>
+                        <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i>
+                        <b>Phone:</b> <span>+63 123 456 7890</span><br>
+                        <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i>
+                        <b>Email:</b> <a href="mailto:s.jmpaidomama@usm.edu.ph">s.jmpaidomama@usm.edu.ph</a><br>
+                        <i class="fa fa-facebook fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i>
+                        <b>Facebook:</b> <a href="https://facebook.com/profile.php?id=100088380669322"
+                            target="_blank">Jason
+                            Paidomama</a>
+            </section>
+    </div>
+
+    <script src="javascript/scripts.js"></script>
+</body>
+
+</html>
