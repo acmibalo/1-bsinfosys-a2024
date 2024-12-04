@@ -1,0 +1,289 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Parkinsans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+  }
+
+.navbar {
+    display: flex;
+    align-items: center;
+    padding: 20;
+}
+
+nav {
+    flex: 1;
+    text-align: right;
+}
+
+nav ul {
+    display: inline-block;
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    padding: 15px 20px;
+    text-decoration: none;
+    display: block;
+}
+
+nav .dropdown {
+    display: inline-block;
+}
+
+nav .dropdown .dropbtn {
+    cursor: pointer;
+}
+
+nav .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    min-width: 160px;
+    z-index: 1;
+}
+
+nav .dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+}
+
+nav .dropdown-content a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+nav .dropdown:hover .dropdown-content {
+    display: block;
+}
+
+nav ul li a:hover {
+    background-color: #575757;
+}
+
+a {
+    text-decoration: none;
+    color: #555;
+}
+
+p {
+    color:#555;
+}
+
+.container {
+    max-width: 1300;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+  
+.col2 {
+    flex-basis: 50%;
+    min-width: 300px;
+}
+
+.col2 img {
+    max-width: 900%;
+    padding: 50px 0;
+}
+
+.col2 h1 {
+    font-size: 50px;
+    line-height: 60px;
+    margin: 25px 0;
+}
+
+.btn {
+    display: inline-block;
+    background: #4cb4f0;
+    color: #fff;
+    padding: 8px 30px;
+    margin: 30px 0;
+    border-radius: 30px;
+    transition: background 0.5s;
+}
+
+.btn:hover {
+    background: #1f6086;
+}
+
+.header {
+    background: radial-gradient(#fff, #b0daec);
+}
+
+.header .row {
+    margin-top:50px;
+}
+
+.categories {
+    margin: 10%;
+}
+
+.col3 {
+    flex-basis: 30%;
+    min-width: 250px;
+    margin-bottom: 30px;
+}
+
+.col3 img {
+    width: 100%;
+}
+
+.small-container {
+    max-width: 1080px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.title {
+    text-align: center;
+    margin: 0 auto 80px;
+    position: relative;
+    line-height: 60px;
+    color: #555;
+}
+
+.title::after {
+    content: "";
+    background: #1f6086;
+    width: 80px;
+    height: 5px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+  
+.offer {
+    background: linear-gradient(-100deg, #d1ebf6, #fefbba, #f6d4e3, #d1ebf6);
+    margin-top: 80px;
+    padding: 30px 0;
+}
+
+.col2 .offer-img {
+    padding: 50px;
+}
+
+small {
+    color: #555;
+}
+
+
+
+/* Contact Section */
+.contact-section, .contact-info {
+    max-width: 600px;
+    margin: 2rem auto;
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-section h2, .contact-info h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 0.7rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+form button {
+    width: 100%;
+    padding: 0.7rem;
+    background: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+form button:hover {
+    background: #45a049;
+}
+
+#form-message {
+    text-align: center;
+    font-weight: bold;
+    margin-top: 1rem;
+}
+
+.contact-info p {
+    margin: 1rem 0;
+}
+
+.contact-info a {
+    color: #4CAF50;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+.map-container {
+    margin-top: 1rem;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    background: #398cbc;
+    color: white;
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    section {
+        padding: 15px;
+        max-width: 95%;
+    }
+
+    #about h2, #contact h2 {
+        font-size: 24px;
+    }
+
+    #about p, #contact p {
+        font-size: 1em;
+    }
+}
