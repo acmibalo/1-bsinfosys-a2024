@@ -1,0 +1,264 @@
+body {
+    width: 100%;
+    height: 100%;
+    font-family: sans-serif;
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+    background: radial-gradient(circle, #98FF98 0%, #B4FFB2 33%, #D1FFD5 66%, #F3FFF9 100%);
+    overflow-x: hidden;
+}
+
+header {
+    width: 100%;
+    height: auto; 
+    background: #453f3d;
+    font-family: Garamond;
+    font-size: 50px;
+    color: #777696;
+    background-image: url(2.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    text-align: center;
+    padding: 4px 0;
+}
+
+nav {
+    font-family: Garamond;
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #e7dabc;
+    color: #d4c286;
+    padding: 0 20px;
+    z-index: 10;
+}
+
+main {
+    display: flex;
+    padding: 1em;
+    flex-wrap: wrap;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 40px;
+}
+
+.logo h3 {
+    margin-left: 10px;
+    color: black;
+    text-decoration: none;
+    font-size: 28px;
+    font-family: Garamond;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.nav-links a {
+    display: block;
+    padding: 30px 16px;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: Garamond;
+    text-transform: uppercase;
+    transition: all ease-in-out 100ms;
+}
+
+.nav-links a:hover {
+    background-color: pink;
+}
+
+.nav-links .nav-cta-button {
+    padding: 10px 18px;
+    margin-left: 16px;
+    border: pink solid 2px;
+    border-radius: 50px;
+}
+
+.nav-links .nav-cta-button:hover {
+    background-color: pink;
+}
+
+.Furniture {
+    display: none;
+    cursor: pointer;
+    width: 34px;
+}
+
+.Furniture .bar {
+    flex-basis: 100%;
+    height: 4px;
+    background: gray;
+    margin: 3px;
+}
+
+.grid1 {
+    height: 100;
+    width: 100;
+    border: 1px solid lightgray;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+.index-category {
+    width: 100%;
+    padding: 60px 0;
+    color: #222222;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    font-family: Garamond;
+    background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(0,0,0,1) 100%);
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+    z-index: 1;
+}
+
+.index-category p {
+    color: #111;
+    text-align: center;
+    padding-bottom: 40px;
+    flex-basis: 100%;
+    font-family: Garamond;
+    font-size: 44px;
+    text-transform: capitalize;
+}
+
+.index-category-box {
+    width: 200px;
+    height: 200px;
+    background-color: black;
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    position: relative;
+    margin: 10px;
+    flex: 1 1 calc(25% - 40px);
+    box-sizing: border-box;
+    z-index: 1;
+    margin-top: 60px;
+}
+
+.index-category-box:nth-child(2) {
+    background-image: url(../images/category/livingroom.jpg);
+}
+
+.index-category-box:nth-child(3) {
+    background-image: url(../images/category/bathroom.jpg);
+}
+
+.index-category-box:nth-child(4) {
+    background-image: url(../images/category/bedroom.jpg);
+}
+
+.index-category-box:nth-child(5) {
+    background-image: url(../images/category/kitchen.jpg);
+}
+
+.index-category-box:nth-child(6) {
+    background-image: url(../images/category/garden.jpg);
+}
+
+.dark-overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: black;
+    opacity: 0.5;
+}
+
+.index-category-box:hover .dark-overlay {
+    opacity: 0;
+    transition: all ease-in-out 200ms;
+}
+
+.index-category-box h3 {
+    font-size: 33px;
+    line-height: 28px;
+    text-align: center;
+    text-shadow: -2px 2px 4px #fff;
+    color: #000;
+    z-index: 100;
+}
+
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 1em;
+}
+
+@media (max-width: 766px) {
+
+    header {
+        font-size: 30px;
+        padding: 2px 0;
+    }
+
+    nav {
+        flex-wrap: wrap;
+    }
+
+    .Furniture {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .logo {
+        height: 80px;
+    }
+
+    .nav-links {
+        display: none;
+        flex-basis: 100%;
+    }
+
+    .nav-links li {
+        flex-basis: 100%;
+    }
+
+    .nav-links a {
+        text-align: center;
+        font-size: 28px;
+    }
+
+    .nav-links a:hover {
+        background-color: pink;
+    }
+
+    .nav-links .nav-cta-button {
+        padding: 30px 16px;
+        margin-left: 0;
+        border: none;
+        border-radius: 0;
+        margin-bottom: 20px;
+    }
+
+    .nav-links .nav-cta-button:hover {
+        background-color: pink;
+    }
+
+    main {
+        flex-direction: column;
+    }
+}
