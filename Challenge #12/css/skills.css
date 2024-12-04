@@ -1,0 +1,62 @@
+.skills {
+    padding: 4rem 1rem;
+    background-color: var(--second-bg-color);
+    background-color: var(--second-bg-color);
+    color: var(--text-color);
+}
+
+.skills .heading {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: var(--text-color);
+    text-transform: uppercase;
+}
+
+.skills .container {
+    background: var(--bg-color);
+    border-radius: 1rem;
+    padding: 2rem;
+    margin: auto;
+    max-width: 1200px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.skills .container .row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1.5rem;
+}
+
+.skills .container .bar {
+    padding: 1rem;
+    border-radius: 1rem;
+    background: #40316d;
+    text-align: center;
+    transition: 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.skills .container .bar:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.skills .container .bar .info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.skills .container .bar .info .image {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+}
+
+.skills .container .bar .info span {
+    font-size: 2rem;
+    font-weight: 500;
+    color: var(--text-color);
+}
