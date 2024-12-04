@@ -1,0 +1,277 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Parkinsans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+  }
+
+.navbar {
+    display: flex;
+    align-items: center;
+    padding: 20;
+}
+
+nav {
+    flex: 1;
+    text-align: right;
+}
+
+nav ul {
+    display: inline-block;
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    padding: 15px 20px;
+    text-decoration: none;
+    display: block;
+}
+
+nav .dropdown {
+    display: inline-block;
+}
+
+nav .dropdown .dropbtn {
+    cursor: pointer;
+}
+
+nav .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    min-width: 160px;
+    z-index: 1;
+}
+
+nav .dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+}
+
+nav .dropdown-content a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+nav .dropdown:hover .dropdown-content {
+    display: block;
+}
+
+nav ul li a:hover {
+    background-color: #575757;
+}
+
+a {
+    text-decoration: none;
+    color: #555;
+}
+
+p {
+    color:#555;
+}
+
+.container {
+    max-width: 1300;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+  
+.col2 {
+    flex-basis: 50%;
+    min-width: 300px;
+}
+
+.col2 img {
+    max-width: 900%;
+    padding: 50px 0;
+}
+
+.col2 h1 {
+    font-size: 50px;
+    line-height: 60px;
+    margin: 25px 0;
+}
+
+.btn {
+    display: inline-block;
+    background: #4cb4f0;
+    color: #fff;
+    padding: 8px 30px;
+    margin: 30px 0;
+    border-radius: 30px;
+    transition: background 0.5s;
+}
+
+.btn:hover {
+    background: #1f6086;
+}
+
+.header {
+    background: radial-gradient(#fff, #b0daec);
+}
+
+.header .row {
+    margin-top:50px;
+}
+
+.categories {
+    margin: 10%;
+}
+
+.col3 {
+    flex-basis: 30%;
+    min-width: 250px;
+    margin-bottom: 30px;
+}
+
+.col3 img {
+    width: 100%;
+}
+
+.small-container {
+    max-width: 1080px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+    padding: 2rem;
+}
+
+.product-card {
+    border: 1px solid #ddd;
+    padding: 1rem;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+}
+
+.product-card img {
+    max-width: 100%;
+    height: auto;
+}
+
+.title {
+    text-align: center;
+    margin: 0 auto 80px;
+    position: relative;
+    line-height: 60px;
+    color: #555;
+}
+
+.title::after {
+    content: "";
+    background: #1f6086;
+    width: 80px;
+    height: 5px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+.gallery img {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+    .gallery img {
+        width: 200px;
+    }
+}
+
+@media (max-width: 480px) {
+    .gallery img {
+        width: 150px;
+    }
+}
+  
+.offer {
+    background: linear-gradient(-100deg, #d1ebf6, #fefbba, #f6d4e3, #d1ebf6);
+    margin-top: 80px;
+    padding: 30px 0;
+}
+
+.home {
+    background: radial-gradient(#fff, #b0daec);
+    margin-top: 80px;
+    padding: 30px 0;
+}
+
+.col2 .offer-img {
+    padding: 50px;
+}
+
+small {
+    color: #555;
+}
+
+/*ABOUT ME SECTION*/
+
+.testimonial {
+    padding-top: 100px;
+}
+
+.testimonial .col3{
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.testimonial .col3 img {
+    width: 50px;
+    margin-top: 20px;
+    border-radius: 50%;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    background: #398cbc;
+    color: white;
+    margin-top: 20px;
+}
+

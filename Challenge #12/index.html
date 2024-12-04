@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Alexah Lee V. De La Rosa">
+    <title>CINNAMOROLL STORE</title>
+    <link rel="icon" type="images/logo" href="images/favicon-16x16.png">
+    <link href="https://fonts.googleapis.com/css2?family=Parkinsans:wght@300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        /* General Styling */
+        body { font-family: 'Parkinsans', sans-serif; margin: 0; padding: 0; }
+        .btn { padding: 10px 20px; background-color: #1f6086; color: white; border: none; text-decoration: none; cursor: pointer; border-radius: 5px; }
+        .container { padding: 20px; }
+
+        /* Sticky Header */
+        .header { position: sticky; top: 0; z-index: 1000; background-color: white; padding: 10px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); }
+
+        /* Responsive Navbar */
+        .responsive-navbar a { padding: 10px; color: #333; text-decoration: none; display: block; }
+        .responsive-navbar a.active { background-color: #1f6086; color: white; }
+        .responsive-navbar a.icon { display: none; }
+        .responsive-navbar.responsive { display: flex; flex-direction: column; }
+
+        /* Slideshow */
+        .slideshow-container { position: relative; max-width: 100%; margin: 20px 0; }
+        .slides { display: none; }
+        .fade { animation: fadeEffect 1.5s; }
+        @keyframes fadeEffect { from { opacity: 0.4 } to { opacity: 1 } }
+
+        /* Modal Box */
+        .modal { display: none; position: fixed; z-index: 1; left: 0; top: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.5); }
+        .modal-content { background-color: white; margin: 15% auto; padding: 20px; width: 80%; text-align: center; border-radius: 10px; }
+        .close { float: right; font-size: 24px; font-weight: bold; cursor: pointer; }
+
+        /* Tooltip */
+        .tooltip { position: relative; display: inline-block; }
+        .tooltip .tooltip-text { visibility: hidden; width: 150px; background-color: #555; color: white; text-align: center; border-radius: 5px; padding: 5px; position: absolute; z-index: 1; bottom: 125%; left: 50%; margin-left: -75px; opacity: 0; transition: opacity 0.3s; }
+        .tooltip:hover .tooltip-text { visibility: visible; opacity: 1; }
+
+        /* Search Bar */
+        .search-bar { text-align: center; margin: 20px 0; }
+        .search-bar input { width: 80%; padding: 10px; border: 1px solid #ddd; border-radius: 5px; }
+
+        /* Accordion */
+        .accordion { background-color: #f9f9f9; border: 1px solid #ddd; cursor: pointer; padding: 10px; text-align: left; outline: none; transition: background-color 0.4s ease; }
+        .accordion.active { background-color: #1f6086; color: white; }
+        .panel { padding: 0 15px; display: none; overflow: hidden; background-color: white; border: 1px solid #ddd; }
+
+        /* Back-to-Top Button */
+        .back-to-top { position: fixed; bottom: 20px; right: 20px; background-color: #1f6086; color: white; padding: 10px; border-radius: 50%; cursor: pointer; display: none; z-index: 1000; }
+
+        /* Countdown Timer */
+        .countdown { text-align: center; margin: 20px 0; font-size: 20px; }
+    </style>
+</head>
+<body>
+
+<!-- Sticky Header -->
+<div class="header">
+    <div class="container">
+        <div class="navbar">
+            <img src="images/logo2.png" alt="logo" width="125px">
+        </div>
+        <div class="responsive-navbar">
+            <a href="index-home.html" class="active">HOME</a>
+            <a href="products.html">PRODUCTS</a>
+            <a href="aboutme.html">ABOUT ME</a>
+            <a href="contacts.html">CONTACTS</a>
+            <a href="blog.html">BLOG</a>
+            <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+    </div>
+</div>
+
+<!-- Search Bar -->
+<div class="search-bar">
+    <input type="text" placeholder="Search for products...">
+</div>
+
+<!-- Slideshow -->
+<div class="slideshow-container">
+    <div class="slides fade">
+        <img src="images/limited1.png" style="width:100%">
+    </div>
+    <div class="slides fade">
+        <img src="images/limited2.png" style="width:100%">
+    </div>
+    <div class="slides fade">
+        <img src="images/limited3.png" style="width:100%">
+    </div>
+</div>
+
+<!-- Countdown Timer -->
+<div class="countdown">
+    <h2>Countdown to Exclusive Sale</h2>
+    <p id="timer"></p>
+</div>
+
+<!-- Accordion FAQ Section -->
+<h2 class="title">Frequently Asked Questions</h2>
+<div class="container">
+    <button class="accordion">What is Cinnamoroll Store?</button>
+    <div class="panel">
+        <p>A whimsical store offering products inspired by the beloved Cinnamoroll character.</p>
+    </div>
+    <button class="accordion">How can I place an order?</button>
+    <div class="panel">
+        <p>Simply browse the products page and add your favorites to the cart!</p>
+    </div>
+</div>
+
+<!-- Back-to-Top Button -->
+<button class="back-to-top" onclick="scrollToTop()">↑</button>
+
+<script>
+    // Toggle Responsive Navbar
+    function toggleMenu() {
+        const navbar = document.querySelector('.responsive-navbar');
+        navbar.classList.toggle('responsive');
+    }
+
+    // Slideshow
+    let slideIndex = 0;
+    function showSlides() {
+        const slides = document.querySelectorAll(".slides");
+        slides.forEach(slide => slide.style.display = "none");
+        slideIndex = (slideIndex + 1) % slides.length;
+        slides[slideIndex].style.display = "block";
+        setTimeout(showSlides, 3000); // Change every 3 seconds
+    }
+    showSlides();
+
+    // Countdown Timer
+    const targetDate = new Date("December 31, 2024 23:59:59").getTime();
+    function updateCountdown() {
+        const now = new Date().getTime();
+        const distance = targetDate - now;
+        const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+        document.getElementById("timer").innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s`;
+        if (distance < 0) document.getElementById("timer").innerHTML = "EXPIRED";
+    }
+    setInterval(updateCountdown, 1000);
+
+    // Accordion FAQ Section
+    document.querySelectorAll('.accordion').forEach(button => {
+        button.addEventListener('click', () => {
+            button.classList.toggle('active');
+            const panel = button.nextElementSibling;
+            panel.style.display = panel.style.display === 'block' ? 'none' : 'block';
+        });
+    });
+
+    // Back-to-Top Button
+    window.onscroll = function () {
+        const btn = document.querySelector('.back-to-top');
+        btn.style.display = window.scrollY > 300 ? 'block' : 'none';
+    };
+    function scrollToTop() {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+</script>
+
+</body>
+</html>
