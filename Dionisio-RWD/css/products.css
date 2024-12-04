@@ -24,19 +24,6 @@ header {
     padding: 4px 0;
 }
 
-nav {
-    font-family: Garamond;
-    position: sticky;
-    top: 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: #e7dabc;
-    color: #d4c286;
-    padding: 0 20px;
-    z-index: 10;
-}
-
 main {
     display: flex;
     padding: 1em;
@@ -261,4 +248,16 @@ footer {
     main {
         flex-direction: column;
     }
+}
+nav {
+    font-family: Garamond;
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #a7777a;
+    color: #d4c286;
+    padding: 0 20px;
+    z-index: 10;
 }
