@@ -2,31 +2,27 @@ body {
     width: 100%;
     height: 100%;
     font-family: sans-serif;
-    font-size: 20px; 
+    font-size: 20px;
     margin: 0;
     padding: 0;
+    background: radial-gradient(circle, #f9f0f0 0%, #f9e0e0 25%, #f9d0d0 50%, #f9c0c0 75%, #f9b0b0);
     overflow-x: hidden;
-    background-image: url(1.jpg);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
 }
 
 header {
     width: 100%;
-    height: auto; /* Allow the height to adjust based on content */
+    height: auto; 
     background: #453f3d;
     font-family: Garamond;
     font-size: 50px;
-    color: #777696;
+    color: #d0a090;
     background-image: url(2.png);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
     text-align: center;
-    padding: 4px 0; /* Adjust padding for smaller screens */
+    padding: 4px 0;
 }
-
 nav {
     font-family: Garamond;
     position: sticky;
@@ -34,10 +30,12 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: #453f3d;
-    color: white;
+    background: #a7777a;
+    color: #d4c286;
     padding: 0 20px;
+    z-index: 10;
 }
+
 
 .logo {
     display: flex;
@@ -123,10 +121,11 @@ aside {
 article {
     margin-bottom: 1em;
     padding: 1em;
-    background: gray;
+    background: #c5ae9f;
     border: 1px solid #ddd;
     width: 100%;
     box-sizing: border-box; /* Ensures padding and border are included in the total width and height */
+    font-family: GARAMOND;
 }
 
 footer {
