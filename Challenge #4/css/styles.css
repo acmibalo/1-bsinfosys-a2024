@@ -1,0 +1,43 @@
+body {
+  font-family: Serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  background-color: #9daecc;
+  padding: 10px;
+  margin: 0;
+  
+}
+
+nav {
+  text-align: center;
+  background-color: #9daecc;
+  padding: 10px;
+  
+}
+
+nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: blue;
+}
+
+section {
+  background-color: #9daecc;
+  margin: 20px 0;
+  padding: 20px;
+  border: 5px solid #0e4a80;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #9daecc;
+}
