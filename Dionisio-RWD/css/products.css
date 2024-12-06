@@ -5,7 +5,7 @@ body {
     font-size: 20px;
     margin: 0;
     padding: 0;
-    background: radial-gradient(circle, #98FF98 0%, #B4FFB2 33%, #D1FFD5 66%, #F3FFF9 100%);
+    background: white;
     overflow-x: hidden;
 }
 
@@ -189,10 +189,11 @@ main {
 }
 
 footer {
-    background: #333;
+    background: #a7777a;
     color: white;
     text-align: center;
     padding: 1em;
+    font-family: garamond;
 }
 
 @media (max-width: 766px) {

@@ -11,7 +11,7 @@ body {
     font-size: 20px;
     margin: 0;
     padding: 0;
-    background: radial-gradient(circle, #f9f0f0 0%, #f9e0e0 25%, #f9d0d0 50%, #f9c0c0 75%, #f9b0b0);
+    background: white;
     overflow-x: hidden;
 }
 
@@ -19,7 +19,7 @@ header {
     width: 100%;
     height: auto; 
     background: #453f3d;
-    font-family: Garamond;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 50px;
     color: #d0a090;
     background-image: url(2.png);

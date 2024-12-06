@@ -114,18 +114,30 @@ section {
 aside {
     flex: 1;
     padding: 1em;
-    background: #BF40BF;
+    background: WHITE;
     margin-left: 1em;
 }
 
+aside img {
+    justify-content: center;
+    margin-left: 90px;
+    margin-top: 20px;
+    height: 470px;
+    width: 500px;
+    border: black;
+}
+
 article {
-    margin-bottom: 1em;
+    margin-top: 80PX;
     padding: 1em;
     background: #c5ae9f;
     border: 1px solid #ddd;
     width: 100%;
     box-sizing: border-box; /* Ensures padding and border are included in the total width and height */
-    font-family: GARAMOND;
+    font-family: gARAMOND;
+    font-size: 130%;
+    justify-content: center;
+
 }
 
 footer {
@@ -190,12 +202,18 @@ footer {
         flex-direction: column;
     }
 
-    section {
-        padding: 1em;
-    }
-
     aside {
-        margin-left: 0;
+        display: flex;
+        justify-content: center;
         margin-top: 1em;
+        position: relative;
+        font-family: garamond;
     }
-}
+    aside p {
+        display: flex;
+        justify-content: center;
+        margin-top: 1em;
+        position: relative;
+        font-family: garamond;
+    }
+}    
