@@ -81,17 +81,6 @@ nav {
     background-color: pink;
 }
 
-.nav-links .nav-cta-button {
-    padding: 10px 18px;
-    margin-left: 16px;
-    border: pink solid 2px;
-    border-radius: 50px;
-}
-
-.nav-links .nav-cta-button:hover {
-    background-color: pink;
-}
-
 .Furniture {
     display: none;
     cursor: pointer;
