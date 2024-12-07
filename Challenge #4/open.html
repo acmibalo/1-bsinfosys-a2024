@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Balibol</title>
+<link rel="icon" type="image/x-icon" href="images/logo.ico">
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the Header to make it priti*/
+header {
+  background-color: Maroon;
+  padding: 10px;
+  text-align: center;
+  font-size: 18px;
+  color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 30%;
+  height: 400px; /* only for demonstration, should be removed */
+  background: Gray;
+  padding: 20px;
+  font-size: 25px
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: right;
+  padding: 10px;
+  width: 60%;
+  background-color: white;
+  height: 400px; 
+  text-align: center;
+  font-size: 20px
+ 
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: maroon;
+  padding: 10px;
+  text-align: center;
+  color: White;
+  font-size: 20px
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
+<body>
+
+<h2>All about Volleyball</h2>
+<p>Para maka learn onti ang mga ferson about sa Volleyball</p>
+
+<header>
+  <h2>VOLLEYBALL</h2>
+  <h3> <a href="Implementation of Favicon.html">HOME</a></h3>
+</header>
+<section>
+  <nav>
+    <ul>
+	
+	  <li>POSITIONS</li><br>
+      <li><a href="open.html">Open spiker</a></li>
+      <li><a href="opposite.html">Opposite spiker</a></li>
+      <li><a href="LIBERO.html">Libero</a></li>
+	  <li><a href="Setter.html">Setter</a></li>
+    </ul>
+  </nav>
+  
+   <article>
+    <h1>Open spiker</h1>
+    <p>An open spiker’s responsibilities include hitting from the front and back row, passing in serve receive, playing left or middle-back defense, and blocking.</p>
+  </article>
+</section>
+
+<footer>
+  <p>Manifesting MAKAPASA!!</p>
+</footer>
+
+</body>
+</html>
