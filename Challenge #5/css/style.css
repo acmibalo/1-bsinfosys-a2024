@@ -1,0 +1,62 @@
+* {
+    box-sizing: border-box;
+    }
+
+    body {
+        font-family: "Karma", sans-serif;
+        background-color: white;
+    }
+
+    header {
+        background-color: transparent;
+        padding: 1ch;
+        text-align: left;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 50px;
+        color: rgb(73, 22, 22);
+    }
+
+    nav {
+        float: left;
+        width: 30%;
+        height: 300px;
+        padding: 20px;
+        color: black;
+    }
+
+    nav ul {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    article {
+        float: right;
+        padding: 1px;
+        width: auto;
+        background-color: whitesmoke;
+        background-image: url();
+        height: 600px;
+        font-family: Felix Titling;
+        font-size: 50px;
+        text-align: center;
+    }
+
+    section::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    footer {
+        background-color: white;
+        padding: 5px;
+        text-align: left;
+        color: rgba(0, 0, 0, 0.63);
+    }
+
+    @media (max-width: 600px) {
+    nav, article {
+        width: 100%;
+        height: auto;
+    }
+    }
