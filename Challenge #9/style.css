@@ -1,0 +1,56 @@
+video {
+    display: block;
+    max-width: 100%;
+    margin: 20px 0;
+    border: 3px solid #8b0000;
+    border-radius: 5px;
+}
+
+form {
+    background-color: #F0E9DF;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+form label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+form button {
+    background-color: #BF0001;
+    color: white;
+    padding: 10px 15px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #8b0000;
+}
+
+@media (max-width: 768px) {
+    video {
+        width: 100%;
+    }
+
+    form {
+        padding: 15px;
+    }
+}
