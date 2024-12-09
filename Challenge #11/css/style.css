@@ -250,6 +250,22 @@ small {
     color: #555;
 }
 
+.responsive-navbar {
+    display: flex;
+    flex-wrap: wrap;
+}
+@media (max-width: 768px) {
+    .responsive-navbar a {
+        display: none;
+    }
+    .responsive-navbar a.icon {
+        display: block;
+    }
+    .responsive-navbar.responsive a {
+        display: block;
+    }
+}
+
 /*ABOUT ME SECTION*/
 
 .testimonial {
