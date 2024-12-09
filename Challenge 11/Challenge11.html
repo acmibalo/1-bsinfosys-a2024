@@ -4,81 +4,13 @@
     <meta charset="UTF-8">
     <title>Silvestre | Website</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" type="image/x-icon" href="Other Website/Images/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="/Challenge 11/images/favicon.ico">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta name="keywords" content="layout, design, portfolio, table setup, gallery">
     <meta name="description" content="Welcome to Food Craze Express, your go-to destination for gourmet coffees,    yogurts, cereals, nuts, chips, sweet treats, frozen desserts, soft drinks, and juices.">
     <meta name="author" content="Nicole Silvestre">
-	<style>
-        .glow { 
-            font-size: 1.5em; 
-            color: #000000; 
-            text-shadow: 0 0 10px #000000, 0 0 20px #000000, 0 0 30px #000000, 0 0 40px #000000; 
-        }
-        .dropdown-content {
-            display: none;
-            position: absolute;
-            background-color: #f9f9f9;
-            min-width: 160px;
-            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-            z-index: 1000;
-            top: 100%; /* Ensure it’s below the button */
-            left: 0; /* Align left */
-            right: 0; /* Align right */
-            margin: auto; /* Center */
-        }
-        .dropdown-content a {
-            color: black;
-            padding: 12px 16px;
-            text-decoration: none;
-            display: block;
-        }
-        .dropdown-content a:hover {
-            background-color: #f1f1f1;
-        }
-		
-	.custom-modal { 
-			width: 600px; 
-			height: auto; 
-			max-width: 70%; 
-			max-height:100%; 
-			padding: 20px; 
-			margin: 50px auto; 
-			overflow: auto;
-			background-color: white;
-			border-radius: 10px;
-			position: relative;
-		} 
-		.w3-input { 
-			width: calc(100% - 20px); 
-			padding: 10px; 
-			margin-bottom: 10px; 
-		} 
-		.w3-button { 
-			width: 100%; 
-		}
-		.modal-content-center {
-			display: flex;
-			flex-direction: column;
-			justify-content: center;
-			align-items: center;
-			height: 100%;
-		}
-		
-		.container {
-			padding: 16px;
-		}
-/*Responsive Layout*/
-		@media screen and (max-width: 300px) {
-		span.psw {
-			display: block;
-			float: none;
-		}
-		.cancelbtn {
-			width: 100%;
-		}
-    </style>
+	<link rel="stylesheet" href="/Challenge 11/css/Challenge11styles.css">
 </head>
 
 <body>
@@ -131,8 +63,8 @@
 						<span onclick="document.getElementById('settingsDropdown').style.display='none'" class="w3-button w3-display-topright">&times;</span> 
 						<h4>Categories</h4>
 					</header>
-					<a href="theme-setting.html" class="w3-bar-item w3-button">Theme</a> 
-					<a href="language-setting.html" class="w3-bar-item w3-button">language</a> 
+					<a href="/Challenge 11/links/theme-setting.html" class="w3-bar-item w3-button">Theme</a> 
+					<a href="/Challenge 11/links/language-setting.html" class="w3-bar-item w3-button">language</a> 
 				</div> 
 			</div>
 		</div>
@@ -142,7 +74,7 @@
 	
 		<div id="home" style="max-width: 100%;">
 			<div style="position: relative; max-width: 100%;">
-				<img src="Other Website/fce.png" alt="fce" style="width: 100%; height: auto;">
+				<img src="/Challenge 11/images/fce.png" alt="fce" style="width: 100%; height: auto;">
 				<div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center; width: 100%;">
 					<h1 style="color: white; text-shadow: 0 0 20px #FAB12F; font-size: 58px;"><b>FOOD CRAZE EXPRESS</b></h1>
 					<h2 style="color: white; text-shadow: 0 0 20px #000;" class="w3-hide-small"><b>Instant Needs, Instant Deliveries</b></h2>
@@ -155,9 +87,9 @@
 						<p><input type="text" placeholder="Enter Username" name="username" required style="width: 100%; padding: 10px;"></p>
 						<p><label style="color: black;">Password</label></p>
 						<p><input type="password" placeholder="Enter Password" name="password" required style="width: 100%; padding: 10px;"></p>
-						<p>By creating an account you agree to our <a href="terms-privacy.html">Terms & Privacy</a>.</p>
+						<p>By creating an account you agree to our <a href="/Challenge 11/links/terms-privacy.html">Terms & Privacy</a>.</p>
 						<button type="submit" style="width: 100%; background-color: black; color: white; padding: 15px; border: none; cursor: pointer;">Login</button>
-						<p>Already have an account? <a href="sign-in.html">Sign in</a>.</p>
+						<p>Already have an account? <a href="/Challenge 11/links/sign-in.html">Sign in</a>.</p>
 					</div>
 				</div>
 			</div>
@@ -167,25 +99,25 @@
 <!--Embedded Video-->
 		<div style="width: 100%; max-width: 100%; height: auto; overflow: hidden;">
 		<video width="100%" height="auto" controls>
-			<source src="Video.mp4" type="video/mp4">
-			<source src="Video.mov" type="video/ogg">
+			<source src="/Challenge 11/videos/Video.mp4" type="video/mp4">
+			<source src="/Challenge 11/videos/Video.mov" type="video/ogg">
 		</video>
 		</div>
 
 		<div class="mySlides w3-display-container w3-center">
-			<img src="Other Website/Images/slideshow 1.png" style="width:100%">
+			<img src="/Challenge 11/images/slideshow 1.png" style="width:100%">
 			<div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">   
 			</div>
 		</div>
   
 		<div class="mySlides w3-display-container w3-center">
-			<img src="Other Website/Images/slideshow 2.png" style="width:100%">
+			<img src="/Challenge 11/images/slideshow 2.png" style="width:100%">
 			<div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">  
 			</div>
 		</div>
   
 		<div class="mySlides w3-display-container w3-center">
-			<img src="Other Website/Images/slideshow 3.png" style="width:100%">
+			<img src="/Challenge 11/images/slideshow 3.png" style="width:100%">
 			<div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">   
 			</div>
 		</div>
@@ -195,7 +127,7 @@
 			<div class="w3-col l3 s6">
 				<div class="w3-container">
 					<div class="w3-display-container">
-					<img src="Other Website/Gourmet Coffee/a.png" style="width:100%">
+					<img src="/Challenge 11/images/Gourmet Coffee/a.png" style="width:100%">
 						<div class="w3-display-middle w3-display-hover">
 						<button class="w3-button w3-black" onclick="document.getElementById('BuyModal').style.display='block'">Add to Cart <i class="fa fa-shopping-cart"></i></button>
 						</div>
@@ -204,7 +136,7 @@
 				</div>
 				<div class="w3-container">
 					<div class="w3-display-container">
-					<img src="Other Website/Gourmet Coffee/b.png" style="width:100%">
+					<img src="/Challenge 11/images/Gourmet Coffee/b.png" style="width:100%">
 						<div class="w3-display-middle w3-display-hover">
 						<button class="w3-button w3-black" onclick="document.getElementById('BuyModal').style.display='block'">Add to Cart <i class="fa fa-shopping-cart"></i></button>
 						</div>
@@ -216,7 +148,7 @@
 			<div class="w3-col l3 s6">
 				<div class="w3-container">
 					<div class="w3-display-container">
-					<img src="Other Website/Gourmet Coffee/c.png" style="width:100%">
+					<img src="/Challenge 11/images/Gourmet Coffee/c.png" style="width:100%">
 					<span class="w3-tag w3-display-topleft">New</span>
 						<div class="w3-display-middle w3-display-hover">
 						<button class="w3-button w3-black" onclick="document.getElementById('BuyModal').style.display='block'">Add to Cart <i class="fa fa-shopping-cart"></i></button>
@@ -226,7 +158,7 @@
 				</div>
 				<div class="w3-container">
 					<div class="w3-display-container">
-					<img src="Other Website/Gourmet Coffee/f.png" style="width:100%">
+					<img src="/Challenge 11/images/Gourmet Coffee/f.png" style="width:100%">
 					<span class="w3-tag w3-display-topleft">New</span>
 						<div class="w3-display-middle w3-display-hover">
 						<button class="w3-button w3-black" onclick="document.getElementById('BuyModal').style.display='block'">Add to Cart <i class="fa fa-shopping-cart"></i></button>
@@ -239,7 +171,7 @@
 			<div class="w3-col l3 s6">
 				<div class="w3-container">
 					<div class="w3-display-container">
-					<img src="Other Website/Gourmet Coffee/d.png" style="width:100%">
+					<img src="/Challenge 11/images/Gourmet Coffee/d.png" style="width:100%">
 						<div class="w3-display-middle w3-display-hover">
 						<button class="w3-button w3-black" onclick="document.getElementById('BuyModal').style.display='block'">Add to Cart <i class="fa fa-shopping-cart"></i></button>
 						</div>
@@ -248,7 +180,7 @@
 				</div>
 				<div class="w3-container">
 					<div class="w3-display-container">
-					<img src="Other Website/Gourmet Coffee/e.png" style="width:100%">
+					<img src="/Challenge 11/images/Gourmet Coffee/e.png" style="width:100%">
 						<div class="w3-display-middle w3-display-hover">
 						<button class="w3-button w3-black" onclick="document.getElementById('BuyModal').style.display='block'">Add to Cart <i class="fa fa-shopping-cart"></i></button>
 						</div>
@@ -260,7 +192,7 @@
 			<div class="w3-col l3 s6">
 				<div class="w3-container">
 					<div class="w3-display-container">
-					<img src="Other Website/Gourmet Coffee/g.png" style="width:100%">
+					<img src="/Challenge 11/images/Gourmet Coffee/g.png" style="width:100%">
 						<div class="w3-display-middle w3-display-hover">
 						<button class="w3-button w3-black" onclick="document.getElementById('BuyModal').style.display='block'">Add to Cart <i class="fa fa-shopping-cart"></i></button>
 						</div>
@@ -269,7 +201,7 @@
 				</div>
 				<div class="w3-container">
 					<div class="w3-display-container">
-					<img src="Other Website/Gourmet Coffee/h.png" style="width:100%">
+					<img src="/Challenge 11/images/Gourmet Coffee/h.png" style="width:100%">
 						<div class="w3-display-middle w3-display-hover">
 						<button class="w3-button w3-black" onclick="document.getElementById('BuyModal').style.display='block'">Add to Cart <i class="fa fa-shopping-cart"></i></button>
 						</div>
@@ -284,7 +216,7 @@
 			<div class="w3-col l3 s6">
 				<div class="w3-container">
 					<div class="w3-display-container">
-					<img src="Other Website/YandC/j.png" style="width:100%">
+					<img src="/Challenge 11/images/YandC/j.png" style="width:100%">
 						<div class="w3-display-middle w3-display-hover">
 						<button class="w3-button w3-black" onclick="document.getElementById('BuyModal').style.display='block'">Add to Cart<i class="fa fa-shopping-cart"></i></button>
 						</div>
@@ -293,7 +225,7 @@
 				</div>
 				<div class="w3-container">
 					<div class="w3-display-container">
-					<img src="Other Website/YandC/o.png" style="width:100%">
+					<img src="/Challenge 11/images/YandC/o.png" style="width:100%">
 						<div class="w3-display-middle w3-display-hover">
 						<button class="w3-button w3-black" onclick="document.getElementById('BuyModal').style.display='block'">Add to Cart <i class="fa fa-shopping-cart"></i></button>
 						</div>
@@ -305,7 +237,7 @@
 			<div class="w3-col l3 s6">
 				<div class="w3-container">
 					<div class="w3-display-container">
-					<img src="Other Website/YandC/i.png" style="width:100%">
+					<img src="/Challenge 11/images/YandC/i.png" style="width:100%">
 						<div class="w3-display-middle w3-display-hover">
 						<button class="w3-button w3-black" onclick="document.getElementById('BuyModal').style.display='block'">Add to Cart <i class="fa fa-shopping-cart"></i></button>
 						</div>
@@ -314,7 +246,7 @@
 				</div>
 				<div class="w3-container">
 					<div class="w3-display-container">
-					<img src="Other Website/YandC/n.png" style="width:100%">
+					<img src="/Challenge 11/images/YandC/n.png" style="width:100%">
 					<span class="w3-tag w3-display-topleft">New</span>
 						<div class="w3-display-middle w3-display-hover">
 						<button class="w3-button w3-black" onclick="document.getElementById('BuyModal').style.display='block'">Add to Cart <i class="fa fa-shopping-cart"></i></button>
@@ -327,7 +259,7 @@
 			<div class="w3-col l3 s6">
 				<div class="w3-container">
 					<div class="w3-display-container">
-					<img src="Other Website/YandC/k.png" style="width:100%">
+					<img src="/Challenge 11/images/YandC/k.png" style="width:100%">
 						<div class="w3-display-middle w3-display-hover">
 						<button class="w3-button w3-black" onclick="document.getElementById('BuyModal').style.display='block'">Add to Cart <i class="fa fa-shopping-cart"></i></button>
 						</div>
@@ -336,7 +268,7 @@
 				</div>
 				<div class="w3-container">
 					<div class="w3-display-container">
-					<img src="Other Website/YandC/p.png" style="width:100%">
+					<img src="/Challenge 11/images/YandC/p.png" style="width:100%">
 					<span class="w3-tag w3-display-topleft">New</span>
 						<div class="w3-display-middle w3-display-hover">
 						<button class="w3-button w3-black" onclick="document.getElementById('BuyModal').style.display='block'">Add to Cart <i class="fa fa-shopping-cart"></i></button>
@@ -349,7 +281,7 @@
 			<div class="w3-col l3 s6">
 				<div class="w3-container">
 					<div class="w3-display-container">
-					<img src="Other Website/YandC/l.png" style="width:100%">
+					<img src="/Challenge 11/images/YandC/l.png" style="width:100%">
 						<div class="w3-display-middle w3-display-hover">
 						<button class="w3-button w3-black" onclick="document.getElementById('BuyModal').style.display='block'">Add to Cart <i class="fa fa-shopping-cart"></i></button>
 						</div>
@@ -358,7 +290,7 @@
 				</div>
 				<div class="w3-container">
 					<div class="w3-display-container">
-					<img src="Other Website/YandC/m.png" style="width:100%">
+					<img src="/Challenge 11/images/YandC/m.png" style="width:100%">
 						<div class="w3-display-middle w3-display-hover">
 						<button class="w3-button w3-black" onclick="document.getElementById('BuyModal').style.display='block'">Add to Cart <i class="fa fa-shopping-cart"></i></button>
 						</div>
@@ -373,7 +305,7 @@
 			<div class="w3-col l3 s6">
 				<div class="w3-container">
 					<div class="w3-display-container">
-					<img src="Other Website/NandC/q.png" style="width:100%">
+					<img src="/Challenge 11/images/NandC/q.png" style="width:100%">
 						<div class="w3-display-middle w3-display-hover">
 						<button class="w3-button w3-black" onclick="document.getElementById('BuyModal').style.display='block'">Add to Cart <i class="fa fa-shopping-cart"></i></button>
 						</div>
@@ -382,7 +314,7 @@
 				</div>
 				<div class="w3-container">
 					<div class="w3-display-container">
-					<img src="Other Website/NandC/r.png" style="width:100%">
+					<img src="/Challenge 11/images/NandC/r.png" style="width:100%">
 						<div class="w3-display-middle w3-display-hover">
 						<button class="w3-button w3-black" onclick="document.getElementById('BuyModal').style.display='block'">Add to Cart <i class="fa fa-shopping-cart"></i></button>
 						</div>
@@ -394,7 +326,7 @@
 			<div class="w3-col l3 s6">
 				<div class="w3-container">
 					<div class="w3-display-container">
-					<img src="Other Website/NandC/s.png" style="width:100%">
+					<img src="/Challenge 11/images/NandC/s.png" style="width:100%">
 					<span class="w3-tag w3-display-topleft">New</span>
 						<div class="w3-display-middle w3-display-hover">
 						<button class="w3-button w3-black" onclick="document.getElementById('BuyModal').style.display='block'">Add to Cart <i class="fa fa-shopping-cart"></i></button>
@@ -404,7 +336,7 @@
 				</div>
 				<div class="w3-container">
 					<div class="w3-display-container">
-					<img src="Other Website/NandC/t.png" style="width:100%">
+					<img src="/Challenge 11/images/NandC/t.png" style="width:100%">
 						<div class="w3-display-middle w3-display-hover">
 						<button class="w3-button w3-black" onclick="document.getElementById('BuyModal').style.display='block'">Add to Cart <i class="fa fa-shopping-cart"></i></button>
 						</div>
@@ -416,7 +348,7 @@
 			<div class="w3-col l3 s6">
 				<div class="w3-container">
 					<div class="w3-display-container">
-					<img src="Other Website/NandC/u.png" style="width:100%">
+					<img src="/Challenge 11/images/NandC/u.png" style="width:100%">
 						<div class="w3-display-middle w3-display-hover">
 						<button class="w3-button w3-black" onclick="document.getElementById('BuyModal').style.display='block'">Add to Cart <i class="fa fa-shopping-cart"></i></button>
 						</div>
@@ -425,7 +357,7 @@
 				</div>
 				<div class="w3-container">
 					<div class="w3-display-container">
-					<img src="Other Website/NandC/v.png" style="width:100%">
+					<img src="/Challenge 11/images/NandC/v.png" style="width:100%">
 						<div class="w3-display-middle w3-display-hover">
 						<button class="w3-button w3-black" onclick="document.getElementById('BuyModal').style.display='block'">Add to Cart <i class="fa fa-shopping-cart"></i></button>
 						</div>
@@ -437,7 +369,7 @@
 			<div class="w3-col l3 s6">
 				<div class="w3-container">
 					<div class="w3-display-container">
-					<img src="Other Website/NandC/w.png" style="width:100%">
+					<img src="/Challenge 11/images/NandC/w.png" style="width:100%">
 						<div class="w3-display-middle w3-display-hover">
 						<button class="w3-button w3-black" onclick="document.getElementById('BuyModal').style.display='block'">Add to Cart <i class="fa fa-shopping-cart"></i></button>
 						</div>
@@ -446,7 +378,7 @@
 				</div>
 				<div class="w3-container">
 					<div class="w3-display-container">
-					<img src="Other Website/NandC/x.png" style="width:100%">
+					<img src="/Challenge 11/images/NandC/x.png" style="width:100%">
 						<div class="w3-display-middle w3-display-hover">
 						<button class="w3-button w3-black" onclick="document.getElementById('BuyModal').style.display='block'">Add to Cart <i class="fa fa-shopping-cart"></i></button>
 						</div>
@@ -461,7 +393,7 @@
 			<div class="w3-col l3 s6">
 				<div class="w3-container">
 					<div class="w3-display-container">
-					<img src="Other Website/ST&FD/1.png" style="width:100%">
+					<img src="/Challenge 11/images/ST&FD/1.png" style="width:100%">
 					<span class="w3-tag w3-display-topleft">New</span>
 						<div class="w3-display-middle w3-display-hover">
 						<button class="w3-button w3-black" onclick="document.getElementById('BuyModal').style.display='block'">Add to Cart <i class="fa fa-shopping-cart"></i></button>
@@ -471,7 +403,7 @@
 				</div>
 				<div class="w3-container">
 					<div class="w3-display-container">
-					<img src="Other Website/ST&FD/2.png" style="width:100%">
+					<img src="/Challenge 11/images/ST&FD/2.png" style="width:100%">										
 						<div class="w3-display-middle w3-display-hover">
 						<button class="w3-button w3-black" onclick="document.getElementById('BuyModal').style.display='block'">Add to Cart <i class="fa fa-shopping-cart"></i></button>
 						</div>
@@ -483,7 +415,7 @@
 			<div class="w3-col l3 s6">
 				<div class="w3-container">
 					<div class="w3-display-container">
-					<img src="Other Website/ST&FD/3.png" style="width:100%">
+					<img src="/Challenge 11/images/ST&FD/3.png" style="width:100%">
 					<span class="w3-tag w3-display-topleft">New</span>
 						<div class="w3-display-middle w3-display-hover">
 						<button class="w3-button w3-black" onclick="document.getElementById('BuyModal').style.display='block'">Add to Cart <i class="fa fa-shopping-cart"></i></button>
@@ -493,7 +425,7 @@
 				</div>
 				<div class="w3-container">
 					<div class="w3-display-container">
-					<img src="Other Website/ST&FD/4.png" style="width:100%">
+					<img src="/Challenge 11/images/ST&FD/4.png" style="width:100%">
 						<div class="w3-display-middle w3-display-hover">
 						<button class="w3-button w3-black" onclick="document.getElementById('BuyModal').style.display='block'">Add to Cart <i class="fa fa-shopping-cart"></i></button>
 						</div>
@@ -505,7 +437,7 @@
 			<div class="w3-col l3 s6">
 				<div class="w3-container">
 					<div class="w3-display-container">
-					<img src="Other Website/ST&FD/5.png" style="width:100%">
+					<img src="/Challenge 11/images/ST&FD/5.png" style="width:100%">
 					<span class="w3-tag w3-display-topleft">New</span>
 						<div class="w3-display-middle w3-display-hover">
 						<button class="w3-button w3-black" onclick="document.getElementById('BuyModal').style.display='block'">Add to Cart <i class="fa fa-shopping-cart"></i></button>
@@ -515,7 +447,7 @@
 				</div>
 				<div class="w3-container">
 					<div class="w3-display-container">
-					<img src="Other Website/ST&FD/6.png" style="width:100%">
+					<img src="/Challenge 11/images/ST&FD/6.png" style="width:100%">
 						<div class="w3-display-middle w3-display-hover">
 						<button class="w3-button w3-black" onclick="document.getElementById('BuyModal').style.display='block'">Add to Cart <i class="fa fa-shopping-cart"></i></button>
 						</div>
@@ -527,7 +459,7 @@
 			<div class="w3-col l3 s6">
 				<div class="w3-container">
 					<div class="w3-display-container">
-					<img src="Other Website/ST&FD/7.png" style="width:100%">
+					<img src="/Challenge 11/images/ST&FD/7.png" style="width:100%">
 						<div class="w3-display-middle w3-display-hover">
 						<button class="w3-button w3-black" onclick="document.getElementById('BuyModal').style.display='block'">Add to Cart <i class="fa fa-shopping-cart"></i></button>
 						</div>
@@ -536,7 +468,7 @@
 				</div>
 				<div class="w3-container">
 					<div class="w3-display-container">
-					<img src="Other Website/ST&FD/8.png" style="width:100%">
+					<img src="/Challenge 11/images/ST&FD/8.png" style="width:100%">
 					<span class="w3-tag w3-display-topleft">New</span>
 						<div class="w3-display-middle w3-display-hover">
 						<button class="w3-button w3-black" onclick="document.getElementById('BuyModal').style.display='block'">Add to Cart <i class="fa fa-shopping-cart"></i></button>
@@ -552,7 +484,7 @@
 			<div class="w3-col l3 s6">
 				<div class="w3-container">
 					<div class="w3-display-container">
-					<img src="Other Website/SD&J/9.png" style="width:100%">
+					<img src="/Challenge 11/images/SD&J/9.png" style="width:100%">
 						<div class="w3-display-middle w3-display-hover">
 						<button class="w3-button w3-black" onclick="document.getElementById('BuyModal').style.display='block'">Add to Cart <i class="fa fa-shopping-cart"></i></button>
 						</div>
@@ -561,7 +493,7 @@
 				</div>
 				<div class="w3-container">
 					<div class="w3-display-container">
-					<img src="Other Website/SD&J/10.png" style="width:100%">
+					<img src="/Challenge 11/images/SD&J/10.png" style="width:100%">
 						<div class="w3-display-middle w3-display-hover">
 						<button class="w3-button w3-black" onclick="document.getElementById('BuyModal').style.display='block'">Add to Cart <i class="fa fa-shopping-cart"></i></button>
 						</div>
@@ -573,7 +505,7 @@
 			<div class="w3-col l3 s6">
 				<div class="w3-container">
 					<div class="w3-display-container">
-					<img src="Other Website/SD&J/11.png" style="width:100%">
+					<img src="/Challenge 11/images/SD&J/11.png" style="width:100%">
 					<span class="w3-tag w3-display-topleft">New</span>
 						<div class="w3-display-middle w3-display-hover">
 						<button class="w3-button w3-black" onclick="document.getElementById('BuyModal').style.display='block'">Add to Cart <i class="fa fa-shopping-cart"></i></button>
@@ -583,7 +515,7 @@
 				</div>
 				<div class="w3-container">
 					<div class="w3-display-container">
-					<img src="Other Website/SD&J/12.png" style="width:100%">
+					<img src="/Challenge 11/images/SD&J/12.png" style="width:100%">
 						<div class="w3-display-middle w3-display-hover">
 						<button class="w3-button w3-black" onclick="document.getElementById('BuyModal').style.display='block'">Add to Cart <i class="fa fa-shopping-cart"></i></button>
 						</div>
@@ -595,7 +527,7 @@
 			<div class="w3-col l3 s6">
 				<div class="w3-container">
 					<div class="w3-display-container">
-					<img src="Other Website/SD&J/13.png" style="width:100%">
+					<img src="/Challenge 11/images/SD&J/13.png" style="width:100%">
 					<span class="w3-tag w3-display-topleft">New</span>
 						<div class="w3-display-middle w3-display-hover">
 						<button class="w3-button w3-black" onclick="document.getElementById('BuyModal').style.display='block'">Add to Cart <i class="fa fa-shopping-cart"></i></button>
@@ -605,7 +537,7 @@
 				</div>
 				<div class="w3-container">
 					<div class="w3-display-container">
-					<img src="Other Website/SD&J/14.png" style="width:100%">
+					<img src="/Challenge 11/images/SD&J/14.png" style="width:100%">
 						<div class="w3-display-middle w3-display-hover">
 						<button class="w3-button w3-black" onclick="document.getElementById('BuyModal').style.display='block'">Add to Cart <i class="fa fa-shopping-cart"></i></button>
 						</div>
@@ -617,7 +549,7 @@
 			<div class="w3-col l3 s6">
 				<div class="w3-container">
 					<div class="w3-display-container">
-					<img src="Other Website/SD&J/15.png" style="width:100%">
+					<img src="/Challenge 11/images/SD&J/15.png" style="width:100%">
 						<div class="w3-display-middle w3-display-hover">
 						<button class="w3-button w3-black" onclick="document.getElementById('BuyModal').style.display='block'">Add to Cart <i class="fa fa-shopping-cart"></i></button>
 						</div>
@@ -626,7 +558,7 @@
 				</div>
 				<div class="w3-container">
 					<div class="w3-display-container">
-					<img src="Other Website/SD&J/16.png" style="width:100%">
+					<img src="/Challenge 11/images/SD&J/15.png" style="width:100%">
 						<div class="w3-display-middle w3-display-hover">
 						<button class="w3-button w3-black" onclick="document.getElementById('BuyModal').style.display='block'">Add to Cart <i class="fa fa-shopping-cart"></i></button>
 						</div>
