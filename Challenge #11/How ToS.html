@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>W3Schools How-Tos</title>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></script>
+</head>
+<body>
+
+<div class="w3-container w3-teal">
+  <h1>W3Schools How-Tos</h1>
+  <p>Learn web development with free tutorials!</p>
+  <div class="w3-bar">
+    <button class="w3-bar-item w3-button w3-mobile w3-white" onclick="openSearch()">Search Tutorials <i class="fa fa-search"></i></button>
+    <div id="searchBox" class="w3-bar-item w3-hide w3-mobile">
+      <input class="w3-input w3-round-large" type="text" placeholder="Search Tutorials">
+    </div>
+  </div>
+
+  <div class="w3-container w3-content w3-left w3-padding-32" style="max-width:500px">
+    <h2>Interactive Tutorials</h2>
+    <ul class="w3-ul w3-hoverable">
+      <li onclick="openTutorial('HTML Introduction')">HTML Introduction</li>
+      <li onclick="openTutorial('CSS Basics')">CSS Basics</li>
+      <li onclick="openTutorial('JavaScript Fundamentals')">JavaScript Fundamentals</li>
+      <li onclick="openTutorial('Learn Python')">Learn Python</li>
+    </ul>
+
+    <div id="tutorialContent" class="w3-container w3-border"></div>
+  </div>
+
+  <div class="w3-container">
+    <h2>Track Your Progress</h2>
+    <p>Mark completed tutorials (This feature requires cookies or server-side storage for persistence):</p>
+    <ul class="w3-ul">
+      <li>HTML Introduction <i class="fa fa-star w3-text-yellow" id="htmlStar" onclick="toggleStar(this.id)"></i></li>
+      <li>CSS Basics (Not completed) <i class="fa fa-star-o w3-text-yellow" id="cssStar" onclick="toggleStar(this.id)"></i></li>
+    </ul>
+  </div>
+  <div class="w3-container w3-left">
+    <h2>Interactive Quiz</h2>
+    <p>Test your knowledge with this short quiz!</p>
+    <div id="quizContainer"></div>
+    <button class="w3-button w3-green" onclick="checkAnswers()">Check Answers</button>
+  </div>
+  
+  <div class="w3-container">
+  <h2>Frequently Asked Questions</h2>
+  
+  <button class="w3-button w3-block w3-dark-grey w3-left-align" onclick="openAccordion(event)">What is W3Schools?</button>
+  <div class="w3-container w3-border w3-hide">
+    <p>W3Schools is a free online web development tutorial website. It offers a wide range of tutorials on HTML, CSS, JavaScript, SQL, PHP, Python, and many more.</p>
+  </div>
+  
+  <button class="w3-button w3-block w3-dark-grey w3-left-align" onclick="openAccordion(event)">How do I get started?</button>
+  <div class="w3-container w3-border w3-hide">
+    <p>Simply browse through the tutorials or search for a specific topic. You can also try out the interactive exercises to practice your skills.</p>
+  </div>
+</div>
+
+
+ <script>
+function openSearch() {
+  document.getElementById("searchBox").classList.toggle("w3-show");
+}
+
+function openTutorial(tutorialName) {
+  var content = document.getElementById("tutorialContent");
+  content.innerHTML = "<h2>" + tutorialName + "</h2><p>Loading tutorial content...</p>";
+
+  fetchTutorialContentFromDatabase(tutorialName)
+    .then(function(tutorialContent) {
+      content.innerHTML = "<h2>" + tutorialName + "</h2>" + tutorialContent;
+    })
+    .catch(function(error) {
+      content.innerHTML = "<h2>" + tutorialName + "</h2><p>Error loading tutorial content: " + error + "</p>";
+    });
+}
+
+function toggleStar(starId) {
+  var star = document.getElementById(starId);
+  if (star.classList.contains("fa-star")) {
+    star.classList.remove("fa-star");
+    star.classList.add("fa-star-o");
+  } else {
+    star.classList.remove("fa-star-o");
+    star.classList.add("fa-star");
+  }
+}
+
+function openAccordion(event) {
+  // Get all accordion content containers
+  var accordionContents = document.querySelectorAll(".w3-container.w3-hide");
+
+  // Loop through all accordion containers and hide them
+  for (var i = 0; i < accordionContents.length; i++) {
+    // Hide the sections that are currently open
+    accordionContents[i].classList.add("w3-hide");
+  }
+
+  // Get the content div that follows the clicked button
+  var contentDiv = event.currentTarget.nextElementSibling;
+
+  // Toggle the visibility of the clicked accordion's content
+  if (contentDiv.classList.contains("w3-hide")) {
+    contentDiv.classList.remove("w3-hide");
+  } else {
+    contentDiv.classList.add("w3-hide");
+  }
+}
+
+
+// Quiz questions
+const quizQuestions = [
+  {
+    question: "What is HTML?",
+    options: [
+      "Hyper Text Markup Language",
+      "Hyper Text Machine Language",
+      "Hyper Text Model Language",
+      "Hyper Text Mark Language"
+    ],
+    correctAnswer: 0
+  },
+  // Add more questions here if necessary
+];
+
+function displayQuiz() {
+  const quizContainer = document.getElementById("quizContainer");
+  quizContainer.innerHTML = "";  // Clear previous content
+
+  quizQuestions.forEach((question, index) => {
+    const questionElement = document.createElement("div");
+    questionElement.classList.add("quiz-question");
+
+    questionElement.innerHTML = `
+      <p>${question.question}</p>
+      <ul>
+        ${question.options.map((option, i) => `
+          <li>
+            <input type="radio" name="q${index}" value="${i}" id="q${index}_option${i}">
+            <label for="q${index}_option${i}">${option}</label>
+          </li>
+        `).join('')}
+      </ul>
+    `;
+    quizContainer.appendChild(questionElement);
+  });
+}
+
+// Function to check answers
+function checkAnswers() {
+  let score = 0;
+  let feedback = "";
+
+  quizQuestions.forEach((question, index) => {
+    const selectedOption = document.querySelector(`input[name="q${index}"]:checked`);
+
+    if (selectedOption) {
+      const selectedAnswer = parseInt(selectedOption.value, 10);
+      if (selectedAnswer === question.correctAnswer) {
+        score++;
+        feedback += `<p>Question ${index + 1}: Correct!</p>`;
+      } else {
+        feedback += `<p>Question ${index + 1}: Incorrect! The correct answer was "${question.options[question.correctAnswer]}".</p>`;
+      }
+    } else {
+      feedback += `<p>Question ${index + 1}: You didn't answer this question.</p>`;
+    }
+  });
+
+  alert(`You got ${score} out of ${quizQuestions.length} questions correct!`);
+  document.getElementById("feedback").innerHTML = feedback;
+}
+
+// Display the quiz when the page loads
+window.onload = displayQuiz;
+</script>
+
+	<footer class="footer" style="text-align: center;">
+		<p>&copy; 2024 The Gearhead's Garage</p>
+	</footer>
+</body>
+</html>
