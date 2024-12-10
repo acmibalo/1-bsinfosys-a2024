@@ -5,13 +5,13 @@ body {
     font-size: 20px;
     margin: 0;
     padding: 0;
-    background: radial-gradient(circle, #f6c3ef, #f6c3df, #f6c3cf, #f6c3bf, #f6c3af);
+    background: radial-gradient(circle, #f6c3ef, #f6c3df, #f6c3cf, #f6c3bf, #f6c3af);;
     overflow-x: hidden;
 }
 
 header {
     width: 100%;
-    height: auto; 
+    height: auto;
     background: #453f3d;
     font-family: Garamond;
     font-size: 50px;
@@ -23,6 +23,11 @@ header {
     text-align: center;
     padding: 4px 0;
 }
+
+.header h1 {
+    color: #d0a090;
+}
+
 nav {
     font-family: Garamond;
     position: sticky;
@@ -35,7 +40,6 @@ nav {
     padding: 0 20px;
     z-index: 10;
 }
-
 
 .logo {
     display: flex;
@@ -98,30 +102,27 @@ nav {
     background: gray;
     margin: 3px;
 }
-
+ 
 main {
     display: flex;
     padding: 1em;
-    flex-wrap: wrap;
-    background: radial-gradient(circle, #f6c3ef, #f6c3df, #f6c3cf, #f6c3bf, #f6c3af);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    min-height: 100vh;
-    width: 100%;
+    flex-wrap: wrap; /* Ensure content wraps on smaller screens */
+    background-color: radial-gradient(circle, #f6c3ef, #f6c3df, #f6c3cf, #f6c3bf, #f6c3af);
+    font-family: garamond;
 }
 
 section {
+    border: 5px solid white;
     padding: 2em;
-    background: rgba(255, 255, 255, 0.7);
-    flex: 1;
+    background: white;
+    flex: 1; /* Allow section to expand */
 }
 
 
 aside {
     flex: 1;
     padding: 1em;
-    background: WHITE;
+    background: white;
     margin-right: 30px;
 }
 
@@ -137,31 +138,20 @@ aside img {
 aside p {
     flex: 1;
     padding: 1em;
-    background: WHITE;
+    background: white;
     margin-right: 30px;
-    color: black;
-    text-align: center;
-    margin-top: 130px;
-    font-size: 78px;
-    font-family: garamond;
-    border: #453f3d;
-
 }
 
 article {
-    margin-top: 0;
+    margin-top: 80px;
     padding: 1em;
-    background-image: url(mylove.jpeg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    background: #c5ae9f;
     border: 1px solid #ddd;
     width: 100%;
-    min-height: 100vh;
-    box-sizing: border-box;
-   justify-content: center; 
-    color: white;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    box-sizing: border-box; /* Ensures padding and border are included in the total width and height */
+    font-family: Garamond;
+    font-size: 130%;
+    justify-content: center;
 }
 
 footer {
@@ -169,16 +159,14 @@ footer {
     color: white;
     text-align: center;
     padding: 1em;
-    font-family: garamond;
+    font-family: Garamond;
 }
 
 @media (max-width: 766px) {
-	
-	
-	header { 
-	font-size: 30px; 
-	padding: 2px 0; /* Adjust padding for smaller screens */ 
-	}
+    header {
+        font-size: 30px;
+        padding: 2px 0; /* Adjust padding for smaller screens */
+    }
 
     nav {
         flex-wrap: wrap;
@@ -232,13 +220,14 @@ footer {
         justify-content: center;
         margin-top: 1em;
         position: relative;
-        font-family: garamond;
+        font-family: Garamond;
     }
+
     aside p {
         display: flex;
         justify-content: center;
         margin-top: 1em;
         position: relative;
-        font-family: garamond;
+        font-family: Garamond;
     }
-}    
+}

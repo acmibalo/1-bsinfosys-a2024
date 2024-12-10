@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", () => {
         try {
             await new Promise((resolve) => setTimeout(resolve, 2000)); // Simulate server delay
 
-            formMessage.textContent = Thank you, ${name}! Your message has been sent successfully.;
+            formMessage.textContent = `Thank you, ${name}! Your message has been sent successfully.`;
             formMessage.style.color = "green";
 
             // Clear the form
