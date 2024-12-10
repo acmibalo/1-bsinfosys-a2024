@@ -1,0 +1,81 @@
+header {
+		background-color: #FF8400;
+		padding: 30px;
+		text-align: center;
+		font-size: 35px;
+		color: white;
+	}
+	nav {
+		float: left;
+		width: 20%;
+		background: #4F200D;
+		padding: 20px;
+		height: 490px;
+	}
+	nav ul {
+		list-style-type: none;
+		padding: 0;
+	}
+	nav ul li a {
+		display: block;
+		padding: 20px;
+		background-color: #FBFBFB;
+		margin-bottom: 5px;
+		text-decoration: none;
+		color: black;
+	}
+	nav ul li a:hover {
+		background-color: #FBFBFB;
+	}
+	article {
+		display: none;
+		float: left;
+		padding: 20px;
+		width: 50%;
+		background-color: #F0A500;
+	}
+	article:target {
+		display: block;
+	}
+	.images {
+		float: left;
+		width: 30%;
+		background: #FFD93D;
+		padding: 20px;
+		height: 490px;
+	}
+	.images img {
+		display: none;
+		width: 100%;
+		height: auto;
+		margin-bottom: 10px;
+	}
+	#blog1:target ~ .images #blog1Image,
+	#blog2:target ~ .images #blog2Image,
+	#blog3:target ~ .images #blog3Image {
+		display: block;
+	}
+	section::after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+	.white-text {
+		color: white;
+	}
+	article h3 {
+		color: white;
+	}
+	footer {
+		background-color: #FF8400;
+		padding: 10px;
+		text-align: center;
+		color: white;
+	}
+	@media (max-width: 600px) {
+		nav, article, .images {
+			width: 100%;
+			height: auto;
+		}
+	}
+

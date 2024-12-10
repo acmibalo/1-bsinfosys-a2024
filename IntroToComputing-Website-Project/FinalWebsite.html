@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Silvestre | Website</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="keywords" content="layout, design, portfolio, table setup, gallery">
+    <meta name="description" content="Welcome to Food Craze Express, your go-to destination for gourmet coffees, yogurts, cereals, nuts, chips, sweet treats, frozen desserts, soft drinks, and juices.">
+    <meta name="author" content="Nicole Silvestre">
+	<link rel="stylesheet" href="FinalWebsiteStyles.css">
+</head>
+
+<body>
+
+    <div class="w3-top w3-bar w3-wide w3-black w3-padding w3-card" style="overflow: visible;">
+        
+        <div class="w3-left">
+            <div class="w3-dropdown-click dropdown" style="position: relative;">
+                <a href="javascript:void(0)" class="w3-bar-item w3-text-amber w3-button" onclick="toggleDropdown()"><b>FOOD CRAZE EXPRESS</b></a>
+                <div id="myDropdown" class="w3-dropdown-content w3-bar-block w3-border"> 
+				<header class="w3-container">
+					<span onclick="document.getElementById('myDropdown').style.display='none'" class="w3-button w3-display-topright">&times;</span> 
+					<h4>Categories</h4>
+				</header>
+				<a href="#gc" onclick="document.getElementById('gc').style.display='block'" class="w3-bar-item w3-button">GOURMET COFFEES</a>
+                <a href="#yc" onclick="document.getElementById('yc').style.display='block'" class="w3-bar-item w3-button">YOGURTS & CEREALS</a>
+                <a href="#nc" onclick="document.getElementById('nc').style.display='block'" class="w3-bar-item w3-button">NUTS & CHIPS</a>
+                <a href="#stfd" onclick="document.getElementById('stfd').style.display='block'" class="w3-bar-item w3-button">SWEET TREATS & FROZEN DESSERTS</a>
+                <a href="#sdj" onclick="document.getElementById('sdj').style.display='block'" class="w3-bar-item w3-button">SOFT DRINKS & JUICES</a>
+                </div>
+            </div>
+        </div>
+       
+        <div class=" w3-bar-item w3-center w3-hide-small" style="width:40%;">
+			<form action="/action_page.php" method="get">
+				<input type="text" id="searchInput" class="w3-input search-bar" placeholder="Search">
+			</form>
+	   </div>
+       
+        <div class="w3-right w3-hide-small">
+			<a href="#home" class="w3-text-amber w3-bar-item w3-button">Home</a>
+			<div class="w3-dropdown-click" style="position: relative;">
+			<a href="javascript:void(0)" class="w3-text-amber w3-bar-item w3-button" onclick="toggleProfileDropdown()">Profile</a>
+				<div id="profileDropdown" class="w3-dropdown-content w3-bar-block w3-border" style="display:none;">
+					<header class="w3-container">
+						<span onclick="document.getElementById('profileDropdown').style.display='none'" class="w3-button w3-display-topright">&times;</span> 
+						<h4>Categories</h4>
+					</header>
+					<a href="#aboutMe" class="w3-bar-item w3-button">About Me</a> 
+					<a href="#aboutWebsite" class="w3-bar-item w3-button">About This Website</a> 
+				</div> 
+			</div>
+			<a href="#contact" class="w3-text-amber w3-bar-item w3-button">Contact</a>
+			<div class="w3-dropdown-click" style="position: relative;">
+			<a href="javascript:void(0)" class="w3-text-amber w3-bar-item w3-button" onclick="toggleSettingsDropdown()">Settings</a>
+				<div id="settingsDropdown" class="w3-dropdown-content w3-bar-block w3-border" style="display:none;"> 
+					<header class="w3-container">
+						<span onclick="document.getElementById('settingsDropdown').style.display='none'" class="w3-button w3-display-topright">&times;</span> 
+						<h4>Categories</h4>
+					</header>
+					<a href="/IntroToComputing-Website-Project/Link/theme-setting.html" class="w3-bar-item w3-button">Theme</a> 
+					<a href="/IntroToComputing-Website-Project/Link/language-setting.html" class="w3-bar-item w3-button">language</a> 
+				</div> 
+			</div>
+		</div>
+    </div>
+	
+	<div class="w3-content w3-padding" style="max-width:1564px">
+	
+		<div id="home" style="max-width: 100%;">
+			<div style="position: relative; max-width: 100%;">
+				<img src="/IntroToComputing-Website-Project/images/fce.png" alt="fce" style="width: 100%; height: auto;">
+				<div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center; width: 100%;">
+					<h1 style="color: white; text-shadow: 0 0 20px #FAB12F; font-size: 58px;"><b>FOOD CRAZE EXPRESS</b></h1>
+					<h2 style="color: white; text-shadow: 0 0 20px #000;" class="w3-hide-small"><b>Instant Needs, Instant Deliveries</b></h2>
+					<button onclick="toggleLoginForm()" style="padding: 10px 20px; margin-top: 10px; background-color: black; color: white; border: none; cursor: pointer;">Shop Now and Save Big</button>
+					<div id="Login" style="display: none; background-color: lightgrey; padding: 20px; max-width: 90%; margin: auto;">
+						<h2>Log In</h2>
+						<p><label style="color: black;">Username</label></p>
+						<p><input type="text" placeholder="Enter Username" name="username" required style="width: 100%; padding: 10px;"></p>
+						<p><label style="color: black;">Password</label></p>
+						<p><input type="password" placeholder="Enter Password" name="password" required style="width: 100%; padding: 10px;"></p>
+						<p>By creating an account you agree to our <a href="/IntroToComputing-Website-Project/Link/terms-privacy.html">Terms & Privacy</a>.</p>
+						<button type="submit" style="width: 100%; background-color: black; color: white; padding: 15px; border: none; cursor: pointer;">Login</button>
+						<p>Already have an account? <a href="/IntroToComputing-Website-Project/Link/sign-in.html">Sign in</a>.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div style="width: 100%; max-width: 100%; height: auto; overflow: hidden;">
+		<video width="100%" height="auto" controls>
+			<source src="/IntroToComputing-Website-Project/videos/Video.mp4" type="video/mp4">
+			<source src="/IntroToComputing-Website-Project/videos/Video.mov" type="video/ogg">
+		</video>
+		</div>
+
+		<div class="mySlides w3-display-container w3-center">
+			<img src="/IntroToComputing-Website-Project/images/slideshow 3.png" style="width:100%">
+			<div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">   
+			</div>
+		</div>
+  
+		<div class="mySlides w3-display-container w3-center">
+			<img src="/IntroToComputing-Website-Project/images/slideshow 2.png" style="width:100%">
+			<div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">  
+			</div>
+		</div>
+  
+		<div class="mySlides w3-display-container w3-center">
+			<img src="/IntroToComputing-Website-Project/images/slideshow 1.png" style="width:100%">
+			<div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">   
+			</div>
+		</div>
+
+		<div id="gc" class="w3-row w3-container w3-padding-32 w3-modal w3-modal-content w3-animate-zoom">
+		<span onclick="document.getElementById('gc').style.display='none'" class="w3-button w3-display-topright w3-large">x</span></span>
+			<div class="w3-col l3 s6">
+				<div class="w3-container">
+					<div class="w3-display-container">
+					<img src="/IntroToComputing-Website-Project/images/Gourmet Coffee/a.png" style="width:100%">
+						<div class="w3-display-middle w3-display-hover">
+						<button class="w3-button w3-black" onclick="document.getElementById('BuyModal').style.display='block'">Add to Cart <i class="fa fa-shopping-cart"></i></button>
+						</div>
+					</div>
+					<p>Aurora Beans 'Lavender Latte<br><b>$1.87</b></p>
+				</div>
+				<div class="w3-container">
+					<div class="w3-display-container">
+					<img src="/IntroToComputing-Website-Project/images/Gourmet Coffee/b.png" style="width:100%">
+						<div class="w3-display-middle w3-display-hover">
+						<button class="w3-button w3-black" onclick="document.getElementById('BuyModal').style.display='block'">Add to Cart <i class="fa fa-shopping-cart"></i></button>
+						</div>
+					</div>
+					<p>Aurora Beans 'Almond Amaretto'<br><b>$1.87</b></p>
+				</div>
+			</div>
+	  
+			<div class="w3-col l3 s6">
+				<div class="w3-container">
+					<div class="w3-display-container">
+					<img src="/IntroToComputing-Website-Project/images/Gourmet Coffee/c.png" style="width:100%">
+					<span class="w3-tag w3-display-topleft">New</span>
+						<div class="w3-display-middle w3-display-hover">
+						<button class="w3-button w3-black" onclick="document.getElementById('BuyModal').style.display='block'">Add to Cart <i class="fa fa-shopping-cart"></i></button>
+						</div>
+					</div>
+					<p>Aurora Beans 'Caramel Cascade'<br><b>$1.87</b></p>
+				</div>
+				<div class="w3-container">
+					<div class="w3-display-container">
+					<img src="/IntroToComputing-Website-Project/images/Gourmet Coffee/f.png" style="width:100%">
+					<span class="w3-tag w3-display-topleft">New</span>
+						<div class="w3-display-middle w3-display-hover">
+						<button class="w3-button w3-black" onclick="document.getElementById('BuyModal').style.display='block'">Add to Cart <i class="fa fa-shopping-cart"></i></button>
+						</div>
+					</div>
+					<p>Aurora Beans 'Peppermint Twist'<br><b>$1.87</b></p>
+				</div>
+			</div>
+	  
+			<div class="w3-col l3 s6">
+				<div class="w3-container">
+					<div class="w3-display-container">
+					<img src="/IntroToComputing-Website-Project/images/Gourmet Coffee/d.png" style="width:100%">
+						<div class="w3-display-middle w3-display-hover">
+						<button class="w3-button w3-black" onclick="document.getElementById('BuyModal').style.display='block'">Add to Cart <i class="fa fa-shopping-cart"></i></button>
+						</div>
+					</div>
+					<p>Grandeur Brews 'Cafe en Laut'<br><b>$1.36</b></p>
+				</div>
+				<div class="w3-container">
+					<div class="w3-display-container">
+					<img src="/IntroToComputing-Website-Project/images/Gourmet Coffee/e.png" style="width:100%">
+						<div class="w3-display-middle w3-display-hover">
+						<button class="w3-button w3-black" onclick="document.getElementById('BuyModal').style.display='block'">Add to Cart <i class="fa fa-shopping-cart"></i></button>
+						</div>
+					</div>
+					<p>Grandeur Brews 'Heritage Blend'<br><b>$1.36</b></p>
+				</div>
+			</div>
+	  
+			<div class="w3-col l3 s6">
+				<div class="w3-container">
+					<div class="w3-display-container">
+					<img src="/IntroToComputing-Website-Project/images/Gourmet Coffee/g.png" style="width:100%">
+						<div class="w3-display-middle w3-display-hover">
+						<button class="w3-button w3-black" onclick="document.getElementById('BuyModal').style.display='block'">Add to Cart <i class="fa fa-shopping-cart"></i></button>
+						</div>
+					</div>
+					<p>Chateau Coffee<br><b>$1.36</b></p>
+				</div>
+				<div class="w3-container">
+					<div class="w3-display-container">
+					<img src="/IntroToComputing-Website-Project/images/Gourmet Coffee/h.png" style="width:100%">
+						<div class="w3-display-middle w3-display-hover">
+						<button class="w3-button w3-black" onclick="document.getElementById('BuyModal').style.display='block'">Add to Cart <i class="fa fa-shopping-cart"></i></button>
+						</div>
+					</div>
+					<p>Chateau Coffee - Sticks<br><b>$1.02</b></p>
+				</div>
+			</div>
+		</div>
+	
+		<div id="yc" class="w3-row w3-container w3-padding-32 w3-modal w3-modal-content w3-animate-zoom">
+		<span onclick="document.getElementById('yc').style.display='none'" class="w3-button w3-display-topright w3-large">x</span></span>
+			<div class="w3-col l3 s6">
+				<div class="w3-container">
+					<div class="w3-display-container">
+					<img src="/IntroToComputing-Website-Project/images/YandC/j.png" style="width:100%">
+						<div class="w3-display-middle w3-display-hover">
+						<button class="w3-button w3-black" onclick="document.getElementById('BuyModal').style.display='block'">Add to Cart<i class="fa fa-shopping-cart"></i></button>
+						</div>
+					</div>
+					<p>Cereal Guy<br><b>$4.77</b></p>
+				</div>
+				<div class="w3-container">
+					<div class="w3-display-container">
+					<img src="/IntroToComputing-Website-Project/images/YandC/o.png" style="width:100%">
+						<div class="w3-display-middle w3-display-hover">
+						<button class="w3-button w3-black" onclick="document.getElementById('BuyModal').style.display='block'">Add to Cart <i class="fa fa-shopping-cart"></i></button>
+						</div>
+					</div>
+					<p>FroYo 'Pineapple'<br><b>$1.02</b></p>
+				</div>
+			</div>
+	  
+			<div class="w3-col l3 s6">
+				<div class="w3-container">
+					<div class="w3-display-container">
+					<img src="/IntroToComputing-Website-Project/images/YandC/i.png" style="width:100%">
+						<div class="w3-display-middle w3-display-hover">
+						<button class="w3-button w3-black" onclick="document.getElementById('BuyModal').style.display='block'">Add to Cart <i class="fa fa-shopping-cart"></i></button>
+						</div>
+					</div>
+					<p>Pink Puffs<br><b>$4.77</b></p>
+				</div>
+				<div class="w3-container">
+					<div class="w3-display-container">
+					<img src="/IntroToComputing-Website-Project/images/YandC/n.png" style="width:100%">
+					<span class="w3-tag w3-display-topleft">New</span>
+						<div class="w3-display-middle w3-display-hover">
+						<button class="w3-button w3-black" onclick="document.getElementById('BuyModal').style.display='block'">Add to Cart <i class="fa fa-shopping-cart"></i></button>
+						</div>
+					</div>
+					<p>FroYo 'Avocado'<br><b>$1.02</b></p>
+				</div>
+			</div>
+	  
+			<div class="w3-col l3 s6">
+				<div class="w3-container">
+					<div class="w3-display-container">
+					<img src="/IntroToComputing-Website-Project/images/YandC/k.png" style="width:100%">
+						<div class="w3-display-middle w3-display-hover">
+						<button class="w3-button w3-black" onclick="document.getElementById('BuyModal').style.display='block'">Add to Cart <i class="fa fa-shopping-cart"></i></button>
+						</div>
+					</div>
+					<p>Oat Burst<br><b>$1.02</b></p>
+				</div>
+				<div class="w3-container">
+					<div class="w3-display-container">
+					<img src="/IntroToComputing-Website-Project/images/YandC/p.png" style="width:100%">
+					<span class="w3-tag w3-display-topleft">New</span>
+						<div class="w3-display-middle w3-display-hover">
+						<button class="w3-button w3-black" onclick="document.getElementById('BuyModal').style.display='block'">Add to Cart <i class="fa fa-shopping-cart"></i></button>
+						</div>
+					</div>
+					<p>FroYo 'Papaya'<br><b>$1.02</b></p>
+				</div>
+			</div>
+	  
+			<div class="w3-col l3 s6">
+				<div class="w3-container">
+					<div class="w3-display-container">
+					<img src="/IntroToComputing-Website-Project/images/YandC/l.png" style="width:100%">
+						<div class="w3-display-middle w3-display-hover">
+						<button class="w3-button w3-black" onclick="document.getElementById('BuyModal').style.display='block'">Add to Cart <i class="fa fa-shopping-cart"></i></button>
+						</div>
+					</div>
+					<p>Yogee 'Strawberry'<br><b>$1.02</b></p>
+				</div>
+				<div class="w3-container">
+					<div class="w3-display-container">
+					<img src="/IntroToComputing-Website-Project/images/YandC/m.png" style="width:100%">
+						<div class="w3-display-middle w3-display-hover">
+						<button class="w3-button w3-black" onclick="document.getElementById('BuyModal').style.display='block'">Add to Cart <i class="fa fa-shopping-cart"></i></button>
+						</div>
+					</div>
+					<p>Yogee 'Plum'<br><b>$19.99</b></p>
+				</div>
+			</div>
+		</div>
+	
+		<div id="nc" class="w3-row w3-container w3-padding-32 w3-modal w3-modal-content w3-animate-zoom">
+		<span onclick="document.getElementById('nc').style.display='none'" class="w3-button w3-display-topright w3-large">x</span></span>
+			<div class="w3-col l3 s6">
+				<div class="w3-container">
+					<div class="w3-display-container">
+					<img src="/IntroToComputing-Website-Project/images/NandC/q.png" style="width:100%">
+						<div class="w3-display-middle w3-display-hover">
+						<button class="w3-button w3-black" onclick="document.getElementById('BuyModal').style.display='block'">Add to Cart <i class="fa fa-shopping-cart"></i></button>
+						</div>
+					</div>
+					<p>Crunch 'Berry Burst'<br><b>$0.51</b></p>
+				</div>
+				<div class="w3-container">
+					<div class="w3-display-container">
+					<img src="/IntroToComputing-Website-Project/images/NandC/r.png" style="width:100%">
+						<div class="w3-display-middle w3-display-hover">
+						<button class="w3-button w3-black" onclick="document.getElementById('BuyModal').style.display='block'">Add to Cart <i class="fa fa-shopping-cart"></i></button>
+						</div>
+					</div>
+					<p>Crunch 'Tropical Crunch'<br><b>$0.51</b></p>
+				</div>
+			</div>
+	  
+			<div class="w3-col l3 s6">
+				<div class="w3-container">
+					<div class="w3-display-container">
+					<img src="/IntroToComputing-Website-Project/images/NandC/s.png" style="width:100%">
+					<span class="w3-tag w3-display-topleft">New</span>
+						<div class="w3-display-middle w3-display-hover">
+						<button class="w3-button w3-black" onclick="document.getElementById('BuyModal').style.display='block'">Add to Cart <i class="fa fa-shopping-cart"></i></button>
+						</div>
+					</div>
+				<p>Fortune Flavors<br><b>$0.68</b></p>
+				</div>
+				<div class="w3-container">
+					<div class="w3-display-container">
+					<img src="/IntroToComputing-Website-Project/images/NandC/t.png" style="width:100%">
+						<div class="w3-display-middle w3-display-hover">
+						<button class="w3-button w3-black" onclick="document.getElementById('BuyModal').style.display='block'">Add to Cart <i class="fa fa-shopping-cart"></i></button>
+						</div>
+					</div>
+					<p>Munch Magic<br><b>$0.51</b></p>
+				</div>
+			</div>
+	  
+			<div class="w3-col l3 s6">
+				<div class="w3-container">
+					<div class="w3-display-container">
+					<img src="/IntroToComputing-Website-Project/images/NandC/u.png" style="width:100%">
+						<div class="w3-display-middle w3-display-hover">
+						<button class="w3-button w3-black" onclick="document.getElementById('BuyModal').style.display='block'">Add to Cart <i class="fa fa-shopping-cart"></i></button>
+						</div>
+					</div>
+					<p>Bite Bliss 'BBQ'<br><b>$0.51</b></p>
+				</div>
+				<div class="w3-container">
+					<div class="w3-display-container">
+					<img src="/IntroToComputing-Website-Project/images/NandC/v.png" style="width:100%">
+						<div class="w3-display-middle w3-display-hover">
+						<button class="w3-button w3-black" onclick="document.getElementById('BuyModal').style.display='block'">Add to Cart <i class="fa fa-shopping-cart"></i></button>
+						</div>
+					</div>
+					<p>Chippy Bliss 'Cheese'<br><b>$0.51</b></p>
+				</div>
+			</div>
+	  
+			<div class="w3-col l3 s6">
+				<div class="w3-container">
+					<div class="w3-display-container">
+					<img src="/IntroToComputing-Website-Project/images/NandC/w.png" style="width:100%">
+						<div class="w3-display-middle w3-display-hover">
+						<button class="w3-button w3-black" onclick="document.getElementById('BuyModal').style.display='block'">Add to Cart <i class="fa fa-shopping-cart"></i></button>
+						</div>
+					</div>
+					<p>Banana Chips<br><b>$1.36</b></p>
+				</div>
+				<div class="w3-container">
+					<div class="w3-display-container">
+					<img src="/IntroToComputing-Website-Project/images/NandC/x.png" style="width:100%">
+						<div class="w3-display-middle w3-display-hover">
+						<button class="w3-button w3-black" onclick="document.getElementById('BuyModal').style.display='block'">Add to Cart <i class="fa fa-shopping-cart"></i></button>
+						</div>
+					</div>
+					<p>Mixed Nuts 'Smokey BBQ'<br><b>$1.02</b></p>
+				</div>
+			</div>
+		</div>
+	
+		<div id="stfd" class="w3-row w3-container w3-padding-32 w3-modal w3-modal-content w3-animate-zoom">
+		<span onclick="document.getElementById('stfd').style.display='none'" class="w3-button w3-display-topright w3-large">x</span></span>
+			<div class="w3-col l3 s6">
+				<div class="w3-container">
+					<div class="w3-display-container">
+					<img src="/IntroToComputing-Website-Project/images/ST&FD/1.png" style="width:100%">
+					<span class="w3-tag w3-display-topleft">New</span>
+						<div class="w3-display-middle w3-display-hover">
+						<button class="w3-button w3-black" onclick="document.getElementById('BuyModal').style.display='block'">Add to Cart <i class="fa fa-shopping-cart"></i></button>
+						</div>
+					</div>
+					<p>Sorbetto 'Choco'<br><b>$0.51</b></p>
+				</div>
+				<div class="w3-container">
+					<div class="w3-display-container">
+					<img src="/IntroToComputing-Website-Project/images/ST&FD/2.png" style="width:100%">
+						<div class="w3-display-middle w3-display-hover">
+						<button class="w3-button w3-black" onclick="document.getElementById('BuyModal').style.display='block'">Add to Cart <i class="fa fa-shopping-cart"></i></button>
+						</div>
+					</div>
+					<p>Sweet Slices 'a'<br><b>$7.67</b></p>
+				</div>
+			</div>
+	  
+			<div class="w3-col l3 s6">
+				<div class="w3-container">
+					<div class="w3-display-container">
+					<img src="/IntroToComputing-Website-Project/images/ST&FD/3.png" style="width:100%">
+					<span class="w3-tag w3-display-topleft">New</span>
+						<div class="w3-display-middle w3-display-hover">
+						<button class="w3-button w3-black" onclick="document.getElementById('BuyModal').style.display='block'">Add to Cart <i class="fa fa-shopping-cart"></i></button>
+						</div>
+					</div>
+					<p>Sorbetto 'Strawberry'<br><b>$0.51</b></p>
+				</div>
+				<div class="w3-container">
+					<div class="w3-display-container">
+					<img src="/IntroToComputing-Website-Project/images/ST&FD/4.png" style="width:100%">
+						<div class="w3-display-middle w3-display-hover">
+						<button class="w3-button w3-black" onclick="document.getElementById('BuyModal').style.display='block'">Add to Cart <i class="fa fa-shopping-cart"></i></button>
+						</div>
+					</div>
+					<p>Sweet Slices 'b'<br><b>$7.67</b></p>
+				</div>
+			</div>
+	  
+			<div class="w3-col l3 s6">
+				<div class="w3-container">
+					<div class="w3-display-container">
+					<img src="/IntroToComputing-Website-Project/images/ST&FD/5.png" style="width:100%">
+					<span class="w3-tag w3-display-topleft">New</span>
+						<div class="w3-display-middle w3-display-hover">
+						<button class="w3-button w3-black" onclick="document.getElementById('BuyModal').style.display='block'">Add to Cart <i class="fa fa-shopping-cart"></i></button>
+						</div>
+					</div>
+					<p>Sorbetto 'Triple Delight'<br><b>$0.64</b></p>
+				</div>
+				<div class="w3-container">
+					<div class="w3-display-container">
+					<img src="/IntroToComputing-Website-Project/images/ST&FD/6.png" style="width:100%">
+						<div class="w3-display-middle w3-display-hover">
+						<button class="w3-button w3-black" onclick="document.getElementById('BuyModal').style.display='block'">Add to Cart <i class="fa fa-shopping-cart"></i></button>
+						</div>
+					</div>
+					<p>Sweet Slices 'c'<br><b>$7.67</b></p>
+				</div>
+			</div>
+	  
+			<div class="w3-col l3 s6">
+				<div class="w3-container">
+					<div class="w3-display-container">
+					<img src="/IntroToComputing-Website-Project/images/ST&FD/7.png" style="width:100%">
+						<div class="w3-display-middle w3-display-hover">
+						<button class="w3-button w3-black" onclick="document.getElementById('BuyModal').style.display='block'">Add to Cart <i class="fa fa-shopping-cart"></i></button>
+						</div>
+					</div>
+					<p>Truffelle<br><b>$2.04</b></p>
+				</div>
+				<div class="w3-container">
+					<div class="w3-display-container">
+					<img src="/IntroToComputing-Website-Project/images/ST&FD/8.png" style="width:100%">
+					<span class="w3-tag w3-display-topleft">New</span>
+						<div class="w3-display-middle w3-display-hover">
+						<button class="w3-button w3-black" onclick="document.getElementById('BuyModal').style.display='block'">Add to Cart <i class="fa fa-shopping-cart"></i></button>
+						</div>
+					</div>
+					<p>Monarch 'Dark Chocolate'<br><b>$9.88</b></p>
+				</div>
+			</div>
+		</div>
+	
+		<div id="sdj" class="w3-row w3-container w3-padding-32 w3-modal w3-modal-content w3-animate-zoom">
+		<span onclick="document.getElementById('sdj').style.display='none'" class="w3-button w3-display-topright w3-large">x</span></span>
+			<div class="w3-col l3 s6">
+				<div class="w3-container">
+					<div class="w3-display-container">
+					<img src="/IntroToComputing-Website-Project/images/SD&J/9.png" style="width:100%">
+						<div class="w3-display-middle w3-display-hover">
+						<button class="w3-button w3-black" onclick="document.getElementById('BuyModal').style.display='block'">Add to Cart <i class="fa fa-shopping-cart"></i></button>
+						</div>
+					</div>
+					<p>Citrus Burst 'Orange'<br><b>$1.28</b></p>
+				</div>
+				<div class="w3-container">
+					<div class="w3-display-container">
+					<img src="/IntroToComputing-Website-Project/images/SD&J/10.png" style="width:100%">
+						<div class="w3-display-middle w3-display-hover">
+						<button class="w3-button w3-black" onclick="document.getElementById('BuyModal').style.display='block'">Add to Cart <i class="fa fa-shopping-cart"></i></button>
+						</div>
+					</div>
+					<p>Citrus Burst 'Lemon'<br><b>$1.28</b></p>
+				</div>
+			</div>
+	  
+			<div class="w3-col l3 s6">
+				<div class="w3-container">
+					<div class="w3-display-container">
+					<img src="Other Website/SD&J/11.png" style="width:100%">
+					<span class="w3-tag w3-display-topleft">New</span>
+						<div class="w3-display-middle w3-display-hover">
+						<button class="w3-button w3-black" onclick="document.getElementById('BuyModal').style.display='block'">Add to Cart <i class="fa fa-shopping-cart"></i></button>
+						</div>
+					</div>
+					<p>Citrus Burst 'Cherry'<br><b>$1.28</b></p>
+				</div>
+				<div class="w3-container">
+					<div class="w3-display-container">
+					<img src="/IntroToComputing-Website-Project/images/SD&J/12.png" style="width:100%">
+						<div class="w3-display-middle w3-display-hover">
+						<button class="w3-button w3-black" onclick="document.getElementById('BuyModal').style.display='block'">Add to Cart <i class="fa fa-shopping-cart"></i></button>
+						</div>
+					</div>
+					<p>Citrus Burst 'Watermelon'<br><b>$1.28</b></p>
+				</div>
+			</div>
+	  
+			<div class="w3-col l3 s6">
+				<div class="w3-container">
+					<div class="w3-display-container">
+					<img src="/IntroToComputing-Website-Project/images/SD&J/13.png" style="width:100%">
+					<span class="w3-tag w3-display-topleft">New</span>
+						<div class="w3-display-middle w3-display-hover">
+						<button class="w3-button w3-black" onclick="document.getElementById('BuyModal').style.display='block'">Add to Cart <i class="fa fa-shopping-cart"></i></button>
+						</div>
+					</div>
+					<p>Citrus Burst 'Blueberry'<br><b>$1.28</b></p>
+				</div>
+				<div class="w3-container">
+					<div class="w3-display-container">
+					<img src="/IntroToComputing-Website-Project/images/SD&J/14.png" style="width:100%">
+						<div class="w3-display-middle w3-display-hover">
+						<button class="w3-button w3-black" onclick="document.getElementById('BuyModal').style.display='block'">Add to Cart <i class="fa fa-shopping-cart"></i></button>
+						</div>
+					</div>
+					<p>Fizz Fusion Energy Drink<br><b>$1.02</b></p>
+				</div>
+			</div>
+	  
+			<div class="w3-col l3 s6">
+				<div class="w3-container">
+					<div class="w3-display-container">
+					<img src="/IntroToComputing-Website-Project/images/SD&J/15.png" style="width:100%">
+						<div class="w3-display-middle w3-display-hover">
+						<button class="w3-button w3-black" onclick="document.getElementById('BuyModal').style.display='block'">Add to Cart <i class="fa fa-shopping-cart"></i></button>
+						</div>
+					</div>
+					<p>Viva Pop 'Cotton candy<br><b>$1.02</b></p>
+				</div>
+				<div class="w3-container">
+					<div class="w3-display-container">
+					<img src="/IntroToComputing-Website-Project/images/SD&J/16.png" style="width:100%">
+						<div class="w3-display-middle w3-display-hover">
+						<button class="w3-button w3-black" onclick="document.getElementById('BuyModal').style.display='block'">Add to Cart <i class="fa fa-shopping-cart"></i></button>
+						</div>
+					</div>
+					<p>Blue Oasis 'Drinking Water'<br><b>$0.43</b></p>
+				</div>
+			</div>
+		</div>
+	
+		<div id="BuyModal" class="w3-modal">
+			<div class="w3-modal-content w3-animate-top w3-card-4">
+				<header class="w3-container w3-teal w3-center w3-padding-32"> 
+					<span onclick="document.getElementById('BuyModal').style.display='none'" class="w3-button w3-teal w3-xlarge w3-display-topright">&times;</span>
+					<h2 class="w3-wide"><i class="w3-margin-right"></i>Shopping Card</h2>
+				</header>
+				<div class="w3-container">
+					<p><label><i class="fa fa-shopping-cart"></i> Quantity</label></p>
+					<input class="w3-input w3-border" type="text" placeholder="How many?">
+					<p><label><i class="fa fa-user"></i> Send To</label></p>
+					<input class="w3-input w3-border" type="text" placeholder="Enter email">
+					<button class="w3-button w3-block w3-teal w3-padding-16 w3-section w3-right">PAY <i class="fa fa-check"></i></button>
+					<button class="w3-button w3-red w3-section" onclick="document.getElementById('BuyModal').style.display='none'">Close <i class="fa fa-remove"></i></button>
+				</div>
+			</div>
+		</div>
+	
+		<div id="aboutMe" class="w3-container about-me w3-black">
+			<div class="w3-content w3-justify w3-text-light-grey w3-padding-64" id="about">
+				<h2 class="w3-text-light-grey">About Me</h2>
+				<hr style="width:200px" class="w3-opacity">
+				<p>Hi there! My Name is Trisha Nicole Silvestre, and I’m a first-year student at the University of Southern Mindanao, 
+				currently pursuing a Bachelor of Science in Information Systems. As part of our final project for the first semester, 
+				I’ve created this convenience store-inspired website to provide you with a seamless and enjoyable one-stop-shop experience.
+				</p>
+				<p>My inspiration for creating this website sparked from my background as a former Accountancy, Business, and Management (ABM) student. 
+				During my studies, I discovered my passion and interest for the business and marketing field. To showcase my skills 
+				and bring my ideas to life, I dedicated time to designing the products and creating this platform.
+				</p>
+				<p>At Food Craze Express, I am committed to offering a wide range of high-quality products, 
+				making your shopping experience both convenient and efficient.
+				</p>
+				<p>Thank you for visiting and I hoped you enjoy exploring Food Craze Express!
+				</p>
+			</div>
+		</div>
+	
+		<div id="aboutWebsite" class="w3-container about-me w3-amber">
+			<div class="w3-content w3-justify w3-text-black w3-padding-64" id="about">
+				<h2 class="w3-text-black">About this Website</h2>
+				<hr style="width:200px" class="w3-opacity">
+				<p>Welcome to Food Craze Express!
+				</p>
+				<p> At Food Craze Express, we are dedicated to providing you an online shopping experience that is easy and convenient at the same time. 
+				Our website is designed to be a convenient one-stop-shop, offering a wide range of food products from beverages to snacks and breakfast items.
+				</p>
+				<p>Here’s a glimpse of what you’ll find inside our website:
+				</P>
+				<p> Gourmet Coffees: Experience the art of coffee with our premium blends. Discover single-origin coffees, flavored blends, 
+				and everything you need to brew the perfect cup.
+				</p>
+				<p>Breakfast (Yogurts & Cereals): Start your day right with our delicious breakfast options. Explore everything from flavorful and nutritious cereals 
+				to the creamy taste of yogurts.
+				</P>
+				<p>Desserts (Sweet Treats & Frozen Desserts): Indulge in our delightful selection of sweet treats. Whether you're craving some chocolate, cake, or ice cream,
+				you'll find a variety of desserts to satisfy your sweet tooth.
+				</P>
+				<p>Snacks (Nuts & Chips): Satisfy your cravings with our tasty snacks. From chips and mixed nuts to crunchy snacks that makes every bite enjoyable, 
+				we offer a variety of junk food to enjoy anytime, anywhere.
+				</p>
+				<p>Beverages (Soft drinks & Juices): Quench your thirst with our wide range of refreshing drinks. From soft drinks and juices to energy drinks and bottled water, 
+				we've got all your beverage needs covered.
+				</p>
+				<p>Explore our different categories, take advantage of our deals, and stay updated with the latest product offerings and tips.
+				</P>
+				<p>Happy Snacking!
+				</p>
+			</div>
+		</div>	
+	  
+		<div id="contact" class="w3-container w3-row w3-white w3-large">
+			<div class="w3-col l12 s12">
+				<div class="w3-container ">
+				<p class="w3-center w3-large">Need Help? We're Here for You!</p>
+					<div style="margin-top:10px; width: 100%;">
+						<p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i>Kabacan, North Cotabato, Philippines</p>
+						<p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i>Phone: +09 876543210</p>
+						<p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"></i>Email: FoodCrazeExpress24@gmail.com</p>
+						<br>
+						<form action="/action_page.php" target="_blank" style="width: 100%;">
+							<p><input class="w3-input w3-border" type="text" placeholder="Name" required name="Name"></p>
+							<p><input class="w3-input w3-border" type="text" placeholder="Email" required name="Email"></p>
+							<p><input class="w3-input w3-border" type="text" placeholder="Subject" required name="Subject"></p>
+							<p><input class="w3-input w3-border" type="text" placeholder="Message" required name="Message"></p>
+							<p><button class="w3-button w3-black w3-text-white" type="submit"></i> SEND MESSAGE</button></p>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	
+		<footer class="w3-container w3-amber" style="padding:32px">
+		<a href="#" class="w3-button w3-white w3-padding-large w3-margin-bottom"><i class="fa fa-arrow-up w3-margin-right w3-text-black"></i>To the top</a>
+		</footer>
+	
+	</div>
+
+    <script>
+        function toggleDropdown() {
+            var dropdown = document.getElementById("myDropdown");
+            if (dropdown.style.display === "block") {
+                dropdown.style.display = "none";
+            } else {
+                dropdown.style.display = "block";
+            }
+        }
+		
+		function toggleProfileDropdown() { 
+			var dropdown = document.getElementById("profileDropdown"); 
+			if (dropdown.style.display === "block") { 
+				dropdown.style.display = "none"; 
+			} else { 
+				dropdown.style.display = "block"; 
+			} 
+		}
+		
+		function toggleSettingsDropdown() { 
+			var dropdown = document.getElementById("settingsDropdown"); 
+			if (dropdown.style.display === "block") { 
+				dropdown.style.display = "none"; 
+			} else { 
+				dropdown.style.display = "block"; 
+			} 
+		}
+		
+        window.onclick = function(event) {
+            if (!event.target.matches('.w3-bar-item')) {
+                var dropdowns = document.getElementsByClassName("w3-dropdown-content");
+                for (var i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.style.display === "block") {
+                        openDropdown.style.display = "none";
+                    }
+                }
+            }
+        }
+		
+		var myIndex = 0;
+		carousel();
+
+		function carousel() {
+			var i;
+			var x = document.getElementsByClassName("mySlides");
+			for (i = 0; i < x.length; i++) {
+				x[i].style.display = "none";  
+			}
+			myIndex++;
+			if (myIndex > x.length) {myIndex = 1}    
+			x[myIndex-1].style.display = "block";  
+			setTimeout(carousel, 3000);    
+		}
+		
+		function showLoginForm() { 
+		document.getElementById('login').style.display = 'block'; 
+		}  
+		function toggleLoginForm() { 
+			var LoginForm = document.getElementById("Login"); 
+			if (LoginForm.style.display === "none") { 
+				LoginForm.style.display = "block"; 
+			} else { 
+			LoginForm.style.display = "none"; 
+			} 
+		}
+		
+		
+		var modal = document.getElementById('BuyModal');
+		window.onclick = function(event) {
+			if (event.target == modal) {
+			modal.style.display = "none";
+			}
+		}
+		
+		document.querySelector('.cancelbtn').addEventListener('click', function() { 
+		document.getElementById('loginForm').style.display = 'none'; 
+		});	
+    </script>
+	
+</body>
+</html>
+
+    
+
+		
+		
+		
