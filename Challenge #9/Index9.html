@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>European Football</title>
+    <link rel="icon" type="image/x-icon" href="images/soul.ico">
+    <meta name="author" content="Brent Cabornida">
+    <link rel="stylesheet" href="css/Style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Parkinsans:wght@300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<div class="header">
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <img src="image/soul.ico" alt="European Football Logo" width="125px">
+            </div>
+        </div>
+    </div>
+
+    <nav>
+        <ul>
+            <li><a href="index-home.html">HOME</a></li>
+            <li><a href="formations.html">FORMATIONS</a></li>
+            <li><a href="rules.html">RULES</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+    </nav>
+
+    <div style="text-align: center;">
+        <video width="560" height="315" controls autoplay>
+            <source src="videos/v4.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <section class="contact-section">
+        <h2>Contact Us</h2>
+        <form id="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" placeholder="Write your message here" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+        <p id="form-message"></p>
+    </section>
+
+    <section class="contact-info">
+        <h2>Contact Information</h2>
+        <p><strong>Phone:</strong> <a href="tel:09084774215">09084774215</a></p>
+        <p><strong>Email:</strong> <a href="mailto:s.bjbcabornida@usm.edu.ph">s.bjbcabornida@usm.edu.ph</a></p>
+        <p><strong>Address:</strong> University of Southern Mindanao, Kabacan Campus</p>
+        <div class="map-container">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=@7.3242259,124.6254981,11z/data=!3m1!4b1!4m6!3m5!1s0x32f8be917ca065fb:0xfd1e00762a44b8f2!8m2!3d7.3826135!4d124.8182593!16zL20vMDZuOW14?entry=ttu&g_ep=EgoyMDI0MTIwNC4wIKXMDSoASAFQAw%3D%3D" 
+                width="600" 
+                height="450" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 European Football. All Rights Reserved.</p>
+    </footer>
+</div>
+
+<script src="css/script1.js"></script>
+</body>
+</html>
