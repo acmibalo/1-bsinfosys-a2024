@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore Taylor Swift's Journey">
+    <meta name="keywords" content="Taylor Swift, Music, Albums">
+    <meta name="author" content="j4nzeth">
+    <title>THIRTEEN</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="images/logo.ico">
+</head>
+<body>
+    <header class="site-header">
+        <nav class="navbar">
+            <ul class="nav-list">
+                <li class="nav-item"><a href="#home" class="nav-link">HOME</a></li>
+                <li class="nav-item"><a href="#about" class="nav-link">ABOUT</a></li>
+                <li class="nav-item"><a href="#albums" class="nav-link">ALBUMS</a></li>
+                <li class="nav-item"><a href="#videos" class="nav-link">VIDEOS</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link">CONTACT</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="home" class="section home-section">
+            <h1 class="section-title">WELCOME TO TAYLOR'S WORLD</h1>
+            <p class="section-description">Discover her music, albums, and career highlights.</p>
+        </section>
+        <section id="about" class="section about-section">
+            <h2 class="section-title">About Taylor Swift</h2>
+            <p class="section-description">
+Taylor Swift is a famous American singer and songwriter known for her heartfelt lyrics and ability to switch between music styles like country, pop, and indie. Born on December 13, 1989, in Pennsylvania, she gained fame with hits like "Love Story," "Shake It Off," and "All Too Well."  
+
+Taylor has won many awards, including Grammys, and is admired for her talent, hard work, and connection with fans. She also stands up for artists' rights and social causes. Her decision to re-record her old albums to regain control of her music has inspired many. Taylor Swift is not just a musician but a global icon.</p>
+        </section>
+        <section id="albums" class="section albums-section">
+            <h2 class="section-title">TAYLOR'S ALBUMS</h2>
+            <p class="section-description">FEARLESS, SPEAK NOW, RED, 1989, REPUTATION <br>LOVER, FOLKLORE, EVERMORE, MIDNIGHTS, TTPD</p>
+        </section>
+        <section id="videos" class="section video-section">
+            <h2 class="section-title">WATCH TAYLOR'S LATEST ALBUM</h2>
+            <div class="video-container">
+                <h3 class="video-title">YouTube Video</h3>
+                <iframe src="https://www.youtube.com/embed/l0BUuN3DNR0" title="Taylor Swift Video" allowfullscreen></iframe>
+            </div>
+            <div class="video-container">
+                <h3 class="video-title">Local Video</h3>
+                <video controls>
+                    <source src="taylor-local.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </section>
+        <section id="contact" class="section contact-section">
+            <h2 class="section-title">CONTACT US</h2>
+            <form class="contact-form">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn-submit">Send</button>
+            </form>
+        </section>
+    </main>
+    <footer class="site-footer">
+        <p>&copy; 2024 Thirteen. All rights reserved.</p>
+    </footer>
+</body>
+</html>
