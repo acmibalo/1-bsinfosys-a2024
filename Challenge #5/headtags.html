@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Title of the webpage displayed in the browser tab -->
+  <title>Alyssa Serfino</title>
+  
+  <!-- Link to favicon, the small icon displayed in the browser tab -->
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+  <!-- Character encoding for the webpage, ensuring it displays characters correctly -->
+  <meta charset="UTF-8">
+
+  <!-- Viewport settings for responsiveness on mobile devices -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Linking to external CSS file for W3.CSS framework for styling -->
+  <link rel="stylesheet" href="css/w3.css">
+
+  <!-- Custom CSS file for additional styling specific to this webpage -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Another custom CSS file, likely for additional design elements -->
+  <link rel="stylesheet" href="css/css.css">
+
+  <!-- Link to Font Awesome library for icon usage throughout the site -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- Link to Material Icons from Google Fonts for additional icons -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+  <!-- Internal CSS for custom styling of the webpage -->
+  <style>
+<!-- Default font family for all text elements --> 
+    body,h1,h2,h3,h4,h5,h6 {font-family: "Times New Roman", cursive;}
+    
+    <!-- General styles for body and html elements 
+    body -->, html {
+      height: 100%;
+      color: #777;
+      line-height: 1.8;
+    }
+
+    <!-- Parallax Effect styles for background images  -->
+    .bgimg-1, .bgimg-2, .bgimg-3 {
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    <!-- Styles for specific background images (Full height for Logo)  -->
+    .bgimg-1 {
+      background-image: url('images/parallax1.jpg');
+      min-height: 100%;
+    }
+
+   <!-- Styles for second parallax image (Portfolio section) -->
+    .bgimg-2 {
+      background-image: url("images/parallax2.jpg");
+      min-height: 400px;
+    }
+
+    <!-- Styles for third parallax image (Contact section) -->
+    .bgimg-3 {
+      background-image: url("images/parallax3.jpg");
+      min-height: 400px;
+    }
+
+    <!--Letter-spacing for wider text -->
+    .w3-wide {letter-spacing: 10px;}
+
+    <!-- Hover opacity effect for clickable elements -->
+    .w3-hover-opacity {cursor: pointer;}
+  </style>
+
+</head>
+<body>
+    
+    <!-- content -->
+    
+<script> <!-- script tag -->
+<!-- Modal Image Gallery -->
+<!-- This function is triggered when an image is clicked. It opens a modal with the clicked image. -->
+function onClick(element) {
+  document.getElementById("img01").src = element.src;  <!--Set the modal image to the clicked image
+  --> document.getElementById("modal01").style.display = "block";  <!-- Show the modal -->
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;  <!--Set the image description in the modal caption -->
+}
+
+<!-- Change style of navbar on scroll -->
+<!-- This function changes the navbar style when the user scrolls past a certain point -->
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";  <!-- Add styles for scrolling -->
+    } else {
+        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");  <!-- Remove styles when back at the top -->
+    }
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+// This function toggles the visibility of the navigation menu on small screens
+function toggleFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";  <!--Show the menu -->
+    } else {
+        x.className = x.className.replace(" w3-show", "");  <!--Hide the menu-->
+    }
+}
+</script>
+</body>
+</html>
+    
