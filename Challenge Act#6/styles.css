@@ -1,0 +1,82 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #6a0dad; /* Purple */
+    padding: 10px 0;
+}
+
+.menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.menu-item {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+.menu-item a {
+    color: #ffd700; /* Gold */
+    text-decoration: none;
+    font-size: 18px;
+    padding: 8px 15px;
+}
+
+.menu-item a:hover {
+    background-color: #4b0082; /* Dark Purple */
+    border-radius: 4px;
+}
+
+/* Submenu */
+.submenu {
+    display: none;
+    position: absolute;
+    background-color: #6a0dad; /* Purple */
+    list-style: none;
+    padding: 10px 0;
+}
+
+.menu-item:hover .submenu {
+    display: block;
+}
+
+.submenu li {
+    margin: 0;
+}
+
+.submenu li a {
+    color: #ffd700; /* Gold */
+    padding: 10px 20px;
+    display: block;
+}
+
+.submenu li a:hover {
+    background-color: #4b0082; /* Dark Purple */
+}
+
+/* Content Styling */
+.content {
+    text-align: center;
+    margin: 50px 0;
+}
+
+.content h1 {
+    font-size: 36px;
+    color: #6a0dad; /* Purple */
+}
+
+.content p {
+    font-size: 18px;
+    color: #666;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
