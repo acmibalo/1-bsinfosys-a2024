@@ -1,0 +1,61 @@
+ body {
+    font-family:Bookman, URW Bookman L, serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e3cba5;
+	font-size:20px;
+}
+
+#header {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+#nav {
+  background-color: #ddd;
+  text-align: center;
+  padding: 10px 0;
+}
+
+#nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#nav li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+#nav a {
+   color: #333;
+   text-decoration: none;
+}
+
+.section {
+   padding: 20px;
+}
+
+@media (max-width: 768px) {
+  #hero {
+    height: 200px;
+  }
+
+.section {
+    padding: 10px;
+  }
+}
+
+#footer {
+   background-color: #333;
+   text-align: center;
+   padding: 10px 0;
+}
+
+#footer p{
+	color:white;
+	
+}
