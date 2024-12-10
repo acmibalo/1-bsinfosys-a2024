@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>W3Schools How-Tos Example</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+	<link rel="stylesheet" href="css/Style.css">
+    <style>
+        
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>W3Schools How-Tos Example</h1>
+</header>
+
+<main>
+    <!-- How-to 1: Create a Button -->
+    <section class="content-section">
+        <h2>How to Create a Button</h2>
+        <p>Click the button below to see an action:</p>
+        <button class="button" id="clickButton">Click Me</button>
+        <div id="message-box" style="display: none;">Hello! You've clicked the button.</div>
+    </section>
+
+    <!-- How-to 2: Create a Contact Form -->
+    <section class="content-section">
+        <h2>How to Create a Contact Form</h2>
+        <form action="/submit_form" method="post" id="contactForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea><br>
+            <button class="button" type="submit">Submit</button>
+        </form>
+    </section>
+
+    <!-- How-to 3: Add an Image -->
+    <section class="content-section">
+        <h2>How to Add an Image</h2>
+        <p>This is an example of an image being added:</p>
+        <img src="https://via.placeholder.com/300" alt="Placeholder Image">
+    </section>
+
+    <!-- How-to 4: Create Links -->
+    <section class="content-section">
+        <h2>How to Create Links</h2>
+        <p>Click the link below to visit W3Schools:</p>
+        <a href="https://www.w3schools.com" target="_blank">Visit W3Schools</a>
+    </section>
+
+    <!-- How-to 5: Create a Simple Image Carousel -->
+    <section class="content-section">
+        <h2>How to Create a Simple Image Carousel</h2>
+        <div class="carousel">
+            <img src="https://via.placeholder.com/600x300?text=Image+1" alt="Image 1" class="active">
+            <img src="https://via.placeholder.com/600x300?text=Image+2" alt="Image 2">
+            <img src="https://via.placeholder.com/600x300?text=Image+3" alt="Image 3">
+        </div>
+        <button class="button" id="nextImage">Next Image</button>
+    </section>
+
+</main>
+
+<footer>
+    <p>Powered by W3Schools Example</p>
+</footer>
+
+</body>
+</html>
+
+<script>
+// JavaScript to show the message when the button is clicked (How-to 1)
+document.getElementById("clickButton").addEventListener("click", function() {
+    document.getElementById("message-box").style.display = "block";
+});
+
+// JavaScript for the image carousel (How-to 5)
+let currentImage = 0;
+const images = document.querySelectorAll(".carousel img");
+
+document.getElementById("nextImage").addEventListener("click", function() {
+    images[currentImage].classList.remove("active");
+    currentImage = (currentImage + 1) % images.length;
+    images[currentImage].classList.add("active");
+});
+</script>
