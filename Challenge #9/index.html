@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <!-- Meta Information -->
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <meta name="description" content="Anime Fans Hub - Discover, Watch, and Discuss Your Favorite Anime!" />
+    <meta name="keywords" content="Anime, Reviews, Community, Anime Fans, Discussions" />
+    <meta name="author" content="Wariloh" />
+    
+    <title>Anime Fan Website</title>
+    
+    <!-- Favicon Link -->
+    <link rel="icon" type="image/x-icon" href="favicon.png" />
+
+    <!-- Link to External CSS -->
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
+  <body>
+    <!-- Header Section -->
+    <header id="header">
+      <h1>Anime Fans Hub</h1>
+      <p>Discover, Watch, and Discuss Your Favorite Anime!</p>
+    </header>
+
+    <!-- Main Content Area -->
+    <div id="main">
+      <!-- Left Sidebar (Navigation) -->
+      <div id="leftcolumn">
+        <div class="menu">
+          <ul>
+            <li><a href="#home" class="nav-link">Home</a></li>
+            <li><a href="#reviews" class="nav-link">Reviews</a></li>
+            <li><a href="#forums" class="nav-link">Community</a></li>
+            <li><a href="#news" class="nav-link">News</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Right Main Content -->
+      <div id="rightcolumn">
+        <section id="home">
+          <h2>Welcome to Anime Fans Hub</h2>
+          <p>Discover, watch, and discuss your favorite anime with fellow enthusiasts!</p>
+        </section>
+
+        <section id="reviews">
+          <h2>Anime Reviews</h2>
+          <article class="review">
+            <h3>Top 5 Must-Watch Anime of 2024</h3>
+            <p>Explore the top anime releases for 2024.</p>
+          </article>
+        </section>
+
+        <section id="forums">
+          <h2>Join the Community</h2>
+          <p>Talk about your favorite shows and connect with fellow fans.</p>
+        </section>
+
+        <!-- Local MP4 Video -->
+        <section id="local-video">
+          <h2>Watch Local Anime Video</h2>
+          <video width="720" controls>
+            <source src="anime-trailer.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </section>
+
+        <!-- Contact Form Section -->
+        <section id="contact">
+          <h2>Contact Us</h2>
+          <form action="/submit_contact" method="POST" class="contact-form">
+            <div class="form-group">
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name" required />
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message:</label>
+              <textarea id="message" name="message" rows="4" required></textarea>
+            </div>
+
+            <button type="submit" class="submit-btn">Send Message</button>
+          </form>
+        </section>
+      </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer id="footer">
+      <p>&copy; 2024 Anime Fans Hub. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
