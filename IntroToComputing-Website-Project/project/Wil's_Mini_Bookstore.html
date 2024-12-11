@@ -1,0 +1,2937 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title> Estremos, Wilmar A.</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="css/w3.css">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel ="stylesheet" >
+	<link rel="icon" type="image/x-icon" href="images/fav.ico">
+	<meta name="description" content="A library of Literatures">
+	<meta name="keywords" content="Library, Literature, Novels, Fantasy, Textbooks, Fiction, Nonfiction, Biographies, Romance, Horror, Adventure">
+	<meta name="author" content="Estremos, Wilmar A.">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+@font-face {
+    font-family: Gagalin;  
+    src: url(/fonts/Gagalin.otf) format('opentype'); 
+}
+*{
+	margin:0;
+	font-family: Gagalin, sans-serif;
+	padding:0;
+	box-sizing:border-box;
+}
+html{
+	scroll-behavior:smooth;
+}
+.main-header{
+	margin-bottom:0
+	justify-content:space-between;
+	max-height:12vh;
+	top:0;
+	background-color:white;
+}
+.logo-header{
+	height:20vh;
+	display:flex;
+}
+.logo{
+	width:13.5vh;
+	height:auto;
+	position:absolute;
+}
+.menu-container{
+	position:absolute;
+	padding:0;
+	margin-left:10vw;
+}
+.menu-button{
+	width:8vw;
+	height:15vh;
+	font-family:Gagalin,sans-serif;
+	background:transparent;
+	color:#33374C;
+	padding:1vh;
+	border:none;
+	position:absolute;
+	font-size:3vh;
+}
+.menu-button:hover{
+	background-color:#6C7085 !important;
+	color:white !important;
+}
+.menu-arrow{
+	margin-left:5px;
+}
+.dropdown-content{
+	display:none;
+	position:absolute;
+	background-color:#33374c;
+	min-width:10vw;
+	z-index:1;
+	text-align:left;
+	color:white;
+	margin-top:17vh;
+	height:68vh;
+	left:-8vw;
+	width:183px;
+	font-size:20px;
+	overflow-x:auto;
+}
+.dropdown-content::-webkit-scrollbar{
+	display:none;
+}
+.dropdown-content a{
+	display:block;
+	text-decoration:none;
+	padding-left:30px;
+	color:white;
+	height:100px;
+	padding-top:30px;
+}
+.dropdown-content a:hover{
+	background-color:#6C7085;
+}
+.show{
+	display:block;
+}
+.myaccount{
+	cursor:pointer;
+	height:100px;
+	width:183px;
+	padding-left:2.3vw;
+	padding-top:30px;
+	text-align:left;
+}
+.myaccount:hover{
+	background-color:#6C7085 !important;
+	color:white !important;
+}
+.myaccount-content{
+	display:none;
+	flex-direction:column;
+	padding-left:8px;
+}
+.myaccount-arrow{
+	padding-left:5px;
+	font-size:15px;
+}
+.cart-container{
+	display:block;
+	position:relative;
+	margin-left:90vw;
+	margin-right:2vw;
+	margin-top:3vh;
+}
+.cart-icon{
+	height:3vw;
+	width:3vw;
+}
+.search-container {
+	margin-left:20vw;
+    display: flex;
+	position:absolute;
+	align-items: center;      
+	border: 1px solid #33374C;
+	overflow: hidden;
+	transition: width 0.4s ease;
+	width: 40vh;
+	max-width: 100%;
+	height:10vh;
+	margin-top:2vh;
+    }  
+#search-input {
+    flex-grow: 1;
+	border: none;
+	outline: none;
+	padding: 10px;
+	width: 0;
+	transition: width 0.4s ease;
+}
+#search-button {
+    background: none;
+    border: none;
+    padding: 10px;
+	cursor: pointer;
+	font-size: 18px;
+	color: #33374c;
+	outline: none;
+	transition: transform 0.4s ease;
+}
+.search-container.active {
+    width: 80vh;
+}
+.search-container.active #search-input {
+    width: 100%;
+}
+.search-container.active #search-button {
+    transform: translateX(0);
+}
+.nav-bar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #33374C;
+	width: 100%;
+	padding: 10px 0;
+	margin-top:3vh;
+	height:10vh;
+}
+.nav-bar button {
+	width:100%;
+    padding:0;
+	flex:1;
+	text-align:center;
+	font-size: 16px;
+	border: none;
+	background-color: transparent;
+	color: white;
+	cursor: pointer;
+	transition: background-color 0.3s ease, color 0.3s ease;
+	height:10vh;
+}
+.nav-bar a{
+	width:20%;
+}
+.nav-bar button:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+article{
+	height:90vh;
+	background-color:#33374C;
+	font-family: Gagalin, sans-serif;
+}
+.homepage{
+	padding-top:5vh;
+	font-family: Gagalin, sans-serif;
+}
+.homepage h1{
+	font-size:10vh;
+	color:#e4d2d2;
+	text-align:center;
+	font-family: Gagalin, sans-serif;
+}
+h1 {
+    color: #e4d2d2;
+	animation: changeColor 6s infinite; 
+}
+@keyframes changeColor {
+    0% {
+	color: #e4d2d2; 
+}
+    20% {
+    color: #f0c9c9; 
+}
+    40% {
+    color: #dfadaf;
+}
+    60% {
+	color: #f2d4d4;
+}
+    80% {
+    color: #e8b3b3; 
+}
+	100% {
+    color: #e4d2d2;
+}
+}
+.homepage h3{
+	font-size:5vh;
+	color:white;
+	text-align:center;
+	padding-top:5vh;
+	padding-bottom:5vh;
+	font-family: Gagalin, sans-serif;
+}
+.scroll-aside a{
+	font-size:2.5vh;
+	color:#e4d2d2;
+	margin-left:50vw;
+}	
+aside{
+	height:150vh;
+	overflow-x:auto;
+	font-family: Gagalin, sans-serif;
+}
+aside::-webkit-scrollbar{
+	display:none;
+}
+.product-showcase h4{
+	color:#33374C;
+	font-size:5vh;
+	margin-top:10vh;
+	margin-left:5vh;
+	margin-bottom:2vh;
+	font-family: Gagalin, sans-serif;
+}
+.product-showcase h2{
+	color:#33374C;
+	font-size:8vh;
+	margin-top:10vh;
+	text-align:center;
+	margin-bottom:2vh;
+	font-family: Gagalin, sans-serif;
+}
+h2 {
+    color: #33374C; 
+	animation: changeColorh2 6s infinite; 
+}
+@keyframes changeColorh2 {
+    0% {
+	color: #33374C;
+}
+    20% {
+    color: #4C47333; 
+}
+    40% {
+    color: #82849D; 
+}
+    60% {
+	color: #31334C; 
+}
+    80% {
+    color: #606C8C;
+}
+	100% {
+    color: #33374C; 
+}
+}
+.product-showcase h5{
+	color:#33374C;
+	font-size:4vh;
+	margin-top:10vh;
+	margin-left:5vh;
+	margin-bottom:2vh;
+	font-family: Gagalin, sans-serif;
+}
+.gallery-container {
+    position: relative;
+	margin: 20px;
+}
+.gallery {
+    display: flex;
+	flex-wrap: nowrap;  
+	overflow-x: auto;   
+	gap: 30px;
+	padding: 10px;
+	margin-left:1vh;
+}
+.gallery::-webkit-scrollbar{
+	display:none;
+}  
+.photo-item {
+    display: inline-block;
+	text-align: center;
+	cursor: pointer;
+	min-width: 150px;
+	max-width:150px;
+	margin-top:2vh;
+}
+.photo-item img {
+   width: 100%;
+   height: 160px;
+   border-radius: 8px;
+   transition: transform 0.3s ease;
+}
+.photo-item img:hover {
+    transform: scale(1.1);
+}
+.caption {
+    margin-top: 10px;
+    font-size: 1.2em;
+    color: #555;
+}
+.rank {
+    margin-top: 10px;
+	font-size: 1.5em;
+	color: #555;
+}
+.book-details {
+    position: fixed; 
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: white;
+	color: black;
+	display: none; 
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	z-index: 1000;
+	flex-direction: column;
+	overflow-x:auto;
+	font-family: Gagalin, sans-serif;
+}
+.book-details::-webkit-scrollbar{
+	display:none;
+}
+.book-details img {
+    width: 150px;
+	height: 200px;
+	border-radius: 8px;
+	margin-bottom: 1vh;
+	position:fixed;
+}
+.book-details h2 {
+    font-size: 2em;
+	font-family: Gagalin, sans-serif;
+}
+.book-details p {
+    font-size: 1.1em;
+	margin: 10px 0;
+	font-family: Gagalin, sans-serif;
+}
+.book-details .back-link {
+    font-size: 1.2em;
+    margin-top: 20px;
+}
+.book-details .back-link a {
+    color: #FFB6C1;
+    text-decoration: none;
+}
+.book-details .back-link a:hover {
+    text-decoration: underline;
+}
+.merchant{
+	font-size:3vh;
+	color:#33374C;
+	background-color:#e4d2d2;
+	width:11vw;
+	height:11vh;
+	border-radius:10px;
+	margin-bottom:1vh;
+	cursor:pointer;
+	border:none;
+	transition:0.3s ease;
+	overflow-x:auto;
+}
+.merchant::-webkit-scrollbar{
+	display:none;
+}
+.merchant:hover{
+	background-color:#B9A5A5;
+	transform:scale(1.1);
+}
+footer{
+	background-color:#33374C;
+	height:50vh;
+	font-family: Gagalin, sans-serif !important;
+	margin-top:10vh;
+}
+.logo-footer{
+	margin-top:3vh;
+	margin-left:47.5vw;
+	width:4vw;
+	height:auto
+}
+.contactus {
+	text-align:center;
+    margin-bottom: 20px; 
+}
+.contactus h3{
+	font-family: Gagalin, sans-serif;
+	color: #E4D2D2;
+}
+.social-media-icons {
+	margin-left:45vw;
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px; 
+}
+.social-icon {
+    font-size:5vh;
+    color: #E4D2D2;
+    text-decoration: none;
+}
+.social-icon:hover {
+    color: #B9A5A5;
+}
+.copyright h3{
+	font-family: Gagalin, sans-serif;
+	display: flex;
+	font-size:3vh;
+    gap: 20px;
+    justify-content: center;
+    margin-top:2vh;
+	color: #E4D2D2;
+}
+.footer-links {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top:5vh;
+}
+.footer-links a {
+    text-decoration: none;
+    color: #E4D2D2;
+    font-size: 14px;
+}
+.footer-links a:hover {
+    color: #B9A5A5;
+}
+.auth-button{
+	display:flex;
+	position:absolute;
+	background-color:#A6ACB8;
+	color:white;
+	border:none;
+	border-radius:30px;
+	padding:0;
+	width:220px;
+	height:11vh;
+	font-size:16px;
+	align-items:center;
+	justify-content:flex-start;
+	overflow:hidden;
+	transition: background-color 0.3s ease;
+	margin-left:65vw;
+	margin-top:1.5vh;
+	margin-right:10px;
+}
+.auth-button:hover{
+	background-color:#A6ACB8 !important;
+}
+.login-button{
+	background-color:#33374C;
+	color:white;
+	width:60%;
+	line-height:65px;
+	border-radius:30px;
+	text-align:center;
+	padding:0;
+	left:0;
+	z-index:1;
+	transition:transform 0.3s ease, background-color 0.3s ease;
+}
+.signup-button{
+	flex:1;
+	background-color:#A6ACB8;
+	text-align:center;
+	font-size:16px;
+	padding-left:5px;
+	z-index:0;
+}
+.auth-button:hover .login-button{
+	background-color:#6C7085 !important;
+	color:white !important;
+	transform:scale(1.05);
+}
+.auth-button:hover .signup-button{
+	background-color:#A6ACB8 !important;
+}
+.banner{
+	display:none;
+	position:fixed;
+	top:50%;
+	left:50%;
+	transform:translate(-50%, -50%);
+	background-color:#33374C;
+	color:white;
+	padding:20px 30px;
+	border-radius:5px;
+	z-index:1000;
+	text-align:center;
+}
+.banner button{
+	background-color:white;
+	color:#33374C;
+	border:none;
+	margin-top:3vh;
+	cursor:pointer;
+	border-radius:3px;
+	width:2vw;
+	height:5vh;
+}
+.banner button:hover{
+	background-color:#E4D2D2;
+}
+</style>
+</head>
+<body>
+<header class="main-header">
+	<div class="logo-header">
+		<a href="Wil's Mini Bookstore.html">
+				<img src="images/bookstore.jpg" alt="Wil's Mini Bookstore official logo" class="logo" />
+			</a>
+	<div class="menu-container">
+			<button id="dropdownButton" class="menu-button w3-button">Menu <span id="menuArrow" class="menu-arrow">▼</span></button>
+				<div id="dropdownContent" class="dropdown-content">
+					<a href="Wil's Mini Bookstore.html">Home</a>
+					<div class="myaccount w3-button" onclick="toggleAccordion(this)">Products<span class="myaccount-arrow">▼</span> </div>
+						<div class="myaccount-content">
+							<a href="#fiction">Fiction</a>
+							<a href="#Nonfiction">Nonfiction</a>
+							<a href="#academic">Academic</a>
+							<a href="#children's-book">Children's Book</a>
+							<a href="#arts">Arts</a>
+						</div>
+					<a href="aboutme.html" target="_blank">About Me</a>
+					<a href="blogs.html" target="_blank" >Blogs</a>
+					<a href="#contactus">Contact Us</a>
+				</div>
+		</div>
+		<div class="search-container">
+			<input type="text" id="search-input" placeholder="Search...">
+				<button id="search-button">
+					<span class="fa fa-search"></span>
+				</button>
+		</div>
+		<div class="auth-button">
+			<a href="login.html" target="_blank" class="login-button w3-button">Log in</a>
+			<a href="signup.html" target="_blank" class="signup-button w3-button">Sign-up</a>
+		</div>
+		<div class="cart-container">
+			<a href="mycart.html">
+				<img src="images/shopping-cart.gif" class="cart-icon">
+			</a>
+		</div>
+</header>
+<div class="nav-bar">
+	<a href="#fiction">
+		<button>Fiction</button>
+	</a>
+	<a href="#nonfiction">
+		<button>Nonfiction</button>
+	</a>
+	<a href="#academic">
+		<button>Academic</button>
+	</a>
+	<a href="#children's-book">
+		<button>Children's Book</button>
+	</a>
+	<a href="#arts">
+		<button>Arts</button>
+	</a>
+</div>
+</div>
+<section>
+<article>
+	<div class="homepage">
+		<h1>Start Shopping Now,</h1>
+		<h3>and explore the world of literatures</h3>
+	</div>
+	<div class="scroll-aside">
+		<a href="#product-showcase">Don't know where to start?</a></p>
+	</div>
+</article>
+<aside id="product-showcase">
+	<div class="product-showcase">
+	<h4>Daily Most Popular</h4>
+	</div>
+	<div class="gallery-container">
+    <div class="gallery">
+      <div class="photo-item" onclick="showBookDetails('book7')">
+        <img src="images/fiction-horror2.jpg" alt="Uzumaki">
+        <div class="caption">Uzumaki Vol.1</div>
+      </div>
+       <div class="photo-item" onclick="showBookDetails('book60')">
+        <img src="images/fiction-science6.jpg" alt="Jurassic Park">
+        <div class="caption">Jurassic Park</div>
+      </div>
+	  <div class="photo-item" onclick="showBookDetails('book69')">
+        <img src="images/cb1.jpg" alt="The Lorax">
+        <div class="caption">The Lorax</div>
+      </div>
+      <div class="photo-item" onclick="showBookDetails('book54')">
+        <img src="images/children'sbook.jpg" alt="How the Grinch Lost Christmas!">
+        <div class="caption">How the Grinch Lost Christmas!</div>
+      </div>
+      <div class="photo-item" onclick="showBookDetails('book22')">
+        <img src="images/nonfiction-biography3.jpg" alt="I'm Glab My Mom Died">
+        <div class="caption">I'am Glad My Mom Died</div>
+      </div>
+      <div class="photo-item" onclick="showBookDetails('book10')">
+        <img src="images/fiction-fantasy1.jpg" alt="Harry Potter and the Chamber of Secrets">
+        <div class="caption">Harry Potter and the Chamber of Secrets</div>
+      </div>
+      <div class="photo-item" onclick="showBookDetails('book56')">
+        <img src="images/children'sbook3.jpg" alt="Diary of a Wimpy Kid: Hot Mess">
+        <div class="caption">Diary of a Wimpy Kid: Hot Mess</div>
+      </div>
+      <div class="photo-item" onclick="showBookDetails('book30')">
+        <img src="images/nonfiction-selfhelp1.jpg" alt="The Subtle Art of Not Giving a F*ck">
+        <div class="caption">The Subtle Art of Not Giving a F*ck</div>
+      </div>
+      <div class="photo-item" onclick="showBookDetails('book13')">
+        <img src="images/fiction-fantasy4.jpg" alt="The Chronicles of Narnia: The Lion, The Witch, and The Wardrobe">
+        <div class="caption">The Chronicles of Narnia: The Lion, The Witch, and The Wardrobe</div>
+      </div>
+      <div class="photo-item" onclick="showBookDetails('book41')">
+        <img src="images/academic2.jpg" alt="Cancer and Cancer Care">
+        <div class="caption">Cancer and Cancer Care</div>
+      </div>
+      <div class="photo-item" onclick="showBookDetails('book49')">
+        <img src="images/art1.jpg" alt="Easy Origami">
+        <div class="caption">Easy Origami</div>
+      </div>
+	  <div class="photo-item" onclick="showBookDetails('book1')">
+        <img src="images/fiction-romance1.jpg" alt="Beach Read">
+        <div class="caption">Beach Read</div>
+      </div>
+	  <div class="photo-item" onclick="showBookDetails('book11')">
+        <img src="images/fiction-fantasy2.jpg" alt="The Hobbit">
+        <div class="caption">The Hobbit</div>
+      </div>
+    </div>
+	<div class="product-showcase">
+	<h4>New Release</h4>
+	</div>
+    <div class="gallery">
+      <div class="photo-item" onclick="showBookDetails('book16')">
+        <img src="images/fiction-science2.jpg" alt="1984">
+        <div class="caption">1984</div>
+      </div>
+      <div class="photo-item" onclick="showBookDetails('book2')">
+        <img src="images/fiction-romance2.jpg" alt="Red White & Royal Blue">
+        <div class="caption">Red White & Royal Blue</div>
+      </div>
+      <div class="photo-item" onclick="showBookDetails('book9')">
+        <img src="images/fiction-horror5.jpg" alt="Uzumaki Vol.2">
+        <div class="caption">Uzumaki Vol.2</div>
+      </div>
+	  <div class="photo-item" onclick="showBookDetails('book73')">
+        <img src="images/cb5.jpg" alt="Clifford the Big Red Dog">
+        <div class="caption">Clifford the Big Red Dog</div>
+      </div>
+      <div class="photo-item" onclick="showBookDetails('book21')">
+        <img src="images/nonfiction-biography2.jpg" alt="Our Jackie">
+        <div class="caption">Our Jackie</div>
+      </div>
+      <div class="photo-item" onclick="showBookDetails('book28')">
+        <img src="images/nonfiction-cookbook4.jpg" alt="Salt, Fat, Acid, Heat: Mastering the Elements of Good Cooking">
+        <div class="caption">Salt, Fat, Acid, Heat: Mastering the Elements of Good Cooking</div>
+      </div>
+	   <div class="photo-item" onclick="showBookDetails('book57')">
+        <img src="images/children'sbook4.jpg" alt="Olaf's Quest">
+        <div class="caption">Olaf's Quest</div>
+      </div>
+      <div class="photo-item" onclick="showBookDetails('book47')">
+        <img src="images/academic-textbook4.png" alt="Introduction to Financial Accounting">
+        <div class="caption">Introduction to Financial Accounting</div>
+      </div>
+      <div class="photo-item" onclick="showBookDetails('book30')">
+        <img src="images/nonfiction-selfhelp1.jpg" alt="The Subtle Art of Not Giving a F*ck">
+        <div class="caption">The Subtle Art of Not Giving a F*ck</div>
+      </div>
+	   <div class="photo-item" onclick="showBookDetails('book38')">
+        <img src="images/nonfiction-truestory4.jpg" alt="If You Tell: A True Story of Murder">
+        <div class="caption">If You Tell: A True Story of Murder</div>
+      </div>
+      <div class="photo-item" onclick="showBookDetails('book35')">
+        <img src="images/nonfiction-truestory1.jpg" alt="Silent Sisters: A True Story">
+        <div class="caption">Silent Sisters: A True Story</div>
+      </div>
+    </div>
+	<div class="product-showcase">
+	<h4>Top 10 Best Selling Of All Time</h4>
+	</div>
+	<div class="gallery">
+      <div class="photo-item" onclick="showBookDetails('book30')">
+        <img src="images/nonfiction-selfhelp1.jpg" alt="The Subtle Art of Not Giving a F*ck">
+        <div class="rank">1</div>
+      </div>
+     <div class="photo-item" onclick="showBookDetails('book7')">
+        <img src="images/fiction-horror2.jpg" alt="Uzumaki">
+        <div class="rank">2</div>
+      </div>
+     <div class="photo-item" onclick="showBookDetails('book22')">
+        <img src="images/nonfiction-biography3.jpg" alt="I'm Glab My Mom Died">
+        <div class="rank">3</div>
+      </div>
+      <div class="photo-item" onclick="showBookDetails('book3')">
+        <img src="images/fiction-romance3.jpg" alt="Twilight">
+        <div class="rank">4</div>
+      </div>
+      <div class="photo-item" onclick="showBookDetails('book24')">
+        <img src="images/nonfiction-biography5.jpg" alt="I'am Malala">
+        <div class="rank">5</div>
+      </div>
+	   <div class="photo-item" onclick="showBookDetails('book58')">
+        <img src="images/children'sbook5.jpg" alt="Si Langgam at si Tipaklong">
+        <div class="rank">6</div>
+      </div>
+      <div class="photo-item" onclick="showBookDetails('book56')">
+        <img src="images/children'sbook3.jpg" alt="Diary of a Wimpy Kid: Hot Mess">
+        <div class="rank">7</div>
+      </div>
+      <div class="photo-item" onclick="showBookDetails('book54')">
+        <img src="images/children'sbook.jpg" alt="How the Grinch Lost Christmas!">
+        <div class="rank">8</div>
+      </div>
+	   <div class="photo-item" onclick="showBookDetails('book51')">
+        <img src="images/art3.jpg" alt="Handmade Houseplants">
+        <div class="rank">9</div>
+      </div>
+      <div class="photo-item" onclick="showBookDetails('book61')">
+        <img src="images/a1.jpg" alt="Wreck This Journal">
+        <div class="caption">10</div>
+      </div>
+	</div>
+	<div class="product-showcase">
+	<h4>You Might Like</h4>
+	</div>
+	<div class="gallery">
+      <div class="photo-item" onclick="showBookDetails('book9')">
+        <img src="images/fiction-horror5.jpg" alt="Uzumaki Vol.2">
+        <div class="caption">Uzumaki Vol.2</div>
+      </div>
+     <div class="photo-item" onclick="showBookDetails('book53')">
+        <img src="images/art5.jpg" alt="Stitch'n Bitch: The Knitters Handbook">
+        <div class="caption">Stitch'n Bitch: The Knitters Handbook</div>
+      </div>
+      <div class="photo-item" onclick="showBookDetails('book30')">
+        <img src="images/nonfiction-selfhelp1.jpg" alt="The Subtle Art of Not Giving a F*ck">
+        <div class="caption">The Subtle Art of Not Giving a F*ck</div>
+      </div>
+      <div class="photo-item" onclick="showBookDetails('book37')">
+        <img src="images/nonfiction-truestory3.jpg" alt="The Lost Boy">
+        <div class="caption">The Lost Boy</div>
+      </div>
+      <div class="photo-item" onclick="showBookDetails('book23')">
+        <img src="images/nonfiction-biography4.jpg" alt="Barack Obama">
+        <div class="caption">Barack obama</div>
+      </div>
+	   <div class="photo-item" onclick="showBookDetails('book57')">
+        <img src="images/children'sbook4.jpg" alt="Olaf's Quest">
+        <div class="caption">Olaf's Quest</div>
+      </div>
+      <div class="photo-item" onclick="showBookDetails('book40')">
+        <img src="images/academic-1.jpg" alt="The Nursing Profession">
+        <div class="caption">The Nursing Profession</div>
+      </div>
+      <div class="photo-item" onclick="showBookDetails('book15')">
+        <img src="images/fiction-science1.jpg" alt="Dune">
+        <div class="caption">Dune</div>
+      </div>
+	   <div class="photo-item" onclick="showBookDetails('book32')">
+        <img src="images/nonfiction-selfhelp3.jpg" alt="Maybe You Should Talk to Someone">
+        <div class="caption">Maybe You Should Talk to Someone</div>
+      </div>
+      <div class="photo-item" onclick="showBookDetails('book14')">
+        <img src="images/fiction-fantasy5.jpg" alt="American Gods">
+        <div class="caption">American Gods</div>
+      </div>
+	  <div class="photo-item" onclick="showBookDetails('book4')">
+        <img src="images/fiction-romance4.jpg" alt="The Hating game">
+        <div class="caption">The Hating Game</div>
+      </div>
+    </div>
+	<div class="product-showcase">
+	<h4>Your Daily Dose of Romance</h4>
+	</div>
+	<div class="gallery">
+      <div class="photo-item" onclick="showBookDetails('book1')">
+        <img src="images/fiction-romance1.jpg" alt="Beach Read">
+        <div class="caption">Beach Read</div>
+      </div>
+     <div class="photo-item" onclick="showBookDetails('book2')">
+        <img src="images/fiction-romance2.jpg" alt="Red White & Royal Blue">
+        <div class="caption">Red White & Royal Blue</div>
+      </div>
+      <div class="photo-item" onclick="showBookDetails('book5')">
+        <img src="images/fiction-romance5.jpg" alt="Love, Theoretically">
+        <div class="caption">Love, Theoretically</div>
+      </div>
+	  <div class="photo-item" onclick="showBookDetails('book3')">
+        <img src="images/fiction-romance3.jpg" alt="Twilight">
+        <div class="caption">Twilight</div>
+      </div>
+	  <div class="photo-item" onclick="showBookDetails('book4')">
+        <img src="images/fiction-romance4.jpg" alt="The Hating game">
+        <div class="caption">The Hating Game</div>
+      </div>
+	  <div class="photo-item" onclick="showBookDetails('book31')">
+        <img src="images/nonfiction-selfhelp2.jpg" alt="How to Date a Foreigner">
+        <div class="caption">How to Date a Foreigner</div>
+      </div>
+	</div>
+	<div class="product-showcase">
+	<h4>To You, A Message From the Future</h4>
+	</div>
+	<div class="gallery">
+      <div class="photo-item" onclick="showBookDetails('book15')">
+        <img src="images/fiction-science1.jpg" alt="Dune">
+        <div class="caption">Dune</div>
+      </div>
+     <div class="photo-item" onclick="showBookDetails('book17')">
+        <img src="images/fiction-science3.jpg" alt="Hyperion">
+        <div class="caption">Hyperion</div>
+      </div>
+      <div class="photo-item" onclick="showBookDetails('book16')">
+        <img src="images/fiction-science2.jpg" alt="1984">
+        <div class="caption">1984</div>
+      </div>
+	  <div class="photo-item" onclick="showBookDetails('book19')">
+        <img src="images/fiction-science5.jpg" alt="The Time Machine">
+        <div class="caption">The Time Machine</div>
+      </div>
+	  <div class="photo-item" onclick="showBookDetails('book60')">
+        <img src="images/fiction-science6.jpg" alt="Jurassic Park">
+        <div class="caption">Jurassic Park</div>
+      </div>
+	  <div class="photo-item" onclick="showBookDetails('book18')">
+        <img src="images/fiction-science4.jpg" alt="The Martian">
+        <div class="caption">The Martian</div>
+      </div>
+	  <div class="photo-item" onclick="showBookDetails('book69')">
+        <img src="images/cb1.jpg" alt="The Lorax">
+        <div class="caption">The Lorax</div>
+      </div>
+	  <div class="photo-item" onclick="showBookDetails('book42')">
+        <img src="images/academic3.jpg" alt="Environmental Sciences: A Student's Companion">
+        <div class="caption">Environmental Sciences: A Student's Companion</div>
+      </div>
+	  <div class="photo-item" onclick="showBookDetails('book43')">
+        <img src="images/academic4.jpg" alt="Climate Change in Asia and the Pacific">
+        <div class="caption">Climate Change in Asia and the Pacific</div>
+      </div>
+	</div>
+	<div class="product-showcase">
+	<h4>In Another One's Shoe</h4>
+	</div>
+	<div class="gallery">
+      <div class="photo-item" onclick="showBookDetails('book20')">
+        <img src="images/nonfiction-autobiography1.jpg" alt="Becoming Michelle Obama">
+        <div class="caption">Becoming</div>
+      </div>
+      <div class="photo-item" onclick="showBookDetails('book22')">
+        <img src="images/nonfiction-biography3.jpg" alt="I'm Glab My Mom Died">
+        <div class="caption">I'am Glad My Mom Died</div>
+      </div>
+      <div class="photo-item" onclick="showBookDetails('book21')">
+        <img src="images/nonfiction-biography2.jpg" alt="Our Jackie">
+        <div class="caption">Our Jackie</div>
+      </div>
+	  <div class="photo-item" onclick="showBookDetails('book36')">
+        <img src="images/nonfiction-truestory2.jpg" alt="A Child Called 'It'">
+        <div class="caption">A Child Called "It"</div>
+      </div>
+	  <div class="photo-item" onclick="showBookDetails('book24')">
+        <img src="images/nonfiction-biography5.jpg" alt="I'am Malala">
+        <div class="caption">I'am Malala</div>
+      </div>
+	  <div class="photo-item" onclick="showBookDetails('book39')">
+        <img src="images/nonfiction-truestory5.jpg" alt="I Survived: The Shark Attack of 1916">
+        <div class="caption">I Survived: The Shark Attack of 1916</div>
+      </div>
+	  <div class="photo-item" onclick="showBookDetails('book35')">
+        <img src="images/nonfiction-truestory1.jpg" alt="Silent Sisters: A True Story">
+        <div class="caption">Silent Sisters: A True Story</div>
+      </div>
+	  <div class="photo-item" onclick="showBookDetails('book38')">
+        <img src="images/nonfiction-truestory4.jpg" alt="If You Tell: A True Story of Murder">
+        <div class="caption">If You Tell: A True Story of Murder</div>
+      </div>
+	  <div class="photo-item" onclick="showBookDetails('book23')">
+        <img src="images/nonfiction-biography4.jpg" alt="A Promised Land">
+        <div class="caption">A Promised Land</div>
+      </div>
+	  <div class="photo-item" onclick="showBookDetails('book37')">
+        <img src="images/nonfiction-truestory3.jpg" alt="The Lost Boy">
+        <div class="caption">The Lost Boy</div>
+      </div>
+	</div>
+	<div class="product-showcase">
+	<h4>Face Your Fears, The Horror Awaits</h4>
+	</div>
+	<div class="gallery">
+      <div class="photo-item" onclick="showBookDetails('book9')">
+        <img src="images/fiction-horror5.jpg" alt="Uzumaki Vol.2">
+        <div class="caption">Uzumaki Vol.2</div>
+      </div>
+       <div class="photo-item" onclick="showBookDetails('book3')">
+        <img src="images/fiction-romance3.jpg" alt="Twilight">
+        <div class="caption">Twilight</div>
+      </div>
+      <div class="photo-item" onclick="showBookDetails('book8')">
+        <img src="images/fiction-horror4.jpg" alt="The Merry Spinster: Tales of Everyday Horror">
+        <div class="caption">The Merry Spinster: Tales of Everyday Horror</div>
+      </div>
+	  <div class="photo-item" onclick="showBookDetails('book7')">
+        <img src="images/fiction-horror2.jpg" alt="Uzumaki">
+        <div class="caption">Uzumaki Vol.1</div>
+      </div>
+	  <div class="photo-item" onclick="showBookDetails('book60')">
+        <img src="images/fiction-science6.jpg" alt="Jurassic Park">
+        <div class="caption">Jurassic Park</div>
+      </div>
+	  <div class="photo-item" onclick="showBookDetails('book6')">
+        <img src="images/fiction-horror1.jpg" alt="The Amityville Horror">
+        <div class="caption">The Amtyville Horror</div>
+      </div>
+	  <div class="photo-item" onclick="showBookDetails('book38')">
+        <img src="images/nonfiction-truestory4.jpg" alt="If You Tell: A True Story of Murder">
+        <div class="caption">If You Tell: A True Story of Murder</div>
+      </div>
+	  <div class="photo-item" onclick="showBookDetails('book35')">
+        <img src="images/nonfiction-truestory1.jpg" alt="Silent Sisters: A True Story">
+        <div class="caption">Silent Sisters: A True Story</div>
+      </div>
+	</div>
+	<div class="product-showcase">
+	<h4>When We Learn, We Grow</h4>
+	</div>
+	<div class="gallery">
+      <div class="photo-item" onclick="showBookDetails('book33')">
+        <img src="images/nonfiction-selfhelp4.jpg" alt="The Power of Habit: Why We Do What We Do In Life and Business">
+        <div class="caption">The Power of Habit: Why We Do What We Do In Life and Business</div>
+      </div>
+      <div class="photo-item" onclick="showBookDetails('book22')">
+        <img src="images/nonfiction-biography3.jpg" alt="I'm Glab My Mom Died">
+        <div class="caption">I'am Glad My Mom Died</div>
+      </div>
+      <div class="photo-item" onclick="showBookDetails('book29')">
+        <img src="images/nonfiction-cookbook5.jpg" alt="How to Cook Everything: Simple Recipes for Great Food">
+        <div class="caption">How to Cook Everything: Simple Recipes for Great Food</div>
+      </div>
+	  <div class="photo-item" onclick="showBookDetails('book30')">
+        <img src="images/nonfiction-selfhelp1.jpg" alt="The Subtle Art of Not Giving a F*ck">
+        <div class="caption">The Subtle Art of Not Giving a F*ck</div>
+      </div>
+	  <div class="photo-item" onclick="showBookDetails('book46')">
+        <img src="images/academic-textbook3.png" alt="World History">
+        <div class="caption">World History</div>
+      </div>
+	  <div class="photo-item" onclick="showBookDetails('book61')">
+        <img src="images/a1.jpg" alt="Wreck This Journal">
+        <div class="caption">Wreck This Journal</div>
+      </div>
+	  <div class="photo-item" onclick="showBookDetails('book71')">
+        <img src="images/cb3.jpg" alt="The Ugly Duckling">
+        <div class="caption">The Ugly Duckling</div>
+      </div>
+	   <div class="photo-item" onclick="showBookDetails('book25')">
+        <img src="images/nonfiction-cookbook.jpg" alt="Modern Comfort Food">
+        <div class="caption">Modern Comfort Food</div>
+      </div>
+	  <div class="photo-item" onclick="showBookDetails('book41')">
+        <img src="images/academic2.jpg" alt="Cancer and Cancer Care">
+        <div class="caption">Cancer and Cancer Care</div>
+      </div>
+	   <div class="photo-item" onclick="showBookDetails('book32')">
+        <img src="images/nonfiction-selfhelp3.jpg" alt="Maybe You Should Talk to Someone">
+        <div class="caption">Maybe You Should Talk to Someone</div>
+      </div>
+	  <div class="photo-item" onclick="showBookDetails('book49')">
+        <img src="images/art1.jpg" alt="Easy Origami">
+        <div class="caption">Easy Origami</div>
+      </div>
+	  <div class="photo-item" onclick="showBookDetails('book69')">
+        <img src="images/cb1.jpg" alt="The Lorax">
+        <div class="caption">The Lorax</div>
+      </div>
+	  <div class="photo-item" onclick="showBookDetails('book59')">
+        <img src="images/children'sbook-edu.jpg" alt="How to Draw 101 Things">
+        <div class="caption">How to Draw 101 Things</div>
+      </div>
+	  <div class="photo-item" onclick="showBookDetails('book26')">
+        <img src="images/nonfiction-cookbook2.jpg" alt="You Gotta Eat">
+        <div class="caption">You Gotta Eat</div>
+      </div>
+	  <div class="photo-item" onclick="showBookDetails('book67')">
+        <img src="images/aca1.jpg" alt="The Astrophotography Manual">
+        <div class="caption">The Astrophotography Manual</div>
+      </div>
+	  <div class="photo-item" onclick="showBookDetails('book52')">
+        <img src="images/art4.jpg" alt="Playing With Paper: Illuminating, Engineering, and Reimagining Paper Art">
+        <div class="caption">Playing With Paper: Illuminating, Engineering, and Reimagining Paper Art</div>
+      </div>
+	  <div class="photo-item" onclick="showBookDetails('book27')">
+        <img src="images/nonfiction-cookbook3.jpg" alt="Bake Club">
+        <div class="caption">Bake Club</div>
+      </div>
+	  <div class="photo-item" onclick="showBookDetails('book34')">
+        <img src="images/nonfiction-selfhelp5.jpg" alt="The Four Agreements">
+        <div class="caption">The Four Agreements</div>
+      </div>
+	  <div class="photo-item" onclick="showBookDetails('book28')">
+        <img src="images/nonfiction-cookbook4.jpg" alt="Salt, Fat, Acid, Heat: Mastering the Elements of Good Cooking">
+        <div class="caption">Salt, Fat, Acid, Heat: Mastering the Elements of Good Cooking</div>
+      </div>
+	  <div class="photo-item" onclick="showBookDetails('book42')">
+        <img src="images/academic3.jpg" alt="Environmental Sciences: A Student's Companion">
+        <div class="caption">Environmental Sciences: A Student's Companion</div>
+      </div>
+	  <div class="photo-item" onclick="showBookDetails('book55')">
+        <img src="images/children'sbook2.jpg" alt="Murdle Jr.">
+        <div class="caption">Murdle Jr.</div>
+      </div>
+	  <div class="photo-item" onclick="showBookDetails('book66')">
+        <img src="images/a5.webp" alt="Collins Complete DIY Manual">
+        <div class="caption">Collins Complete DIY Manual</div>
+      </div>
+	  <div class="photo-item" onclick="showBookDetails('book48')">
+        <img src="images/academic-textbook5.jpg" alt="Eloquent Javascript: Third Edition">
+        <div class="caption">Eloquent Javascript: Third Edition</div>
+      </div>
+	  <div class="photo-item" onclick="showBookDetails('book51')">
+        <img src="images/art3.jpg" alt="Handmade Houseplants">
+        <div class="caption">Handmade Houseplants</div>
+      </div>
+	  <div class="photo-item" onclick="showBookDetails('book40')">
+        <img src="images/academic-1.jpg" alt="The Nursing Profession">
+        <div class="caption">The Nursing Profession</div>
+      </div>
+	  <div class="photo-item" onclick="showBookDetails('book50')">
+        <img src="images/art2.jpg" alt="How to Paint: A Complete Beginner's Guide to Watercolors, Acrylics, and Oils">
+        <div class="caption">How to Paint: A Complete Beginner's Guide to Watercolors, Acrylics, and Oils</div>
+      </div>
+	  <div class="photo-item" onclick="showBookDetails('book68')">
+        <img src="images/aca2.webp" alt="Clinical Thinking in Psychotherapy">
+        <div class="caption">Clinical Thinking in Psychotherapy</div>
+      </div>
+	  <div class="photo-item" onclick="showBookDetails('book53')">
+        <img src="images/art5.jpg" alt="Stitch'n Bitch: The Knitters Handbook">
+        <div class="caption">Stitch'n Bitch: The Knitters Handbook</div>
+      </div>
+	</div>
+	<div class="product-showcase">
+	<h4>A World That Defies Reality</h4>
+	</div>
+	<div class="gallery">
+	<div class="photo-item" onclick="showBookDetails('book73')">
+        <img src="images/cb5.jpg" alt="Clifford the Big Red Dog">
+        <div class="caption">Clifford the Big Red Dog</div>
+      </div>
+      <div class="photo-item" onclick="showBookDetails('book15')">
+        <img src="images/fiction-science1.jpg" alt="Dune">
+        <div class="caption">Dune</div>
+      </div>
+	  <div class="photo-item" onclick="showBookDetails('book70')">
+        <img src="images/cb2.jpg" alt="Harold and the Purple Crayon">
+        <div class="caption">Harold and the Purple Crayon</div>
+      </div>
+      <div class="photo-item" onclick="showBookDetails('book3')">
+        <img src="images/fiction-romance3.jpg" alt="Twilight">
+        <div class="caption">Twilight</div>
+      </div>
+	  <div class="photo-item" onclick="showBookDetails('book69')">
+        <img src="images/cb1.jpg" alt="The Lorax">
+        <div class="caption">The Lorax</div>
+      </div>
+      <div class="photo-item" onclick="showBookDetails('book12')">
+        <img src="images/fiction-fantasy3.jpg" alt="A Game of Thrones">
+        <div class="caption">A Game of Thrones</div>
+      </div>
+	  <div class="photo-item" onclick="showBookDetails('book11')">
+        <img src="images/fiction-fantasy2.jpg" alt="The Hobbit">
+        <div class="caption">The Hobbit</div>
+      </div>
+	  <div class="photo-item" onclick="showBookDetails('book54')">
+        <img src="images/children'sbook.jpg" alt="How the Grinch Lost Christmas!">
+        <div class="caption">How the Grinch Lost Christmas!</div>
+      </div>
+	  <div class="photo-item" onclick="showBookDetails('book14')">
+        <img src="images/fiction-fantasy5.jpg" alt="American Gods">
+        <div class="caption">American Gods</div>
+      </div>
+	  <div class="photo-item" onclick="showBookDetails('book60')">
+        <img src="images/fiction-science6.jpg" alt="Jurassic Park">
+        <div class="caption">Jurassic Park</div>
+      </div>
+	  <div class="photo-item" onclick="showBookDetails('book10')">
+        <img src="images/fiction-fantasy1.jpg" alt="Harry Potter and the Chamber of Secrets">
+        <div class="caption">Harry Potter and the Chamber of Secrets</div>
+      </div>
+	  <div class="photo-item" onclick="showBookDetails('book57')">
+        <img src="images/children'sbook4.jpg" alt="Olaf's Quest">
+        <div class="caption">Olaf's Quest</div>
+      </div>
+	  <div class="photo-item" onclick="showBookDetails('book17')">
+        <img src="images/fiction-science3.jpg" alt="Hyperion">
+        <div class="caption">Hyperion</div>
+      </div>
+	  <div class="photo-item" onclick="showBookDetails('book13')">
+        <img src="images/fiction-fantasy4.jpg" alt="The Chronicles of Narnia: The Lion, The Witch, and The Wardrobe">
+        <div class="caption">The Chronicles of Narnia: The Lion, The Witch, and The Wardrobe</div>
+      </div>
+	  <div class="photo-item" onclick="showBookDetails('book18')">
+        <img src="images/fiction-science4.jpg" alt="The Martian">
+        <div class="caption">The Martian</div>
+      </div>
+	</div>
+	<div class="product-showcase">
+		<h2>Literary Categories</h2>
+	</div>
+	<div class="product-showcase">
+		<h4 id="fiction">Fiction</h4>
+	</div>
+	<div class="gallery">
+	  <div class="photo-item" onclick="showBookDetails('book15')">
+        <img src="images/fiction-science1.jpg" alt="Dune">
+        <div class="caption">Dune</div>
+      </div>
+      <div class="photo-item" onclick="showBookDetails('book1')">
+        <img src="images/fiction-romance1.jpg" alt="Beach Read">
+        <div class="caption">Beach Read</div>
+      </div>
+	  <div class="photo-item" onclick="showBookDetails('book19')">
+        <img src="images/fiction-science5.jpg" alt="The Time Machine">
+        <div class="caption">The Time Machine</div>
+      </div>
+	   <div class="photo-item" onclick="showBookDetails('book9')">
+        <img src="images/fiction-horror5.jpg" alt="Uzumaki Vol.2">
+        <div class="caption">Uzumaki Vol.2</div>
+      </div>
+     <div class="photo-item" onclick="showBookDetails('book2')">
+        <img src="images/fiction-romance2.jpg" alt="Red White & Royal Blue">
+        <div class="caption">Red White & Royal Blue</div>
+      </div>
+	  <div class="photo-item" onclick="showBookDetails('book12')">
+        <img src="images/fiction-fantasy3.jpg" alt="A Game of Thrones">
+        <div class="caption">A Game of Thrones</div>
+      </div>
+      <div class="photo-item" onclick="showBookDetails('book3')">
+        <img src="images/fiction-romance3.jpg" alt="Twilight">
+        <div class="caption">Twilight</div>
+      </div>
+	  <div class="photo-item" onclick="showBookDetails('book8')">
+        <img src="images/fiction-horror4.jpg" alt="The Merry Spinster: Tales of Everyday Horror">
+        <div class="caption">The Merry Spinster: Tales of Everyday Horror</div>
+      </div>
+      <div class="photo-item" onclick="showBookDetails('book5')">
+        <img src="images/fiction-romance5.jpg" alt="Love, Theoretically">
+        <div class="caption">Love, Theoretically</div>
+      </div>
+     <div class="photo-item" onclick="showBookDetails('book7')">
+        <img src="images/fiction-horror2.jpg" alt="Uzumaki">
+        <div class="caption">Uzumaki Vol.1</div>
+      </div>
+      <div class="photo-item" onclick="showBookDetails('book17')">
+        <img src="images/fiction-science3.jpg" alt="Hyperion">
+        <div class="caption">Hyperion</div>
+      </div>
+	  <div class="photo-item" onclick="showBookDetails('book11')">
+        <img src="images/fiction-fantasy2.jpg" alt="The Hobbit">
+        <div class="caption">The Hobbit</div>
+      </div>
+	  <div class="photo-item" onclick="showBookDetails('book13')">
+        <img src="images/fiction-fantasy4.jpg" alt="The Chronicles of Narnia: The Lion, The Witch, and The Wardrobe">
+        <div class="caption">The Chronicles of Narnia: The Lion, The Witch, and The Wardrobe</div>
+      </div>
+	  <div class="photo-item" onclick="showBookDetails('book14')">
+        <img src="images/fiction-fantasy5.jpg" alt="American Gods">
+        <div class="caption">American Gods</div>
+      </div>
+	  <div class="photo-item" onclick="showBookDetails('book4')">
+        <img src="images/fiction-romance4.jpg" alt="The Hating game">
+        <div class="caption">The Hating Game</div>
+      </div>
+	  <div class="photo-item" onclick="showBookDetails('book60')">
+        <img src="images/fiction-science6.jpg" alt="Jurassic Park">
+        <div class="caption">Jurassic Park</div>
+      </div>
+	  <div class="photo-item" onclick="showBookDetails('book16')">
+        <img src="images/fiction-science2.jpg" alt="1984">
+        <div class="caption">1984</div>
+      </div>
+	  <div class="photo-item" onclick="showBookDetails('book6')">
+        <img src="images/fiction-horror1.jpg" alt="The Amityville Horror">
+        <div class="caption">The Amtyville Horror</div>
+      </div>
+	  <div class="photo-item" onclick="showBookDetails('book10')">
+        <img src="images/fiction-fantasy1.jpg" alt="Harry Potter and the Chamber of Secrets">
+        <div class="caption">Harry Potter and the Chamber of Secrets</div>
+      </div>
+	  <div class="photo-item" onclick="showBookDetails('book18')">
+        <img src="images/fiction-science4.jpg" alt="The Martian">
+        <div class="caption">The Martian</div>
+      </div>
+    </div>
+	<div class="product-showcase">
+		<h4 id="nonfiction">Nonfiction</h4>
+	</div>
+	<div class="gallery">
+	  <div class="photo-item" onclick="showBookDetails('book20')">
+        <img src="images/nonfiction-autobiography1.jpg" alt="Becoming Michelle Obama">
+        <div class="caption">Becoming</div>
+      </div>
+	  <div class="photo-item" onclick="showBookDetails('book31')">
+        <img src="images/nonfiction-selfhelp2.jpg" alt="How to Date a Foreigner">
+        <div class="caption">How to Date a Foreigner</div>
+      </div>
+	  <div class="photo-item" onclick="showBookDetails('book22')">
+        <img src="images/nonfiction-biography3.jpg" alt="I'm Glab My Mom Died">
+        <div class="caption">I'am Glad My Mom Died</div>
+      </div>
+	  <div class="photo-item" onclick="showBookDetails('book29')">
+        <img src="images/nonfiction-cookbook5.jpg" alt="How to Cook Everything: Simple Recipes for Great Food">
+        <div class="caption">How to Cook Everything: Simple Recipes for Great Food</div>
+      </div>
+	   <div class="photo-item" onclick="showBookDetails('book33')">
+        <img src="images/nonfiction-selfhelp4.jpg" alt="The Power of Habit: Why We Do What We Do In Life and Business">
+        <div class="caption">The Power of Habit: Why We Do What We Do In Life and Business</div>
+      </div>
+	  <div class="photo-item" onclick="showBookDetails('book24')">
+        <img src="images/nonfiction-biography5.jpg" alt="I'am Malala">
+        <div class="caption">I'am Malala</div>
+      </div>
+	  <div class="photo-item" onclick="showBookDetails('book25')">
+        <img src="images/nonfiction-cookbook.jpg" alt="Modern Comfort Food">
+        <div class="caption">Modern Comfort Food</div>
+      </div>
+	  <div class="photo-item" onclick="showBookDetails('book39')">
+        <img src="images/nonfiction-truestory5.jpg" alt="I Survived: The Shark Attack of 1916">
+        <div class="caption">I Survived: The Shark Attack of 1916</div>
+      </div>
+	  <div class="photo-item" onclick="showBookDetails('book26')">
+        <img src="images/nonfiction-cookbook2.jpg" alt="You Gotta Eat">
+        <div class="caption">You Gotta Eat</div>
+      </div>
+	  <div class="photo-item" onclick="showBookDetails('book38')">
+        <img src="images/nonfiction-truestory4.jpg" alt="If You Tell: A True Story of Murder">
+        <div class="caption">If You Tell: A True Story of Murder</div>
+      </div>
+	  <div class="photo-item" onclick="showBookDetails('book27')">
+        <img src="images/nonfiction-cookbook3.jpg" alt="Bake Club">
+        <div class="caption">Bake Club</div>
+      </div>
+	  <div class="photo-item" onclick="showBookDetails('book23')">
+        <img src="images/nonfiction-biography4.jpg" alt="A Promised Land">
+        <div class="caption">A Promised Land</div>
+      </div>
+	  <div class="photo-item" onclick="showBookDetails('book30')">
+        <img src="images/nonfiction-selfhelp1.jpg" alt="The Subtle Art of Not Giving a F*ck">
+        <div class="caption">The Subtle Art of Not Giving a F*ck</div>
+      </div>
+	  <div class="photo-item" onclick="showBookDetails('book36')">
+        <img src="images/nonfiction-truestory2.jpg" alt="A Child Called 'It'">
+        <div class="caption">A Child Called "It"</div>
+      </div>
+	  <div class="photo-item" onclick="showBookDetails('book32')">
+        <img src="images/nonfiction-selfhelp3.jpg" alt="Maybe You Should Talk to Someone">
+        <div class="caption">Maybe You Should Talk to Someone</div>
+      </div>
+	  <div class="photo-item" onclick="showBookDetails('book35')">
+        <img src="images/nonfiction-truestory1.jpg" alt="Silent Sisters: A True Story">
+        <div class="caption">Silent Sisters: A True Story</div>
+      </div>
+	  <div class="photo-item" onclick="showBookDetails('book21')">
+        <img src="images/nonfiction-biography2.jpg" alt="Our Jackie">
+        <div class="caption">Our Jackie</div>
+      </div>
+	   <div class="photo-item" onclick="showBookDetails('book37')">
+        <img src="images/nonfiction-truestory3.jpg" alt="The Lost Boy">
+        <div class="caption">The Lost Boy</div>
+      </div>
+	   <div class="photo-item" onclick="showBookDetails('book34')">
+        <img src="images/nonfiction-selfhelp5.jpg" alt="The Four Agreements">
+        <div class="caption">The Four Agreements</div>
+      </div>
+	   <div class="photo-item" onclick="showBookDetails('book28')">
+        <img src="images/nonfiction-cookbook4.jpg" alt="Salt, Fat, Acid, Heat: Mastering the Elements of Good Cooking">
+        <div class="caption">Salt, Fat, Acid, Heat: Mastering the Elements of Good Cooking</div>
+      </div>
+	</div>
+	<div class="product-showcase">
+		<h4 id="academic">Academic</h4>
+	</div>
+	<div class="gallery">
+	  <div class="photo-item" onclick="showBookDetails('book40')">
+        <img src="images/academic-1.jpg" alt="The Nursing Profession">
+        <div class="caption">The Nursing Profession</div>
+      </div>
+	 <div class="photo-item" onclick="showBookDetails('book41')">
+        <img src="images/academic2.jpg" alt="Cancer and Cancer Care">
+        <div class="caption">Cancer and Cancer Care</div>
+      </div>
+	  <div class="photo-item" onclick="showBookDetails('book42')">
+        <img src="images/academic3.jpg" alt="Environmental Sciences: A Student's Companion">
+        <div class="caption">Environmental Sciences: A Student's Companion</div>
+      </div>
+	  <div class="photo-item" onclick="showBookDetails('book43')">
+        <img src="images/academic4.jpg" alt="Climate Change in Asia and the Pacific">
+        <div class="caption">Climate Change in Asia and the Pacific</div>
+      </div>
+	  <div class="photo-item" onclick="showBookDetails('book44')">
+        <img src="images/academic-textbook1.png" alt="A First Course in Linear Algebra">
+        <div class="caption">A First Course in Linear Algebra</div>
+      </div>
+	  <div class="photo-item" onclick="showBookDetails('book45')">
+        <img src="images/academic-textbook2.png" alt="The Unicode Cookbook for Linguistics">
+        <div class="caption">The Unicode Cookbook for Linguistics</div>
+      </div>
+	  <div class="photo-item" onclick="showBookDetails('book46')">
+        <img src="images/academic-textbook3.png" alt="World History">
+        <div class="caption">World History</div>
+      </div>
+	  <div class="photo-item" onclick="showBookDetails('book47')">
+        <img src="images/academic-textbook4.png" alt="Introduction to Financial Accounting">
+        <div class="caption">Introduction to Financial Accounting</div>
+      </div>
+	  <div class="photo-item" onclick="showBookDetails('book48')">
+        <img src="images/academic-textbook5.jpg" alt="Eloquent Javascript: Third Edition">
+        <div class="caption">Eloquent Javascript: Third Edition</div>
+      </div>
+	  <div class="photo-item" onclick="showBookDetails('book67')">
+        <img src="images/aca1.jpg" alt="The Astrophotography Manual">
+        <div class="caption">The Astrophotography Manual</div>
+      </div>
+	  <div class="photo-item" onclick="showBookDetails('book68')">
+        <img src="images/aca2.webp" alt="Clinical Thinking in Psychotherapy">
+        <div class="caption">Clinical Thinking in Psychotherapy</div>
+      </div>
+	</div>
+	<div class="product-showcase">
+		<h4 id="children's-book">Children's Book</h4>
+	</div>
+	<div class="gallery">
+	  <div class="photo-item" onclick="showBookDetails('book54')">
+        <img src="images/children'sbook.jpg" alt="How the Grinch Lost Christmas!">
+        <div class="caption">How the Grinch Lost Christmas!</div>
+      </div>
+	  <div class="photo-item" onclick="showBookDetails('book55')">
+        <img src="images/children'sbook2.jpg" alt="Murdle Jr.">
+        <div class="caption">Murdle Jr.</div>
+      </div>
+	  <div class="photo-item" onclick="showBookDetails('book56')">
+        <img src="images/children'sbook3.jpg" alt="Diary of a Wimpy Kid: Hot Mess">
+        <div class="caption">Diary of a Wimpy Kid: Hot Mess</div>
+      </div>
+	  <div class="photo-item" onclick="showBookDetails('book57')">
+        <img src="images/children'sbook4.jpg" alt="Olaf's Quest">
+        <div class="caption">Olaf's Quest</div>
+      </div>
+	  <div class="photo-item" onclick="showBookDetails('book58')">
+        <img src="images/children'sbook5.jpg" alt="Si Langgam at si Tipaklong">
+        <div class="caption">Si Langgam at si Tipaklong</div>
+      </div>
+	  <div class="photo-item" onclick="showBookDetails('book59')">
+        <img src="images/children'sbook-edu.jpg" alt="How to Draw 101 Things">
+        <div class="caption">How to Draw 101 Things</div>
+      </div>
+	   <div class="photo-item" onclick="showBookDetails('book69')">
+        <img src="images/cb1.jpg" alt="The Lorax">
+        <div class="caption">The Lorax</div>
+      </div>
+	  <div class="photo-item" onclick="showBookDetails('book70')">
+        <img src="images/cb2.jpg" alt="Harold and the Purple Crayon">
+        <div class="caption">Harold and the Purple Crayon</div>
+      </div>
+	  <div class="photo-item" onclick="showBookDetails('book71')">
+        <img src="images/cb3.jpg" alt="The Ugly Duckling">
+        <div class="caption">The Ugly Duckling</div>
+      </div>
+	  <div class="photo-item" onclick="showBookDetails('book72')">
+        <img src="images/cb4.jpg" alt="The Cat in the Hat">
+        <div class="caption">The Cat in the Hat</div>
+      </div>
+	  <div class="photo-item" onclick="showBookDetails('book73')">
+        <img src="images/cb5.jpg" alt="Clifford the Big Red Dog">
+        <div class="caption">Clifford the Big Red Dog</div>
+      </div>
+	  <div class="photo-item" onclick="showBookDetails('book74')">
+        <img src="images/cb6.jpg" alt="I Found A Frog">
+        <div class="caption">I Found A Frog</div>
+      </div>
+	</div>
+	<div class="product-showcase">
+		<h4 id="arts">Arts</h4>
+	</div>
+	<div class="gallery">
+	  <div class="photo-item" onclick="showBookDetails('book49')">
+        <img src="images/art1.jpg" alt="Easy Origami">
+        <div class="caption">Easy Origami</div>
+      </div>
+	  <div class="photo-item" onclick="showBookDetails('book50')">
+        <img src="images/art2.jpg" alt="How to Paint: A Complete Beginner's Guide to Watercolors, Acrylics, and Oils">
+        <div class="caption">How to Paint: A Complete Beginner's Guide to Watercolors, Acrylics, and Oils</div>
+      </div>
+	  <div class="photo-item" onclick="showBookDetails('book51')">
+        <img src="images/art3.jpg" alt="Handmade Houseplants">
+        <div class="caption">Handmade Houseplants</div>
+      </div>
+	  <div class="photo-item" onclick="showBookDetails('book52')">
+        <img src="images/art4.jpg" alt="Playing With Paper: Illuminating, Engineering, and Reimagining Paper Art">
+        <div class="caption">Playing With Paper: Illuminating, Engineering, and Reimagining Paper Art</div>
+      </div>
+	  <div class="photo-item" onclick="showBookDetails('book53')">
+        <img src="images/art5.jpg" alt="Stitch'n Bitch: The Knitters Handbook">
+        <div class="caption">Stitch'n Bitch: The Knitters Handbook</div>
+      </div>
+	  <div class="photo-item" onclick="showBookDetails('book61')">
+        <img src="images/a1.jpg" alt="Wreck This Journal">
+        <div class="caption">Wreck This Journal</div>
+      </div>
+	   <div class="photo-item" onclick="showBookDetails('book62')">
+        <img src="images/a2.jpg" alt="101 Essential Tips: Crochet">
+        <div class="caption">101 Essential Tips: Crochet</div>
+      </div>
+	  <div class="photo-item" onclick="showBookDetails('book63')">
+        <img src="images/a3.jpg" alt="15 Minute Art: Painting">
+        <div class="caption">15 Minute Art: Painting</div>
+      </div>
+	  <div class="photo-item" onclick="showBookDetails('book64')">
+        <img src="images/a4.jpg" alt="By My Hand: A Potter's Apprenticeship">
+        <div class="caption">By My Hand: A Potter's Apprenticeship</div>
+      </div>
+	  <div class="photo-item" onclick="showBookDetails('book65')">
+        <img src="images/a5.jpg" alt="Dressmaking: The Easy Guide">
+        <div class="caption">Dressmaking: The Easy Guide</div>
+      </div>
+	  <div class="photo-item" onclick="showBookDetails('book66')">
+        <img src="images/a5.webp" alt="Collins Complete DIY Manual">
+        <div class="caption">Collins Complete DIY Manual</div>
+      </div>
+	</div>
+<div id="book1" class="book-details">
+    <h2>Beach Read</h2>
+    <p>Emily Henry</p>
+    <p><strong>Synopsis:</strong> A romance writer who no longer believes in love and a literary writer stuck in a rut engage in a summer-long challenge that may just upend everything they believe about happily ever afters.</p>
+	<p><strong>Genre:</strong> Romance, Contemporary, Adult, Chicklit, Adult Fiction</p>
+	<p>361 pages, E-book ver.</p>
+	<p><strong>Published:</strong> May 19, 2020 by Berkley</p>
+	<p><strong>Language:</strong> English</p>
+	<p><strong>Type:</strong> E-book</p>
+	<a href="merchant.html">
+		<button class="merchant">Buy Now<br>₱200</button>
+	</a>
+    <div class="back-link">
+      <a href="javascript:void(0)" onclick="closeBookDetails()">Back to Gallery</a>
+    </div>
+  </div>
+  <div id="book2" class="book-details">
+    <h2>Red White & Royal Blue</h2>
+    <p>Casey McQuiston</p>
+    <p><strong>Synopsis:</strong> First Son Alex Claremont-Diaz is the closest thing to a prince this side of the Atlantic. With his intrepid sister and the Veep‘s genius granddaughter, they’re the White House Trio, a beautiful millennial marketing strategy for his mother, President Ellen Claremont. International socialite duties do have downsides—namely, when photos of a confrontation with his longtime nemesis Prince Henry at a royal wedding leak to the tabloids and threaten American/British relations.</p>
+	<p><strong>Genre:</strong> Romance, LGBT, Contempory, Queer, Young adult</p>
+	<p>448 pages, Paperback/E-book</p>
+	<p><strong>Published:</strong> May 14, 2019 by St. Martin’s Griffin</p>
+	<p><strong>Language:</strong> English</p>
+	<p><strong>Type:</strong> E-book & Physical Copy</p>
+	<a href="merchant.html">
+		<button class="merchant">Buy Now<br>₱245-E-book</button>
+	</a>
+	<a href="merchant.html">
+		<button class="merchant">Buy Now<br>₱355-Physical Copy</button>
+	</a>
+    <div class="back-link">
+      <a href="javascript:void(0)" onclick="closeBookDetails()">Back to Gallery</a>
+    </div>
+  </div>
+  <div id="book3" class="book-details">
+    <h2>Twilight</h2>
+    <p>Stephenie Meyer</p>
+    <p><strong>Synopsis:</strong> About three things I was absolutely positive. First, Edward was a vampire. Second, there was a part of him – and I didn’t know how dominant that part might be – that thirsted for my blood. And third, I was unconditionally and irrevocably in love with him. Deeply seductive and extraordinarily suspenseful, Twilight is a love story with bite.</p>
+	<p><strong>Genre:</strong> Fantasy, Young Adult, Romance, Vampires, Paranormal, Paranormal Romance</p>
+	<p>498 pages, Paperback/E-book</p>
+	<p><strong>Published:</strong> September 6, 2006 by Little, Brown and Company</p>
+	<p><strong>Language:</strong> English</p>
+	<p><strong>Type:</strong> E-book & Physical Copy</p>
+	<a href="merchant.html">
+		<button class="merchant">Buy Now<br>₱250-E-book</button>
+	</a>
+	<a href="merchant.html">
+		<button class="merchant">Buy Now<br>₱350-Physical Copy</button>
+	</a>
+    <div class="back-link">
+      <a href="javascript:void(0)" onclick="closeBookDetails()">Back to Gallery</a>
+    </div>
+  </div>
+  <div id="book4" class="book-details">
+    <h2>The Hating Game</h2>
+    <p>Sally Thorne</p>
+    <p><strong>Synopsis:</strong> Lucy Hutton and Joshua Templeman hate each other. Not dislike. Not begrudgingly tolerate. Hate. And they have no problem displaying their feelings through a series of ritualistic passive aggressive maneuvers as they sit across from each other, executive assistants to co-CEOs of a publishing company. Lucy can‘t understand Joshua’s joyless, uptight, meticulous approach to his job. Joshua is clearly baffled by Lucy‘s overly bright clothes, quirkiness, and Pollyanna attitude. Now up for the same promotion, their battle of wills has come to a head and Lucy refuses to back down when their latest game could cost her her dream job…But the tension between Lucy and Joshua has also reached its boiling point, and Lucy is discovering that maybe she doesn‘t hate Joshua. And maybe, he doesn’t hate her either. Or maybe this is just another game.</p>
+	<p><strong>Genre:</strong> Romance, Contemporary, Chicklit, Adult</p>
+	<p>365 pages, Paperback/E-book</p>
+	<p><strong>Published:</strong> August 9, 2016 by William Morrow Paperbacks</p>
+	<p><strong>Language:</strong> English</p>
+	<p><strong>Type:</strong> E-book & Physical Copy</p>
+	<a href="merchant.html">
+		<button class="merchant">Buy Now<br>₱215-E-book</button>
+	</a>
+	<a href="merchant.html">
+		<button class="merchant">Buy Now<br>₱305-Physical Copy</button>
+	</a>
+    <div class="back-link">
+      <a href="javascript:void(0)" onclick="closeBookDetails()">Back to Gallery</a>
+    </div>
+  </div>
+  <div id="book5" class="book-details">
+    <h2>Love, Theoretically</h2>
+    <p>Ali Hazelwood</p>
+    <p><strong>Synopsis:</strong>  The many lives of theoretical physicist Elsie Hannaway have finally caught up with her. By day, she‘s an adjunct professor, toiling away at grading labs and teaching thermodynamics in the hopes of landing tenure. By other day, Elsie makes up for her non-existent paycheck by offering her services as a fake girlfriend, tapping into her expertly honed people pleasing skills to embody whichever version of herself the client needs.</p>
+	<p><strong>Genre:</strong> Romance, Contemporary, Adult, Chicklit</p>
+	<p>389 pages, Paperback</p>
+	<p><strong>Published:</strong> June 13, 2023 by Sphere</p>
+	<p><strong>Language:</strong> English</p>
+	<p><strong>Type:</strong> Physical Copy</p>
+	<a href="merchant.html">
+		<button class="merchant">Buy Now<br>₱305-Physical Copy</button>
+	</a>
+    <div class="back-link">
+      <a href="javascript:void(0)" onclick="closeBookDetails()">Back to Gallery</a>
+    </div>
+  </div> 
+  <div id="book6" class="book-details">
+    <h2>The Amityville Horror</h2>
+    <p>Jay Anson</p>
+    <p><strong>Synopsis:</strong> 28 Days of Terror in a House Possessed by Evil Spirits. In December 1975, the Lutz family moved into their dream home, the same home where Ronald DeFeo had murdered his parents, brothers and sisters just one year earlier. The psychic phenomena that followed created the most terrifying experience the Lutz family had ever encountered, forcing them to flee the house in 28 days, convinced that it was possessed by evil spirits. Their fantastic story, never before disclosed in full detail, makes for an unforgettable book with all the shocks and gripping suspense of The Exorcist, The Omen or Rosemary’s Baby, but with one vital difference...the story is true.</p>
+	<p><strong>Genre:</strong> Horror, Paranormal, Classics, Thriller, Supernatural</p>
+	<p>315 pages, Paperback/E-book</p>
+	<p><strong>Published:</strong> January 1, 1978 by Bantam Books</p>
+	<p><strong>Language:</strong> English</p>
+	<p><strong>Type:</strong> E-book & Physical Copy</p>
+	<a href="merchant.html">
+		<button class="merchant">Buy Now<br>₱210-E-book</button>
+	</a>
+	<a href="merchant.html">
+		<button class="merchant">Buy Now<br>₱310-Physical Copy</button>
+	</a>
+    <div class="back-link">
+      <a href="javascript:void(0)" onclick="closeBookDetails()">Back to Gallery</a>
+    </div>
+  </div>  
+  <div id="book7" class="book-details">
+    <h2>Uzumaki Vol.1</h2>
+    <p>Junji Itō</p>
+    <p><strong>Synopsis:</strong> Shortly after Shuichi Saito’s father becomes obsessed with spiral patterns, he dies mysteriously, his body positioned in the shape of a twisted coil, and soon the entire town is afflicted with a snail-like disease.</p>
+	<p><strong>Genre:</strong> Horror, Fantasy</p>
+	<p>208 pages, Paperback/E-book</p>
+	<p><strong>Published:</strong> October 1, 2001 by VIZ Media LLC</p>
+	<p><strong>Language:</strong> English</p>
+	<p><strong>Type:</strong> E-book & Physical Copy</p>
+	<a href="merchant.html">
+		<button class="merchant">Buy Now<br>₱195-E-book</button>
+	</a>
+	<a href="merchant.html">
+		<button class="merchant">Buy Now<br>₱300-Physical Copy</button>
+	</a>
+    <div class="back-link">
+      <a href="javascript:void(0)" onclick="closeBookDetails()">Back to Gallery</a>
+    </div>
+  </div>  
+  <div id="book8" class="book-details">
+    <h2>The Merry Spinster: Tales of Everyday Horror</h2>
+    <p>Daniel M. Lavery</p>
+    <p><strong>Synopsis:</strong> From Daniel M. Lavery comes a collection of darkly mischievous stories based on classic fairy tales. Adapted from his beloved “Children’s Stories Made Horrific” series, The Merry Spinster takes up the trademark wit that endeared Lavery to readers of both The Toast and his best-selling debut Texts from Jane Eyre. The feature become among the most popular on the site, with each entry bringing in tens of thousands of views, as the stories proved a perfect vehicle for Lavery‘s eye for deconstruction and destabilization. Sinister and inviting, familiar and alien all at the same time, The Merry Spinster updates traditional children’s stories and fairy tales with elements of psychological horror, emotional clarity, and a keen sense of feminist mischief.</p>
+	<p><strong>Genre:</strong> Short Story, Fantasy, Horror, Fairy tales, Retellings, LGBT</p>
+	<p>190 pages, Paperback/E-book</p>
+	<p><strong>Published:</strong> March 13, 2018 by Holt Paperbacks</p>
+	<p><strong>Language:</strong> English</p>
+	<p><strong>Type:</strong> E-book & Physical Copy</p>
+	<a href="merchant.html">
+		<button class="merchant">Buy Now<br>₱150-E-book</button>
+	</a>
+	<a href="merchant.html">
+		<button class="merchant">Buy Now<br>₱275-Physical Copy</button>
+	</a>
+    <div class="back-link">
+      <a href="javascript:void(0)" onclick="closeBookDetails()">Back to Gallery</a>
+    </div>
+  </div> 
+  <div id="book9" class="book-details">
+    <h2>Uzumaki Vol.2</h2>
+    <p>Junji Itō</p>
+    <p><strong>Synopsis:</strong> A sleepy town on the coast of Japan is under quiet, deadly siege, not by a person or group but by a primeval spiral shape whose victims include both parents of Shuichi Saito. In this second volume of the saga, Shuichi‘s girlfriend Kirie becomes further involved in the town’s terrible secret when schoolmates start turning up as horrible human snails and something unspeakable is discovered within the walls of the local hospital.</p>
+	<p><strong>Genre:</strong> Horror, Fantasy</p>
+	<p>208 pages, Paperback/E-book</p>
+	<p><strong>Published:</strong> July 6, 2002 by VIZ Media LLC</p>
+	<p><strong>Language:</strong> English</p>
+	<p><strong>Type:</strong> E-book & Physical Copy</p>
+	<a href="merchant.html">
+		<button class="merchant">Buy Now<br>₱190-E-book</button>
+	</a>
+	<a href="merchant.html">
+		<button class="merchant">Buy Now<br>₱295-Physical Copy</button>
+	</a>
+    <div class="back-link">
+      <a href="javascript:void(0)" onclick="closeBookDetails()">Back to Gallery</a>
+    </div>
+  </div>
+  <div id="book10" class="book-details">
+    <h2>Harry Potter and the Chamber of Secrets</h2>
+    <p>J.K Rowling</p>
+    <p><strong>Synopsis:</strong> Ever since Harry Potter had come home for the summer, the Dursleys had been so mean and hideous that all Harry wanted was to get back to the Hogwarts School for Witchcraft and Wizardry. But just as he‘s packing his bags, Harry receives a warning from a strange impish creature who says that if Harry returns to Hogwarts, disaster will strike.</p>
+	<p><strong>Genre:</strong> Fantasy, Magic, Adventure</p>
+	<p>352 pages, Hardcover/E-book</p>
+	<p><strong>Published:</strong> June 2, 1999 by Arthur A. Levine Books</p>
+	<p><strong>Language:</strong> English</p>
+	<p><strong>Type:</strong> E-book & Physical Copy</p>
+	<a href="merchant.html">
+		<button class="merchant">Buy Now<br>₱295-E-book</button>
+	</a>
+	<a href="merchant.html">
+		<button class="merchant">Buy Now<br>₱399-Physical Copy</button>
+	</a>
+    <div class="back-link">
+      <a href="javascript:void(0)" onclick="closeBookDetails()">Back to Gallery</a>
+    </div>
+  </div> 
+  <div id="book11" class="book-details">
+    <h2>The Hobbit</h2>
+    <p>John Ronald Reuel Tolkien</p>
+    <p><strong>Synopsis:</strong> In a hole in the ground there lived a hobbit. Not a nasty, dirty, wet hole, filled with the ends of worms and an oozy smell, nor yet a dry, bare, sandy hole with nothing in it to sit down on or to eat: it was a hobbit-hole, and that means comfort.</p>
+	<p><strong>Genre:</strong> Fantasy, Magic, Science Fiction</p>
+	<p>366 pages, Paperback</p>
+	<p><strong>Published:</strong> August 15, 2002 by Houghton Mifflin</p>
+	<p><strong>Language:</strong> English</p>
+	<p><strong>Type:</strong> E-book & Physical Copy</p>
+	<a href="merchant.html">
+		<button class="merchant">Buy Now<br>₱385-Physical Copy</button>
+	</a>
+    <div class="back-link">
+      <a href="javascript:void(0)" onclick="closeBookDetails()">Back to Gallery</a>
+    </div>
+  </div> 
+  <div id="book12" class="book-details">
+    <h2>A Game of Thrones</h2>
+    <p>George Raymond Richard “R.R.” Martin</p>
+    <p><strong>Synopsis:</strong> Threw the seasons out of balance. In a land where summers can last decades and winters a lifetime, trouble is brewing. The cold is returning, and in the frozen wastes to the north of Winterfell, sinister forces are massing beyond the kingdom‘s protective Wall. To the south, the king’s powers are failing—his most trusted adviser dead under mysterious circumstances and his enemies emerging from the shadows of the throne. At the center of the conflict lie the Starks of Winterfell, a family as harsh and unyielding as the frozen land they were born to. Now Lord Eddard Stark is reluctantly summoned to serve as the king‘s new Hand, an appointment that threatens to sunder not only his family but the kingdom itself.</p>
+	<p><strong>Genre:</strong> Fantasy, Epic Fantasy, Adult</p>
+	<p>835 pages, Paperback/E-book</p>
+	<p><strong>Published:</strong> August 1, 2005 by Bantam</p>
+	<p><strong>Language:</strong> English</p>
+	<p><strong>Type:</strong> E-book & Physical Copy</p>
+	<a href="merchant.html">
+		<button class="merchant">Buy Now<br>₱545-E-book</button>
+	</a>
+	<a href="merchant.html">
+		<button class="merchant">Buy Now<br>₱650-Physical Copy</button>
+	</a>
+    <div class="back-link">
+      <a href="javascript:void(0)" onclick="closeBookDetails()">Back to Gallery</a>
+    </div>
+  </div> 
+  <div id="book13" class="book-details">
+    <h2>The Chronicles of Narnia: The Lion, The Witch, and The Wardrobe</h2>
+    <p>Clive Staples Lewis</p>
+    <p><strong>Synopsis:</strong> Narnia… the land beyond the wardrobe door, a secret place frozen in eternal winter, a magical country waiting to be set free. Lucy is the first to find the secret of the wardrobe in the professor’s mysterious old house. At first her brothers and sister don’t believe her when she tells of her visit to the land of Narnia. But soon Edmund, then Peter and Susan step through the wardrobe themselves. In Narnia they find a country buried under the evil enchantment of the White Witch. When they meet the Lion Aslan, they realize they’ve been called to a great adventure and bravely join the battle to free Narnia from the Witch’s sinister spell.</p>
+	<p><strong>Genre:</strong> Fantasy, Young Adult, Adventure</p>
+	<p>206 pages, Paperback/E-book</p>
+	<p><strong>Published:</strong> January 1, 2005 by HarperCollins Publishers</p>
+	<p><strong>Language:</strong> English</p>
+	<p><strong>Type:</strong> E-book & Physical Copy</p>
+	<a href="merchant.html">
+		<button class="merchant">Buy Now<br>₱215-E-book</button>
+	</a>
+    <div class="back-link">
+      <a href="javascript:void(0)" onclick="closeBookDetails()">Back to Gallery</a>
+    </div>
+  </div> 
+  <div id="book14" class="book-details">
+    <h2>American Gods</h2>
+    <p>Neil Gaiman </p>
+    <p><strong>Synopsis:</strong> Days before his release from prison, Shadow’s wife, Laura, dies in a mysterious car crash. Numbly, he makes his way back home. On the plane, he encounters the enigmatic Mr Wednesday, who claims to be a refugee from a distant war, a former god and the king of America. Together they embark on a profoundly strange journey across the heart of the USA, whilst all around them a storm of preternatural and epic proportions threatens to break. Scary, gripping and deeply unsettling, American Gods takes a long, hard look into the soul of America. You’ll be surprised by what – and who – it finds there...</p>
+	<p><strong>Genre:</strong> Fantasy, Mythology, Science Fiction</p>
+	<p>635 pages, Paperback/E-book</p>
+	<p><strong>Published:</strong> August 1, 2005 by Bantam</p>
+	<p><strong>Language:</strong> English</p>
+	<p><strong>Type:</strong> E-book & Physical Copy</p>
+	<a href="merchant.html">
+		<button class="merchant">Buy Now<br>₱480-E-book</button>
+	</a>
+	<a href="merchant.html">
+		<button class="merchant">Buy Now<br>₱545-Physical Copy</button>
+	</a>
+    <div class="back-link">
+      <a href="javascript:void(0)" onclick="closeBookDetails()">Back to Gallery</a>
+    </div>
+  </div>  
+  <div id="book15" class="book-details">
+    <h2>Dune</h2>
+    <p>Franklin Patrick Herbert Jr.</p>
+    <p><strong>Synopsis:</strong> Set on the desert planet Arrakis, Dune is the story of the boy Paul Atreides, heir to a noble family tasked with ruling an inhospitable world where the only thing of value is the “spice” melange, a drug capable of extending life and enhancing consciousness. Coveted across the known universe, melange is a prize worth killing for... When House Atreides is betrayed, the destruction of Paul‘s family will set the boy on a journey toward a destiny greater than he could ever have imagined. And as he evolves into the mysterious man known as Muad’Dib, he will bring to fruition humankind‘s most ancient and unattainable dream.</p>
+	<p><strong>Genre:</strong> Science Fiction, Fantasy, Classics</p>
+	<p>658 pages, Hardcover/E-book</p>
+	<p><strong>Published:</strong> October 1, 2019 by Ace</p>
+	<p><strong>Language:</strong> English</p>
+	<p><strong>Type:</strong> E-book & Physical Copy</p>
+	<a href="merchant.html">
+		<button class="merchant">Buy Now<br>₱615-E-book</button>
+	</a>
+	<a href="merchant.html">
+		<button class="merchant">Buy Now<br>₱720-Physical Copy</button>
+	</a>
+    <div class="back-link">
+      <a href="javascript:void(0)" onclick="closeBookDetails()">Back to Gallery</a>
+    </div>
+  </div> 
+  <div id="book16" class="book-details">
+    <h2>1984</h2>
+    <p>Eric Arthur Blair</p>
+    <p><strong>Synopsis:</strong> A masterpiece of rebellion and imprisonment where war is peace freedom is slavery and Big Brother is watching. Thought Police, Big Brother, Orwellian – these words have entered our vocabulary because of George Orwell’s classic dystopian novel 1984. The story of one man’s Nightmare Odyssey as he pursues a forbidden love affair through a world ruled by warring states and a power structure that controls not only information but also individual thought and memory 1984 is a prophetic haunting tale More relevant than ever before 1984 exposes the worst crimes imaginable the destruction of truth freedom and individuality. With a foreword by Thomas Pynchon. This beautiful paperback edition features deckled edges and french flaps a perfect gift for any occasion</p>
+	<p><strong>Genre:</strong> Science Fiction, Fantasy, Classics, Dystopia, Politics</p>
+	<p>368 pages, Paperback/E-book</p>
+	<p><strong>Published:</strong> July 1, 2022 by Plume</p>
+	<p><strong>Language:</strong> English</p>
+	<p><strong>Type:</strong> E-book & Physical Copy</p>
+	<a href="merchant.html">
+		<button class="merchant">Buy Now<br>₱235-E-book</button>
+	</a>
+	<a href="merchant.html">
+		<button class="merchant">Buy Now<br>₱310-Physical Copy</button>
+	</a>
+    <div class="back-link">
+      <a href="javascript:void(0)" onclick="closeBookDetails()">Back to Gallery</a>
+    </div>
+  </div>  
+  <div id="book17" class="book-details">
+    <h2>Hyperion</h2>
+    <p>Dan Simmons</p>
+    <p><strong>Synopsis:</strong> On the world called Hyperion, beyond the law of the Hegemony of Man, there waits the creature called the Shrike. There are those who worship it. There are those who fear it. And there are those who have vowed to destroy it. In the Valley of the Time Tombs, where huge, brooding structures move backward through time, the Shrike waits for them all. On the eve of Armageddon, with the entire galaxy at war, seven pilgrims set forth on a final voyage to Hyperion seeking the answers to the unsolved riddles of their lives. Each carries a desperate hope—and a terrible secret. And one may hold the fate of humanity in his hands.</p>
+	<p><strong>Genre:</strong> Science Fiction, Fantasy, Space Opera, Horror</p>
+	<p>500 pages, Paperback/E-book</p>
+	<p><strong>Published:</strong> March 1, 1990 by Bantam Doubleday Dell Publishing Group</p>
+	<p><strong>Language:</strong> English</p>
+	<p><strong>Type:</strong> E-book & Physical Copy</p>
+	<a href="merchant.html">
+		<button class="merchant">Buy Now<br>₱390-E-book</button>
+	</a>
+	<a href="merchant.html">
+		<button class="merchant">Buy Now<br>₱485-Physical Copy</button>
+	</a>
+    <div class="back-link">
+      <a href="javascript:void(0)" onclick="closeBookDetails()">Back to Gallery</a>
+    </div>
+  </div>
+  <div id="book18" class="book-details">
+    <h2>The Martian</h2>
+    <p>Andy Weir</p>
+    <p><strong>Synopsis:</strong> Six days ago, astronaut Mark Watney became one of the first people to walk on Mars. Now, he‘s sure he’ll be the first person to die there.</p>
+	<p><strong>Genre:</strong> Science Fiction, Adventure, Space, Adult, Thriller, Humor, Survival</p>
+	<p>384 pages, Hardcover/E-book</p>
+	<p><strong>Published:</strong> February 11, 2014 by Ballantine Books</p>
+	<p><strong>Language:</strong> English</p>
+	<p><strong>Type:</strong> E-book & Physical Copy</p>
+	<a href="merchant.html">
+		<button class="merchant">Buy Now<br>₱310-E-book</button>
+	</a>
+	<a href="merchant.html">
+		<button class="merchant">Buy Now<br>₱399-Physical Copy</button>
+	</a>
+    <div class="back-link">
+      <a href="javascript:void(0)" onclick="closeBookDetails()">Back to Gallery</a>
+    </div>
+  </div> 
+  <div id="book19" class="book-details">
+    <h2>The Time Machine</h2>
+    <p>Herbert George Wells</p>
+    <p><strong>Synopsis:</strong> “I‘ve had a most amazing time....” So begins the Time Traveller‘s astonishing firsthand account of his journey 800,000 years beyond his own era—and the story that launched H.G. Wells’s successful career and earned him his reputation as the father of science fiction. With a speculative leap that still fires the imagination, Wells sends his brave explorer to face a future burdened with our greatest hopes...and our darkest fears. A pull of the Time Machine‘s lever propels him to the age of a slowly dying Earth.  There he discovers two bizarre races—the ethereal Eloi and the subterranean Morlocks—who not only symbolize the duality of human nature, but offer a terrifying portrait of the men of tomorrow as well.  Published in 1895, this masterpiece of invention captivated readers on the threshold of a new century. Thanks to Wells’s expert storytelling and provocative insight, The Time Machine will continue to enthrall readers for generations to come.</p>
+	<p><strong>Genre:</strong> Science Fiction, Classics, Time Travel, Fantasy, Dystopia, Adventure</p>
+	<p>384 pages, Hardcover/E-book</p>
+	<p><strong>Published:</strong> February 11, 2014 by Ballantine Books</p>
+	<p><strong>Language:</strong> English</p>
+	<p><strong>Type:</strong> E-book & Physical Copy</p>
+	<a href="merchant.html">
+		<button class="merchant">Buy Now<br>₱310-E-book</button>
+	</a>
+	<a href="merchant.html">
+		<button class="merchant">Buy Now<br>₱399-Physical Copy</button>
+	</a>
+    <div class="back-link">
+      <a href="javascript:void(0)" onclick="closeBookDetails()">Back to Gallery</a>
+    </div>
+  </div> 
+  <div id="book60" class="book-details">
+    <h2>Jurassic Park</h2>
+    <p>Michael Crichton</p>
+    <p><strong>Synopsis:</strong> An astonishing technique for recovering and cloning dinosaur DNA has been discovered. Now humankind‘s most thrilling fantasies have come true. Creatures extinct for eons roam Jurassic Park with their awesome presence and profound mystery, and all the world can visit them—for a price. Until something goes wrong. . . .</p>
+	<p><strong>Genre:</strong> Science Fiction, Thriller, Fantasy, Horror, Adventure, Classics, Dinosaur </p>
+	<p>466 pages, Hardcover/E-book</p>
+	<p><strong>Published:</strong> May 14, 2012 by Ballantine Books</p>
+	<p><strong>Language:</strong> English</p>
+	<p><strong>Type:</strong> E-book & Physical Copy</p>
+	<a href="merchant.html">
+		<button class="merchant">Buy Now<br>₱345-E-book</button>
+	</a>
+	<a href="merchant.html">
+		<button class="merchant">Buy Now<br>₱465-Physical Copy</button>
+	</a>
+    <div class="back-link">
+      <a href="javascript:void(0)" onclick="closeBookDetails()">Back to Gallery</a>
+    </div>
+  </div>  
+  <div id="book20" class="book-details">
+    <h2>Becoming</h2>
+    <p>Michelle Obama</p>
+    <p><strong>Synopsis:</strong> In a life filled with meaning and accomplishment, Michelle Obama has emerged as one of the most iconic and compelling women of our era. As First Lady of the United States of America—the first African American to serve in that role—she helped create the most welcoming and inclusive White House in history, while also establishing herself as a powerful advocate for women and girls in the U.S. and around the world, dramatically changing the ways that families pursue healthier and more active lives, and standing with her husband as he led America through some of its most harrowing moments. Along the way, she showed us a few dance moves, crushed Carpool Karaoke, and raised two down-to-earth daughters under an unforgiving media glare.</p>
+	<p><strong>Genre:</strong> Autobiography, History, Adult, Politics, Feminism</p>
+	<p>426 pages, Hardcover/E-book</p>
+	<p><strong>Published:</strong> November 13, 2018 by Crown</p>
+	<p><strong>Language:</strong> English</p>
+	<p><strong>Type:</strong> E-book & Physical Copy</p>
+	<a href="merchant.html">
+		<button class="merchant">Buy Now<br>₱210-E-book</button>
+	</a>
+	<a href="merchant.html">
+		<button class="merchant">Buy Now<br>₱315-Physical Copy</button>
+	</a>
+    <div class="back-link">
+      <a href="javascript:void(0)" onclick="closeBookDetails()">Back to Gallery</a>
+    </div>
+  </div>   
+  <div id="book21" class="book-details">
+    <h2>Our Jackie</h2>
+    <p>Karen M. Dunak</p>
+    <p><strong>Synopsis:</strong> Tells the story of Jacqueline Kennedy Onassis through her evolving public persona, from campaign wife to First Lady to fallen idol to treasured national icon. When Jacqueline Kennedy Onassis became First Lady of the United States over sixty years ago, she stepped into the public spotlight. Although Jackie is perhaps best known for her two highly-publicized marriages, her legacy has endured beyond twentieth-century pop culture and she remains an object of public fascination today.</p>
+	<p><strong>Genre:</strong> Autobiography, History, Adult, Politics, Feminism</p>
+	<p>360 pages, Hardcover/E-book</p>
+	<p><strong>Published:</strong> November 12, 2024 by NYU Press</p>
+	<p><strong>Language:</strong> English</p>
+	<p><strong>Type:</strong> E-book & Physical Copy</p>
+	<a href="merchant.html">
+		<button class="merchant">Buy Now<br>₱155-E-book</button>
+	</a>
+	<a href="merchant.html">
+		<button class="merchant">Buy Now<br>₱285-Physical Copy</button>
+	</a>
+    <div class="back-link">
+      <a href="javascript:void(0)" onclick="closeBookDetails()">Back to Gallery</a>
+    </div>
+  </div> 
+  <div id="book22" class="book-details">
+    <h2>I'am Glad My Mom Died</h2>
+    <p>Jennette McCurdy</p>
+    <p><strong>Synopsis:</strong> A heartbreaking and hilarious memoir by iCarly and Sam & Cat star Jennette McCurdy about her struggles as a former child actor—including eating disorders, addiction, and a complicated relationship with her overbearing mother—and how she retook control of her life.</p>
+	<p><strong>Genre:</strong> Memoir, Autobiography, Adult, Mental Health</p>
+	<p>320 pages, Hardcover/E-book</p>
+	<p><strong>Published:</strong> August 9, 2022 by Simon & Schuster</p>
+	<p><strong>Language:</strong> English</p>
+	<p><strong>Type:</strong> E-book & Physical Copy</p>
+	<a href="merchant.html">
+		<button class="merchant">Buy Now<br>₱275-E-book</button>
+	</a>
+	<a href="merchant.html">
+		<button class="merchant">Buy Now<br>₱399-Physical Copy</button>
+	</a>
+    <div class="back-link">
+      <a href="javascript:void(0)" onclick="closeBookDetails()">Back to Gallery</a>
+    </div>
+  </div>
+  <div id="book23" class="book-details">
+    <h2>A Promised Land</h2>
+    <p>Barack Obama</p>
+    <p><strong>Synopsis:</strong> In the stirring, highly anticipated first volume of his presidential memoirs, Barack Obama tells the story of his improbable odyssey from young man searching for his identity to leader of the free world, describing in strikingly personal detail both his political education and the landmark moments of the first term of his historic presidency—a time of dramatic transformation and turmoil.</p>
+	<p><strong>Genre:</strong> Autobiography, Memoir, Politics, History</p>
+	<p>768 pages, Hardcover/E-book</p>
+	<p><strong>Published:</strong> November 17, 2020 by Crown</p>
+	<p><strong>Language:</strong> English</p>
+	<p><strong>Type:</strong> E-book & Physical Copy</p>
+	<a href="merchant.html">
+		<button class="merchant">Buy Now<br>₱299-E-book</button>
+	</a>
+	<a href="merchant.html">
+		<button class="merchant">Buy Now<br>₱399-Physical Copy</button>
+	</a>
+    <div class="back-link">
+      <a href="javascript:void(0)" onclick="closeBookDetails()">Back to Gallery</a>
+    </div>
+  </div>  
+  <div id="book24" class="book-details">
+    <h2>I'am Malala</h2>
+    <p>Malala Yousafzai</p>
+    <p><strong>Synopsis:</strong> I Am Malala is the remarkable tale of a family uprooted by global terrorism, of the fight for girls’ education, of a father who, himself a school owner, championed and encouraged his daughter to write and attend school, and of brave parents who have a fierce love for their daughter in a society that prizes sons.</p>
+	<p><strong>Genre:</strong> Autobiography, Memoir, Feminism, History, Politics</p>
+	<p>327 pages, Hardcover/E-book</p>
+	<p><strong>Published:</strong> October 8, 2013 by Little, Brown and Company</p>
+	<p><strong>Language:</strong> English</p>
+	<p><strong>Type:</strong> E-book & Physical Copy</p>
+	<a href="merchant.html">
+		<button class="merchant">Buy Now<br>₱315-E-book</button>
+	</a>
+	<a href="merchant.html">
+		<button class="merchant">Buy Now<br>₱410-Physical Copy</button>
+	</a>
+    <div class="back-link">
+      <a href="javascript:void(0)" onclick="closeBookDetails()">Back to Gallery</a>
+    </div>
+  </div>  
+  <div id="book25" class="book-details">
+    <h2>Modern Comfort Food</h2>
+    <p>Ina Garten</p>
+    <p><strong>Synopsis:</strong> In Modern Comfort Food, Ina Garten shares 85 new recipes that will feed your deepest cravings. Many of these dishes are inspired by childhood favorites—but with the volume turned way up, such as Cheddar and Chutney Grilled Cheese sandwiches (the perfect match for Ina’s Creamy Tomato Bisque), Smashed Hamburgers with Caramelized Onions, and the crispiest hash browns that are actually made in a waffle iron!</p>
+	<p><strong>Genre:</strong> Cookbooks, Cooking, Culinary, Health, Food and Drink, Foodie</p>
+	<p>256 pages, Hardcover/E-book</p>
+	<p><strong>Published:</strong> October 6, 2020 by Clarkson Potter</p>
+	<p><strong>Language:</strong> English</p>
+	<p><strong>Type:</strong> E-book & Physical Copy</p>
+	<a href="merchant.html">
+		<button class="merchant">Buy Now<br>₱155-E-book</button>
+	</a>
+	<a href="merchant.html">
+		<button class="merchant">Buy Now<br>₱210-Physical Copy</button>
+	</a>
+    <div class="back-link">
+      <a href="javascript:void(0)" onclick="closeBookDetails()">Back to Gallery</a>
+    </div>
+  </div>  
+  <div id="book26" class="book-details">
+    <h2>You Gotta Eat</h2>
+    <p>Margaret Eby</p>
+    <p><strong>Synopsis:</strong> A trained chef teaches you how to keep yourself fed in the face of stress, burnout, and exhaustion—and have fun doing it.Delivery is expensive. Eating a spoonful of peanut butter is depressing. You can’t imagine having the energy to chop an onion. But somehow, you gotta eat. How does anyone feed themselves under these conditions?Enter You Gotta Eat, a friendly, accessible resource for getting something on your plate when you have too much on your plate. Part cookbook, part pep talk, and part action plan, You Gotta Eat offers tips and tactics—plus ten “do exactly this” recipes—for making effortless food that’s nourishing, tasty, and even a little fun.</p>
+	<p><strong>Genre:</strong> Food, Cookbooks, Cooking</p>
+	<p>192 pages, Hardcover/E-book</p>
+	<p><strong>Published:</strong> November 19, 2024 by Quirk Books</p>
+	<p><strong>Language:</strong> English</p>
+	<p><strong>Type:</strong> E-book & Physical Copy</p>
+	<a href="merchant.html">
+		<button class="merchant">Buy Now<br>₱105-E-book</button>
+	</a>
+	<a href="merchant.html">
+		<button class="merchant">Buy Now<br>₱235-Physical Copy</button>
+	</a>
+    <div class="back-link">
+      <a href="javascript:void(0)" onclick="closeBookDetails()">Back to Gallery</a>
+    </div>
+  </div>
+  <div id="book27" class="book-details">
+    <h2>Bake Club</h2>
+    <p>Christina Tosi</p>
+    <p><strong>Synopsis:</strong> A collection of 100-plus unfussy, oh-so-good sweet and savory recipes from  the best-selling author and founder of Milk Bar</p>
+	<p><strong>Genre:</strong> Cookbooks, Cooking</p>
+	<p>247 pages, E-book</p>
+	<p><strong>Published:</strong> November 12, 2024 by Knopf</p>
+	<p><strong>Language:</strong> English</p>
+	<p><strong>Type:</strong> E-book & Physical Copy</p>
+	<a href="merchant.html">
+		<button class="merchant">Buy Now<br>₱165-E-book</button>
+	</a>
+    <div class="back-link">
+      <a href="javascript:void(0)" onclick="closeBookDetails()">Back to Gallery</a>
+    </div>
+  </div> 
+  <div id="book28" class="book-details">
+    <h2>Salt, Fat, Acid, Heat: Mastering the Elements of Good Cooking</h2>
+    <p>Samin Nosrat</p>
+    <p><strong>Synopsis:</strong> Featuring 150 illustrations and infographics that reveal an atlas to the world of flavor by renowned illustrator Wendy MacNaughton, Salt, Fat, Acid, Heat will be your compass in the kitchen. Destined to be a classic, it just might be the last cookbook you’ll ever need.</p>
+	<p><strong>Genre:</strong> Cookbook, Cooking, Food, Science, Culinary</p>
+	<p>480 pages, Hardcover/E-book</p>
+	<p><strong>Published:</strong> April 25, 2017 by Simon and Schuste</p>
+	<p><strong>Language:</strong> English</p>
+	<p><strong>Type:</strong> E-book & Physical Copy</p>
+	<a href="merchant.html">
+		<button class="merchant">Buy Now<br>₱205-E-book</button>
+	</a>
+	<a href="merchant.html">
+		<button class="merchant">Buy Now<br>₱320-Physical Copy</button>
+	</a>
+    <div class="back-link">
+      <a href="javascript:void(0)" onclick="closeBookDetails()">Back to Gallery</a>
+    </div>
+  </div> 
+  <div id="book29" class="book-details">
+    <h2>How to Cook Everything: Simple Recipes for Great Food</h2>
+    <p>Mark Bittman</p>
+    <p><strong>Synopsis:</strong> Great Food Made Simple. Here’s the breakthrough one-stop cooking reference for today’s generation of cooks! Nationally known cooking authority Mark Bittman shows you how to prepare great food for all occasions using simple techniques, fresh ingredients, and basic kitchen equipment. Just as important, How to Cook Everything takes a relaxed, straightforward approach to cooking, so you can enjoy yourself in the kitchen and still achieve outstanding results.</p>
+	<p><strong>Genre:</strong> Cookbook, Cooking, Food, Culinary</p>
+	<p>944 pages, Hardcover/E-book</p>
+	<p><strong>Published:</strong> August 14, 1998 by John Wiley & Sons</p>
+	<p><strong>Language:</strong> English</p>
+	<p><strong>Type:</strong> E-book & Physical Copy</p>
+	<a href="merchant.html">
+		<button class="merchant">Buy Now<br>₱399-E-book</button>
+	</a>
+	<a href="merchant.html">
+		<button class="merchant">Buy Now<br>₱505-Physical Copy</button>
+	</a>
+    <div class="back-link">
+      <a href="javascript:void(0)" onclick="closeBookDetails()">Back to Gallery</a>
+    </div>
+  </div> 
+  <div id="book30" class="book-details">
+    <h2>The Subtle Art of Not Giving a F*ck</h2>
+    <p>Mark Manson</p>
+    <p><strong>Synopsis:</strong> There are only so many things we can give a f**k about so we need to figure out which ones really matter, Manson makes clear. While money is nice, caring about what you do with your life is better, because true wealth is about experience. A much-needed grab-you-by-the-shoulders-and-look-you-in-the-eye moment of real-talk, filled with entertaining stories and profane, ruthless humor, The Subtle Art of Not Giving a F**k is a refreshing slap for a generation to help them lead contented, grounded lives.</p>
+	<p><strong>Genre:</strong> Self-help, Psychology, Personal Development, Philosophy</p>
+	<p>212 pages, Paperback/E-book</p>
+	<p><strong>Published:</strong> September 13, 2016 by Harper</p>
+	<p><strong>Language:</strong> English</p>
+	<p><strong>Type:</strong> E-book & Physical Copy</p>
+	<a href="merchant.html">
+		<button class="merchant">Buy Now<br>₱200-E-book</button>
+	</a>
+	<a href="merchant.html">
+		<button class="merchant">Buy Now<br>₱295-Physical Copy</button>
+	</a>
+    <div class="back-link">
+      <a href="javascript:void(0)" onclick="closeBookDetails()">Back to Gallery</a>
+    </div>
+  </div>  
+  <div id="book31" class="book-details">
+    <h2>How to Date a Foreigner</h2>
+    <p>Sylvia Halter</p>
+    <p><strong>Synopsis:</strong> With its proven framework, How to Date a Foreigner leads the way in explaining cultural differences in dating and provides a first-of-its-kind guidebook to navigating them with ease. Ultimately, international dating should be fun and enjoyable and not paved with obstacles.</p>
+	<p><strong>Genre:</strong> Psychology, Romance, Cultural, Self-help, Relationship, Sociology </p>
+	<p>312 pages, Hardcover/E-book</p>
+	<p><strong>Published:</strong> October 22, 2024 by cultureZ Publishing</p>
+	<p><strong>Language:</strong> English</p>
+	<p><strong>Type:</strong> E-book & Physical Copy</p>
+	<a href="merchant.html">
+		<button class="merchant">Buy Now<br>₱215-E-book</button>
+	</a>
+	<a href="merchant.html">
+		<button class="merchant">Buy Now<br>₱315-Physical Copy</button>
+	</a>
+    <div class="back-link">
+      <a href="javascript:void(0)" onclick="closeBookDetails()">Back to Gallery</a>
+    </div>
+  </div>  
+  <div id="book32" class="book-details">
+    <h2>Maybe You Should Talk to Someone</h2>
+    <p>Lori Gottlieb</p>
+    <p><strong>Synopsis:</strong> Maybe You Should Talk to Someone is revolutionary in its candor, offering a deeply personal yet universal tour of our hearts and minds and providing the rarest of gifts: a boldly revealing portrait of what it means to be human, and a disarmingly funny and illuminating account of our own mysterious lives and our power to transform them.</p>
+	<p><strong>Genre:</strong> Psychology, Memoir, Self-help, Mental Health</p>
+	<p>415 pages, Hardcover/E-book</p>
+	<p><strong>Published:</strong> April 2, 2019 by Harper</p>
+	<p><strong>Language:</strong> English</p>
+	<p><strong>Type:</strong> E-book & Physical Copy</p>
+	<a href="merchant.html">
+		<button class="merchant">Buy Now<br>₱265-E-book</button>
+	</a>
+	<a href="merchant.html">
+		<button class="merchant">Buy Now<br>₱310-Physical Copy</button>
+	</a>
+    <div class="back-link">
+      <a href="javascript:void(0)" onclick="closeBookDetails()">Back to Gallery</a>
+    </div>
+  </div>
+  <div id="book33" class="book-details">
+    <h2>The Power of Habit: Why We Do What We Do In Life and Business</h2>
+    <p>Charles Duhigg</p>
+    <p><strong>Synopsis:</strong> At its core, The Power of Habit contains an exhilarating argument: The key to exercising regularly, losing weight, raising exceptional children, becoming more productive, building revolutionary companies and social movements, and achieving success is understanding how habits work. Habits aren’t destiny. As Charles Duhigg shows, by harnessing this new science, we can transform our businesses, our communities, and our lives.</p>
+	<p><strong>Genre:</strong> Self-help, Psychology, Business, Personal Development, Productivity</p>
+	<p>375 pages, Hardcover/E-book</p>
+	<p><strong>Published:</strong> February 28, 2012 by Random House</p>
+	<p><strong>Language:</strong> English</p>
+	<p><strong>Type:</strong> E-book & Physical Copy</p>
+	<a href="merchant.html">
+		<button class="merchant">Buy Now<br>₱285-E-book</button>
+	</a>
+	<a href="merchant.html">
+		<button class="merchant">Buy Now<br>₱325-Physical Copy</button>
+	</a>
+    <div class="back-link">
+      <a href="javascript:void(0)" onclick="closeBookDetails()">Back to Gallery</a>
+    </div>
+  </div>
+  <div id="book34" class="book-details">
+    <h2>The Four Agreements</h2>
+    <p>Don Miguel Ruiz</p>
+    <p><strong>Synopsis:</strong> In The Four Agreements, don Miguel Ruiz reveals the source of self-limiting beliefs that rob us of joy and create needless suffering. Based on ancient Toltec wisdom, the Four Agreements offer a powerful code of conduct that can rapidly transform our lives to a new experience of freedom, true happiness, and love. The Four Agreements are: Be Impeccable With Your Word, Don’t Take Anything Personally, Don’t Make Assumptions, Always Do Your Best.</p>
+	<p><strong>Genre:</strong> Self-help, Spirituality, Personal Development, Philosophy, Psychology, Inspirational</p>
+	<p>152 pages, Hardcover/E-book</p>
+	<p><strong>Published:</strong> January 15, 2001 by Amber-Allen</p>
+	<p><strong>Language:</strong> English</p>
+	<p><strong>Type:</strong> E-book & Physical Copy</p>
+	<a href="merchant.html">
+		<button class="merchant">Buy Now<br>₱105-E-book</button>
+	</a>
+	<a href="merchant.html">
+		<button class="merchant">Buy Now<br>₱199-Physical Copy</button>
+	</a>
+    <div class="back-link">
+      <a href="javascript:void(0)" onclick="closeBookDetails()">Back to Gallery</a>
+    </div>
+  </div>  
+  <div id="book35" class="book-details">
+    <h2>Silent Sisters: A True Story</h2>
+    <p>Joanne Lee</p>
+    <p><strong>Synopsis:</strong> In Silent Sisters, the daughter who was falsely accused of murdering her own baby sister will tell her full story for the first time, detailing her struggle to understand her mother, to piece together the truth and to give the four babies the proper burial they deserve.</p>
+	<p><strong>Genre:</strong> True Crime, Memoir, Biography, Crime, True Story </p>
+	<p>205 pages, E-book</p>
+	<p><strong>Published:</strong> </p>
+	<p><strong>Language:</strong> English</p>
+	<p><strong>Type:</strong> E-book</p>
+	<a href="merchant.html">
+		<button class="merchant">Buy Now<br>₱-E-book</button>
+	</a>
+	<a href="merchant.html">
+		<button class="merchant">Buy Now</button>
+	</a>
+    <div class="back-link">
+      <a href="javascript:void(0)" onclick="closeBookDetails()">Back to Gallery</a>
+    </div>
+  </div>
+  <div id="book36" class="book-details">
+    <h2>A Child Called "It"</h2>
+    <p>Dave Pelzer</p>
+    <p><strong>Synopsis:</strong> It is the story of Dave Pelzer, who was brutally beaten and starved by his emotionally unstable, alcoholic mother: a mother who played tortuous, unpredictable games—games that left him nearly dead. He had to learn how to play his mother’s games in order to survive because she no longer considered him a son, but a slave; and no longer a boy, but an “it.” Dave’s bed was an old army cot in the basement, and his clothes were torn and raunchy. When his mother allowed him the luxury of food, it was nothing more than spoiled scraps that even the dogs refused to eat. The outside world knew nothing of his living nightmare. He had nothing or no one to turn to, but his dreams kept him alive—dreams of someone taking care of him, loving him and calling him their son.</p>
+	<p><strong>Genre:</strong> Memoir, Biography, Psychology, Abuse </p>
+	<p>184 pages, Paperback/E-book</p>
+	<p><strong>Published:</strong> September 1, 1995 by Health</p>
+	<p><strong>Language:</strong> English</p>
+	<p><strong>Type:</strong> E-book & Physical Copy</p>
+	<a href="merchant.html">
+		<button class="merchant">Buy Now<br>₱145-E-book</button>
+	</a>
+	<a href="merchant.html">
+		<button class="merchant">Buy Now<br>₱185-Physical Copy</button>
+	</a>
+    <div class="back-link">
+      <a href="javascript:void(0)" onclick="closeBookDetails()">Back to Gallery</a>
+    </div>
+  </div>
+  <div id="book37" class="book-details">
+    <h2>The Lost Boy</h2>
+    <p>Dave Pelzer</p>
+    <p><strong>Synopsis:</strong> Imagine a young boy who has never had a loving home. His only possesions are the old, torn clothes he carries in a paper bag. The only world he knows is one of isolation and fear. Although others had rescued this boy from his abusive alcoholic mother, his real hurt is just begining – he has no place to call home. This is Dave Pelzer’s long-awaited sequel to A Child Called “It”.</p>
+	<p><strong>Genre:</strong> Abuse, Psychology, True Story, Fostering</p>
+	<p>331 pages, Paperback/E-book</p>
+	<p><strong>Published:</strong> August 1, 1997 by Health</p>
+	<p><strong>Language:</strong> English</p>
+	<p><strong>Type:</strong> E-book & Physical Copy</p>
+	<a href="merchant.html">
+		<button class="merchant">Buy Now<br>₱150-E-book</button>
+	</a>
+	<a href="merchant.html">
+		<button class="merchant">Buy Now<br>₱230-Physical Copy</button>
+	</a>
+    <div class="back-link">
+      <a href="javascript:void(0)" onclick="closeBookDetails()">Back to Gallery</a>
+    </div>
+  </div>
+  <div id="book38" class="book-details">
+    <h2>If You Tell: A True Story of Murder</h2>
+    <p>Gregg Olsen</p>
+    <p><strong>Synopsis:</strong> After more than a decade, when sisters Nikki, Sami, and Tori Knotek hear the word mom, it claws like an eagle’s talons, triggering memories that have been their secret since childhood. Until now. For years, behind the closed doors of their farmhouse in Raymond, Washington, their sadistic mother, Shelly, subjected her girls to unimaginable abuse, degradation, torture, and psychic terrors.</p>
+	<p><strong>Genre:</strong> True Story, True Crime, Horror, Mystery, Thriller</p>
+	<p>431 pages, E-book</p>
+	<p><strong>Published:</strong> </p>
+	<p><strong>Language:</strong> English</p>
+	<p><strong>Type:</strong> E-book</p>
+	<a href="merchant.html">
+		<button class="merchant">Buy Now<br>₱225-E-book</button>
+	</a>
+    <div class="back-link">
+      <a href="javascript:void(0)" onclick="closeBookDetails()">Back to Gallery</a>
+    </div>
+  </div>
+  <div id="book39" class="book-details">
+    <h2>I Survived: The Shark Attack of 1916</h2>
+    <p>Lauren Tarshis</p>
+    <p><strong>Synopsis:</strong> Chet Roscow is finally feeling at home in Elm Hills, New Jersey. He has a job with his uncle Jerry at the local diner, three great friends, and the perfect summertime destination: cool, refreshing Matawan Creek. But Chet’s summer is interrupted by shocking news. A great white shark has been attacking swimmers along the Jersey shore, not far from Elm Hills. Everyone in town is talking about it. So when Chet sees something in the creek, he’s sure it’s his imagination...until he comes face-to-face with a bloodthirsty shark!</p>
+	<p><strong>Genre:</strong> Historical Fiction, Survival, Animals</p>
+	<p>160 pages, Hardcover</p>
+	<p><strong>Published:</strong>June 2, 2020 by Graphix </p>
+	<p><strong>Language:</strong> English</p>
+	<p><strong>Type:</strong>Physical Copy</p>
+	<a href="merchant.html">
+		<button class="merchant">Buy Now<br>₱265-Physical Copy</button>
+	</a>
+    <div class="back-link">
+      <a href="javascript:void(0)" onclick="closeBookDetails()">Back to Gallery</a>
+    </div>
+  </div>
+  <div id="book40" class="book-details">
+    <h2>The Nursing Profession</h2>
+    <p>Norma L. Chaska</p>
+    <p><strong>Synopsis:</strong> This volume provides an in-depth and global study of nursing as a profession. The contributors project patterns about nursing now in to the future and present their views on how the profession should go advance. This volume contains 78 original chapters by 105 contributing authors, many of whom are elected Fellows of the American Academy of Nursing.</p>
+	<p><strong>Genre:</strong> Education, Health, Textbook</p>
+	<p>1050 pages, Hardcover/E-book</p>
+	<p><strong>Published:</strong> October 18, 2000 by SAGE Publications, Inc; 1st edition </p>
+	<p><strong>Language:</strong> English</p>
+	<p><strong>Type:</strong> E-book & Physical Copy</p>
+	<a href="merchant.html">
+		<button class="merchant">Buy Now<br>₱455-E-book</button>
+	</a>
+	<a href="merchant.html">
+		<button class="merchant">Buy Now<br>₱555-Physical Copy</button>
+	</a>
+    <div class="back-link">
+      <a href="javascript:void(0)" onclick="closeBookDetails()">Back to Gallery</a>
+    </div>
+  </div>
+  <div id="book41" class="book-details">
+    <h2>Cancer and Cancer Care</h2>
+    <p>Debbie Wyatt & Nicholas Hulbert-Williams</p>
+    <p><strong>Synopsis:</strong> Cancer and Cancer Care is a complete study of cancer, the care of people with the disease and its impact on everyday life. Addressing the physical and psychosocial aspects of the illness in detail, it covers all fundamental aspects of cancer diagnosis, treatment, survival and aspects of psychosocial support for all those affected by cancer: patients, their families, and their healthcare providers. </p>
+	<p><strong>Genre:</strong> Textbook, Education, Health, Cancer, Treatment</p>
+	<p>640 pages, E-book</p>
+	<p><strong>Published:</strong> April 2015 by SAGE Publications Ltd</p>
+	<p><strong>Language:</strong> English</p>
+	<p><strong>Type:</strong> E-book</p>
+	<a href="merchant.html">
+		<button class="merchant">Buy Now<br>₱340-E-book</button>
+	</a>
+    <div class="back-link">
+      <a href="javascript:void(0)" onclick="closeBookDetails()">Back to Gallery</a>
+    </div>
+  </div>
+  <div id="book42" class="book-details">
+    <h2>Environmental Sciences: A Student's Companion</h2>
+    <p>Kenneth J. Gregory et. Al.</p>
+    <p><strong>Synopsis:</strong> This unique addition to reference literature provides an introduction to the major concepts and contemporary issues that are essential for students of environmental science and environmental studies to know.  </p>
+	<p><strong>Genre:</strong> Textbook, Science, Environmental, Education</p>
+	<p>986 pages, E-book</p>
+	<p><strong>Published:</strong> June 19, 2012 by SAGE Publications Ltd</p>
+	<p><strong>Language:</strong> English</p>
+	<p><strong>Type:</strong> E-book</p>
+	<a href="merchant.html">
+		<button class="merchant">Buy Now<br>₱300-E-book</button>
+	</a>
+    <div class="back-link">
+      <a href="javascript:void(0)" onclick="closeBookDetails()">Back to Gallery</a>
+    </div>
+  </div>
+  <div id="book43" class="book-details">
+    <h2>Climate Change in Asia and the Pacific</h2>
+    <p>Ventakachalam Anbumozhi et. Al</p>
+    <p><strong>Synopsis:</strong> This book provides an overview of climate change policies and practices in the region that can be replicated by countries within Asia and the Pacific and beyond to strengthen their climate change adaptation strategies.</p>
+	<p><strong>Genre:</strong> Textbook, Climate, Science, Environmental</p>
+	<p>656 pages, Hardcover</p>
+	<p><strong>Published:</strong> December 26, 2013 by SAGE Publications India Pvt Ltd</p>
+	<p><strong>Language:</strong> English</p>
+	<p><strong>Type:</strong>Physical Copy</p>
+	<a href="merchant.html">
+		<button class="merchant">Buy Now<br>₱385-Physical Copy</button>
+	</a>
+    <div class="back-link">
+      <a href="javascript:void(0)" onclick="closeBookDetails()">Back to Gallery</a>
+    </div>
+  </div>
+  <div id="book44" class="book-details">
+    <h2>A First Course in Linear Algebra</h2>
+    <p>Robert A. Beezer</p>
+    <p><strong>Synopsis:</strong> A First Course in Linear Algebra is an introductory textbook aimed at college-level sophomores and juniors. Typically students will have taken calculus, but it is not a prerequisite. </p>
+	<p><strong>Genre:</strong> Textbook, Math, Algebra, Education</p>
+	<p>502 pages, Hardcover</p>
+	<p><strong>Published:</strong> 2015 by Robert Beezer</p>
+	<p><strong>Language:</strong> English</p>
+	<p><strong>Type:</strong> E-book & Physical Copy</p>
+	<a href="merchant.html">
+		<button class="merchant">Buy Now<br>₱399-Physical Copy</button>
+	</a>
+    <div class="back-link">
+      <a href="javascript:void(0)" onclick="closeBookDetails()">Back to Gallery</a>
+    </div>
+  </div>
+  <div id="book45" class="book-details">
+    <h2>The Unicode Cookbook for Linguistics</h2>
+    <p>Steven Moran, Dr., Michael Cysouw, Prof. Dr.</p>
+    <p><strong>Synopsis:</strong> This text is a practical guide for linguists, and programmers, who work with data in multilingual computational environments. We introduce the basic concepts needed to understand how writing systems and character encodings function, and how they work together at the intersection between the Unicode Standard and the International Phonetic Alphabet. </p>
+	<p><strong>Genre:</strong> Textbook, Languages, Programming</p>
+	<p>456 pages, Hardcover/E-book</p>
+	<p><strong>Published:</strong> 2018-06-29</p>
+	<p><strong>Language:</strong> English</p>
+	<p><strong>Type:</strong> E-book & Physical Copy</p>
+	<a href="merchant.html">
+		<button class="merchant">Buy Now<br>₱275-E-book</button>
+	</a>
+	<a href="merchant.html">
+		<button class="merchant">Buy Now<br>₱345-Physical Copy</button>
+	</a>
+    <div class="back-link">
+      <a href="javascript:void(0)" onclick="closeBookDetails()">Back to Gallery</a>
+    </div>
+  </div>
+  <div id="book46" class="book-details">
+    <h2>World History</h2>
+    <p>Eugene Berger et. Al</p>
+    <p><strong>Synopsis:</strong> World History: Cultures, States, and Societies to 1500 offers a comprehensive introduction to the history of humankind from prehistory to 1500. Authored by six USG faculty members with advance degrees in History, this textbook offers up-to-date original scholarship. </p>
+	<p><strong>Genre:</strong> Textbook, Education, History</p>
+	<p>871 pages, Hardcover/E-book</p>
+	<p><strong>Published:</strong> 2016 by University of North Georgia Press</p>
+	<p><strong>Language:</strong> English</p>
+	<p><strong>Type:</strong> E-book & Physical Copy</p>
+	<a href="merchant.html">
+		<button class="merchant">Buy Now<br>₱485-E-book</button>
+	</a>
+	<a href="merchant.html">
+		<button class="merchant">Buy Now<br>₱535-Physical Copy</button>
+	</a>
+    <div class="back-link">
+      <a href="javascript:void(0)" onclick="closeBookDetails()">Back to Gallery</a>
+    </div>
+  </div>
+  <div id="book47" class="book-details">
+    <h2>Introduction to Financial Accounting</h2>
+    <p>David Annand</p>
+    <p><strong>Synopsis:</strong> This textbook is an adaptation by Athabasca University of the original text written by D. Annand and H. Dauderis. It is intended for use in entry-level college and university courses in financial accounting. A corporate approach is utilized consistently throughout the book.</p>
+	<p><strong>Genre:</strong> Textbook, Business, Accounting </p>
+	<p>487 pages, Hardcover/E-book</p>
+	<p><strong>Published:</strong> 2017 by Lyryx</p>
+	<p><strong>Language:</strong> English</p>
+	<p><strong>Type:</strong> E-book & Physical Copy</p>
+	<a href="merchant.html">
+		<button class="merchant">Buy Now<br>₱325-E-book</button>
+	</a>
+	<a href="merchant.html">
+		<button class="merchant">Buy Now<br>₱410-Physical Copy</button>
+	</a>
+    <div class="back-link">
+      <a href="javascript:void(0)" onclick="closeBookDetails()">Back to Gallery</a>
+    </div>
+  </div>
+  <div id="book48" class="book-details">
+    <h2>Eloquent Javascript: Third Edition</h2>
+    <p>Marjin Haverbeke</p>
+    <p><strong>Synopsis:</strong> This much anticipated and thoroughly revised third edition of Eloquent Javascript dives deep into the Javascript language to show you how to write beautiful, effective code.</p>
+	<p><strong>Genre:</strong> Textbook, Education, Programming, Technology</p>
+	<p>472 pages, Hardcover/E-book</p>
+	<p><strong>Published:</strong> </p>
+	<p><strong>Language:</strong> English</p>
+	<p><strong>Type:</strong> E-book & Physical Copy</p>
+	<a href="merchant.html">
+		<button class="merchant">Buy Now<br>₱350-E-book</button>
+	</a>
+	<a href="merchant.html">
+		<button class="merchant">Buy Now<br>₱399-Physical Copy</button>
+	</a>
+    <div class="back-link">
+      <a href="javascript:void(0)" onclick="closeBookDetails()">Back to Gallery</a>
+    </div>
+  </div>
+  <div id="book49" class="book-details">
+    <h2>Easy Origami</h2>
+    <p>John Montroll</p>
+    <p><strong>Synopsis:</strong> Discover the wonderful world of origami with this traditional Japanese collection of 32 simple projects, perfect for novice origami hobbyist.</p>
+	<p><strong>Genre:</strong> Art, Paper Art, Crafts</p>
+	<p>48 pages, Paperback/E-book</p>
+	<p><strong>Published:</strong> </p>
+	<p><strong>Language:</strong> English</p>
+	<p><strong>Type:</strong> E-book & Physical Copy</p>
+	<a href="merchant.html">
+		<button class="merchant">Buy Now<br>₱99-E-book</button>
+	</a>
+	<a href="merchant.html">
+		<button class="merchant">Buy Now<br>₱105-Physical Copy</button>
+	</a>
+    <div class="back-link">
+      <a href="javascript:void(0)" onclick="closeBookDetails()">Back to Gallery</a>
+    </div>
+  </div>
+  <div id="book50" class="book-details">
+    <h2>How to Paint: A Complete Beginner's Guide to Watercolors, Acrylics, and Oils</h2>
+    <p>Angela Gair</p>
+    <p><strong>Synopsis:</strong> Start Painting Today! Covering the three most popular types of watercolors, acrylics and oils, this comprehensive step-by-step guide provides basic information on materials and techniques as well as an exciting series of demonstrations aimed at complete beginners. The unique approach of this book is so simple that the reader can start immediately on original and exciting projects.</p>
+	<p><strong>Genre:</strong> Art, Painting</p>
+	<p>726 pages, E-book</p>
+	<p><strong>Published:</strong> January 8, 2019 by CompanionHouse Books</p>
+	<p><strong>Language:</strong> English</p>
+	<p><strong>Type:</strong> E-book</p>
+	<a href="merchant.html">
+		<button class="merchant">Buy Now<br>₱485-E-book</button>
+	</a>
+    <div class="back-link">
+      <a href="javascript:void(0)" onclick="closeBookDetails()">Back to Gallery</a>
+    </div>
+  </div>
+  <div id="book51" class="book-details">
+    <h2>Handmade Houseplants</h2>
+    <p>Corrie Beth Hogg</p>
+    <p><strong>Synopsis:</strong> In  Handmade Houseplants , expert crafter and tastemaker Corrie Beth Hogg offers a no-water option for your urban plants made from paper! This stylish guide includes step-by-step instructions and templates for making 30 of the most popular houseplants, from monstera and peperomia to fiddle leaf fig and philodendron. Additional projects show how to use paper plants for home décor, wall art, holiday decorations, gift giving, and more. </p>
+	<p><strong>Genre:</strong> Art, Crafts </p>
+	<p>300 pages, Paperback/E-book</p>
+	<p><strong>Published:</strong> September 4, 2018 by Timber Press</p>
+	<p><strong>Language:</strong> English</p>
+	<p><strong>Type:</strong> E-book & Physical Copy</p>
+	<a href="merchant.html">
+		<button class="merchant">Buy Now<br>₱205-E-book</button>
+	</a>
+	<a href="merchant.html">
+		<button class="merchant">Buy Now<br>₱295-Physical Copy</button>
+	</a>
+    <div class="back-link">
+      <a href="javascript:void(0)" onclick="closeBookDetails()">Back to Gallery</a>
+    </div>
+  </div>
+  <div id="book52" class="book-details">
+    <h2>Playing With Paper: Illuminating, Engineering, and Reimagining Paper Art</h2>
+    <p>Helen Hiebert</p>
+    <p><strong>Synopsis:</strong> Explore the world of paper crafts with this inspiring book! This guide begins with a section that covers everything about paper, including cool tools, folding and cutting basics, and fasteners and glues. The next section is filled with 20 fun-filled projects, - One-sheet books – Lampshades – Clothing – Accessories – Hot air balloons – Origami You’ll also find an extensive gallery of artists whose work relates to and expands upon each project. Take a page from this creative guide and start Playing with Paper !</p>
+	<p><strong>Genre:</strong> Art, Craft, Paper Art</p>
+	<p>144 pages, Paperback/E-book</p>
+	<p><strong>Published:</strong> January 1, 2013 by Quarry Books</p>
+	<p><strong>Language:</strong> English</p>
+	<p><strong>Type:</strong> E-book & Physical Copy</p>
+	<a href="merchant.html">
+		<button class="merchant">Buy Now<br>₱110-E-book</button>
+	</a>
+	<a href="merchant.html">
+		<button class="merchant">Buy Now<br>₱155-Physical Copy</button>
+	</a>
+    <div class="back-link">
+      <a href="javascript:void(0)" onclick="closeBookDetails()">Back to Gallery</a>
+    </div>
+  </div>
+  <div id="book53" class="book-details">
+    <h2>Stitch'n Bitch: The Knitters Handbook</h2>
+    <p>Debbie Stoller</p>
+    <p><strong>Synopsis:</strong> From the tools of the trade to the knitty-gritty of techniques and patterns, all with easy-to-follow step-by-step illustrated techniques. Stockinette stitch, rib stitch, seed stitch. Increasing and decreasing. All the bells and whistles: fringes, tassels, cables, intarsia, crab stitch, and Fair Isle. Plus the stitch doctor’s own special bag of tricks and how to hook up with other knitters. After the how-tos come the why-to: forty hop, stylish patterns, as good for beginners as they are for purely pros.</p>
+	<p><strong>Genre:</strong> Art, Sewing, Cloth, Fashion </p>
+	<p>‎256 pages, Paperback/E-book</p>
+	<p><strong>Published:</strong> September 3, 2004 by Workman</p>
+	<p><strong>Language:</strong> English</p>
+	<p><strong>Type:</strong> E-book & Physical Copy</p>
+	<a href="merchant.html">
+		<button class="merchant">Buy Now<br>₱145-E-book</button>
+	</a>
+	<a href="merchant.html">
+		<button class="merchant">Buy Now<br>₱199-Physical Copy</button>
+	</a>
+    <div class="back-link">
+      <a href="javascript:void(0)" onclick="closeBookDetails()">Back to Gallery</a>
+    </div>
+  </div>
+  <div id="book54" class="book-details">
+    <h2>How the Grinch Lost Christmas!</h2>
+    <p>Theodor Seuss Geisel</p>
+    <p><strong>Synopsis:</strong> The Grinch is BACK and ready to prove to the residents of Who- ville that he’s changed. This heartwarming sequel is written and illustrated in the style of Dr. Seuss’s beloved holiday classic How the Grinch Stole Christmas!</p>
+	<p><strong>Genre:</strong> Children’s Book, Holiday, Christmas, Classics, Humor</p>
+	<p>40 pages, Hardcover/E-book</p>
+	<p><strong>Published:</strong> September 5, 2023 by Random House Books for Young Readers</p>
+	<p><strong>Language:</strong> English</p>
+	<p><strong>Type:</strong> E-book & Physical Copy</p>
+	<a href="merchant.html">
+		<button class="merchant">Buy Now<br><del>₱105</del>₱99-E-book</button>
+	</a>
+	<a href="merchant.html">
+		<button class="merchant">Buy Now<br><del>₱199</del>₱150-Physical Copy</button>
+	</a>
+    <div class="back-link">
+      <a href="javascript:void(0)" onclick="closeBookDetails()">Back to Gallery</a>
+    </div>
+  </div>
+  <div id="book55" class="book-details">
+    <h2>Murdle Jr.</h2>
+    <p>G. T. Karber</p>
+    <p><strong>Synopsis:</strong> With forty mysteries featuring key suspects, locations, clues, and more to enter into a helpful grid, Murdle Jr. Is an introduction to a nefarious world kids will love to dive into, using logic and the power of deduction to figure out each whodunnit.</p>
+	<p><strong>Genre:</strong> Children’s Book, Problem Solving</p>
+	<p>240 pages, Hardcover/E-book</p>
+	<p><strong>Published:</strong> November 26, 2024 by Little, Brown Books for Young Readers </p>
+	<p><strong>Language:</strong> English</p>
+	<p><strong>Type:</strong> E-book & Physical Copy</p>
+	<a href="merchant.html">
+		<button class="merchant">Buy Now<br>₱150-E-book</button>
+	</a>
+	<a href="merchant.html">
+		<button class="merchant">Buy Now<br>₱210-Physical Copy</button>
+	</a>
+    <div class="back-link">
+      <a href="javascript:void(0)" onclick="closeBookDetails()">Back to Gallery</a>
+    </div>
+  </div>
+  <div id="book56" class="book-details">
+    <h2>Diary of a Wimpy Kid: Hot Mess</h2>
+    <p>Jeff Kinney</p>
+    <p><strong>Synopsis:</strong> The pressure is building for Greg Heffley, who discovers that when you mix heaps of family, a tiny beach house, and sweltering heat, it’s a recipe for disaster. Speaking of recipes—the secret ingredients behind Gramma’s famous meatballs have been closely guarded for years. Can Greg unpack all of his family’s mysteries before their vacation is over? Or will he just stir the pot? This sidesplittingly relatable summer story is the funniest Wimpy Kid book yet!</p>
+	<p><strong>Genre:</strong> Children’s Book, Story Book, Humor, Family</p>
+	<p>224 pages, Hardcover/E-book</p>
+	<p><strong>Published:</strong> October 22, 2024 by Harry N. Abrams</p>
+	<p><strong>Language:</strong> English</p>
+	<p><strong>Type:</strong> E-book & Physical Copy</p>
+	<a href="merchant.html">
+		<button class="merchant">Buy Now<br>₱199-E-book</button>
+	</a>
+	<a href="merchant.html">
+		<button class="merchant">Buy Now<br>₱255-Physical Copy</button>
+	</a>
+    <div class="back-link">
+      <a href="javascript:void(0)" onclick="closeBookDetails()">Back to Gallery</a>
+    </div>
+  </div>
+  <div id="book57" class="book-details">
+    <h2>Olaf's Quest</h2>
+    <p>Susan Francis</p>
+    <p><strong>Synopsis:</strong> Olaf, Arendelle’s adorable snowman, loves to read. One day, an unexpected message leads Olaf and his friends Anna, Kristoff, and Sven on a quest for a place known as Haus Biblio, described as a “sea of stories”. This Audible Original spans the group’s journey to Haus Biblio as they cross over mountains, search for monsters under bridges, and have conversations with friendly sheep. During his travels, Olaf makes new friends and hears lots of exciting stories along the way.</p>
+	<p><strong>Genre:</strong> Children’s Book, Humor</p>
+	<p>3 pages, Audible Audio/E-book</p>
+	<p><strong>Published:</strong> September 19, 2024 by Audible Originals, Disney Enterprises</p>
+	<p><strong>Language:</strong> English</p>
+	<p><strong>Type:</strong> E-book & Physical Copy</p>
+	<a href="merchant.html">
+		<button class="merchant">Buy Now<br>₱145-E-book</button>
+	</a>
+	<a href="merchant.html">
+		<button class="merchant">Buy Now<br>₱199-Physical Copy</button>
+	</a>
+    <div class="back-link">
+      <a href="javascript:void(0)" onclick="closeBookDetails()">Back to Gallery</a>
+    </div>
+  </div>
+  <div id="book58" class="book-details">
+    <h2>Si Langgam at si Tipaklong</h2>
+    <p>Aesop</p>
+    <p><strong>Synopsis:</strong> The fable describes how a hungry grasshopper begs for food from an ant when winter comes and is refused. The situation sums up moral lessons about the virtues of hard work and planning for the future.</p>
+	<p><strong>Genre:</strong> </p>
+	<p>20 pages, Hardcover/E-book</p>
+	<p><strong>Published:</strong> Fable, Children’s Books, Story Book, Education </p>
+	<p><strong>Language:</strong> English</p>
+	<p><strong>Type:</strong> E-book & Physical Copy</p>
+	<a href="merchant.html">
+		<button class="merchant">Buy Now<br>₱175-E-book</button>
+	</a>
+	<a href="merchant.html">
+		<button class="merchant">Buy Now<br>₱230-Physical Copy</button>
+	</a>
+    <div class="back-link">
+      <a href="javascript:void(0)" onclick="closeBookDetails()">Back to Gallery</a>
+    </div>
+  </div>
+  <div id="book59" class="book-details">
+    <h2>How to Draw 101 Things</h2>
+    <p>Sophia Elizabeth</p>
+    <p><strong>Synopsis:</strong> Learning to draw has never been easier! How To Draw 101 Things For Kids uses simple step-by-step guides to teach your children how to draw adorable things as well as wonderful characters. This book is designed for kids to learn how to draw, no experience needed! With over 100 things to draw, your children will be entertained for hours while learning a new skill.</p>
+	<p><strong>Genre:</strong> Art, Children’s Book, Drawing</p>
+	<p>109 pages, Paperback/E-book</p>
+	<p><strong>Published:</strong> October 11, 2021 Independently</p>
+	<p><strong>Language:</strong> English</p>
+	<p><strong>Type:</strong> E-book & Physical Copy</p>
+	<a href="merchant.html">
+		<button class="merchant">Buy Now<br>₱125-E-book</button>
+	</a>
+	<a href="merchant.html">
+		<button class="merchant">Buy Now<br>₱205-Physical Copy</button>
+	</a>
+    <div class="back-link">
+      <a href="javascript:void(0)" onclick="closeBookDetails()">Back to Gallery</a>
+    </div>
+  </div>
+  <div id="book61" class="book-details">
+    <h2>Wreck This Journal</h2>
+    <p>Keri Smith</p>
+    <p><strong>Synopsis:</strong> For anyone who’s ever wished to, but had trouble starting, keeping, or finishing a journal or sketchbook comes Wreck This Journal, an illustrated book that features a subversive collection of prompts, asking readers to muster up their best mistake- and mess-making abilities to fill the pages of the book (and destroy them).</p>
+	<p><strong>Genre:</strong> Art</p>
+	<p>192 pages, Hardcover/E-book</p>
+	<p><strong>Published:</strong> June 5, 2007 by Perigee Trade</p>
+	<p><strong>Language:</strong> English</p>
+	<p><strong>Type:</strong> E-book & Physical Copy</p>
+	<a href="merchant.html">
+		<button class="merchant">Buy Now<br>₱150-E-book</button>
+	</a>
+	<a href="merchant.html">
+		<button class="merchant">Buy Now<br>₱230-Physical Copy</button>
+	</a>
+    <div class="back-link">
+      <a href="javascript:void(0)" onclick="closeBookDetails()">Back to Gallery</a>
+    </div>
+  </div>
+  <div id="book62" class="book-details">
+    <h2>101 Essential Tips: Crochet</h2>
+    <p>D.K</p>
+    <p><strong>Synopsis:</strong> Crochet beginners will find everything they need in 101 Essential Tips: Crochet, from how to choose crochet yarn to how to make a slipknot to how to choose a project. Step-by-step instructions on stitching and crochet techniques let you master crochet patterns like phone covers, friendship bracelets, and even baby hats. With clear explanations of crochet charts and abbreviations that might be confusing otherwise, 101 Essential Tips: Crochet has everything you need to get the crochet results you want.</p>
+	<p><strong>Genre:</strong> Arts, Crafts, Crocheting </p>
+	<p>72 pages, Hardcover/E-book</p>
+	<p><strong>Published:</strong> April 21, 2015 by DK</p>
+	<p><strong>Language:</strong> English</p>
+	<p><strong>Type:</strong> E-book & Physical Copy</p>
+	<a href="merchant.html">
+		<button class="merchant">Buy Now<br>₱95-E-book</button>
+	</a>
+	<a href="merchant.html">
+		<button class="merchant">Buy Now<br>₱135-Physical Copy</button>
+	</a>
+    <div class="back-link">
+      <a href="javascript:void(0)" onclick="closeBookDetails()">Back to Gallery</a>
+    </div>
+  </div>
+  <div id="book63" class="book-details">
+    <h2>15 Minute Art: Painting</h2>
+    <p>Hannah Podbury</p>
+    <p><strong>Synopsis:</strong> Explore the pure joy of paint with fifty 15-minute projects inspired by nature. From leaves and houseplants to flowers and fungi, 15-Minute Art Painting encourages you to explore painting in a relaxing, free, and fun way. Each project can be completed in no more than six steps and will include practice pages, color swatches, and helpful hints to make light work of the artwork.</p>
+	<p><strong>Genre:</strong> Art, Painting</p>
+	<p>‎240 pages, Hardcover/E-book</p>
+	<p><strong>Published:</strong> May 3, 2022 by Quadrille</p>
+	<p><strong>Language:</strong> English</p>
+	<p><strong>Type:</strong> E-book & Physical Copy</p>
+	<a href="merchant.html">
+		<button class="merchant">Buy Now<br>₱135-E-book</button>
+	</a>
+	<a href="merchant.html">
+		<button class="merchant">Buy Now<br>₱199-Physical Copy</button>
+	</a>
+    <div class="back-link">
+      <a href="javascript:void(0)" onclick="closeBookDetails()">Back to Gallery</a>
+    </div>
+  </div>
+  <div id="book64" class="book-details">
+    <h2>By My Hand: A Potter's Apprenticeship</h2>
+    <p>Florian Gadsby</p>
+    <p><strong>Synopsis:</strong> The internet’s favorite potter opens up about his life and craft in this inspiring, stunningly photographed ode to the beauty of small things that brighten life’s daily rituals.</p>
+	<p><strong>Genre:</strong> Art, Crafts, Pottery</p>
+	<p>400 pages, Hardcover/E-book</p>
+	<p><strong>Published:</strong> November 14, 2023 by Ten Speed Press </p>
+	<p><strong>Language:</strong> English</p>
+	<p><strong>Type:</strong> E-book & Physical Copy</p>
+	<a href="merchant.html">
+		<button class="merchant">Buy Now<br>₱180-E-book</button>
+	</a>
+	<a href="merchant.html">
+		<button class="merchant">Buy Now<br>₱200-Physical Copy</button>
+	</a>
+    <div class="back-link">
+      <a href="javascript:void(0)" onclick="closeBookDetails()">Back to Gallery</a>
+    </div>
+  </div>
+  <div id="book65" class="book-details">
+    <h2>Dressmaking: The Easy Guide</h2>
+    <p>Helen Rhiannon</p>
+    <p><strong>Synopsis:</strong> From just 5 basic patterns elements, learn to mix and match these elements to create over 80 different bespoke garments that are unique to you. With full-size patterns to cater for dress sizes 2 to 42.</p>
+	<p><strong>Genre:</strong> Art, Sewing</p>
+	<p>160 pages, Hardcover/E-book</p>
+	<p><strong>Published:</strong> August 1, 2023 by Search Press</p>
+	<p><strong>Language:</strong> English</p>
+	<p><strong>Type:</strong> E-book & Physical Copy</p>
+	<a href="merchant.html">
+		<button class="merchant">Buy Now<br>₱99-E-book</button>
+	</a>
+	<a href="merchant.html">
+		<button class="merchant">Buy Now<br>₱175-Physical Copy</button>
+	</a>
+    <div class="back-link">
+      <a href="javascript:void(0)" onclick="closeBookDetails()">Back to Gallery</a>
+    </div>
+  </div>
+  <div id="book66" class="book-details">
+    <h2>Collins Complete DIY Manual</h2>
+    <p>Albert Jackson</p>
+    <p><strong>Synopsis:</strong> This international bestseller is the most comprehensive and authoritative DIY manual ever produced. This new edition has been updated with information on all the latest changes in products, techniques and regulations developed since the last edition (published in 2004).</p>
+	<p><strong>Genre:</strong> Art, Crafts, Woodwork</p>
+	<p>552 pages, Hardcover/E-book</p>
+	<p><strong>Published:</strong> January 1, 2007 by Harpercollins Pub Ltd</p>
+	<p><strong>Language:</strong> English</p>
+	<p><strong>Type:</strong> E-book & Physical Copy</p>
+	<a href="merchant.html">
+		<button class="merchant">Buy Now<br>₱235-E-book</button>
+	</a>
+	<a href="merchant.html">
+		<button class="merchant">Buy Now<br>₱300-Physical Copy</button>
+	</a>
+    <div class="back-link">
+      <a href="javascript:void(0)" onclick="closeBookDetails()">Back to Gallery</a>
+    </div>
+  </div>
+  <div id="book67" class="book-details">
+    <h2>The Astrophotography Manual</h2>
+    <p>Chris Woodhouse</p>
+    <p><strong>Synopsis:</strong> The Astrophotography Manual, Second Edition is for photographers ready to move beyond standard SLR cameras and editing software to create beautiful images of nebulas, galaxies, clusters, and the stars. Beginning with a brief astronomy primer, this book takes readers through the full astrophotography process, from choosing and using equipment to image capture, calibration, and processing. This combination of technical background and hands-on approach brings the science down to earth, with practical methods to ensure success.</p>
+	<p><strong>Genre:</strong> Textbook, Astronomy, Science, Photography </p>
+	<p>‎432 pages, Paperback/E-book</p>
+	<p><strong>Published:</strong> December 12, 2017 by Routledge</p>
+	<p><strong>Language:</strong> English</p>
+	<p><strong>Type:</strong> E-book & Physical Copy</p>
+	<a href="merchant.html">
+		<button class="merchant">Buy Now<br>₱135-E-book</button>
+	</a>
+	<a href="merchant.html">
+		<button class="merchant">Buy Now<br>₱199-Physical Copy</button>
+	</a>
+    <div class="back-link">
+      <a href="javascript:void(0)" onclick="closeBookDetails()">Back to Gallery</a>
+    </div>
+  </div>
+  <div id="book68" class="book-details">
+    <h2>Clinical Thinking in Psychotherapy</h2>
+    <p>John Fredrickson</p>
+    <p><strong>Synopsis:</strong> Clinical Thinking in Psychotherapy empowers practitioners and students to better understand clients by attending to both verbal and nonverbal forms of expression. Readers will find tools for unlearning biases and for providing effective therapy with transcripts and dialogic tools.</p>
+	<p><strong>Genre:</strong> Textbook, Education, Psychology, Therapy</p>
+	<p>‎252 pages, Paperback/E-book</p>
+	<p><strong>Published:</strong> December 17, 2024 by Routledge</p>
+	<p><strong>Language:</strong> English</p>
+	<p><strong>Type:</strong> E-book & Physical Copy</p>
+	<a href="merchant.html">
+		<button class="merchant">Buy Now<br>₱125-E-book</button>
+	</a>
+	<a href="merchant.html">
+		<button class="merchant">Buy Now<br>₱175-Physical Copy</button>
+	</a>
+    <div class="back-link">
+      <a href="javascript:void(0)" onclick="closeBookDetails()">Back to Gallery</a>
+    </div>
+  </div>
+  <div id="book69" class="book-details">
+    <h2>The Lorax</h2>
+    <p>Theodor Seuss Geisel</p>
+    <p><strong>Synopsis:</strong> Long before saving the earth became a global concern, Dr. Seuss, speaking through his character the Lorax, warned against mindless progress and the danger it posed to the earth’s natural beauty.</p>
+	<p><strong>Genre:</strong> Children’s Book, Storytelling, Fantasy, Environment</p>
+	<p>72 pages, Hardcover/E-book</p>
+	<p><strong>Published:</strong> January 1, 1998 by Random House Childrens Books</p>
+	<p><strong>Language:</strong> English</p>
+	<p><strong>Type:</strong> E-book & Physical Copy</p>
+	<a href="merchant.html">
+		<button class="merchant">Buy Now<br>₱199-E-book</button>
+	</a>
+	<a href="merchant.html">
+		<button class="merchant">Buy Now<br>₱225-Physical Copy</button>
+	</a>
+    <div class="back-link">
+      <a href="javascript:void(0)" onclick="closeBookDetails()">Back to Gallery</a>
+    </div>
+  </div>
+  <div id="book70" class="book-details">
+    <h2>Harold and the Purple Crayon</h2>
+    <p>Crockett Johnson</p>
+    <p><strong>Synopsis:</strong> Harold decides to go for a walk one evening and as he goes he fills in the scene using his purple crayon. Adventure goes hand in hand with imagination to create this charming classic story.</p>
+	<p><strong>Genre:</strong> Children’s Book, Art, Classics, Kids</p>
+	<p>64 pages, Hardcover/E-book</p>
+	<p><strong>Published:</strong> January 1, 1996 by Bloomsbury</p>
+	<p><strong>Language:</strong> English</p>
+	<p><strong>Type:</strong> E-book & Physical Copy</p>
+	<a href="merchant.html">
+		<button class="merchant">Buy Now<br>₱125-E-book</button>
+	</a>
+	<a href="merchant.html">
+		<button class="merchant">Buy Now<br>₱199-Physical Copy</button>
+	</a>
+    <div class="back-link">
+      <a href="javascript:void(0)" onclick="closeBookDetails()">Back to Gallery</a>
+    </div>
+  </div>
+  <div id="book71" class="book-details">
+    <h2>The Ugly Duckling</h2>
+    <p>Hans Christian Andersen</p>
+    <p><strong>Synopsis:</strong> The journey of the awkward little bird – marching bravely through hecklers, hunters, and cruel seasons – is an unforgettable survival story; this blooming into a graceful swan is a reminder of the patience often necessary to discover true happiness. Splendid watercolors set in the lush countryside bring drama to life.</p>
+	<p><strong>Genre:</strong> Fable,  Children’s Books, Animals, Fantasy</p>
+	<p>40 pages, Hardcover/E-book</p>
+	<p><strong>Published:</strong> March 24, 1999 by HarperCollins</p>
+	<p><strong>Language:</strong> English</p>
+	<p><strong>Type:</strong> E-book & Physical Copy</p>
+	<a href="merchant.html">
+		<button class="merchant">Buy Now<br>₱145-E-book</button>
+	</a>
+	<a href="merchant.html">
+		<button class="merchant">Buy Now<br>₱200-Physical Copy</button>
+	</a>
+    <div class="back-link">
+      <a href="javascript:void(0)" onclick="closeBookDetails()">Back to Gallery</a>
+    </div>
+  </div>
+  <div id="book72" class="book-details">
+    <h2>The Cat in the Hat</h2>
+    <p>Theodor Seuss Geisel</p>
+    <p><strong>Synopsis:</strong> A dreary day turns into a wild romp when this beloved story introduces readers to the Cat in the Hat and his troublemaking friends, Thing 1 and Thing 2 – And don’t forget Fish! A favorite among kids, parents and teachers, this story uses simple words and basic rhyme to encourage and delight beginning readers.</p>
+	<p><strong>Genre:</strong> Children’s Book, Storytelling, Humor, Classics </p>
+	<p>36 pages, Paperback/E-book</p>
+	<p><strong>Published:</strong> March 22, 1996 by Random House Childrens Books</p>
+	<p><strong>Language:</strong> English</p>
+	<p><strong>Type:</strong> E-book & Physical Copy</p>
+	<a href="merchant.html">
+		<button class="merchant">Buy Now<br>₱105-E-book</button>
+	</a>
+	<a href="merchant.html">
+		<button class="merchant">Buy Now<br>₱199-Physical Copy</button>
+	</a>
+    <div class="back-link">
+      <a href="javascript:void(0)" onclick="closeBookDetails()">Back to Gallery</a>
+    </div>
+  </div>
+  <div id="book73" class="book-details">
+    <h2>Clifford the Big Red Dog</h2>
+    <p>Norman Bridwell</p>
+    <p><strong>Synopsis:</strong> Meet Clifford & Emily Elizabeth in the original Clifford book! Clifford is big. Clifford is red. But most of all, Clifford knows how to be a good friend!</p>
+	<p><strong>Genre:</strong> Children’s Book, Classic Fantasy, Dog, Animals</p>
+	<p>32 pages, Paperback/E-book</p>
+	<p><strong>Published:</strong> January 1, 1995 by Scholastic</p>
+	<p><strong>Language:</strong> English</p>
+	<p><strong>Type:</strong> E-book & Physical Copy</p>
+	<a href="merchant.html">
+		<button class="merchant">Buy Now<br>₱95-E-book</button>
+	</a>
+	<a href="merchant.html">
+		<button class="merchant">Buy Now<br>₱115-Physical Copy</button>
+	</a>
+    <div class="back-link">
+      <a href="javascript:void(0)" onclick="closeBookDetails()">Back to Gallery</a>
+    </div>
+  </div>
+  <div id="book74" class="book-details">
+    <h2>I Found A Frog</h2>
+    <p>Muzamil Saleem</p>
+    <p><strong>Synopsis:</strong> I Found a Frog is a story describing the unique transformation of a Tadpole into a frog. It is fun, educational, and just may have you catching a Tadpole so you and your child can see it for yourself.</p>
+	<p><strong>Genre:</strong> Children’s Book, Storytelling</p>
+	<p>28 pages, Paperback/E-book</p>
+	<p><strong>Published:</strong> April 26, 2022 by ‎Independently </p>
+	<p><strong>Language:</strong> English</p>
+	<p><strong>Type:</strong> E-book & Physical Copy</p>
+	<a href="merchant.html">
+		<button class="merchant">Buy Now<br>₱55-E-book</button>
+	</a>
+	<a href="merchant.html">
+		<button class="merchant">Buy Now<br>₱65-Physical Copy</button>
+	</a>
+    <div class="back-link">
+      <a href="javascript:void(0)" onclick="closeBookDetails()">Back to Gallery</a>
+    </div>
+  </div>
+</section>
+<footer>
+	<div class="logo-container">
+				<a href="Wil's Min Bookstore.html">
+					<img src="images/bookstore.jpg" alt="Wil's Mini Bookstore logo" class="logo-footer" />
+				</a>
+	</div>
+	<div class="contactus" id="contactus">
+		<h3>Contact Us</h3>
+	</div>
+	<div class="social-media-icons">
+        <a href="https://www.facebook.com/wilmar.estremos.92?mibextid=ZbWKwL" target="_blank" class="social-icon">
+            <i class="fa fa-facebook"></i>
+        </a>
+        <a href="https://l.facebook.com/l.php?u=https%3A%2F%2Fx.com%2FEstremosWi58104%3Ffbclid%3DIwZXh0bgNhZW0CMTAAAR24n6K0K9fLE8u4oYfPtTRzeEgzZd_jTNRdlB63Nds2yb5DiENNMHmTsAc_aem_RFd48L7SkHlBdnsuWVRFoA&h=AT2mrOAWzkpfy0b-V4ZEY8XWwVVlDfy-amTfLpz4LXZeolzSNC76Ys4n898E39vlmYw2_WFgs0pW0qICUliQzCzKyzMHj7VL9Cw0McVD8dQlmTG_eU8PUtOKmWabYt4ZIjuMLg" target="_blank" class="social-icon">
+            <i class="fa fa-twitter"></i>
+        </a>
+        <a href="https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.instagram.com%2Fwilmar_estremos%2Fprofilecard%2F%3Figsh%3DbWJ5bnMwOXY5NzM%253D%26fbclid%3DIwZXh0bgNhZW0CMTAAAR2qibDQe8VfE5cVj80WD11vD_dBzz7c64FF9GhxM-btGnFbfxS3B-x7vB4_aem_dv4dfa5xlkk2tdVIY--EAA&h=AT3mYyoNEd3nC8FoklVeOXKcU_V3ylVUy7W90f3ZVdqrtGYKCuUxa1aSHVhTR6dexjwM6hW6EVstKZ4_34PXWU6IvMeajDdEf8AO8-2GcshwkvT4DrtMLs0-dn1DQeu6OItdqA" target="_blank" class="social-icon">
+            <i class="fa fa-instagram"></i>
+        </a>
+    </div>
+	<div class="copyright">
+		<h3>Copyright &copy 2024 Wil's Mini Bookstore<h3>
+	</div>
+</footer>
+<script>
+	const dropdownButton=document.getElementById("dropdownButton");
+	const dropdownContent=document.getElementById("dropdownContent");
+	const menuArrow=document.getElementById("menuArrow");
+	dropdownButton.addEventListener("click",function(event){
+	dropdownContent.classList.toggle("show");
+	menuArrow.textContent=dropdownContent.classList.contains("show")?"▲":"▼";
+	event.stopPropagation();
+});
+	document.addEventListener("click",function(event){
+	if(!dropdownButton.contains(event.target)&&!dropdownContent.contains(event.target)){
+		dropdown-content.classList.remove("show");
+		menuArrow.textContent="▼";
+		}
+});
+	document.querySelectorAll(".myaccount").forEach((myaccount)=>{
+	myaccount.addEventListener("click",function(event){
+		const content=this.nextElementSibling;
+		const arrow=this.querySelector(".myaccount-arrow");
+		content.style.display=content.style.display==="flex"?"none":"flex";
+		arrow.textContent=content.style.display==="flex"?"▲":"▼";
+		event.stopPropagation();
+	});
+});
+document.getElementById("search-input").addEventListener("focus", function() {
+      document.querySelector(".search-container").classList.add("active");
+    });
+
+    document.getElementById("search-input").addEventListener("blur", function() {
+      if (!this.value) {
+        document.querySelector(".search-container").classList.remove("active");
+      }
+    });
+    function toggleSection(sectionId) {
+      const section = document.getElementById(sectionId);
+
+     
+      if (section.classList.contains("active")) {
+        section.classList.remove("active");
+      } else {
+        
+        document.querySelectorAll("section").forEach(sec => sec.classList.remove("active"));
+
+     
+        section.classList.add("active");
+      }
+    }
+	   function showBookDetails(bookId) {
+      var allDetails = document.querySelectorAll('.book-details');
+      allDetails.forEach(function(detail) {
+        detail.style.display = 'none';
+      });
+      var bookDetail = document.getElementById(bookId);
+      bookDetail.style.display = 'flex'; 
+    }
+
+    function closeBookDetails() {
+      var allDetails = document.querySelectorAll('.book-details');
+      allDetails.forEach(function(detail) {
+        detail.style.display = 'none';
+      });
+    }
+</script>
+</body>
+</html>

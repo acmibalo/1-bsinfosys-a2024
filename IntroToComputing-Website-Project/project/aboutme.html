@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>About Me-Wil's Mini Bookstore</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="css/w3.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel ="stylesheet" >
+	<link rel="icon" type="image/x-icon" href="images/fav.ico">
+	<meta name="description" content="A library of Literatures">
+	<meta name="keywords" content="Library, Literature, Essay, Journal, Research">
+	<meta name="author" content="Estremos, Wilmar A.">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+	<header class="header-about-us">
+		<div class="logo-container">
+			<a href="Wil's Mini Bookstore.html">
+				<img src="images/bookstore.jpg" alt="Wil's Mini Bookstore official logo" class="logo-about-us" />
+			</a>
+</header>
+<body>
+<section>
+	<div class="aboutme">
+    <h1>About Me: The Creator</h1>
+    <div class="aboutme-content">
+        <div class="aboutme-text">
+            <p style='text-indent: 30px;'>Hi! I am Wilmar, The creator of "Wil's Mini Bookstore". I can't really tell much about myself since it would be uninteresting but hey, I am Wilmar Asotigue Estremos, currently 18 years old, from Poblacion, Magpet, Cotabato. A student at University of Southern Mindanao (main campus), currently taking the program, Bachelor of Science in Information System. </p>
+            <p style='text-indent: 30px;'>I created this website for the sole purpose of displaying and selling books and to complete the final requirement of my course, Fundamentals of Information System. Putting everything aside, Hi! Once again, I' am Wilmar Asotigue Estremos and welcome to the small world I've built.</p>
+        </div>
+        <div class="aboutme-slide">
+            <img class="mySlides" src="images/aboutme1.jpg">
+            <img class="mySlides" src="images/aboutme2.jpg">
+            <img class="mySlides" src="images/aboutme3.jpg">
+            <img class="mySlides" src="images/aboutme4.jpg">
+            <img class="mySlides" src="images/aboutme5.jpg">
+            <img class="mySlides" src="images/aboutme6.jpg">
+            <img class="mySlides" src="images/aboutme7.jpg">
+            <img class="mySlides" src="images/aboutme8.jpg">
+            <img class="mySlides" src="images/aboutme9.jpg">
+            <img class="mySlides" src="images/aboutme10.jpg">
+            <img class="mySlides" src="images/aboutme11.jpg">
+        </div>
+    </div>
+</div>
+</section>
+<footer>
+	<div class="logo-container">
+				<a href="Wil's Min Bookstore.html">
+					<img src="images/bookstore.jpg" alt="Wil's Brainrot Library official logo" class="logo-footer" />
+				</a>
+	</div>
+	<div class="contactus">
+		<h3>Contact Us</h3>
+	</div>
+	<div class="social-media-icons">
+        <a href="https://www.facebook.com/wilmar.estremos.92?mibextid=ZbWKwL" target="_blank" class="social-icon">
+            <i class="fa fa-facebook"></i>
+        </a>
+        <a href="https://l.facebook.com/l.php?u=https%3A%2F%2Fx.com%2FEstremosWi58104%3Ffbclid%3DIwZXh0bgNhZW0CMTAAAR24n6K0K9fLE8u4oYfPtTRzeEgzZd_jTNRdlB63Nds2yb5DiENNMHmTsAc_aem_RFd48L7SkHlBdnsuWVRFoA&h=AT2mrOAWzkpfy0b-V4ZEY8XWwVVlDfy-amTfLpz4LXZeolzSNC76Ys4n898E39vlmYw2_WFgs0pW0qICUliQzCzKyzMHj7VL9Cw0McVD8dQlmTG_eU8PUtOKmWabYt4ZIjuMLg" target="_blank" class="social-icon">
+            <i class="fa fa-twitter"></i>
+        </a>
+        <a href="https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.instagram.com%2Fwilmar_estremos%2Fprofilecard%2F%3Figsh%3DbWJ5bnMwOXY5NzM%253D%26fbclid%3DIwZXh0bgNhZW0CMTAAAR2qibDQe8VfE5cVj80WD11vD_dBzz7c64FF9GhxM-btGnFbfxS3B-x7vB4_aem_dv4dfa5xlkk2tdVIY--EAA&h=AT3mYyoNEd3nC8FoklVeOXKcU_V3ylVUy7W90f3ZVdqrtGYKCuUxa1aSHVhTR6dexjwM6hW6EVstKZ4_34PXWU6IvMeajDdEf8AO8-2GcshwkvT4DrtMLs0-dn1DQeu6OItdqA" target="_blank" class="social-icon">
+            <i class="fa fa-instagram"></i>
+        </a>
+    </div>
+	<div class="copyright">
+		<h3>Copyright &copy 2024 Wil's Brainrot Library<h3>
+	</div>
+</footer>
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 1500); 
+}
+</script>
+    
+</body>
+</html>
