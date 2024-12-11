@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title> Wil's Brainrot Library</title>
+	<meta charset="utf-8">
+	<link rel="icon" type="image/x-icon" href="fav.ico">
+	<meta name="description" content="A library of Literatures">
+	<meta name="keywords" content="Library, Literature, Essay, Journal, Research, Fiction, Nonfiction, Thesis, Sacred Text, Comics, Manga">
+	<meta name="author" content="Estremos, Wilmar A.">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<base href="images/">
+<style>
+*{
+	box-sizing: border-box;
+}
+body{
+	font-family: Arial, Helvetica, sans-serif;
+}
+header{
+	background-color: #A1AEB1;
+	padding: 30px;
+	text-align: center;
+	font-size: 30px;
+	color: black
+}
+nav{
+	display: flex;
+	height: 100px;
+	background-color: #616569;
+	width: 100%;
+	padding:20px;
+}
+nav ul{
+	list-style-type: none;
+	pading: 0;
+}
+nav ul li{
+	display: inline-block;
+}
+nav ul li a{
+	display: flex;
+	width: 100%;
+	flex: 1;
+	color:black;
+	text-decoration: none;
+	margin-left: 200px;
+	font-weight: bold;
+}
+article {
+	float: left;
+	padding:20px;
+	background-color: #C5C6C7;
+	width: 50%;
+	height: 220px;
+}
+aside {
+	background-color: #E8E9EB;
+	margin-top: -20px;
+	height: 220px;
+}
+footer{
+	background-color: #708090;
+	margin-top: -20px;
+	height: 100px;
+}
+</style>
+</head>
+<body>
+	<header>
+		<h1 id="header"><h1>
+	</header>
+	<section>
+		<nav>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="aboutme.html">About Me</a></li>
+				<li><a href="contactus.html">Contact Us</a></li>
+			</ul>
+		</nav>
+		<article>
+			<h1>Welcome to the library</h1>
+			<p>This library will contain my literatures when I was still a senior high student at Magpet National High School. That was a year ago, time flies so fast ain't it?</p>
+		</article>
+		<aside>
+			<h2>Hi, I am Wilmar, the creator of this website</h2>
+			<img src="aboutme1.jpg" alt="the creator, Wilmar" width="120" height="150" />
+		</aside>
+		</section>
+		<footer>
+			<h2>It Ends Here</h2>
+		</footer>
+<script>
+	const text = "Welcome to my Website";
+	const header = document.getElementById ("header");
+	let index = 0;
+	
+	function typeEffect() {
+		if (index < text.length) {
+			header.innerText += text[index] === " " ? " " : text[index];
+			index++;
+			setTimeout(typeEffect, 200);
+		}
+		else{
+			setTimeout(( ) => {
+			header.innerText = " ";
+			index = 0;
+			typeEffect();
+			}, 1000);
+		}
+	}
+	typeEffect();
+</script>
+</body>
+</html>
+			
