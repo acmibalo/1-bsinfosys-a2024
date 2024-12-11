@@ -1,0 +1,98 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+}
+
+/* Header Styling */
+header {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+header h1 {
+  font-size: 3em;
+}
+
+header p {
+  font-size: 1.2em;
+}
+
+/* Main Content Styling */
+#main {
+  display: flex;
+  margin: 20px;
+}
+
+/* Left Column (Navigation Bar) */
+#leftcolumn {
+  flex: 1;
+  background-color: #333;
+  padding: 20px;
+}
+
+#leftcolumn .menu ul {
+  list-style-type: none;
+}
+
+#leftcolumn .menu ul li {
+  margin: 10px 0;
+}
+
+#leftcolumn .menu ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#leftcolumn .menu ul li a:hover {
+  background-color: #555;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+/* Right Column (Main Content) */
+#rightcolumn {
+  flex: 3;
+  padding: 20px;
+  background-color: #fff;
+}
+
+#rightcolumn h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+#rightcolumn p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+/* Footer Styling */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  #main {
+    flex-direction: column;
+  }
+
+  #leftcolumn {
+    margin-bottom: 20px;
+  }
+}
