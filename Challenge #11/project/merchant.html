@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title> Merchant-Wil's Mini Bookstore</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="css/w3.css">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel ="stylesheet" >
+	<link rel="icon" type="image/x-icon" href="images/fav.ico">
+	<meta name="description" content="A library of Literatures">
+	<meta name="keywords" content="Library, Literature, Novels, Fantasy, Textbooks, Fiction, Nonfiction, Biographies, Romance, Horror, Adventure">
+	<meta name="author" content="Estremos, Wilmar A.">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+font-face {
+    font-family: Gagalin;  
+    src: url(/fonts/Gagalin.otf) format('opentype'); 
+}
+*{
+	margin:0;
+	font-family: Gagalin, sans-serif;
+	padding:0;
+	box-sizing:border-box;
+}
+html{
+	scroll-behavior:smooth;
+}
+.main-header{
+	margin-bottom:0
+	justify-content:space-between;
+	max-height:80px;
+	top:0;
+	background-color:white;
+}
+.logo-header{
+	height:20vh;
+	display:flex;
+}
+.logo{
+	width:15vh;
+	height:auto;
+	position:absolute;
+}
+.close-login{
+	margin-left:95vw;
+	margin-top:1vh;
+}	
+.closebtn{
+	font-size:7vh;
+	color:#33374C;
+}
+form {
+    width: 100%;
+	margin: 0 auto;
+	padding: 20px;
+	border-radius: 5px;
+	font-family: Gagalin, sans-serif;
+	border:none;
+	color: #33374C;
+}
+label {
+    display: block;
+    margin: 10px 0 5px;
+}
+input, select, button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+option:hover{
+	background-color:#82849D;
+}
+button {
+    background-color: #33374c;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #82849D;
+}
+
+</style>
+</head>
+<body>
+<header class="main-header">
+	<div class="logo-header">
+		<a href="Wil's Mini Bookstore.html">
+				<img src="images/bookstore.jpg" alt="Wil's Mini Bookstore official logo" class="logo" />
+			</a>
+	<div class="close-login">
+			<a href="Wil's Mini Bookstore.html" class="closebtn">
+			<i class="fa fa-close"></i>
+			</a>
+		</div>
+</header>
+<section>
+<article>
+  <h2 style="text-align: center; font-family: Gagalin, sans-serif;">Place Your Order</h2>
+  <form action="/submit-order" method="POST">
+    <label for="country">Country:</label>
+    <select id="country" name="country" required>
+      <option value="">Select Country</option>
+      <option value="Philippines">Philippines</option>
+	  <option value="China">China</option>
+	  <option value="USA">USA</option>
+	  <option value="South Korea">South Korea</option>
+      <option value="Other">Other</option>
+    </select>
+    <label for="region">Region/City/District:</label>
+    <input type="text" id="region" name="region" placeholder="Enter Region/City/District" required>
+    <label for="street">Street/Building Name:</label>
+    <input type="text" id="street" name="street" placeholder="Enter Street/Building Name" required>
+    <label for="unit">Unit/Floor/House Number:</label>
+    <input type="text" id="unit" name="unit" placeholder="Enter Unit/Floor/House Number" required>
+    <label for="recipient">Recipient's Name:</label>
+    <input type="text" id="recipient" name="recipient" placeholder="Enter Recipient's Name" required>
+    <label for="phone">Phone Number:</label>
+    <input type="tel" id="phone" name="phone" placeholder="Enter Phone Number" pattern="[0-9]{10,15}" required>
+    <label for="payment">Payment Method:</label>
+    <select id="payment" name="payment" required>
+      <option value="">Select Payment Method</option>
+      <option value="COD">Cash on Delivery</option>
+      <option value="GCash">GCash</option>
+      <option value="PayMaya">PayMaya</option>
+    </select>
+    <button type="submit">Place Order</button>
+  </form>
+ </article>
+ </section>
+ </body>
+ </html>

@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title> Wil's Brainrot Library</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="css/w3.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel ="stylesheet" >
+	<link rel="icon" type="image/x-icon" href="images/wil.ico">
+	<meta name="description" content="A library of Literatures">
+	<meta name="keywords" content="Library, Literature, Essay, Journal, Research, Fiction, Nonfiction, Thesis, Sacred Text, Comics, Manga">
+	<meta name="author" content="Estremos, Wilmar A.">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+	<header class="header">
+		<div class="logo-container">
+			<a href="Wil's Brainrot Library.html">
+				<img src="images/icon.png" alt="Wil's Brainrot Library official logo" class="logo" />
+			</a>
+		<div class="menu-container">
+			<button id="dropdownButton" class="menu-button w3-button">Menu <span id="menuArrow" class="menu-arrow">▼</span></button>
+				<div id="dropdownContent" class="dropdown-content">
+					<a href="Wil's Brainrot Library.html">Home</a>
+					<a href="aboutme.html" target="_blank">About Me</a>
+					<div class="myaccount w3-button" onclick="toggleAccordion(this)">My Account<span class="myaccount-arrow">▼</span> </div>
+						<div class="myaccount-content">
+							<a href="myprofile.html" target="_blank">My Profile</a>
+							<a href="library.html" target="_blank">My Library</a>
+						</div>
+					<a href="#contactus">Contact Us</a>
+				</div>
+		</div>
+		<div class="search-container">
+			<input type="text" id="search-input" placeholder="Search...">
+				<button id="search-button">
+					<span class="fa fa-search"></span>
+				</button>
+		</div>
+		<button id="theme-toggle" class="theme-toggle-button">🌙</button>
+		<div class="auth-button">
+			<a href="login.html" target="_blank" class="login-button w3-button">Log in</a>
+			<a href="signup.html" target="_blank" class="signup-button w3-button">Sign-up</a>
+		</div>
+		<div class="sparkles"></div>
+</header>
+<section>
+<nav class="nav-bar">
+    <button onclick="toggleSubNav('fiction-nav')">Fiction</button>
+		<ul id="fiction-nav" class="sub-nav">
+			<li><button onclick="toggleSidebar('novel')">Novel</button></li>
+			<li><button onclick="toggleSidebar('short-story')">Short Story</button></li>
+		</ul>
+    <button onclick="toggleSubNav('nonfiction-nav')">Nonfiction</button>
+		<ul id="nonfiction-nav" class="sub-nav">
+			<li><button onclick="toggleSidebar('biography')">Biography</button></li>
+			<li><button onclick="toggleSidebar('autobiography')">Autobiography</button></li>		
+			<li><button onclick="toggleSidebar('memoir')">Memoir</button></li>
+			<li><button onclick="toggleSidebar('letter')">Letter</button></li>
+			<li><button onclick="toggleSidebar('travelogue')">Travelogue</button></li>
+		</ul>
+    <button onclick="toggleSubNav('academic-nav')">Academic</button>
+		<ul id="academic-nav" class="sub-nav">
+			<li><button onclick="toggleSidebar('researchpaper')">Research Paper</button></li>
+			<li><button onclick="toggleSidebar('thesis')">Thesis</button></li>
+			<li><button onclick="toggleSidebar('dissertation')">Dissertation</button></li>
+			<li><button onclick="toggleSidebar('textbook')">Textbook</button></li>
+		</ul>
+    <button onclick="toggleSubNav('religious-nav')">Religious & Sacred Text</button>
+		<ul id="religious-nav" class="sub-nav">
+			<li><button onclick="toggleSidebar('bible')">Bible</button></li>
+			<li><button onclick="toggleSidebar('quran')">Quran</button></li>
+		</ul>
+    <button onclick="toggleSubNav('comics-nav')">Comics</button>
+		<ul id="comics-nav" class="sub-nav">
+			<li><button onclick="toggleSidebar('westerncomics')">Western Comics</button></li>
+			<li><button onclick="toggleSidebar('manga')">Manga</button></li>
+		</ul>
+  </nav>
+<div id="novel" class="sidebar">
+			 <h2 class="sidebar-title">Novel</h2>
+            <button class="accordion" onclick="toggleAccordion('novel1')">If My Life were a Movie, I'd Burn the Theater</button>
+            <div id="novel1" class="panel">
+                <div class="chapter" onclick="showChapterContent('chap1')">Chapter 1: Days of Shame</div>
+                <div class="chapter" onclick="showChapterContent('chap2')">Chapter 2: Rise of Jupiter/Prodigy</div>
+                <div class="chapter" onclick="showChapterContent('chap3')">Chapter 3: When World Turned Upside-Down</div>
+                <div class="chapter" onclick="showChapterContent('chap4')">Chapter 4: Jupiter was a Failed Star</div>
+            </div>
+			<button class="accordion" onclick="showChapterContent('chap5')"><del>Untitled</del></button>
+        </div>
+<div id="short-story" class="sidebar">
+			<h2 class="sidebar-title">Short Story</h2>
+            <button class="accordion" onclick="showChapterContent('chap6')">My Poor Girl, Jackilyn</button>
+			<button class="accordion" onclick="showChapterContent('chap7')"><del>Untitled</del></button>
+        </div>
+<div id="biography" class="sidebar">
+			<h2 class="sidebar-title">Biography</h2>
+            <button class="accordion" onclick="showChapterContent('chap8')">Wilfredo Abitona Estremos</button>
+			<button class="accordion" onclick="showChapterContent('chap9')"><del>Untitled</del></button>
+        </div>
+<div id="autobiography" class="sidebar">
+			<h2 class="sidebar-title">Autobiography</h2>
+            <button class="accordion" onclick="showChapterContent('chap10')">Wilmar</button>
+			<button class="accordion" onclick="showChapterContent('chap11')"><del>Untitled</del></button>
+        </div>
+<div id="memoir" class="sidebar">
+			<h2 class="sidebar-title">Memoir</h2>
+            <button class="accordion" onclick="showChapterContent('chap12')">District of Happiness</button>
+			<button class="accordion" onclick="showChapterContent('chap13')"><del>Untitled</del></button>
+        </div>
+<div id="letter" class="sidebar">
+			<h2 class="sidebar-title">Letter</h2>
+            <button class="accordion" onclick="showChapterContent('chap14')">Dear, Ma</button>
+			<button class="accordion" onclick="showChapterContent('chap15')"><del>Untitled</del></button>
+        </div>
+<div id="travelogue" class="sidebar">
+			<h2 class="sidebar-title">Travelogue</h2>
+            <button class="accordion" onclick="showChapterContent('chap16')">Reasons to Choose MNHS</button>
+			<button class="accordion" onclick="showChapterContent('chap'17)"><del>Untitled</del></button>
+        </div>
+<div id="researchpaper" class="sidebar">
+			<h2 class="sidebar-title">Research Paper</h2>
+            <button class="accordion pr1" onclick="toggleAccordion('pr1')">From Poverty to Possibility: A Study on Resilience among SHS 4Ps Beneficiary Students of Magpet National High School</button>
+			<div id="pr1" class="panel">
+                <div class="chapter" onclick="showChapterContent('chap18')">Chapter 1</div>
+                <div class="chapter" onclick="showChapterContent('chap19')">Chapter 2</div>
+                <div class="chapter" onclick="showChapterContent('chap20')">Chapter 3</div>
+                <div class="chapter" onclick="showChapterContent('chap21')">Chapter 4</div>
+				<div class="chapter" onclick="showChapterContent('chap22')">Chapter 5</div>
+            </div>
+			<button class="accordion" onclick="toggleAccordion('pr2')"><del>Learning  Through Games: The Use of Spelling Bee in Teaching Vocabulary among Grade-8 SNED Students in Magpet National High School</del></button>
+			<div id="pr2" class="panel">
+                <div class="chapter" onclick="showChapterContent('chap23')"><del>Chapter 1</del></div>
+                <div class="chapter" onclick="showChapterContent('chap24')"><del>Chapter 2</del></div>
+                <div class="chapter" onclick="showChapterContent('chap25')"><del>Chapter 3</del></div>
+                <div class="chapter" onclick="showChapterContent('chap26')"><del>Chapter 4</del></div>
+            </div>
+        </div>
+<div id="thesis" class="sidebar">
+			<h2 class="sidebar-title">Thesis</h2>
+            <button class="accordion" onclick="showChapterContent('chap27')">Work-Life Balance and Organizational Commitment of Nurses in a Tertiary Hospital in Las Vegas, USA</button>
+			<button class="accordion" onclick="showChapterContent('chap28')"><del>Untitled</del></button>
+        </div>
+<div id="dissertation" class="sidebar">
+			<h2 class="sidebar-title">Dissertation</h2>
+            <button class="accordion" onclick="showChapterContent('chap29')">EXAMINING DISSATISFACTION WITH AN ONLINE DOCTORAL PROGRAM</button>
+			<button class="accordion" onclick="showChapterContent('chap30')"><del>Untitled</del></button>
+        </div>
+<div id="textbook" class="sidebar">
+			<h2 class="sidebar-title">Textbook</h2>
+            <button class="accordion" onclick="showChapterContent('chap31')">Technology in Schools</button>
+			<button class="accordion" onclick="showChapterContent('chap32')">Untitled</button>
+        </div>
+<div id="bible" class="sidebar">
+			<h2 class="sidebar-title">The Bible</h2>
+            <button class="accordion" onclick="showChapterContent('chap33')">Genesis</button>
+			<button class="accordion" onclick="showChapterContent('chap34')"><del>Untitled</del></button>
+        </div>
+<div id="quran" class="sidebar">
+			<h2 class="sidebar-title">Quran</h2>
+            <button class="accordion" onclick="showChapterContent('chap35')">Al-Fatihah</button>
+			<button class="accordion" onclick="showChapterContent('chap36')"><del>Untitled</del></button>
+        </div>
+<div id="westerncomics" class="sidebar">
+			<h2 class="sidebar-title">Western Comics</h2>
+            <button class="accordion" onclick="showChapterContent('chap37')">Ang Pusang OA</button>
+			<button class="accordion" onclick="showChapterContent('chap38')"><del>Untitled</del></button>
+        </div>
+<div id="manga" class="sidebar">
+			<h2 class="sidebar-title">Manga</h2>
+            <button class="accordion" onclick="toggleAccordion('manga1')">One-Punch Man</button>
+			<div id="manga1" class="panel">
+                <div class="chapter" onclick="showChapterContent('chap39')">Chapter 1</div>
+                <div class="chapter" onclick="showChapterContent('chap40')"><del>Chapter 2</del></div>
+			</div>
+			<button class="accordion" onclick="showChapterContent('chap41')"><del>Untitled</del></button>
+        </div>
+<div class="bubbles">
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+</div>
+<div class="stars" id="stars"></div>
+<article>
+<div id="content" class="main-content">
+	<h1>Start Reading Now,<h1>
+    <h3>AND IMMERSE YOURSELF IN A WORLD OF DIVERSE LITERATURE</h3>
+</div>
+<div class="banner" id="alertBanner">
+	<p>Content Removed, Wait for further updates</p>
+	<button id="closeBanner">Ok</button>
+</div>
+</article>
+<aside>
+	<div class="aside">
+		<h1>Wanna go shopping instead?</h1>
+		<h2>Visit <a href="project/Wil's Mini Bookstore.html" target="_blank">Wil's Mini Bookstore!</a></h2>
+			<iframe src="project/Wil's Mini Bookstore.html" class="iframe" title="Iframe Example"></iframe>
+	</div>
+</aside>
+</section>
+<footer>
+	<div class="logo-container">
+				<a href="Wil's Brainrot Library.html">
+					<img src="images/icon.png" alt="Wil's Brainrot Library official logo" class="logo-footer" />
+				</a>
+	</div>
+	<div class="contactus" id="contactus">
+		<h3>Contact Us</h3>
+	</div>
+	<div class="social-media-icons">
+        <a href="https://www.facebook.com/wilmar.estremos.92?mibextid=ZbWKwL" target="_blank" class="social-icon">
+            <i class="fa fa-facebook"></i>
+        </a>
+        <a href="https://l.facebook.com/l.php?u=https%3A%2F%2Fx.com%2FEstremosWi58104%3Ffbclid%3DIwZXh0bgNhZW0CMTAAAR24n6K0K9fLE8u4oYfPtTRzeEgzZd_jTNRdlB63Nds2yb5DiENNMHmTsAc_aem_RFd48L7SkHlBdnsuWVRFoA&h=AT2mrOAWzkpfy0b-V4ZEY8XWwVVlDfy-amTfLpz4LXZeolzSNC76Ys4n898E39vlmYw2_WFgs0pW0qICUliQzCzKyzMHj7VL9Cw0McVD8dQlmTG_eU8PUtOKmWabYt4ZIjuMLg" target="_blank" class="social-icon">
+            <i class="fa fa-twitter"></i>
+        </a>
+        <a href="https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.instagram.com%2Fwilmar_estremos%2Fprofilecard%2F%3Figsh%3DbWJ5bnMwOXY5NzM%253D%26fbclid%3DIwZXh0bgNhZW0CMTAAAR2qibDQe8VfE5cVj80WD11vD_dBzz7c64FF9GhxM-btGnFbfxS3B-x7vB4_aem_dv4dfa5xlkk2tdVIY--EAA&h=AT3mYyoNEd3nC8FoklVeOXKcU_V3ylVUy7W90f3ZVdqrtGYKCuUxa1aSHVhTR6dexjwM6hW6EVstKZ4_34PXWU6IvMeajDdEf8AO8-2GcshwkvT4DrtMLs0-dn1DQeu6OItdqA" target="_blank" class="social-icon">
+            <i class="fa fa-instagram"></i>
+        </a>
+    </div>
+	<div class="copyright">
+		<h3>Copyright &copy 2024 Wil's Brainrot Library<h3>
+	</div>
+	<div class="footer-links">
+            <a href="help.html" target="_blank">Help</a>
+            <a href="privacy.html" target="_blank">Privacy</a>
+            <a href="terms.html" target="_blank">Terms & Conditions</a>
+        </div>
+    </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
