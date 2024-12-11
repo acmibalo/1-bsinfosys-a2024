@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title> Wil's Brainrot Library</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="style.css">
+	<link rel="icon" type="image/x-icon" href="fav.ico">
+	<meta name="description" content="A library of Literatures">
+	<meta name="keywords" content="Library, Literature, Essay, Journal, Research, Fiction, Nonfiction, Thesis, Sacred Text, Comics, Manga">
+	<meta name="author" content="Estremos, Wilmar A.">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<base href="images/">
+</head>
+<body>
+	<header>
+		<h1 id="header"><h1>
+	</header>
+	<section>
+		<nav>
+			<ul>
+				<li><a href="index.html" class="nav">Home</a></li>
+				<li><a href="aboutme.html" class="nav">About Me</a></li>
+				<li><a href="contactus.html" class="nav">Contact Us</a></li>
+			</ul>
+		</nav>
+		<article>
+			<h1>Welcome to the library</h1>
+			<p>This library will contain my literatures when I was still a senior high student at <span style="border: 2px solid #655967;">Magpet National High School</span>. That was a year ago, time flies so fast ain't it?</p>			
+		</article>
+		<aside class="aside">
+		<div class="h1">
+			<h2>Hi, <b>I am Wilmar</b>, the creator of this website</h2>
+			<img src="aboutme1.jpg" alt="the creator, Wilmar" width="120" height="150" />
+		</div>
+		</aside>
+		</section>
+		<footer>
+			<h2>It Ends Here</h2>
+		</footer>
+<script>
+	const text = "Welcome to my Website";
+	const header = document.getElementById ("header");
+	let index = 0;
+	
+	function typeEffect() {
+		if (index < text.length) {
+			header.innerText += text[index] === " " ? " " : text[index];
+			index++;
+			setTimeout(typeEffect, 200);
+		}
+		else{
+			setTimeout(( ) => {
+			header.innerText = " ";
+			index = 0;
+			typeEffect();
+			}, 1000);
+		}
+	}
+	typeEffect();
+</script>
+</body>
+</html>
+			
