@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>My Profile-Wil's Brainrot Library</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="css/w3.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel ="stylesheet" >
+	<link rel="icon" type="image/x-icon" href="images/wil.ico">
+	<meta name="description" content="A library of Literatures">
+	<meta name="keywords" content="Library, Literature, Essay, Journal, Research">
+	<meta name="author" content="Estremos, Wilmar A.">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+	<header class="header-myprofile">
+		<div class="logo-container">
+			<a href="Wil's Brainrot Library.html">
+				<img src="images/icon.png" alt="Wil's Brainrot Library official logo" class="logo-about-us" />
+			</a>
+<div class="menu-container">
+			<button id="dropdownButton" class="menu-button w3-button">Menu <span id="menuArrow" class="menu-arrow">▼</span></button>
+				<div id="dropdownContent" class="dropdown-content">
+					<a href="Wil's Brainrot Library.html">Home</a>
+					<a href="aboutme.html" target="_blank">About Me</a>
+					<div class="myaccount w3-button" onclick="toggleAccordion(this)">My Account<span class="myaccount-arrow">▼</span> </div>
+						<div class="myaccount-content">
+							<a href="myprofile.html" target="_blank">My Profile</a>
+							<a href="library.html" target="_blank">My Library</a>
+						</div>
+					<a href="contactus.html" target="_blank">Contact Us</a>
+				</div>
+		</div>
+<div class="close-profile">
+		<a href="Wil's Brainrot Library.html" class="closebtn">
+		<i class="fa fa-close"></i>
+		</a>
+	</div>
+</header>
+<body>
+<section>
+<article>
+<div class="profile-card">
+        <button class="edit-btn" onclick="toggleFields()">+</button>
+        <div class="profile-header">
+					<div class="profile-picture">
+						<img id="profile-img" src="default-avatar.png" alt="Profile Picture" />
+						<input type="file" id="upload-input" accept="image/*" style="display:none;" onchange="previewImage(event)">
+						<button class="edit-btn" onclick="document.getElementById('upload-input').click()">+</button>
+					</div>
+            <div class="profile-name">
+                <h2 id="display-name">Your Name</h2>
+                <p id="display-info">Your Title or Role</p>
+            </div>
+        </div>
+        <div class="profile-bio">
+            <h3>Bio</h3>
+            <p id="display-bio">This is your bio. Tell us more about yourself!</p>
+        </div>
+        <div class="input-field" id="edit-fields">
+            <input type="text" id="name-input" placeholder="Enter your name">
+            <input type="text" id="info-input" placeholder="Enter your title or role">
+            <textarea id="bio-input" rows="4" placeholder="Write something about yourself"></textarea>
+            <button onclick="saveChanges()">Save</button>
+        </div>
+    </div>
+</article>
+</section>
+<script src="script.js"></script>
+</body>
+</html>
