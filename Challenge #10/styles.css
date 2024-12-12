@@ -1,0 +1,162 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header Section */
+#header-section {
+    background-color: #222;
+    color: white;
+    padding: 30px;
+    text-align: center;
+}
+
+/* Navigation Bar */
+#nav-bar {
+    background-color: #333;
+    padding: 20px;
+    text-align: center;
+}
+
+#nav-bar a {
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    margin: 5px;
+}
+
+#nav-bar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Main Content Section */
+#main-content {
+    display: flex;
+    margin: 20px;
+    flex-wrap: wrap;
+}
+
+/* Main Article (Content) */
+.main-content {
+    flex: 70%;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.section-heading {
+    margin-top: 20px;
+    font-size: 1.8em;
+}
+
+/* Sidebar */
+.sidebar {
+    flex: 30%;
+    padding: 20px;
+    background-color: #f8f8f8;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer */
+#footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    width: 100%;
+}
+
+#footer a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Inline Elements */
+.nav-link {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #333;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.nav-link:hover {
+    background-color: #ddd;
+}
+
+/* Buttons */
+.btn-link {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.btn-link:hover {
+    text-decoration: underline;
+}
+
+/* Form Inputs */
+.form-input {
+    width: 100%;
+    padding: 8px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+}
+
+.form-submit {
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.form-submit:hover {
+    background-color: #555;
+}
+
+/* Links inside the Sidebar */
+.sidebar-link {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.sidebar-link:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+    /* Navigation Bar */
+    #nav-bar a {
+        display: block;
+        width: 100%;
+    }
+
+    /* Main content and sidebar */
+    .main-content, .sidebar {
+        width: 100%;
+        padding: 10px;
+    }
+
+    /* Adjust Video Width */
+    iframe, video {
+        width: 100%;
+    }
+
+    /* Header Section */
+    #header-section {
+        padding: 20px;
+    }
+}
