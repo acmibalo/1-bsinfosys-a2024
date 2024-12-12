@@ -45,6 +45,9 @@ header{
     font-size: var(--p-font);
     transition: all .6s ease;
 }
+.navlist a:hover{
+    color: var(--main-color);
+}
 .right-content{
     display: flex;
     align-items: center;
@@ -53,9 +56,9 @@ header{
     display: inline-block;
     padding: 9px 24px;
     background: transparent;
-    border: 2px solid;
+    border: 2px solid var(--text-color);
     border-radius: 7px;
-    color: var(--bg-color);
+    color: var(--text-color);
     font-size: 15px;
     font-weight: 500;
     transition: all .6s ease;
