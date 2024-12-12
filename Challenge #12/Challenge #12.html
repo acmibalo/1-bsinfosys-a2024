@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Web Page</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="jav.js" defer></script>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+  <!-- Responsive Navigation Menu -->
+  <nav class="navbar">
+    <ul class="navbar-menu">
+      <li><a href="#video">Video</a></li>
+      <li><a href="#form">Contact</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#faq">FAQ</a></li>
+      <li><a href="#modal-trigger">Modal</a></li>
+    </ul>
+    <button class="navbar-toggle" onclick="toggleNavbar()">☰</button>
+  </nav>
+
+  <div class="container">
+    <!-- Video Section -->
+    <section class="video-section" id="video">
+      <h2>Video</h2>
+      <video width="640" height="360" controls>
+        <source src="video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="contact-form-section" id="form">
+      <h2>Contact Us</h2>
+      <form id="contact-form" action="#" method="post">
+        <div class="form-group">
+          <label for="name">Full Name</label>
+          <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="4" placeholder="Write your message" required></textarea>
+        </div>
+        <div class="form-group">
+          <label for="datepicker">Select a Date</label>
+          <input type="date" id="datepicker" name="date" required>
+        </div>
+        <button type="submit" class="submit-btn">Submit</button>
+        <div class="progress-container">
+          <div class="progress-bar" id="progress-bar"></div>
+        </div>
+      </form>
+    </section>
+
+    <!-- Image Gallery with Lightbox -->
+    <section class="gallery-section" id="gallery">
+      <h2>Image Gallery</h2>
+      <div class="gallery">
+        <img src="image1.jpg" alt="Image 1" onclick="openLightbox(0)">
+        <img src="image2.jpg" alt="Image 2" onclick="openLightbox(1)">
+        <img src="image3.jpg" alt="Image 3" onclick="openLightbox(2)">
+      </div>
+      <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+        <img id="lightbox-img" src="" alt="Full-size image">
+      </div>
+    </section>
+
+    <!-- FAQ Accordion Section -->
+    <section class="faq-section" id="faq">
+      <h2>Frequently Asked Questions</h2>
+      <div class="accordion">
+        <button class="accordion-button">What is an embedded video?</button>
+        <div class="accordion-content">
+          <p>Embedded videos are media files placed directly into a webpage rather than being linked externally.</p>
+        </div>
+
+        <button class="accordion-button">How do I submit the form?</button>
+        <div class="accordion-content">
+          <p>You fill out the contact form and click the submit button to send your information.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Modal Section -->
+    <section class="modal-section" id="modal-trigger">
+      <h2>Modal Example</h2>
+      <button class="open-modal-btn" onclick="openModal()">Open Modal</button>
+
+      <!-- Modal -->
+      <div class="modal" id="myModal">
+        <div class="modal-content">
+          <span class="close-btn" onclick="closeModal()">×</span>
+          <p>This is a modal window!</p>
+        </div>
+      </div>
+    </section>
+  </div>
+</body>
+</html>
