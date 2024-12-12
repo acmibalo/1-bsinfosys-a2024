@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta Tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Dota 2 - Battle of the Ancients. A competitive online multiplayer game with intense 5v5 battles.">
+    <meta name="keywords" content="Dota 2, Battle of the Ancients, Multiplayer, MOBA, Esports, Heroes, Valve">
+    <meta name="author" content="Valve Corporation">
+
+    <title>Dota 2 - Battle of the Ancients</title>
+
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Favicon for the site -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header id="header-section">
+        <h1 class="title">Dota 2</h1>
+        <p class="subtitle">The Battle of the Ancients</p>
+    </header>
+	
+    <!-- Navigation Bar -->
+    <nav id="nav-bar">
+        <h2>Menu</h2>
+        <a href="#features" class="nav-link">Features</a>
+        <a href="#how-to-play" class="nav-link">How to Play</a>
+        <a href="#watch" class="nav-link">Watch and Learn</a>
+        <a href="#contact" class="nav-link">Contact Us</a>
+        <a href="javascript:void(0)" class="dropdown-btn">Dropdown</a>
+    </nav>
+
+    <!-- Dropdown Menu -->
+    <div class="dropdown-content">
+        <a href="#">Item 1</a>
+        <a href="#">Item 2</a>
+        <a href="#">Item 3</a>
+    </div>
+
+    <!-- Main Section with Navigation and Content -->
+    <section id="main-content" class="container">
+        <!-- Main Content Section -->
+        <article class="main-content">
+            <h2 id="features" class="section-heading">Features of Dota 2</h2>
+            <ul>
+                <li class="feature-item">Over 120 unique heroes to choose from.</li>
+                <li class="feature-item">Intense 5v5 team battles.</li>
+                <li class="feature-item">Regular updates with new content and balance changes.</li>
+            </ul>
+            <!-- YouTube Video Embed Section -->
+            <section id="video-section">
+                <h2>Watch This Amazing Dota 2 Gameplay!</h2>
+                <iframe width="720" height="315" src="https://www.youtube.com/watch?v=-cSFPIwMEq4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </section>
+
+            <!-- Local Video Embed Section -->
+            <section id="local-video-section">
+                <h2>Watch Dota 2</h2>
+                <video width="720" height="360" controls>
+                    <source src="dota2_highlights.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </section>
+            <!-- Accordion -->
+            <h3>Game Modes</h3>
+            <button class="accordion">All Pick</button>
+            <div class="panel">
+                <p>All Pick mode is where every player selects a hero, regardless of team balance.</p>
+            </div>
+            <button class="accordion">Captain's Mode</button>
+            <div class="panel">
+                <p>Captain's Mode is a strategic mode where captains pick heroes for their teams.</p>
+            </div>
+
+            <!-- Image Gallery -->
+            <h2>Game Images</h2>
+            <div class="gallery">
+                <a href="image1.jpg" target="_blank">
+                    <img src="image1_thumbnail.jpg" alt="Image 1" width="300" height="200">
+                </a>
+                <a href="image2.jpg" target="_blank">
+                    <img src="image2_thumbnail.jpg" alt="Image 2" width="300" height="200">
+                </a>
+                <a href="image3.jpg" target="_blank">
+                    <img src="image3_thumbnail.jpg" alt="Image 3" width="300" height="200">
+                </a>
+            </div>
+
+            <!-- Tabs -->
+            <h2>Game Information</h2>
+            <div class="tabs">
+                <button class="tablinks" onclick="openTab(event, 'overview')">Overview</button>
+                <button class="tablinks" onclick="openTab(event, 'heroes')">Heroes</button>
+                <button class="tablinks" onclick="openTab(event, 'tournaments')">Tournaments</button>
+            </div>
+
+            <div id="overview" class="tabcontent">
+                <h3>Overview</h3>
+                <p>Dota 2 is a multiplayer online battle arena (MOBA) game where players control heroes.</p>
+            </div>
+
+            <div id="heroes" class="tabcontent">
+                <h3>Heroes</h3>
+                <p>Over 120 heroes to choose from, each with unique abilities and playstyles.</p>
+            </div>
+
+            <div id="tournaments" class="tabcontent">
+                <h3>Tournaments</h3>
+                <p>Dota 2 has a massive esports scene, with tournaments such as The International.</p>
+            </div>
+
+            <!-- Modal Box -->
+            <button id="openModal">Click to Open Modal</button>
+            <div id="myModal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <p>Welcome to the world of Dota 2!</p>
+                </div>
+            </div>
+            
+        </article>
+    </section>
+
+    <!-- Footer Section -->
+    <footer id="footer">
+        <p>&copy; 2024 Dota 2. All rights reserved.</p>
+        <p><a href="/privacy-policy" class="footer-link">Privacy Policy</a> | <a href="/terms-of-service" class="footer-link">Terms of Service</a></p>
+    </footer>
+
+    <!-- Link to external JavaScript file -->
+    <script src="scripts.js"></script>
+
+</body>
+</html>
