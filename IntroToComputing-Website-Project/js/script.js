@@ -8,8 +8,6 @@ function cancel(){
     navbar.style.transform  = "translateY(-500px)"
 }
 
-
-
 const texts = [
     "Web Developer",
     "Software Developer",
@@ -77,3 +75,45 @@ themeToggle.addEventListener('click', () => {
         themeToggle.classList.add('fa-sun');
     }
 });
+
+
+const cat = document.getElementById('cat');
+const chatContainer = document.getElementById('chat-container');
+const chatBody = document.getElementById('chat-body');
+const questions = document.getElementById('questions');
+const speechBubble = document.getElementById('speech-bubble');
+
+cat.addEventListener('click', () => {
+  chatContainer.style.display = chatContainer.style.display === 'block' ? 'none' : 'block';
+});
+
+questions.addEventListener('click', (e) => {
+  if (e.target.tagName === 'A') {
+    const question = e.target.getAttribute('data-question');
+    displayAnswer(question);
+    chatBody.style.opacity = 0;
+    setTimeout(() => {
+      chatBody.style.display = 'none';
+      chatBody.style.opacity = 1;
+      setTimeout(() => {
+        chatBody.style.display = 'block';
+      }, 2000);
+    }, 2000);
+  }
+});
+
+function displayAnswer(question) {
+  const answers = {
+    "How do I contact the developer?": "Meow! Reach out via email: s.kjoagudo@usm.edu.ph or just click the contact menu",
+    "What services do you offer?": "Purr-fect web development, design, and many more. Let's discuss your project!",
+    "What's your experience?": "I have 6 months of ecxperience in web development, with focusing in designing and editing."
+  };
+
+  const answer = answers[question] || "Sorry, I didn't understand.";
+  speechBubble.innerText = answer;
+  speechBubble.style.color = 'white';
+  speechBubble.style.display = 'block';
+  setTimeout(() => {
+    speechBubble.style.display = 'none';
+  }, 5000);
+}
