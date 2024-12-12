@@ -104,9 +104,9 @@ questions.addEventListener('click', (e) => {
 
 function displayAnswer(question) {
   const answers = {
-    "How do I contact the developer?": "Meow! Reach out via email: s.kjoagudo@usm.edu.ph or just click the contact menu",
+    "How do I contact the developer?": "Meow! Reach out via email: s.kjoagudo@usm.edu.ph or just click the contact menu.",
     "What services do you offer?": "Purr-fect web development, design, and many more. Let's discuss your project!",
-    "What's your experience?": "I have 6 months of ecxperience in web development, with focusing in designing and editing."
+    "What's your experience?": "I have 6 months of experience in web development, with focusing in designing and editing."
   };
 
   const answer = answers[question] || "Sorry, I didn't understand.";
