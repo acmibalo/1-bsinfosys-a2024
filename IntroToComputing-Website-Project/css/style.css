@@ -13,13 +13,15 @@ header{
 	position:absolute;
 	top:0;
 	background-color:white;
-	height:12%;
+	height:13%;
 	z-index:1000;
+	width:100%;
 }
 html{
 	scroll-behavior:smooth;
 }
 .logo-container{
+	background-color:white;
 	display:flex;
 	position:absolute;
 	height:100%;
@@ -381,6 +383,9 @@ body.dark-mode .main-content sup{
 }
 body.dark-mode .main-content h6{
 	color:white;
+}
+body.dark-mode header{
+	background-color: #33374C;
 }
 .auth-button{
 	display:flex;
@@ -974,7 +979,7 @@ aside::-webkit-scrollbar{
     color: #B9A5A5;
 }
 .header-about-us{
-	background-color:#33374C;
+	background:transparent;
 }
 .logo-about-us{
 	width:80px;
@@ -1182,7 +1187,7 @@ aside::-webkit-scrollbar{
 }
 .form-container {
 	width: 60%;
-	max-width: 400px; 
+	max-width: 40vw; 
 	background-color: #fff;
 	padding: 20px;
 }
@@ -1193,7 +1198,7 @@ aside::-webkit-scrollbar{
 	border: 1px solid #33374C;
 	font-size: 3vh;
 	font-family:Roboto, sans-serif;
-	margin-left:35vw;
+	margin-left:30vw;
 }
 .input-field:focus {
 	border-color: #6C7085;
@@ -1209,7 +1214,7 @@ aside::-webkit-scrollbar{
 	font-size: 16px;
 	cursor: pointer;
 	transition: background-color 0.3s ease;
-	margin-left:35vw;
+	margin-left:30vw;
 	font-family:Roboto, sans-serif;
 	font-weight:bold;
 }
@@ -1291,7 +1296,7 @@ aside::-webkit-scrollbar{
 .help h1{
 	text-align:center;
 	font-family:Gagalin, sans-serif;
-	margin-top:5vh;
+	margin-top:20vh;
 }
 .help h2{
 	text-align:center;
@@ -1425,14 +1430,14 @@ aside::-webkit-scrollbar{
 	font-size: 2;
 	color: #33374C;
 }
-.input-field {
+.inputfield {
     display: none;
 	margin-top: 20px;
 	margin-left:0;
 	background-color:white;
 }
-.input-field input,
-.input-field textarea {
+.inputfield input,
+.inputfield textarea {
     width: 100%;
 	padding: 10px;
 	margin-bottom: 10px;
