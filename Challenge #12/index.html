@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ensures responsiveness on different screen sizes -->
+    <title>My Website</title>
+
+    <!-- Link to External CSS Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Meta Tags for SEO -->
+    <meta name="description" content="Welcome to My Website. We provide high-quality services to help you grow your business.">
+    <meta name="author" content="Your Name or Company Name">
+    <meta name="keywords" content="website, services, business, growth, quality services">
+    
+    <!-- Open Graph Meta Tags for social media sharing -->
+    <meta property="og:title" content="My Website">
+    <meta property="og:description" content="Visit our website to learn more about our services and offerings.">
+    <meta property="og:image" content="path-to-your-image.jpg">
+    <meta property="og:url" content="https://www.yourwebsite.com">
+    
+    <!-- Link to the favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    
+    <!-- Additional Meta Tag for Mobile Optimization -->
+    <meta name="theme-color" content="#ffffff">
+    
+    <!-- Link to Google Fonts for custom typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header id="main-header">
+        <div class="logo">
+            <h1>My Website</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="content">
+            <h2>Welcome to My Website</h2>
+            <p>This is the main content area. <span class="highlight">Enjoy your stay!</span></p>
+            
+            <!-- Embed Video from YouTube (iframe) -->
+            <h3>Watch Our Promotional Video:</h3>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/your-video-id" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+            <!-- Embed Local Video (MP4) -->
+            <h3>Watch Our Local Video:</h3>
+            <video width="640" height="360" controls>
+                <source src="videos/your-local-video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+
+            <!-- Accordion -->
+            <h3>FAQs</h3>
+            <div class="accordion">
+                <button class="accordion-button">What services do you offer?</button>
+                <div class="accordion-content">
+                    <p>We offer a variety of business services including marketing, design, and consulting.</p>
+                </div>
+
+                <button class="accordion-button">How can I contact you?</button>
+                <div class="accordion-content">
+                    <p>You can contact us through the contact form on our website or by email.</p>
+                </div>
+            </div>
+
+            <!-- Tooltip Example -->
+            <h3>Hover over the text for more information:</h3>
+            <p class="tooltip">Learn more about our <span class="tooltiptext">We provide detailed consultancy for small businesses.</span> services.</p>
+
+            <!-- Image Gallery -->
+            <h3>Our Projects</h3>
+            <div class="image-gallery">
+                <img src="images/project1.jpg" alt="Project 1" class="gallery-item" loading="lazy">
+                <img src="images/project2.jpg" alt="Project 2" class="gallery-item" loading="lazy">
+                <img src="images/project3.jpg" alt="Project 3" class="gallery-item" loading="lazy">
+                <img src="images/project4.jpg" alt="Project 4" class="gallery-item" loading="lazy">
+            </div>
+
+            <!-- Countdown Timer -->
+            <h3>Special Offer Ends In:</h3>
+            <div id="countdown"></div>
+        </section>
+        
+        <aside class="sidebar">
+            <h3>Sidebar</h3>
+            <p>Additional content like links or advertisements.</p>
+        </aside>
+
+        <!-- Contact Form -->
+        <section class="contact-form">
+            <h3>Contact Us</h3>
+            <form id="contact-form" action="submit-form.php" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p id="footer-text">
+            &copy; 2024 My Website | All Rights Reserved
+        </p>
+        <ul>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+        </ul>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

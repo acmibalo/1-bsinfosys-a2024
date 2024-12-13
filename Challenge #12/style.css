@@ -1,0 +1,32 @@
+/* Image Gallery Styling */
+.image-gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.gallery-item {
+    width: 100%;
+    height: auto;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Countdown Timer Styling */
+#countdown {
+    font-size: 30px;
+    font-weight: bold;
+    color: #ff0000;
+}
+
+/* Sticky Footer */
+footer {
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
