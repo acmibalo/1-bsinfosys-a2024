@@ -71,17 +71,19 @@ nav {
 
 .nav-links a {
     display: block;
-    padding: 30px 16px;
+    padding: 20px 16px;
     color: white;
     text-decoration: none;
     font-size: 16px;
     font-family: Garamond;
     text-transform: uppercase;
-    transition: all ease-in-out 100ms;
+    border-radius: 8px;
+    transition: all ease-in-out 200ms;
 }
 
 .nav-links a:hover {
     background-color: pink;
+    color: black;
 }
 
 .Furniture {
@@ -306,5 +308,17 @@ footer {
 
     #about p, #contact p {
         font-size: 1em;
+    }
+
+    nav {
+        flex-wrap: wrap;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .Furniture {
+        display: flex;
     }
 }

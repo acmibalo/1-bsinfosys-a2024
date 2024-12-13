@@ -72,7 +72,9 @@ nav {
 }
 
 .nav-links a:hover {
-    background-clip: pink;
+    background-color: pink; /* Fixed hover effect */
+    color: black; /* Optional: Changes text color for contrast */
+    border-radius: 8px; /* Optional: Adds smooth hover effect */
 }
 
 .nav-links .nav-cta-button {
@@ -139,7 +141,6 @@ aside p {
     font-family: Garamond;
     margin-top: 40px;
 }
-
 
 article {
     margin-top: 0;

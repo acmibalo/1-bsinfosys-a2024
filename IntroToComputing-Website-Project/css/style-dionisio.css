@@ -23,6 +23,7 @@ header {
     text-align: center;
     padding: 4px 0;
 }
+
 nav {
     font-family: Garamond;
     position: sticky;
@@ -35,7 +36,6 @@ nav {
     padding: 0 20px;
     z-index: 10;
 }
-
 
 .logo {
     display: flex;
@@ -72,7 +72,9 @@ nav {
 }
 
 .nav-links a:hover {
-    background-clip: pink;
+    background-color: pink; /* Fixed hover background effect */
+    color: black; /* Optional: Change text color on hover */
+    border-radius: 8px; /* Optional: Add rounded corners for better visuals */
 }
 
 .nav-links .nav-cta-button {
@@ -117,7 +119,6 @@ section {
     flex: 1;
 }
 
-
 aside {
     flex: 1;
     padding: 1em;
@@ -145,7 +146,6 @@ aside p {
     font-size: 78px;
     font-family: garamond;
     border: #453f3d;
-
 }
 
 article {
@@ -159,7 +159,7 @@ article {
     width: 100%;
     min-height: 100vh;
     box-sizing: border-box;
-   justify-content: center; 
+    justify-content: center; 
     color: white;
     text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
 }
@@ -173,12 +173,10 @@ footer {
 }
 
 @media (max-width: 766px) {
-	
-	
-	header { 
-	font-size: 30px; 
-	padding: 2px 0; /* Adjust padding for smaller screens */ 
-	}
+    header { 
+        font-size: 30px; 
+        padding: 2px 0;
+    }
 
     nav {
         flex-wrap: wrap;
@@ -209,6 +207,7 @@ footer {
 
     .nav-links a:hover {
         background-color: pink;
+        color: black;
     }
 
     .nav-links .nav-cta-button {
@@ -234,6 +233,7 @@ footer {
         position: relative;
         font-family: garamond;
     }
+
     aside p {
         display: flex;
         justify-content: center;
@@ -241,4 +241,4 @@ footer {
         position: relative;
         font-family: garamond;
     }
-}    
+}

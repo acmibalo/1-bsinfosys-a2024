@@ -15,7 +15,7 @@ header {
     background: #453f3d;
     font-family: Garamond;
     font-size: 50px;
-    color: #777696;
+    color: #d0a090;
     background-image: url(2.png);
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -24,10 +24,17 @@ header {
     padding: 4px 0;
 }
 
-main {
+nav {
+    font-family: Garamond;
+    position: sticky;
+    top: 0;
     display: flex;
-    padding: 1em;
-    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background: #a7777a;
+    color: #d4c286;
+    padding: 0 20px;
+    z-index: 10;
 }
 
 .logo {
@@ -65,7 +72,9 @@ main {
 }
 
 .nav-links a:hover {
-    background-color: pink;
+    background-color: pink; /* Fixed hover effect */
+    color: black; /* Optional: Changes text color for contrast */
+    border-radius: 8px; /* Optional: Adds smooth hover effect */
 }
 
 .nav-links .nav-cta-button {
@@ -90,6 +99,12 @@ main {
     height: 4px;
     background: gray;
     margin: 3px;
+}
+
+main {
+    display: flex;
+    padding: 1em;
+    flex-wrap: wrap;
 }
 
 .grid1 {
@@ -197,7 +212,6 @@ footer {
 }
 
 @media (max-width: 766px) {
-
     header {
         font-size: 30px;
         padding: 2px 0;
@@ -249,16 +263,4 @@ footer {
     main {
         flex-direction: column;
     }
-}
-nav {
-    font-family: Garamond;
-    position: sticky;
-    top: 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: #a7777a;
-    color: #d4c286;
-    padding: 0 20px;
-    z-index: 10;
 }
