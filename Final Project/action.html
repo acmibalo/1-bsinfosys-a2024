@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>My Final Project</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/style11.css">
+<link rel="stylesheet" href="css/style12.css">
+<link rel="stylesheet" href="css/style13.css">
+<link rel="stylesheet" href="css/style14.css">
+<link rel="stylesheet" href="css/style7.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="logo" type="image/x-logo" href="images/logo.jpg">
+<style>
+.w3-sidebar a {font-family: "Roboto", sans-serif}
+body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
+</style>
+</head>
+<body class="w3-content" style="max-width:1200px">
+
+    <header class="w3-container w3-center w3-khaki" style="padding:32px 32px">
+        <h1 class="w3-xlarge">Anime Recommendation</h1>
+      </header>
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-bar-block w3-sand w3-collapse w3-top" style="z-index:3;width:250px" id="mySidebar">
+  <div class="w3-container w3-display-container w3-padding-16">
+    <i onclick="w3_close()" class="fa fa-remove w3-hide-large w3-button w3-display-topright"></i>
+    <img src="images/anime logo.webp" alt="Jeans" style="width:100%">
+  </div>
+  <div class="w3-padding-64 w3-large w3-text-grey" style="font-weight:bold">
+    <a href="Bismanos-Final Project.html" class="w3-bar-item w3-button w3-text-black">Home</a>
+    <a href="read_more.html" class="w3-bar-item w3-button w3-sand w3-black w3-text-red">Anime</a>
+    <a onclick="myAccFunc()" href="javascript:void(0)" class="w3-button w3-block w3-sand w3-left-align" id="myBtn">
+      Genres
+    </a>
+    <div id="demoAcc" class="w3-bar-block w3-hide w3-padding-large w3-medium">
+      <a href="action.html" class="w3-bar-item w3-button w3-sand">Action</a>
+      <a href="romance.html" class="w3-bar-item w3-button w3-text-black">Romance</a>
+      <a href="fantasy.html" class="w3-bar-item w3-button w3-text-black">Fantasy</a>
+    </div>
+  </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-bar w3-top w3-hide-large w3-black w3-xlarge">
+  <div class="w3-bar-item w3-padding-24 w3-wide">LOGO</div>
+  <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding-24 w3-right" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:250px">
+
+  <!-- Push down content on small screens -->
+  <div class="w3-hide-large" style="margin-top:83px"></div>
+
+  <!-- Product grid -->
+  <div class="w3-row w3-margin-top">
+    
+    <div class="w3-col l3 s6">
+      <div class="w3-container">
+        <a href="hunterXhunter.html"><span target="_self" class="w3-bar-item w3-button">
+        <img src="images/hunterXhunter.jpg" style="width:100%">
+        <p>HunterXHunter</p></span></a>
+        <br>
+      </div>
+      <div class="w3-container">
+        <a href="let this grieving soul.html"><span target="_self" class="w3-bar-item w3-button">
+        <img src="images/let this grieving soul retire.jpg" style="width:100%">
+        <p class="w3-small">Let this Grieving Soul Retire</p></span></a>
+      </div>
+    </div>
+
+    <div class="w3-col l3 s6">
+        <div class="w3-container">
+          <a href="bubbles.html"><span target="_self" class="w3-bar-item w3-button">
+          <img src="images/bubbles.jpg" style="width:100%">
+          <p>Bubbles</p></span></a>
+        </div>
+        <div class="w3-container">
+          <a href="eminence.html"><span target="_self" class="w3-bar-item w3-button">
+          <img src="images/eminence in shadow.jpg" style="width:100%">
+          <p>Eminence in Shadow</p></span></a>
+        </div>
+      </div>
+
+    <div class="w3-col l3 s6">
+        <div class="w3-container">
+          <a href="spy family.html"><span target="_self" class="w3-bar-item w3-button">
+          <img src="images/spy family.jpg" style="width:100%">
+          <p>Spy X Family</p></span></a>
+        </div>
+        <div class="w3-container">
+          <a href="solo leveling.html"><span target="_self" class="w3-bar-item w3-button">
+          <img src="images/solo leveling.jpg" style="width:100%">
+          <p>Solo Leveling</p></span></a>
+        </div>
+      </div>
+
+      <div class="w3-col l3 s6">
+        <div class="w3-container">
+          <a href="one pice.html"><span target="_self" class="w3-bar-item w3-button">
+          <img src="images/one-piece.jpg" style="width:100%">
+          <p>One Piece</p></span></a>
+        </div>
+        <div class="w3-container">
+            <a href="conan.html"><span target="_self" class="w3-bar-item w3-button">
+            <img src="images/detective conan.jpg" style="width:100%">
+            <p>Detective Conan</p></span></a>
+          </div>
+      </div>
+
+      <div class="w3-col l3 s6">
+        <div class="w3-container">
+          <a href="one punch man.html"><span target="_self" class="w3-bar-item w3-button">
+          <img src="images/one punch man.jpg" style="width:100%">
+          <p>One Puch Man</p></span></a>
+        </div>
+        <div class="w3-container">
+          <a href="towerofgod.html"><span target="_self" class="w3-bar-item w3-button">
+          <img src="images/tower of god.jpg" style="width:100%">
+          <p>Tower of God</p></span></a>
+        </div>
+      </div>
+
+      <div class="w3-col l3 s6">
+        <div class="w3-container">
+          <a href="inuyasha.html"><span target="_self" class="w3-bar-item w3-button">
+          <img src="images/Inuyasha.png" style="width:100%">
+          <p>Inuyasha</p></span></a>
+        </div>
+        <div class="w3-container">
+          <a href="wind breaker.html"><span target="_self" class="w3-bar-item w3-button">
+          <img src="images/wind breaker.jpg" style="width:100%">
+          <p>Wind Breaker</p></span></a>
+        </div>
+      </div>
+
+      <div class="w3-col l3 s6">
+        <div class="w3-container">
+          <a href="hero.html"><span target="_self" class="w3-bar-item w3-button">
+          <img src="images/hero.webp" style="width:100%">
+          <p>My Hero Academia</p></span></a>
+        </div>
+      </div>
+
+
+  </div>
+  <footer class="w3-container w3-khaki w3-padding-20 w3-margin-top">
+    <p>Powered by w3.css</p>
+  </footer>
+
+<script>
+// Accordion 
+function myAccFunc() {
+  var x = document.getElementById("demoAcc");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else {
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+// Click on the "Jeans" link on page load to open the accordion for demo purposes
+document.getElementById("myBtn").click();
+
+
+// Open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+</script>
+
+</body>
+</html>
