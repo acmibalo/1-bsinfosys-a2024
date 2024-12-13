@@ -1,0 +1,60 @@
+
+</head>
+<body>
+    <!-- Container for AimHigh and Travel and Tours text -->
+    <div id="header-container">
+        <div id="aimhigh">AimHigh</div>
+
+        <!-- Travel and Tours text -->
+        <div id="travelAndTours">Travel and Tours</div>
+    </div>
+
+    <!-- Navbar with buttons -->
+    <div id="navbar">
+        <button class="nav-button" onclick="location.href='about us.html'">About Us</button>
+        <button class="nav-button" onclick="location.href='contact.html'">Contact Us</button>
+    
+    </div>
+
+    <!-- Background image section -->
+    <div class="bgimg">
+        <h1>Welcome to the Philippines</h1>
+        <p>A journey of a thousand miles begins with a single step.</p>
+    </div>
+
+    <!-- Places Section -->
+    <div id="places"></div>
+
+    <script>
+        const places = [
+            {
+                name: "Boracay",
+                description: "Famous for its white-sand beaches and vibrant nightlife.",
+                image: "D:/Files/Documents/abby website/yme html pics/tress.jpg",
+                link: "boracay.html"
+            },
+            {
+                name: "Palawan",
+                description: "Known for its stunning landscapes, limestone cliffs, and clear waters.",
+                image: "D:/Files/Documents/abby website/yme html pics/Palawan.jpg",
+                link: "palawan.html"
+            },
+            {
+                name: "Cebu",
+                description: "A historical city with beautiful beaches and rich culture.",
+                image: "D:/Files/Documents/abby website/yme html pics/CBwater.jpg",
+                link: "cebu.html"
+            },
+            {
+                name: "Siargao",
+                description: "Surfing capital of the Philippines, known for Cloud 9.",
+                image: "D:/Files/Documents/abby website/yme html pics/SiargaF.jpg",
+                link: "siargao.html"
+            },
+            {
+                name: "Batanes",
+                description: "is renowned for its stunning landscapes, rich cultural heritage, and unique charm.",
+                image: "D:/Files/Documents/abby website/yme html pics/BatanesE.jpg",
+                link: "Batanes.html"
+            }
+        ];
