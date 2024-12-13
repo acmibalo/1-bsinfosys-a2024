@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url(menu\ bg.jpg);
+    background-position: center;
+    background-size: cover;
+    color: #c0a07e; 
+    min-height: 100vh; 
+    display: flex;
+    flex-direction: column; 
+}
+
+.header {
+    background-color: #a87f66;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.title {
+    font-size: 2.5rem;
+}
+
+.header p {
+    font-size: 1.2rem;
+}
+
+.main-content {
+    flex: 1;
+    display: flex;
+    padding: 20px;
+    gap: 20px;
+}
+
+.sidebar {
+    width: 30%;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.welcome h2 {
+    background: #a87f66;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+
+.nav-buttons {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.nav-buttons .hover-button {
+    width: 100px;
+    height: 100px;
+    background: #c2a089;
+    color: white;
+    border: none;
+    font-size: 1rem;
+    text-align: center;
+    line-height: 100px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.nav-buttons .hover-button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.description {
+    color: #ba9c77;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.categories {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    width: 70%;
+    margin: auto;
+}
+
+.category {
+    width: 200px;
+    height: 200px;
+    background-image: url(bg.jpg);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    text-decoration: none;
+    color: #b58750;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.category h3 {
+    font-size: 1.2rem;
+    color: #865036;
+    margin-bottom: 10px;
+}
+
+.category p {
+    font-size: 1rem;
+    color: #c07f57;
+    line-height: 1.4;
+}
+
+.category:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.footer {
+    background: #a87f66;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: auto;
+}
