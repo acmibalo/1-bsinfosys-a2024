@@ -1,0 +1,28 @@
+/* Global Font Settings */
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Oswald";
+}
+
+body {
+    font-family: "Open Sans";
+    background-color: #FFB6C1; /* Light pink color */
+}
+
+/* Navigation Bar */
+.w3-bar {
+    background-color: #D8BFD8; /* Light purple color */
+}
+
+.w3-bar .fa {
+    color: #cd5269; /* Light pink color */
+}
+
+/* Custom Styling */
+.custom-title,
+.custom-subtitle {
+    color: #7f3b7f; /* Light purple */
+}
+
+.light-purple-container {
+    background-color: #D4A5D6 !important; /* Ensures the background color is applied */
+}
