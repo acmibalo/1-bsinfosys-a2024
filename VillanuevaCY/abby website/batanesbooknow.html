@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="D:/Files/Documents/abby website/yme html pics/ico.ico" type="image/x-icon">
+    <title>Top 10 Must-Visit Spots in Batanes</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;  /* Pale gray background */
+            color: #000000;  /* Black text */
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #000;  /* Black font color for headings */
+        }
+
+        p {
+            font-size: 1.2em;
+            line-height: 1.6;
+            color: #000;  /* Black font color for paragraph text */
+            margin-bottom: 20px;
+        }
+
+        .highlight {
+            font-weight: bold;  /* Make the places bold */
+        }
+
+        /* Flexbox for the layout of the content */
+        .main-content {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+            justify-content: flex-start;
+        }
+
+        /* Place Tour Package at the top-right */
+        .tour-package {
+            flex: 1;
+            background-color: #eef2f3;  /* Slightly off-white background for details */
+            padding: 20px;
+            border-radius: 8px;
+            width: 300px; /* Fix the width for better alignment */
+            position: absolute;
+            top: 100px; /* Position it below the header */
+            right: 20px; /* Right alignment */
+            z-index: 10; /* Keep it above other content */
+        }
+
+        .tour-package h2 {
+            font-size: 1.8em;
+            margin-bottom: 10px;
+        }
+
+        .tour-package ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .tour-package ul li {
+            margin-bottom: 10px;
+        }
+
+        .price-info {
+            font-size: 1.4em;
+            font-weight: bold;
+            color: #000;  /* Black color for price information */
+        }
+         /* Navbar button styles */
+         .nav-button {
+            background-color: transparent; /* Transparent background */
+            color: black; /* Black text color */
+            border: 2px solid black; /* Black border */
+            padding: 10px 20px;
+            margin: 0 5px; /* Add some space between the buttons */
+            cursor: pointer; 
+            font-size: 1em;
+            font-weight: bold; /* Make the font bold */
+            transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+        }
+
+        /* Navbar button hover effect */
+        .nav-button:hover {
+            background-color: black; /* Dark background on hover */
+            color: white; /* White text on hover */
+        }
+
+        .reserve-btn {
+            display: inline-block;
+            background-color: #ffffff;  /* White background for the button */
+            color: #000;  /* Black text for the button */
+            font-size: 1.4em;
+            padding: 15px 30px;
+            text-align: center;
+            border-radius: 5px;
+            margin-top: 20px;
+            text-decoration: none;
+            border: 2px solid #000;  /* Black border for the button */
+        }
+
+        .reserve-btn:hover {
+            background-color: #000;  /* Black background on hover */
+            color: #fff;  /* White text on hover */
+        }
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .gallery img {
+            max-width: 200px;  /* Set a maximum width for the images */
+            height: auto;      /* Ensure the aspect ratio is maintained */
+            border-radius: 8px; /* Optional: to add rounded corners to images */
+        }
+        /* Layout for the "Top 10" section */
+        .content-left {
+            margin-top: 120px; /* Push it down to avoid overlap with the tour package */
+            flex: 2;
+            max-width: 70%;
+        }
+
+        @media (max-width: 768px) {
+            /* Stack the content and package details on smaller screens */
+            .main-content {
+                flex-direction: column;
+                align-items: center; /* Center the content and package details */
+            }
+
+            .tour-package {
+                position: relative;
+                top: 0;
+                right: 0;
+                width: 100%; /* Ensure it takes full width on smaller screens */
+            }
+
+            .content-left {
+                max-width: 100%; /* Take full width on small screens */
+                margin-top: 30px; /* Add margin for spacing */
+            }
+
+            .gallery {
+                grid-template-columns: 1fr 1fr; /* Two columns for smaller screens */
+            }
+
+            .gallery img {
+                max-width: 100%;  /* Ensure images don't get too large on smaller screens */
+            }
+        }
+    </style>
+        <!-- Navbar with buttons -->
+        <div id="navbar">
+            <button class="nav-button" onclick="location.href='website-villanueva.html'">Home</button>
+            <button class="nav-button" onclick="location.href='about us.html'">About Us</button>
+            <button class="nav-button" onclick="location.href='contact.html'">Contact Us</button>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Top 10 Must-Visit Spots in Batanes</h1>
+
+        <!-- Tour Package at the top-right -->
+        <div class="tour-package">
+            <h2>Batanes Tour Package</h2>
+            <ul>
+                <li><strong>Single:</strong> 12k PHP</li>
+                <li><strong>Couple:</strong> 20k PHP</li>
+                <li><strong>6 Pax:</strong> 28k PHP</li>
+                <li><strong>10 Pax:</strong> 45k PHP</li>
+            </ul>
+
+            <h3>Inclusions:</h3>
+            <ul>
+                <li>Bus transport (pick-up and drop-off)</li>
+                <li>All entrance fees</li>
+                <li>3 nights shared room accommodation</li>
+                <li>Boat/environmental/tour guide/docking/tourism fees</li>
+                <li>Van for land tour</li>
+                <li>Boodle fight on the 4th day (end of the tour)</li>
+            </ul>
+
+            <h3>Exclusions:</h3>
+            <ul>
+                <li>Meals and other personal expenses</li>
+            </ul>
+
+            <div class="price-info">
+                <strong>Reserve for only 1,000 PHP per person</strong>
+            </div>
+            <a href="#" class="reserve-btn">Reserve Now</a>
+        </div>
+
+        <!-- Main Content Section -->
+        <div class="main-content">
+            <!-- Left Column for the Top 10 List -->
+            <div class="content-left">
+                <p><span class="highlight">1. Sabtang Island</span><br>
+                Famous for its stone houses and breathtaking landscapes, Sabtang Island offers stunning beaches and traditional Ivatan culture. A visit to the Sabtang Lighthouse provides panoramic views of the island's picturesque coastline.</p>
+
+                <p><span class="highlight">2. Marlboro Hills (Raeleh Hills)</span><br>
+                Known for its rolling green hills and sweeping views of the ocean, Marlboro Hills is often compared to the Scottish Highlands. It's a perfect spot for hiking and nature photography.</p>
+
+                <p><span class="highlight">3. Basco Lighthouse</span><br>
+                Situated on the island of Batan, this lighthouse offers a majestic view of the entire Basco town, the rolling hills, and the Batanes coastline. A must-visit for stunning scenic views.</p>
+
+                <p><span class="highlight">4. Ivana Church and San Jose de Ivana Church</span><br>
+                These centuries-old Spanish-era churches are among the most beautiful historical sites in Batanes, featuring unique architecture and a glimpse into the island’s colonial past.</p>
+
+                <p><span class="highlight">5. Nakabuang Arch</span><br>
+                Located on Sabtang Island, this natural limestone arch is one of Batanes’ most iconic sights. It’s a serene spot with crystal-clear waters and dramatic rock formations.</p>
+
+                <p><span class="highlight">6. Chinapalo Hill</span><br>
+                This hill provides a panoramic view of the surrounding islands and is particularly famous for its vibrant green slopes, which are especially stunning during the rainy season.</p>
+
+                <p><span class="highlight">7. Vayang Rolling Hills</span><br>
+                One of the most photogenic locations in Batanes, Vayang Rolling Hills features sweeping, green hills that seem to roll into the horizon. The hill offers panoramic views of the sea and other islands.</p>
+
+                <p><span class="highlight">8. Dipnaysupuan Japanese Tunnel</span><br>
+                A historic tunnel from the Japanese occupation during World War II, the Dipnaysupuan Tunnel offers insight into the island’s war history and makes for a fascinating visit.</p>
+
+                <p><span class="highlight">9. Valugan Boulder Beach</span><br>
+                This unique beach is covered with large smooth boulders, creating a striking contrast against the crystal-clear waters. It is ideal for a peaceful retreat, photography, or a scenic walk.</p>
+
+                <p><span class="highlight">10. Sabtang's Traditional Ivatan Houses</span><br>
+                The Ivatan people have a distinct architectural style, using materials like limestone, coral, and cogon grass. These traditional homes, with their thick walls, are built to withstand  the region's harsh climatic conditions.</p>
+
+
+<!-- Gallery Section -->
+    <div class="gallery">
+        <img src="yme html pics/batanesD.jpg" alt="Batanes Landscape">
+        <img src="yme html pics/BatanesA.jpg" alt="Traditional Ivatan House">
+        <img src="yme html pics/BatanesB.jpg" alt="Batanes Rolling Hills">
+        <img src="yme html pics/BatanesC.jpg" alt="Batanes Beach">
+        <img src="yme html pics/BatanesE.jpg" alt="Batanes Lighthouse">
+        <img src="yme html pics/BatanesF.jpg" alt="Batanes Scenery">
+        <img src="yme html pics/BatanesG.jpg">
+        <img src="yme html pics/BatanesH.jpg">
+        <img src="yme html pics/BatanesI.jpg">
+        <img src="yme html pics/bataneslight.jpg">
+        <img src="yme html pics/Batanescov.jpg">
+        <img src="yme html pics/BatanesJ.jpg">
+        <img src="yme html pics/Bataneshouse.jpg">
+        <img src="yme html pics/Batanescover.jpg">
+
+    </div>
+
+</div>
+
+</body>
+</html>

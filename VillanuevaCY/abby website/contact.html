@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="D:\Files\Documents\abby website\yme html pics\ico.ico" type="image/x-icon">
+    <title>Contact Information</title>
+    
+    <style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f9f9f9;
+    padding: 40px 20px;
+    color: #333;
+}
+
+  /* Navbar Styles */
+  #navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: black;
+            padding: 10px;
+            z-index: 1000;  /* Make sure navbar stays on top */
+        }
+
+        .nav-button {
+            background-color: black;
+            color: white;
+            font-size: 1.2rem;
+            padding: 10px 20px;
+            margin-right: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .nav-button:hover {
+            background-color: #444;
+        }
+
+/* Container for Contact Information */
+.contact-container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(135deg, #f8f9fa, #e3e3e3);
+}
+
+/* Heading Styling */
+h1 {
+    text-align: center;
+    color: #444;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+/* Contact Item Styling */
+.contact-item {
+    padding: 20px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    background-color: #fafafa;
+    margin-bottom: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.contact-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Contact Item Heading */
+.contact-item h2 {
+    color: #555;
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+/* Contact Item Details */
+.contact-item p {
+    color: #666;
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+}
+
+.contact-item p strong {
+    color: #444;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 600px) {
+    .contact-container {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    .contact-item h2 {
+        font-size: 1.5rem;
+    }
+
+    .contact-item p {
+        font-size: 1rem;
+    }
+}
+</style>
+
+</head>
+<body>
+
+<!-- Navbar with Buttons -->
+<div id="navbar">
+    <button class="nav-button" onclick="location.href='website-villanueva.html'">Home</button>
+    <button class="nav-button" onclick="location.href='about us.html'">About Us</button>
+    <button class="nav-button" onclick="location.href='contact.html'">Contact Us</button>
+</div>
+
+<!-- Contact Information Section -->
+<div class="contact-container">
+    <h1>Contact Information</h1>
+    
+    <!-- Contact Item -->
+    <div class="contact-item">
+        <h2>Aim High Travel And Tours</h2>
+        <p><strong>Email:</strong> <a href="mailto:s.cybvillanueva@usm.edu.ph">s.cybvillanueva@usm.edu.ph</a></p>
+        <p><strong>Phone:</strong> 09123456789</p>
+        <p><strong>Address:</strong> Cebu City, Philippines</p>
+    </div>
+</div>
+
+</body>
+</html>
