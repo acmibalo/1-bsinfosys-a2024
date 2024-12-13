@@ -1,0 +1,233 @@
+body {
+    width: 100%;
+    height: 100%;
+    font-family: sans-serif;
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+    background: radial-gradient(circle, #f6c3ef, #f6c3df, #f6c3cf, #f6c3bf, #f6c3af);;
+    overflow-x: hidden;
+}
+
+header {
+    width: 100%;
+    height: auto;
+    background: #453f3d;
+    font-family: Garamond;
+    font-size: 50px;
+    color: #d0a090;
+    background-image: url(2.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    text-align: center;
+    padding: 4px 0;
+}
+
+.header h1 {
+    color: #d0a090;
+}
+
+nav {
+    font-family: Garamond;
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #a7777a;
+    color: #d4c286;
+    padding: 0 20px;
+    z-index: 10;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 40px;
+}
+
+.logo h3 {
+    margin-left: 10px;
+    color: black;
+    text-decoration: none;
+    font-size: 28px;
+    font-family: Garamond;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.nav-links a {
+    display: block;
+    padding: 30px 16px;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: Garamond;
+    text-transform: uppercase;
+    transition: all ease-in-out 100ms;
+}
+
+.nav-links a:hover {
+    background-clip: pink;
+}
+
+.nav-links .nav-cta-button {
+    padding: 10px 18px;
+    margin-left: 16px;
+    border: pink solid 2px;
+    border-radius: 50px;
+}
+
+.nav-links .nav-cta-button:hover {
+    background-color: pink;
+}
+
+.Furniture {
+    display: none;
+    cursor: pointer;
+    width: 34px;
+}
+
+.Furniture .bar {
+    flex-basis: 100%;
+    height: 4px;
+    background: gray;
+    margin: 3px;
+}
+ 
+main {
+    display: flex;
+    padding: 1em;
+    flex-wrap: wrap; /* Ensure content wraps on smaller screens */
+    background-color: radial-gradient(circle, #f6c3ef, #f6c3df, #f6c3cf, #f6c3bf, #f6c3af);
+    font-family: garamond;
+}
+
+section {
+    border: 5px solid white;
+    padding: 2em;
+    background: white;
+    flex: 1; /* Allow section to expand */
+}
+
+
+aside {
+    flex: 1;
+    padding: 1em;
+    background: white;
+    margin-right: 30px;
+}
+
+aside img {
+    justify-content: center;
+    margin-left: 90px;
+    margin-top: 20px;
+    height: 470px;
+    width: 500px;
+    border: black;
+}
+
+aside p {
+    flex: 1;
+    padding: 1em;
+    background: white;
+    margin-right: 30px;
+}
+
+article {
+    margin-top: 80px;
+    padding: 1em;
+    background: #c5ae9f;
+    border: 1px solid #ddd;
+    width: 100%;
+    box-sizing: border-box; /* Ensures padding and border are included in the total width and height */
+    font-family: Garamond;
+    font-size: 130%;
+    justify-content: center;
+}
+
+footer {
+    background: #a7777a;
+    color: white;
+    text-align: center;
+    padding: 1em;
+    font-family: Garamond;
+}
+
+@media (max-width: 766px) {
+    header {
+        font-size: 30px;
+        padding: 2px 0; /* Adjust padding for smaller screens */
+    }
+
+    nav {
+        flex-wrap: wrap;
+    }
+
+    .Furniture {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .logo {
+        height: 80px;
+    }
+
+    .nav-links {
+        display: none;
+        flex-basis: 100%;
+    }
+
+    .nav-links li {
+        flex-basis: 100%;
+    }
+
+    .nav-links a {
+        text-align: center;
+        font-size: 28px;
+    }
+
+    .nav-links a:hover {
+        background-color: pink;
+    }
+
+    .nav-links .nav-cta-button {
+        padding: 30px 16px;
+        margin-left: 0;
+        border: none;
+        border-radius: 0;
+        margin-bottom: 20px;
+    }
+
+    .nav-links .nav-cta-button:hover {
+        background-color: pink;
+    }
+
+    main {
+        flex-direction: column;
+    }
+
+    aside {
+        display: flex;
+        justify-content: center;
+        margin-top: 1em;
+        position: relative;
+        font-family: Garamond;
+    }
+
+    aside p {
+        display: flex;
+        justify-content: center;
+        margin-top: 1em;
+        position: relative;
+        font-family: Garamond;
+    }
+}
