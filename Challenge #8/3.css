@@ -1,0 +1,143 @@
+/* styles.css */
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic body styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header styles */
+#main-header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+}
+
+#main-header .logo h1 {
+    text-align: center;
+    font-size: 2rem;
+    margin: 0;
+}
+
+#main-header nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+}
+
+#main-header nav ul li {
+    margin: 0 15px;
+}
+
+#main-header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Main content styles */
+main {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.content {
+    flex: 0 0 70%;
+}
+
+.content h2 {
+    color: #333;
+    font-size: 2rem;
+}
+
+.content p {
+    font-size: 1rem;
+    color: #666;
+}
+
+.highlight {
+    font-weight: bold;
+    color: #007bff;
+}
+
+/* Sidebar styles */
+.sidebar {
+    flex: 0 0 25%;
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+}
+
+.sidebar h3 {
+    color: #333;
+}
+
+.sidebar p {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+#footer-text {
+    font-size: 1rem;
+}
+
+footer ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 10px;
+}
+
+footer ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+footer ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    main {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .content, .sidebar {
+        flex: 1 0 100%;
+        margin-bottom: 20px;
+    }
+
+    #main-header nav ul {
+        flex-direction: column;
+    }
+
+    #main-header nav ul li {
+        margin: 10px 0;
+    }
+}

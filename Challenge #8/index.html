@@ -2,8 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ensures responsiveness on different screen sizes -->
     <title>My Website</title>
+
+    <!-- Link to External CSS Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
 
     <!-- Meta Tags for SEO -->
     <meta name="description" content="Welcome to My Website. We provide high-quality services to help you grow your business.">
@@ -19,16 +22,13 @@
     <!-- Link to the favicon -->
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     
-    <!-- External CSS Stylesheet -->
-    <link rel="stylesheet" href="styles.css">
-    
     <!-- Additional Meta Tag for Mobile Optimization -->
     <meta name="theme-color" content="#ffffff">
 </head>
 <body>
 
-    <header id="main-header"> <!-- Block element with Id -->
-        <div class="logo"> <!-- Block element with Class -->
+    <header id="main-header">
+        <div class="logo">
             <h1>My Website</h1>
         </div>
         <nav>
@@ -42,18 +42,18 @@
     </header>
 
     <main>
-        <section class="content"> <!-- Block element with Class -->
+        <section class="content">
             <h2>Welcome to My Website</h2>
-            <p>This is the main content area. <span class="highlight">Enjoy your stay!</span></p> <!-- Inline element with Class -->
+            <p>This is the main content area. <span class="highlight">Enjoy your stay!</span></p>
         </section>
-        <aside class="sidebar"> <!-- Block element with Class -->
+        <aside class="sidebar">
             <h3>Sidebar</h3>
             <p>Additional content like links or advertisements.</p>
         </aside>
     </main>
 
     <footer>
-        <p id="footer-text"> <!-- Block element with Id -->
+        <p id="footer-text">
             &copy; 2024 My Website | All Rights Reserved
         </p>
         <ul>
