@@ -1,0 +1,6 @@
+@media only screen and (max-width: 480px) {
+    #pagepic {
+        width: 70%;
+        margin-top: 60%;
+    }
+}
