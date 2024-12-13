@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Explore the Philippines</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="yme.css">
+    <link rel="icon" href="D:\Files\Documents\abby website\yme html pics\ico.ico" type="image/x-icon">
+    <style>
+        body, html { 
+            height: 100%;
+            margin: 0;
+            font-family: "Raleway", sans-serif;
+        }
+
+        .bgimg {
+            background-image: url("D:/Files/Documents/abby website/yme html pics/BatanesD.jpg");
+            height: 50vh; /* Set height to half of the viewport */
+            background-position: center;
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+
+        h1 {
+        font-size: 4em; /* Increased font size */
+        font-weight: bold; /* Increased weight for bolder text */
+        color: black;
+        margin: 0.2em 0; /* Reduced margin */
+        }
+
+        p {
+        font-size: 1.5em;
+        margin: 0.2em 0; /* Reduced margin */
+        }
+
+
+        #aimhigh {
+            position: absolute;
+            top: 5px;
+            left: 20px;
+            font-size: 2.5em;
+            font-weight: bold; /* Make it bold */
+            color: black; /* Black font color */
+            text-shadow: none; 
+        }
+
+        /* Container for AimHigh and Travel and Tours */
+        #header-container {
+            position: absolute;
+            top: 8px;
+            left: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        /* Travel and Tours */
+        #travelAndTours {
+            position: relative;
+            top: 40px;
+            left: 30px;
+            font-size: 1 em; /* Smaller font size than AimHigh */
+            font-weight: bold;
+            color: black;
+            text-shadow: none;
+            margin-top: 10px; /* Add some space between AimHigh and Travel and Tours */
+        }
+
+       /* Navbar (positioning it to the top-right) */
+       #navbar {
+            position: absolute; 
+            top: 20px; 
+            right: 20px; /* Position the navbar at the top-right corner */
+            display: flex;
+        }
+
+        /* Navbar button styles */
+        .nav-button {
+            background-color: transparent; /* Transparent background */
+            color: black; /* Black text color */
+            border: 2px solid black; /* Black border */
+            padding: 10px 20px;
+            margin: 0 5px; /* Add some space between the buttons */
+            cursor: pointer; 
+            font-size: 1em;
+            font-weight: bold; /* Make the font bold */
+            transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+        }
+
+        /* Navbar button hover effect */
+        .nav-button:hover {
+            background-color: black; /* Dark background on hover */
+            color: white; /* White text on hover */
+        }
+
+        #places {
+            display: flex;
+            flex-wrap: wrap; /* Allow wrapping to next line if necessary */
+            justify-content: center; /* Center the items */
+            padding: 20px;
+            background-color: #caf0f8;
+        }
+
+        .place {
+            margin: 10px;
+            width: calc(25% - 20px); /* Make each place take up 25% of the width, with margins */
+            border-radius: 10px;
+            background-color: white; 
+            color: black; 
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            cursor: pointer;
+            padding: 20px;
+            transition: transform 0.3s ease; /* Add a smooth transform transition */
+        }
+
+        .place:hover {
+            transform: scale(1.02);
+        }
+
+        .place h2 {
+            margin: 0; 
+        }
+
+        .place img {
+            width: 100%; 
+            height: auto; 
+            border-radius: 8px; /* Rounded corners for images */
+        }
+
+        /* Responsive design for smaller screens */
+        @media (max-width: 768px) {
+            .place {
+                width: calc(50% - 20px); /* 2 items per row on smaller screens */
+            }
+        }
+
+        @media (max-width: 480px) {
+            .place {
+                width: 100%; /* 1 item per row on very small screens */
+            }
+        }
+    </style>
+
+</head>
+<body>
+    <!-- Container for AimHigh and Travel and Tours text -->
+    <div id="header-container">
+        <div id="aimhigh">AimHigh</div>
+
+        <!-- Travel and Tours text -->
+        <div id="travelAndTours">Travel and Tours</div>
+    </div>
+
+    <!-- Navbar with buttons -->
+    <div id="navbar">
+        <button class="nav-button" onclick="location.href='about us.html'">About Us</button>
+        <button class="nav-button" onclick="location.href='contact.html'">Contact Us</button>
+    
+    </div>
+
+    <!-- Background image section -->
+    <div class="bgimg">
+        <h1>Welcome to the Philippines</h1>
+        <p>A journey of a thousand miles begins with a single step.</p>
+    </div>
+
+    <!-- Places Section -->
+    <div id="places"></div>
+
+    <script>
+        const places = [
+            {
+                name: "Boracay",
+                description: "Famous for its white-sand beaches and vibrant nightlife.",
+                image: "D:/Files/Documents/abby website/yme html pics/tress.jpg",
+                link: "boracay.html"
+            },
+            {
+                name: "Palawan",
+                description: "Known for its stunning landscapes, limestone cliffs, and clear waters.",
+                image: "D:/Files/Documents/abby website/yme html pics/Palawan.jpg",
+                link: "palawan.html"
+            },
+            {
+                name: "Cebu",
+                description: "A historical city with beautiful beaches and rich culture.",
+                image: "D:/Files/Documents/abby website/yme html pics/CBwater.jpg",
+                link: "cebu.html"
+            },
+            {
+                name: "Siargao",
+                description: "Surfing capital of the Philippines, known for Cloud 9.",
+                image: "D:/Files/Documents/abby website/yme html pics/SiargaF.jpg",
+                link: "siargao.html"
+            },
+            {
+                name: "Batanes",
+                description: "is renowned for its stunning landscapes, rich cultural heritage, and unique charm.",
+                image: "D:/Files/Documents/abby website/yme html pics/BatanesE.jpg",
+                link: "Batanes.html"
+            }
+        ];
+
+        const placesContainer = document.getElementById('places');
+
+        places.forEach(place => {
+            const placeDiv = document.createElement('div');
+            placeDiv.classList.add('place');
+            
+            placeDiv.onclick = () => {
+                window.location.href = place.link; // Navigate to the specific page
+            };
+            
+            placeDiv.innerHTML = `
+               <h2>${place.name}</h2>
+               <img src="${place.image}" alt="${place.name}">
+               <p>${place.description}</p>
+           `;
+            
+           placesContainer.appendChild(placeDiv);
+       });
+    </script>
+</body>
+</html>
