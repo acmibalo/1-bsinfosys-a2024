@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Hair Haven</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="WordpressLogo.png">
+    <style>
+        /* Block Element Styling */
+        body {
+            text-align: center;
+        }
+        header {
+            background-color: #ff6f61;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+        nav {
+            background-color: #333;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 10px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            padding: 10px 20px;
+            display: block;
+        }
+
+        nav ul li a:hover {
+            background-color: #ff6f61;
+            border-radius: 5px;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 20px;
+            gap: 20px;
+        }
+
+        .container div {
+            flex: 1 1 calc(33.333% - 20px);
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+            text-align: center;
+        }
+
+        /* Styling for Classes */
+        .product {
+            display: inline-block;
+            width: 30%;
+            margin: 10px;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background-color: #fff;
+            text-align: center;
+        }
+
+        .product:hover {
+            border-color: #ff6f61;
+        }
+
+        /* Styling for ID */
+        #special-offer {
+            background-color: #fef6e4;
+            border: 2px dashed #ff6f61;
+            padding: 20px;
+            text-align: center;
+            margin: 20px;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Block Element Example -->
+    <header>
+        <h1>Welcome toThe Hair Haven</h1>
+        <p>Your go-to place for stylish and functional hair accessories!</p>
+    </header>
+     <!-- Navigation Menu -->
+     <nav>
+        <ul>
+            <li><a href="Challenge6.html">Home</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="Product.html">Products</a></li>
+
+        </ul>
+    </nav>
+
+    <!-- Main Content Layout -->
+    <div class="container" id="home">
+        <div>
+            <h2>Featured Product</h2>
+            <p>Discover our latest collection of hair accessories.</p>
+        </div>
+        <div>
+            <h2>Style Tips</h2>
+            <p>Get inspired with our hairstyle tutorials.</p>
+        </div>
+        <div>
+            <h2>Exclusive Deals</h2>
+            <p>Enjoy discounts on your favorite accessories!</p>
+        </div>
+    </div>
+  
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 The Hair Haven. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
