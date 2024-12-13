@@ -1,0 +1,198 @@
+/* General body styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Block Elements */
+header, footer, section {
+    background-color: #34495e;
+    color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+/* Inline Elements Styling */
+a, span {
+    color: #3498db;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #e74c3c;
+    text-decoration: underline;
+}
+
+/* Class Styling */
+.highlight {
+    background-color: #f39c12;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+/* ID Styling */
+#important-note {
+    background-color: #e74c3c;
+    color: white;
+    padding: 15px;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+/* Container Layout using Flexbox */
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.main-content {
+    width: 65%;
+    padding-right: 20px;
+}
+
+.sidebar {
+    width: 30%;
+    background-color: #ecf0f1;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #2c3e50;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+/* Video Section Styling */
+section#video, section#local-video {
+    margin-top: 20px;
+}
+
+iframe, video {
+    display: block;
+    margin: 20px auto;
+    max-width: 100%;
+}
+
+/* Contact Form Styling */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form label {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.contact-form input, .contact-form textarea {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.contact-form button {
+    background-color: #3498db;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #2980b9;
+}
+
+/* Media Queries for Responsive Design */
+
+/* Mobile-first: Small screens (default) */
+@media (max-width: 767px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main-content {
+        width: 100%;
+        padding-right: 0;
+    }
+
+    .sidebar {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    iframe, video {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .contact-form input, .contact-form textarea, .contact-form button {
+        font-size: 16px;
+    }
+
+    nav ul {
+        padding: 0;
+        text-align: center;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    nav ul li a {
+        font-size: 18px;
+    }
+}
+
+/* Tablets and medium screens */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .container {
+        flex-direction: row;
+    }
+
+    .main-content {
+        width: 70%;
+    }
+
+    .sidebar {
+        width: 28%;
+        margin-top: 0;
+    }
+
+    iframe, video {
+        width: 100%;
+    }
+}
+
+/* Large screens (Desktops and above) */
+@media (min-width: 1025px) {
+    .container {
+        flex-direction: row;
+    }
+
+    .main-content {
+        width: 65%;
+    }
+
+    .sidebar {
+        width: 30%;
+    }
+}
