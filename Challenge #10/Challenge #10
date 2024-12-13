@@ -1,1 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Layout Example</title>
+  <link rel="stylesheet" href="ey.css">
+</head>
+<body>
+  <header>
+    <h1>Compare and Contrast</h1>
+  </header>
+
+  <div class="main-content">
+    <section class="left-column">
+      <h2>Batanes</h2>
+      <p>1. Geography and Location:</p>
+       
+       <p> Located in the northernmost part of the Philippines, Batanes is an archipelago composed of 10 islands, with the main islands being Batan, Sabtang, and Itbayat.</p>
+   
+        The province is geographically closer to Taiwan than to Manila, making it more isolated and distinct from the rest of the country.</p>
+        <p>Batanes is known for its rolling hills, grassy plains, rugged coastlines, and stone houses.</p>
+
+    </section>
+
+    <section class="right-column">
+      <h2>Palawan</h2>
+      <p>Palawan:
+        Located in the western part of the Philippines, Palawan is a large island province that spans from the South China Sea in the west to the Sulu Sea in the east.</p>
+
+        It is made up of a main island and more than 1,700 smaller islands and islets, including popular destinations like El Nido, Coron, and Puerto Princesa.</p>
+       
+     Palawan is famous for its pristine beaches, limestone cliffs, crystal-clear lagoons, and rich marine life.</p>
+   
+    </section>
+  </div>
+
+  <footer>
+    
+  
+
 
