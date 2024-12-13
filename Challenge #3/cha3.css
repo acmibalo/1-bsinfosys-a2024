@@ -1,0 +1,200 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+section {
+    height: 95vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.back-video {
+    position: absolute;
+    right: 0;
+    bottom: 5;
+    z-index: -1;
+}
+
+.navbar {
+    display: flex;
+    margin-left: 11%;
+}
+
+#navDemo {
+    padding-left: 10%;
+}
+
+header {
+    margin: 0;
+}
+
+#homeicon {
+    color: #008080;
+    background-color: black;
+}
+
+#homeicon:hover {
+    color: white;
+}
+
+#btnicon {
+    box-shadow: 1px 3px 6px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 1px 3px 6px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 1px 3px 6px 0px rgba(0, 0, 0, 0.75);
+}
+
+#main {
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.icon {
+    color: black;
+}
+
+@media screen and (max-width: 480px) {
+    #content {
+        flex-direction: column;
+    }
+}
+
+#txt {
+    font-weight: bolder;
+    font-size: clamp(2.25rem, 1.3125rem + 3vw, 3rem);
+}
+
+.haptxt {
+    overflow: hidden;
+    border-right: .15em solid #10C5FF;
+    white-space: nowrap;
+    letter-spacing: .15em;
+    animation: 
+        typing 3.5s steps(40, end) infinite alternate,
+        blink-caret .75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+    from { width: 0 }
+    to { width: 60% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: #10C5FF; }
+}
+
+.hap {
+    text-align: right;
+}
+
+#home {
+    display: flex;
+}
+
+#content {
+    margin-left: 10%;
+    margin-top: 5%;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-evenly;
+    float: left;
+}
+
+.pageimage {
+    display: flex;
+    float: right;
+}
+
+#containerpic {
+    width: 100%;
+    max-width: 900px;
+    margin-right: 0;
+    float: right;
+}
+
+#txtcontent {
+    margin-top: 8%;
+    margin-left: 10%;
+}
+
+#pagepic {
+    width: 50%;
+    max-width: 450px;
+    border: none;
+    border-radius: 30% 70% 64% 36% / 30% 21% 79% 80%;
+    background-color: #10C5FF;
+    position: absolute;
+    top: 50%;
+    margin-right: 7%;
+    right: 0%;
+    transform: translate(0%, -50%);
+    -ms-transform: translate(0%, -50%);
+}
+
+#image {
+    float: right;
+    margin-right: 10%;
+    margin-top: 10%;
+    border-radius: 50%;
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+}
+
+#hdmg {
+    border: none;
+    margin-left: 2%;
+    padding: 5px;
+    width: 100%;
+    max-width: 67px;
+    border-radius: 40%;
+}
+
+#headname {
+    margin-left: 16%;
+}
+
+.icon {
+    border-radius: 50%;
+}
+
+#about {
+    background-color: white;
+}
+
+#skill, #hobbies, #education, #contact {
+    height: 800px;
+}
+
+.section-wrapper {
+    height: 700px;
+    background-color: white;
+}
+
+.container-about {
+    text-align: center;
+    margin: auto;
+    padding-top: 1%;
+}
+
+.text2, #text2 {
+    justify-content: center;
+    margin-top: 0;
+    font-weight

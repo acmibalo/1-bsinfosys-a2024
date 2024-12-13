@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Happy's Portfolio</title>
+    <link rel="icon" type="image/jpg" href="images/phhicon1.png">
+    <link rel="stylesheet" href="css/styles.css">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-highway.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <div class="w3-top w3-text-black w3-white w3-container w3-transparent" id="main">
+        <!-- Header/Home -->
+        <header>
+            <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu">
+                <i class='bx bx-menu bx-s'></i>
+            </a>
+            <div>
+                <a href="#home"><img class="w3-display-topleft" src="images/" alt="" id="hdmg"></a>
+                <h3 class="w3-display-topleft" id="headname"></h3>
+            </div>
+            <nav class="navbar">
+                <a href="#home" class="w3-bar-item w3-button" id="nav">Home</a>
+                <a href="#about" class="w3-bar-item w3-button w3-hide-small" id="nav">About</a>
+                <a href="#education" class="w3-bar-item w3-button w3-hide-small" id="nav">Education</a>
+                <a href="#hobbies" class="w3-bar-item w3-button w3-hide-small" id="nav">Hobbies</a>
+            </nav>
+            <!-- Navbar on small screens -->
+            <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-medium w3-hide-medium w3-top" style="margin-top:46px">
+                <a href="#about" class="w3-bar-item w3-button w3-padding" onclick="myFunction()">About</a>
+                <a href="#education" class="w3-bar-item w3-button w3-padding" onclick="myFunction()">Education</a>
+                <a href="#hobbies" class="w3-bar-item w3-button w3-padding" onclick="myFunction()">Hobbies</a>
+            </div>
+        </header>
+    </div>
+
+    <div class="home-section-wrapper">
+        <!-- Home Section -->
+        <section id="home">
+            <video autoplay loop muted plays-inline class="back-video">
+                <source src="./videos/videobg2.mp4">
+            </video>
+            <div class="w3-row" id="content">
+                <div class="w3-display-topleft w3-row-padding" id="txtcontent">
+                    <h1 id="txt" style="font-size: clamp(1.875rem, 0.7031rem + 3.75vw, 2.8125rem); color: #008080;">Hi!</h1>
+                    <h1 class="marktxt" id="txt" style="font-size: clamp(1.875rem, 0.7031rem + 3.75vw, 2.8125rem); color: #6F8FAF;">I'm Happy</h1>
+                    <h1 id="txt" style="font-size: clamp(1.875rem, 0.7031rem + 3.75vw, 2.8125rem); color:#6F8FAF;">This is my <span style="color: #008080;">final project</span></h1>
+                    <h1 id="txt" style="font-size: clamp(1.875rem, 0.7031rem + 3.75vw, 2.8125rem);"><span class="w3-row" style="color: #6F8FAF;">In Introduction to </span><span style="color: #
