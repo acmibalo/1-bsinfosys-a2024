@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/nerflogo.png">
+    <title>Nerf Assault Rifle Selection</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #121212;
+            color: #f0f0f0;
+        }
+
+        header {
+            background: linear-gradient(90deg, #ff4500, #ff6600);
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        header p {
+            font-size: 1.1rem;
+            margin-top: 10px;
+        }
+
+        nav {
+            background-color: #1e1e1e;
+            display: flex;
+            justify-content: left;
+            padding: 10px 0;
+        }
+
+        nav a {
+            color: #f0f0f0;
+            text-decoration: none;
+            padding: 10px 20px;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #ff4500;
+            color: white;
+        }
+
+        .container {
+            padding: 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        h2 {
+            text-align: center;
+            color: #ff4500;
+            margin-bottom: 20px;
+            font-size: 2rem;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .gallery-item {
+            background-color: #1e1e1e;
+            border: 1px solid #333;
+            border-radius: 8px;
+            overflow: hidden;
+            transition: transform 0.2s, box-shadow 0.2s;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+        }
+
+        .gallery-item:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.7);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .gallery-item .info {
+            padding: 15px;
+            text-align: center;
+        }
+
+        .gallery-item .info h3 {
+            margin: 0;
+            color: #ff6600;
+            font-size: 1.3rem;
+        }
+
+        .gallery-item .info p {
+            margin: 5px 0 0;
+            color: #ccc;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Nerf Assault Rifle Selection</h1>
+    <p>Choose the perfect Nerf Assault Rifle for your next battle!</p>
+</header>
+
+<nav>
+    <a href="Product Menu.html">RETURN</a>
+</nav>
+
+<div class="container">
+    <section id="gallery">
+        <h2>Our Top Assault Rifle Picks</h2>
+        <div class="gallery">
+            <div class="gallery-item">
+                <img src="ar/ar1.jpeg" alt="AR 1">
+                <div class="info">
+                    <h3>Nerf N-Strike Elite Rampage</h3>
+                    <p>Slam-fire 25-dart drum blaster.</p>
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="ar/ar2.jpeg" alt="AR 2">
+                <div class="info">
+                    <h3>Nerf Modulus Regulator</h3>
+                    <p>Selectable firing modes: single, burst, and auto.</p>
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="ar/ar3.jpeg" alt="AR 3">
+                <div class="info">
+                    <h3>Nerf N-Strike Elite Retaliator</h3>
+                    <p>Modular design with multiple attachments.</p>
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="ar/ar4.jpeg" alt="AR 4">
+                <div class="info">
+                    <h3>Nerf Ultra One</h3>
+                    <p>Motorized Ultra series with 25-dart drum.</p>
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="ar/ar5.jpeg" alt="AR 5">
+                <div class="info">
+                    <h3>Nerf Rival Pathfinder XXII-1200</h3>
+                    <p>Precision Rival rounds.</p>
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="ar/ar6.jpeg" alt="AR 6">
+                <div class="info">
+                    <h3>Nerf Hyper Rush-40</h3>
+                    <p>Compact Hyper series blaster.</p>
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="ar/ar7.jpeg" alt="AR 7">
+                <div class="info">
+                    <h3>Nerf Hyper Rush-40</h3>
+                    <p>Clip-fed, pump-action blaster.</p>
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="ar/ar8.jpeg" alt="AR 8">
+                <div class="info">
+                    <h3>Nerf N-Strike Elite Alpha Trooper CS-12</h3>
+                    <p>Classic clip-fed pump-action.</p>
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="ar/ar9.jpeg" alt="AR 9">
+                <div class="info">
+                    <h3>Nerf Modulus ECS-10</h3>
+                    <p>Fully automatic, highly customizable.</p>
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="ar/ar10.jpeg" alt="AR 10">
+                <div class="info">
+                    <h3>Nerf Ultra Speed</h3>
+                    <p>Ultra darts with rapid firing.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+</body>
+</html>

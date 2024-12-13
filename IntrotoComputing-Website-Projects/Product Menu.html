@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/nerflogo.png">
+    <title>Product Menu | Nerf Association</title>
+    <style>
+     
+        body {
+            font-family: 'Roboto', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url("images/productmenubackground.png");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+            color: white;
+            height: 100%;
+        }
+
+        header {
+            position: relative;
+            text-align: center;
+            padding: 40px 0;
+            background: rgba(0, 0, 0, 0.6);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            color: #ffffff;
+            text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.8);
+            margin: 0;
+        }
+
+        
+        nav {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+        }
+
+        nav a {
+            color: white;
+            font-size: 1.1rem;
+            font-weight: bold;
+            text-decoration: none;
+            padding: 10px 15px;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8);
+        }
+
+        nav a:hover {
+            background: rgba(255, 153, 0, 0.9);
+            color: #ffffff;
+            transform: scale(1.1);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+        }
+
+        
+        main {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.85); 
+            border-radius: 10px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+
+        h1 {
+            color: #003366;
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        
+        .product-card {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .product-image {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+
+        .product-details {
+            padding: 15px;
+            text-align: center;
+        }
+
+        .product-details h3 {
+            margin: 0;
+            color: #003366;
+        }
+
+        .product-details p {
+            margin: 10px 0 20px;
+            color: #555;
+        }
+
+        
+        .product-button {
+            background-color: #003366;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1rem;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .product-button:hover {
+            background-color: #ff6600;
+            transform: scale(1.05);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        
+    </style>
+</head>
+<body>
+
+   
+    <header>
+        <h1>Nerf Association Product Menu</h1>
+    </header>
+
+    
+    <nav>
+        <a href="introduction.html">INTRODUCTION</a>
+        <a href="Home Menu.html">HOME MENU</a>
+        <a href="Blog.html">BLOG</a>
+        <a href="About Us.html">ABOUT US</a>
+        <a href="Product Menu.html">PRODUCT MENU</a>
+    </nav>
+
+  
+    <main>
+        <h1>Our Product Categories</h1>
+        <div class="product-grid">
+            
+            <div class="product-card">
+                <img src="pistols/pistol1.jpeg" alt="Pistol" class="product-image">
+                <div class="product-details">
+                    <h3>Pistols</h3>
+                    <p>Compact and quick, ideal for close-range battles.</p>
+                    <button class="product-button" onclick="location.href='Pistols.html'">View Pistols</button>
+                </div>
+            </div>
+
+           
+            <div class="product-card">
+                <img src="smg/smg10.jpeg" alt="SMG" class="product-image">
+                <div class="product-details">
+                    <h3>Submachine Guns</h3>
+                    <p>Lightweight and rapid-fire for mid-range skirmishes.</p>
+                    <button class="product-button" onclick="location.href='Smg.html'">View SMGs</button>
+                </div>
+            </div>
+            
+            <div class="product-card">
+                <img src="ar/ar6.jpeg" alt="Assault Rifle" class="product-image">
+                <div class="product-details">
+                    <h3>Assault Rifles</h3>
+                    <p>Versatile and powerful, perfect for all-round combat.</p>
+                    <button class="product-button" onclick="location.href='AR.html'">View Assault Rifles</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="lmg/lmg1.jpeg" alt="Light Machine Gun" class="product-image">
+                <div class="product-details">
+                    <h3>Light Machine Guns</h3>
+                    <p>High-capacity and heavy-duty for sustained firepower.</p>
+                    <button class="product-button" onclick="location.href='LMG.html'">View LMGs</button>
+                </div>
+            </div>
+
+            
+            <div class="product-card">
+                <img src="sniper/sniper3.jpeg" alt="Sniper" class="product-image">
+                <div class="product-details">
+                    <h3>Snipers</h3>
+                    <p>Precision and range for stealthy long-distance shots.</p>
+                    <button class="product-button" onclick="location.href='Snipers.html'">View Snipers</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+</body>
+</html>

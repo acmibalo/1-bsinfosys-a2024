@@ -1,0 +1,79 @@
+body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url("images/introduction.jpeg"); 
+            background-position: center center;
+            background-attachment: fixed;
+            color: white;
+        }
+
+        header {
+            background-color: rgba(0, 0, 0, 0.7);
+            color: #00D7F9;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        nav {
+            background-color: rgba(0, 0, 0, 0.7);
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+        }
+
+        nav a {
+            color: rgb(51, 0, 255);
+            padding: 14px 20px;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        nav a:hover {
+            background: blue; 
+            color: #ffffff;
+            transform: scale(1.1); 
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        section, article {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 30px;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.7);
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+            line-height: 1.8; 
+        }
+
+        section p, article p {
+            flex: 1;
+            margin-right: 50px; 
+            text-align: justify; 
+        }
+
+        section img, article img {
+            max-width: 40%; 
+            height: 400px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        h1, h2 {
+            color: #00D7F9;
+            margin-bottom: 15px;
+        }
+
+        footer {
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
