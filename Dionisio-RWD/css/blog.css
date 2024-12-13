@@ -106,7 +106,7 @@ nav {
 main {
     display: flex;
     padding: 1em;
-    flex-wrap: wrap; /* Ensure content wraps on smaller screens */
+    flex-wrap: wrap; 
     background-color: radial-gradient(circle, #f6c3ef, #f6c3df, #f6c3cf, #f6c3bf, #f6c3af);
     font-family: garamond;
 }
@@ -115,9 +115,10 @@ section {
     border: 5px solid white;
     padding: 2em;
     background: white;
-    flex: 1; /* Allow section to expand */
+    flex: 1; 
+    font-size: 30px;
+    font-family: garamond;
 }
-
 
 aside {
     flex: 1;
@@ -148,7 +149,7 @@ article {
     background: #c5ae9f;
     border: 1px solid #ddd;
     width: 100%;
-    box-sizing: border-box; /* Ensures padding and border are included in the total width and height */
+    box-sizing: border-box;
     font-family: Garamond;
     font-size: 130%;
     justify-content: center;
@@ -165,7 +166,7 @@ footer {
 @media (max-width: 766px) {
     header {
         font-size: 30px;
-        padding: 2px 0; /* Adjust padding for smaller screens */
+        padding: 2px 0; 
     }
 
     nav {
