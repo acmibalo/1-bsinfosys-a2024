@@ -1,0 +1,110 @@
+style.css
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #ff6f61;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+nav {
+    background-color: #333;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    display: block;
+}
+
+nav ul li a:hover {
+    background-color: #ff6f61;
+    border-radius: 5px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px;
+    gap: 20px;
+}
+
+.container div {
+    flex: 1 1 calc(33.333% - 20px);
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+
+.products {
+    text-align: center;
+    padding: 20px;
+}
+
+.product {
+    display: inline-block;
+    width: 30%;
+    margin: 10px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+    text-align: center;
+}
+
+/* Styling for ID */
+#special-offer {
+    background-color: #fef6e4;
+    border: 2px dashed #ff6f61;
+    padding: 20px;
+    text-align: center;
+    margin: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .product {
+        width: 45%; /* Adjust product width on medium screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .product {
+        width: 90%; /* Adjust product width on small screens */
+    }
+    header, footer {
+        padding: 15px;
+    }
+}
