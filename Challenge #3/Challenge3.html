@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Hair Haven</title>
+    <style>
+        /* Basic Reset */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Layout Styles */
+        header {
+            background-color: #ff6f61;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        nav {
+            background-color: #333;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 10px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            padding: 10px 20px;
+            display: block;
+        }
+
+        nav ul li a:hover {
+            background-color: #ff6f61;
+            border-radius: 5px;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 20px;
+            gap: 20px;
+        }
+
+        .container div {
+            flex: 1 1 calc(33.333% - 20px);
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+            text-align: center;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>Welcome to The Hair Haven</h1>
+        <p>Your go-to place for stylish and functional hair accessories!</p>
+    </header>
+
+    <!-- Navigation Section -->
+    <nav>
+        <ul>
+            <li><a href="Challenge3.html">Home</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="Product.html">Product</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content Layout -->
+    <div class="container">
+        <div>
+            <h2>Featured Product</h2>
+            <p>Discover our latest collection of hair accessories.</p>
+        </div>
+        <div>
+            <h2>Style Tips</h2>
+            <p>Get inspired with our hairstyle tutorials.</p>
+        </div>
+        <div>
+            <h2>Exclusive Deals</h2>
+            <p>Enjoy discounts on your favorite accessories!</p>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 The Hair Haven. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
