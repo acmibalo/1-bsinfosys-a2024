@@ -117,3 +117,47 @@ function displayAnswer(question) {
     speechBubble.style.display = 'none';
   }, 5000);
 }
+
+const catContainer = document.querySelector('.cat-container');
+
+let active = false;
+let currentX;
+let currentY;
+let initialX;
+let initialY;
+let xOffset = 0;
+let yOffset = 0;
+
+catContainer.addEventListener('mousedown', dragStart, false);
+document.addEventListener('mouseup', dragEnd, false);
+document.addEventListener('mousemove', drag, false);
+
+function dragStart(e) {
+  initialX = e.clientX - xOffset;
+  initialY = e.clientY - yOffset;
+
+  if (e.target === catContainer || catContainer.contains(e.target)) {
+    active = true;
+  }
+}
+
+function dragEnd(e) {
+  initialX = currentX;
+  initialY = currentY;
+
+  active = false;
+}
+
+function drag(e) {
+  if (active) {
+    e.preventDefault();
+
+    currentX = e.clientX - initialX;
+    currentY = e.clientY - initialY;
+
+    xOffset = currentX;
+    yOffset = currentY;
+
+    catContainer.style.transform = "translate3d(" + currentX + "px, " + currentY + "px, 0)";
+  }
+}
