@@ -1,0 +1,146 @@
+style.css
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #ff6f61;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+nav {
+    background-color: #333;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    display: block;
+}
+
+nav ul li a:hover {
+    background-color: #ff6f61;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Video Styling */
+.video-container {
+    text-align: center;
+    margin: 20px 0;
+}
+
+video {
+    display: block;
+    margin: 20px auto;
+    border: 2px solid #ff6f61;
+    border-radius: 10px;
+}
+
+/* Contact Form Styling */
+form {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #ff6f61;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #e65c50;
+}
+
+/* Responsive Design */
+
+/* For Tablets and below (max-width: 768px) */
+@media (max-width: 768px) {
+    header {
+        padding: 15px;
+    }
+
+    .video-container iframe {
+        width: 100%;
+        height: auto;
+    }
+
+    .form-group input, .form-group textarea {
+        font-size: 14px;
+    }
+}
+
+/* For Mobile Phones and below (max-width: 480px) */
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.5em;
+    }
+
+    footer p {
+        font-size: 0.8em;
+    }
+
+    form {
+        padding: 10px;
+    }
+
+    .form-group input, .form-group textarea {
+        font-size: 16px;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+}
