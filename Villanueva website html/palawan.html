@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="D:\Files\Documents\abby website\yme html pics\ico.ico" type="image/x-icon">
+    <title>Discover Palawan</title>
+    <style>
+        body, html {
+            margin: 0;  
+            padding: 0;
+            font-family: "Raleway", sans-serif;
+            color: #333;
+            box-sizing: border-box;
+        }
+
+        /* Hero Section */
+        .hero {
+            background-image: url("yme html pics/coverpalawan.jpg"); 
+            height: 60vh; /* Full height hero section */
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+        }
+
+        .hero h1 {
+            font-size: 4em;
+            margin: 0;
+            color: black; /* Change the color to black */
+        }
+
+        /* Content Section */
+        .content {
+            padding: 40px 20px;
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .content h2 {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+        }
+
+        .content p {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        /* Book Now Button */
+        .book-now-btn {
+            display: inline-block;
+            background-color: black; /* Button background color black */
+            color: white; /* Button text color white */
+            font-size: 1.2rem;
+            padding: 12px 24px;
+            border-radius: 5px;
+            text-decoration: none;
+            margin-top: 20px;
+            transition: background-color 0.3s ease;
+        }
+
+        .book-now-btn:hover {
+            background-color: #444; /* Darker shade of black on hover */
+        }
+
+        /* Gallery Section */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Auto-fit the images */
+            gap: 15px;
+            padding: 20px;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 15px;
+            background: black; /* Footer background color black */
+            color: white; /* Footer text color white */
+            margin-top: 20px;
+        }
+
+          /* Navbar Styles */
+          #navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: black;
+            padding: 10px;
+            z-index: 1000;  /* Make sure navbar stays on top */
+        }
+
+        .nav-button {
+            background-color: black;
+            color: white;
+            font-size: 1.2rem;
+            padding: 10px 20px;
+            margin-right: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .nav-button:hover {
+            background-color: #444;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- Navbar with buttons (horizontally aligned) -->
+    <div id="navbar">
+        <button class="nav-button" onclick="location.href='website-villanueva.html'">Home</button>
+        <button class="nav-button" onclick="location.href='about us.html'">About Us</button>
+        <button class="nav-button" onclick="location.href='contact.html'">Contact Us</button>
+    </div>
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <div>
+            <h1>Welcome to Palawan</h1>
+        </div>
+    </div>
+
+    <!-- Information Section -->
+    <div class="content">
+        <h2>Discover the Beauty of Palawan</h2>
+        <p>Known as the "Last Frontier of the Philippines," Palawan offers breathtaking beaches, dramatic cliffs, and crystal-clear waters. Explore its hidden gems, like the Underground River, El Nido, and Coron, and immerse yourself in nature's paradise.</p>
+
+        <!-- Book Now Button -->
+        <a href="D:\Files\Documents\abby website\palawanbooknow.html" class="book-now-btn">Book Now</a>
+    </div>
+
+    <!-- Gallery Section -->
+    <div class="gallery">
+        <img src="yme html pics/pa.jpg" alt="El Nido Lagoon">
+        <img src="yme html pics/underground.jpg" alt="Underground River">
+        <img src="yme html pics/CoronIsland.jpg" alt="Coron Island">
+        <img src="yme html pics/tubbataha.jpg" alt="Tubbataha Reef">
+        <img src="yme html pics/corong-corong-palawan.jpg" alt="Corong Corong">
+        <img src="yme html pics/falawan.jpg" alt="Palawan Beach">
+        <img src="yme html pics/Palawan.jpg" alt="Palawan Sunset">
+        <img src="yme html pics/taboncave.jpg" alt="Tabon Cave">
+        <img src="yme html pics/coverpalawan.jpg" alt="Cover Palawan">
+        <img src="yme html pics/pal.jpg" alt="Palawan Islands">
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        &copy; 2024 Explore Palawan | Designed with love
+    </footer>
+</body>
+</html>
+

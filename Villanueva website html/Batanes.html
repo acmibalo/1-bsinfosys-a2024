@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Batanes - The Untouched Paradise</title>
+    <link rel="icon" href="D:\Files\Documents\abby website\yme html pics\ico.ico" type="image/x-icon">
+   
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;  /* Light background color */
+        }
+
+        /* Navbar Styles */
+        #navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: black;
+            padding: 10px;
+            z-index: 1000;  /* Make sure navbar stays on top */
+        }
+
+        .nav-button {
+            background-color: black;
+            color: white;
+            font-size: 1.2rem;
+            padding: 10px 20px;
+            margin-right: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .nav-button:hover {
+            background-color: #444;
+        }
+
+        /* Hero Section */
+        .hero {
+            background-image: url("D:/Files/Documents/abby website/yme html pics/Batanescov.jpg");
+            height: 60vh;
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+            text-align: center;
+            margin-top: 60px; /* To avoid overlap with navbar */
+        }
+
+        .hero h1 {
+            font-size: 4em;
+            margin: 0;
+            color: black;
+        }
+
+        .hero p {
+            font-size: 1.5em;
+            margin-top: 0.5em;
+        }
+
+        /* Information Section - Centered */
+        .info-section {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 30px;
+            text-align: center;
+            background-color: #fff;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin-top: -20px;
+            border-radius: 8px;
+        }
+
+        .info-section h2 {
+            font-size: 2.5em;
+            margin-bottom: 15px;
+            color: #333;
+        }
+
+        .info-section p {
+            font-size: 1.2em;
+            line-height: 1.6;
+            margin-bottom: 20px;
+            color: #555;
+        }
+
+        /* Book Now Button */
+        .book-now-btn {
+            display: inline-block;
+            background-color: black;
+            color: white;
+            font-size: 1.2rem;
+            padding: 12px 24px;
+            border-radius: 5px;
+            text-decoration: none;
+            margin-top: 20px;
+            transition: background-color 0.3s ease;
+        }
+
+        .book-now-btn:hover {
+            background-color: #444;
+        }
+
+        /* Gallery Section */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 10px;
+            padding: 20px;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: black;
+            color: white;
+            margin-top: 30px;
+        }
+
+        /* Button at Top Left */
+        .top-left-btn {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            background-color: black;
+            color: white;
+            font-size: 1.2rem;
+            padding: 12px 24px;
+            border-radius: 5px;
+            text-decoration: none;
+            z-index: 1000;  /* Ensure it stays above other content */
+            transition: background-color 0.3s ease;
+        }
+
+        .top-left-btn:hover {
+            background-color: #444;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Navbar with buttons -->
+    <div id="navbar">
+        <button class="nav-button" onclick="location.href='website-villanueva.html'">Home</button>
+        <button class="nav-button" onclick="location.href='about us.html'">About Us</button>
+        <button class="nav-button" onclick="location.href='contact.html'">Contact Us</button>
+    </div>
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <div>
+            <h1>Welcome to Batanes</h1>
+        </div>
+    </div>
+
+    <!-- Information Section -->
+    <div class="info-section">
+        <h2>About Batanes</h2>
+        <p>Batanes is a stunning province located in the northernmost part of the Philippines, known for its picturesque rolling hills, traditional Ivatan houses, and unique cultural heritage. The province offers a serene and peaceful escape with breathtaking landscapes and a rich history, making it a perfect destination for nature lovers and history enthusiasts.</p>
+        
+        <!-- Book Now Button -->
+        <a href="D:\Files\Documents\abby website\batanesbooknow.html" class="book-now-btn">Book Now</a>
+    </div>
+
+    <!-- Gallery Section -->
+    <div class="gallery">
+        <img src="yme html pics/batanesD.jpg" alt="Batanes Landscape">
+        <img src="yme html pics/BatanesA.jpg" alt="Traditional Ivatan House">
+        <img src="yme html pics/BatanesB.jpg" alt="Batanes Rolling Hills">
+        <img src="yme html pics/BatanesC.jpg" alt="Batanes Beach">
+        <img src="yme html pics/BatanesE.jpg" alt="Batanes Lighthouse">
+        <img src="yme html pics/BatanesF.jpg" alt="Batanes Scenery">
+        <img src="yme html pics/BatanesG.jpg" alt="Batanes View 1">
+        <img src="yme html pics/BatanesH.jpg" alt="Batanes View 2">
+        <img src="yme html pics/BatanesI.jpg" alt="Batanes View 3">
+        <img src="yme html pics/bataneslight.jpg" alt="Batanes Lighthouse">
+        <img src="yme html pics/Batanescov.jpg" alt="Batanes View 4">
+        <img src="yme html pics/BatanesJ.jpg" alt="Batanes Scenery">
+        <img src="yme html pics/Bataneshouse.jpg" alt="Ivatan House">
+        <img src="yme html pics/Batanescover.jpg" alt="Batanes Cover Image">
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        &copy; 2024 Explore Batanes | Designed with love
+    </footer>
+
+</body>
+</html>
