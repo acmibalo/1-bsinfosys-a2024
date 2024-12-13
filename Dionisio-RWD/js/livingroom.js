@@ -1,3 +1,11 @@
+document.addEventListener("DOMContentLoaded", () => {
+    const hamburger = document.querySelector('.Furniture');
+    const navLinks = document.querySelector('.nav-links');
+
+    hamburger.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+    });
+});
 
 
 document.addEventListener("DOMContentLoaded", () => {
