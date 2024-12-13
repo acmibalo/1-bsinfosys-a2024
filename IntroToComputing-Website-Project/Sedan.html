@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sedans</title>
+    <link rel="stylesheet" href="sedan.css">
+    <link rel="icon" href="images/Logo.webp">
+</head>
+<body>
+    <!-- Home Button -->
+    <a href="index.html" class="home-btn">Home</a>
+
+    <h1>Explore Our Sedans</h1>
+
+    <!-- Products Section -->
+    <div class="car">
+        <img src="images/toyota-corolla.jpg" alt="Toyota Corolla">
+        <div>
+            <h2>Toyota Corolla</h2>
+            <p>Price: $20,000</p>
+            <p class="car-description">The Toyota Corolla is a reliable and fuel-efficient sedan, offering a smooth ride and advanced safety features. Perfect for daily commuting or long-distance trips.</p>
+            <button class="add-to-cart" data-car="Toyota Corolla" data-price="20000">Add to Cart</button>
+        </div>
+    </div>
+
+    <div class="car">
+        <img src="images/honda-civic.jpg" alt="Honda Civic">
+        <div>
+            <h2>Honda Civic</h2>
+            <p>Price: $25,000</p>
+            <p class="car-description">The Honda Civic is a sleek, stylish sedan with excellent handling and a reputation for reliability. It comes equipped with modern technology and a comfortable interior.</p>
+            <button class="add-to-cart" data-car="Honda Civic" data-price="25000">Add to Cart</button>
+        </div>
+    </div>
+
+    <div class="car">
+        <img src="images/hyundai-elantra.jpg" alt="Hyundai Elantra">
+        <div>
+            <h2>Hyundai Elantra</h2>
+            <p>Price: $22,000</p>
+            <p class="car-description">Featuring a stylish design and great fuel economy, the Hyundai Elantra provides a smooth driving experience with its user-friendly technology and spacious cabin.</p>
+            <button class="add-to-cart" data-car="Hyundai Elantra" data-price="22000">Add to Cart</button>
+        </div>
+    </div>
+
+    <div class="car">
+        <img src="images/ford-focus.jpg" alt="Ford Focus">
+        <div>
+            <h2>Ford Focus</h2>
+            <p>Price: $23,000</p>
+            <p class="car-description">The Ford Focus delivers a dynamic driving experience, with excellent handling, responsive steering, and an intuitive infotainment system. A great choice for enthusiasts.</p>
+            <button class="add-to-cart" data-car="Ford Focus" data-price="23000">Add to Cart</button>
+        </div>
+    </div>
+
+    <div class="car">
+        <img src="images/chevrolet-malibu.jpg" alt="Chevrolet Malibu">
+        <div>
+            <h2>Chevrolet Malibu</h2>
+            <p>Price: $24,000</p>
+            <p class="car-description">The Chevrolet Malibu combines a comfortable ride with modern technology, offering plenty of space and an efficient engine, making it a top pick for families.</p>
+            <button class="add-to-cart" data-car="Chevrolet Malibu" data-price="24000">Add to Cart</button>
+        </div>
+    </div>
+
+    <div class="car">
+        <img src="images/nissan-sentra.jpg" alt="Nissan Sentra">
+        <div>
+            <h2>Nissan Sentra</h2>
+            <p>Price: $21,000</p>
+            <p class="car-description">The Nissan Sentra is an affordable sedan known for its efficiency and stylish design. It offers excellent fuel economy and a comfortable, well-equipped cabin.</p>
+            <button class="add-to-cart" data-car="Nissan Sentra" data-price="21000">Add to Cart</button>
+        </div>
+    </div>
+
+    <div class="car">
+        <img src="images/mazda3.jpg" alt="Mazda3">
+        <div>
+            <h2>Mazda3</h2>
+            <p>Price: $23,500</p>
+            <p class="car-description">With its athletic handling and premium interior, the Mazda3 provides an engaging driving experience. It offers advanced features and a stylish design that's perfect for city driving.</p>
+            <button class="add-to-cart" data-car="Mazda3" data-price="23500">Add to Cart</button>
+        </div>
+    </div>
+
+    <div class="car">
+        <img src="images/kia-forte.jpg" alt="Kia Forte">
+        <div>
+            <h2>Kia Forte</h2>
+            <p>Price: $22,500</p>
+            <p class="car-description">The Kia Forte offers a blend of value and practicality with a comfortable interior, impressive tech, and a smooth ride, making it a great choice for families and commuters alike.</p>
+            <button class="add-to-cart" data-car="Kia Forte" data-price="22500">Add to Cart</button>
+        </div>
+    </div>
+
+    <div class="car">
+        <img src="images/volkswagen-jetta.jpg" alt="Volkswagen Jetta">
+        <div>
+            <h2>Volkswagen Jetta</h2>
+            <p>Price: $24,500</p>
+            <p class="car-description">The Volkswagen Jetta combines a sleek European design with exceptional performance. It's perfect for those who want both style and substance in a compact sedan.</p>
+            <button class="add-to-cart" data-car="Volkswagen Jetta" data-price="24500">Add to Cart</button>
+        </div>
+    </div>
+
+    <div class="car">
+        <img src="images/subaru-impreza.jpg" alt="Subaru Impreza">
+        <div>
+            <h2>Subaru Impreza</h2>
+            <p>Price: $23,000</p>
+            <p class="car-description">The Subaru Impreza offers all-wheel drive for enhanced handling in all conditions. It’s an ideal choice for those who want a reliable and practical sedan with extra traction and space.</p>
+            <button class="add-to-cart" data-car="Subaru Impreza" data-price="23000">Add to Cart</button>
+        </div>
+    </div>
+
+    <!-- Cart Section -->
+    <div class="cart-container">
+        <h3>Your Cart</h3>
+        <ul id="cart-items"></ul>
+        <p>Total: $<span id="total-price">0</span></p>
+        <button class="checkout-btn" style="display: none;" onclick="checkout()">Checkout</button>
+      </div>
+      
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxury Cars - John Lloyd Bofitiado Car Dealerships</title>
+    <link rel="stylesheet" href="sedan.css">
+    <link rel="icon" href="images/Logo.webp">
+</head>
+<body>
+    <!-- Home Button -->
+    <a href="index.html" class="home-btn">Home</a>
+
+    <h1>Explore Our Luxury Cars</h1>
+
+    <!-- Products Section -->
+    <div class="car">
+        <img src="images/rolls-royce-phantom.jpg" alt="Rolls-Royce Phantom">
+        <div>
+            <h2>Rolls-Royce Phantom</h2>
+            <p>Price: $460,000</p>
+            <p class="car-description">The Rolls-Royce Phantom embodies luxury and craftsmanship, offering unparalleled comfort, advanced technology, and a smooth ride.</p>
+            <button class="add-to-cart" data-car="Rolls-Royce Phantom" data-price="460000">Add to Cart</button>
+        </div>
+    </div>
+
+    <div class="car">
+        <img src="images/bentley-flying-spur.jpg" alt="Bentley Flying Spur">
+        <div>
+            <h2>Bentley Flying Spur</h2>
+            <p>Price: $220,000</p>
+            <p class="car-description">The Bentley Flying Spur combines classic British luxury with exhilarating performance, making it an exceptional grand tourer.</p>
+            <button class="add-to-cart" data-car="Bentley Flying Spur" data-price="220000">Add to Cart</button>
+        </div>
+    </div>
+
+    <div class="car">
+        <img src="images/mercedes-maybach-s-class.jpg" alt="Mercedes-Maybach S-Class">
+        <div>
+            <h2>Mercedes-Maybach S-Class</h2>
+            <p>Price: $185,000</p>
+            <p class="car-description">The Mercedes-Maybach S-Class offers unmatched refinement and innovation, designed for those who demand the best in every aspect.</p>
+            <button class="add-to-cart" data-car="Mercedes-Maybach S-Class" data-price="185000">Add to Cart</button>
+        </div>
+    </div>
+
+    <div class="car">
+        <img src="images/porsche-panamera.jpg" alt="Porsche Panamera">
+        <div>
+            <h2>Porsche Panamera</h2>
+            <p>Price: $150,000</p>
+            <p class="car-description">The Porsche Panamera delivers a blend of sports car dynamics with luxury sedan comfort, perfect for enthusiasts who refuse to compromise.</p>
+            <button class="add-to-cart" data-car="Porsche Panamera" data-price="150000">Add to Cart</button>
+        </div>
+    </div>
+
+    <div class="car">
+        <img src="images/lamborghini-urus.jpg" alt="Lamborghini Urus">
+        <div>
+            <h2>Lamborghini Urus</h2>
+            <p>Price: $230,000</p>
+            <p class="car-description">The Lamborghini Urus is a groundbreaking luxury SUV, offering stunning performance, cutting-edge design, and everyday usability.</p>
+            <button class="add-to-cart" data-car="Lamborghini Urus" data-price="230000">Add to Cart</button>
+        </div>
+    </div>
+
+    <div class="car">
+        <img src="images/ferrari-purosangue.jpg" alt="Ferrari Purosangue">
+        <div>
+            <h2>Ferrari Purosangue</h2>
+            <p>Price: $400,000</p>
+            <p class="car-description">The Ferrari Purosangue is Ferrari's first SUV, blending Italian elegance with race-inspired performance and cutting-edge technology.</p>
+            <button class="add-to-cart" data-car="Ferrari Purosangue" data-price="400000">Add to Cart</button>
+        </div>
+    </div>
+
+    <!-- Additional Products -->
+    <div class="car">
+        <img src="images/aston-martin-db11.jpg" alt="Aston Martin DB11">
+        <div>
+            <h2>Aston Martin DB11</h2>
+            <p>Price: $205,000</p>
+            <p class="car-description">The Aston Martin DB11 is a perfect blend of luxury and sportiness, combining powerful performance with elegant British design.</p>
+            <button class="add-to-cart" data-car="Aston Martin DB11" data-price="205000">Add to Cart</button>
+        </div>
+    </div>
+
+    <div class="car">
+        <img src="images/maserati-levante.jpg" alt="Maserati Levante">
+        <div>
+            <h2>Maserati Levante</h2>
+            <p>Price: $150,000</p>
+            <p class="car-description">The Maserati Levante combines the thrill of a sports car with the practicality of an SUV, delivering an exceptional driving experience.</p>
+            <button class="add-to-cart" data-car="Maserati Levante" data-price="150000">Add to Cart</button>
+        </div>
+    </div>
+
+    <div class="car">
+        <img src="images/rolls-royce-cullinan.jpg" alt="Rolls-Royce Cullinan">
+        <div>
+            <h2>Rolls-Royce Cullinan</h2>
+            <p>Price: $350,000</p>
+            <p class="car-description">The Rolls-Royce Cullinan is a luxury SUV that combines the prestige of Rolls-Royce with unparalleled off-road capabilities.</p>
+            <button class="add-to-cart" data-car="Rolls-Royce Cullinan" data-price="350000">Add to Cart</button>
+        </div>
+    </div>
+
+    <div class="car">
+        <img src="images/bugatti-chiron.jpg" alt="Bugatti Chiron">
+        <div>
+            <h2>Bugatti Chiron</h2>
+            <p>Price: $3,000,000</p>
+            <p class="car-description">The Bugatti Chiron is a hypercar with mind-boggling performance, showcasing extreme luxury and speed with a world-record-breaking engine.</p>
+            <button class="add-to-cart" data-car="Bugatti Chiron" data-price="3000000">Add to Cart</button>
+        </div>
+    </div>
+
+    <!-- Cart Section -->
+    <div class="cart-container">
+        <h3>Your Cart</h3>
+        <ul id="cart-items"></ul>
+        <p>Total: $<span id="total-price">0</span></p>
+        <button class="checkout-btn" style="display: none;" onclick="checkout()">Checkout</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

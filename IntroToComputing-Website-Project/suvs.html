@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SUVs - John Lloyd Bofitiado Car Dealerships</title>
+    <link rel="stylesheet" href="sedan.css">
+    <link rel="icon" href="images/Logo.webp">
+</head>
+<body>
+    <!-- Home Button -->
+    <a href="index.html" class="home-btn">Home</a>
+
+    <h1>Explore Our SUVs</h1>
+
+    <!-- Products Section -->
+    <div class="car">
+        <img src="images/ford-explorer.jpg" alt="Ford Explorer">
+        <div>
+            <h2>Ford Explorer</h2>
+            <p>Price: $36,000</p>
+            <p class="car-description">The Ford Explorer offers a spacious interior, impressive towing capacity, and advanced technology for families seeking both comfort and performance.</p>
+            <button class="add-to-cart" data-car="Ford Explorer" data-price="36000">Add to Cart</button>
+        </div>
+    </div>
+
+    <div class="car">
+        <img src="images/chevrolet-tahoe.jpg" alt="Chevrolet Tahoe">
+        <div>
+            <h2>Chevrolet Tahoe</h2>
+            <p>Price: $50,000</p>
+            <p class="car-description">The Chevrolet Tahoe is a powerful, full-size SUV with ample cargo space and a robust engine, ideal for long trips or heavy-duty use.</p>
+            <button class="add-to-cart" data-car="Chevrolet Tahoe" data-price="50000">Add to Cart</button>
+        </div>
+    </div>
+
+    <div class="car">
+        <img src="images/jeep-cherokee.jpg" alt="Jeep Cherokee">
+        <div>
+            <h2>Jeep Cherokee</h2>
+            <p>Price: $34,000</p>
+            <p class="car-description">The Jeep Cherokee combines rugged off-road capabilities with a comfortable interior, making it the perfect choice for adventure lovers.</p>
+            <button class="add-to-cart" data-car="Jeep Cherokee" data-price="34000">Add to Cart</button>
+        </div>
+    </div>
+
+    <div class="car">
+        <img src="images/toyota-4runner.jpg" alt="Toyota 4Runner">
+        <div>
+            <h2>Toyota 4Runner</h2>
+            <p>Price: $38,000</p>
+            <p class="car-description">The Toyota 4Runner is a reliable SUV with a strong off-road presence and a durable design, perfect for those who like to explore off the beaten path.</p>
+            <button class="add-to-cart" data-car="Toyota 4Runner" data-price="38000">Add to Cart</button>
+        </div>
+    </div>
+
+    <div class="car">
+        <img src="images/honda-pilot.jpg" alt="Honda Pilot">
+        <div>
+            <h2>Honda Pilot</h2>
+            <p>Price: $42,000</p>
+            <p class="car-description">The Honda Pilot is a family-friendly SUV with three-row seating, a smooth ride, and a host of safety features, making it ideal for long road trips.</p>
+            <button class="add-to-cart" data-car="Honda Pilot" data-price="42000">Add to Cart</button>
+        </div>
+    </div>
+
+    <div class="car">
+        <img src="images/bmw-x5.jpg" alt="BMW X5">
+        <div>
+            <h2>BMW X5</h2>
+            <p>Price: $65,000</p>
+            <p class="car-description">The BMW X5 is a luxury SUV with a powerful engine, premium interior, and cutting-edge technology, offering an exceptional driving experience.</p>
+            <button class="add-to-cart" data-car="BMW X5" data-price="65000">Add to Cart</button>
+        </div>
+    </div>
+
+    <div class="car">
+        <img src="images/volkswagen-tiguan.jpg" alt="Volkswagen Tiguan">
+        <div>
+            <h2>Volkswagen Tiguan</h2>
+            <p>Price: $30,000</p>
+            <p class="car-description">The Volkswagen Tiguan is a compact SUV with a high-end feel, offering a comfortable interior and a smooth, efficient ride.</p>
+            <button class="add-to-cart" data-car="Volkswagen Tiguan" data-price="30000">Add to Cart</button>
+        </div>
+    </div>
+
+    <div class="car">
+        <img src="images/mazda-cx-5.jpg" alt="Mazda CX-5">
+        <div>
+            <h2>Mazda CX-5</h2>
+            <p>Price: $32,000</p>
+            <p class="car-description">The Mazda CX-5 is a stylish and sporty compact SUV, offering excellent handling, a comfortable interior, and a wealth of standard features.</p>
+            <button class="add-to-cart" data-car="Mazda CX-5" data-price="32000">Add to Cart</button>
+        </div>
+    </div>
+
+    <div class="car">
+        <img src="images/nissan-armada.jpg" alt="Nissan Armada">
+        <div>
+            <h2>Nissan Armada</h2>
+            <p>Price: $55,000</p>
+            <p class="car-description">The Nissan Armada is a large, full-size SUV that offers outstanding towing capacity and a spacious interior, perfect for families and large groups.</p>
+            <button class="add-to-cart" data-car="Nissan Armada" data-price="55000">Add to Cart</button>
+        </div>
+    </div>
+
+    <div class="car">
+        <img src="images/land-rover-discovery.jpg" alt="Land Rover Discovery">
+        <div>
+            <h2>Land Rover Discovery</h2>
+            <p>Price: $70,000</p>
+            <p class="car-description">The Land Rover Discovery is a luxurious, off-road-capable SUV with a stunning design and an impressive list of features for both comfort and capability.</p>
+            <button class="add-to-cart" data-car="Land Rover Discovery" data-price="70000">Add to Cart</button>
+        </div>
+    </div>
+
+    <!-- Cart Section -->
+    <div class="cart-container">
+        <h3>Your Cart</h3>
+        <ul id="cart-items"></ul>
+        <p>Total: $<span id="total-price">0</span></p>
+        <button class="checkout-btn" style="display: none;" onclick="checkout()">Checkout</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
