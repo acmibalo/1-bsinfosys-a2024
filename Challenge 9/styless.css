@@ -1,0 +1,63 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fab6f4;
+  }
+  
+  header {
+    text-align: center;
+    padding: 20px;
+    background-color: #bff7f7;
+    color: rgb(238, 169, 169);
+  }
+  
+  section {
+    margin: 20px;
+    padding: 20px;
+    background-color: rgb(218, 245, 183);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  iframe, video {
+    width: 100%;
+    height: 500px;
+    border-radius: 8px;
+  }
+  
+  h2 {
+    color: #130101;
+  }
+  
+  /* Contact form styles */
+  .contact-form label {
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+  }
+  
+  .contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .contact-form button {
+    background-color: #c9a5e0;
+    color: rgb(1, 2, 12);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  
+  .contact-form button:hover {
+    background-color: #98e0c1;
+  }
+  
