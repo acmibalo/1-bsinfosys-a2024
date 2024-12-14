@@ -3,19 +3,66 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Responsive Card Design</title>
+  <title>My Webpage</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="card">
-    <img src="https://via.placeholder.com/300x200" alt="Card Image" class="card-img">
-    <div class="card-content">
-      <h2 class="card-title">Card Title</h2>
-      <p class="card-description">
-        This is a responsive card design using HTML and CSS. It adjusts to different screen sizes.
-      </p>
-      <a href="#" class="card-button">Learn More</a>
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Header Section -->
+  <header class="header" id="home">
+    <h1>Welcome to My Website</h1>
+    <p>Your go-to place for all things web development!</p>
+  </header>
+
+  <!-- About Section -->
+  <section class="about" id="about">
+    <h2>About Me</h2>
+    <p>Hi, I'm Lian Jeza, a passionate web developer. I specialize in creating responsive, user-friendly websites.</p>
+  </section>
+
+  <!-- Services Section -->
+  <section class="services" id="services">
+    <h2>My Services</h2>
+    <div class="service-item">
+      <h3>Web Design</h3>
+      <p>Beautiful, functional web design that fits your brand.</p>
     </div>
-  </div>
+    <div class="service-item">
+      <h3>Web Development</h3>
+      <p>Building interactive, responsive websites and web apps.</p>
+    </div>
+    <div class="service-item">
+      <h3>SEO Optimization</h3>
+      <p>Improving your website’s ranking on search engines.</p>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact" id="contact">
+    <h2>Contact Me</h2>
+    <form>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Footer Section -->
+  <footer class="footer">
+    <p>&copy; 2024 Lian Jeza Palomo. All rights reserved.</p>
+  </footer>
 </body>
 </html>
