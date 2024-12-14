@@ -1,0 +1,105 @@
+/* Global Styles */
+body, h1, h2, h3, h4, h5 {
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    font-size: 16px;
+}
+
+/* Navbar Styles */
+.w3-half img {
+    margin-bottom: -6px;
+    margin-top: 16px;
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.w3-half img:hover {
+    opacity: 1;
+}
+
+/* Header Styles */
+header {
+    background-color: #282c34; /* Darker gray header background */
+    color: #fff; /* White header text */
+    padding: 10px 0;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10; /* Ensure header stays on top */
+}
+
+/* Active Navigation Link */
+.w3-container.w3-bar-item.w3-button.active {
+    color: white;
+}
+
+/* Sticky Header */
+header.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Image Gallery Styles */
+.w3-row-padding img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.w3-row-padding img:hover {
+    transform: scale(1.1);
+}
+
+/* Video Styles */
+.video-container {
+    margin: 20px 0;
+    text-align: center;
+}
+
+/* Tooltip Styles */
+.w3-hover-opacity {
+    position: relative;
+    display: inline-block;
+}
+
+.w3-hover-opacity:hover::after {
+    content: 'Click to see more details!';
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #000;
+    color: #fff;
+    padding: 5px;
+    border-radius: 3px;
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    background-color: #282c34;
+    color: #fff;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 600px) {
+    .w3-half {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .video-container video {
+        width: 100%;
+    }
+}
