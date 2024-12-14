@@ -3,73 +3,23 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Block, Inline, Class, ID</title>
-
-  <style>
-    /* Styling for Block Elements */
-    .block-element {
-      width: 100%;
-      background-color: #14bb6d96;
-      padding: 15px;
-      margin: 10px 0;
-      border: 1px solid #128fa577;
-    }
-
-    /* Styling for Inline Elements */
-    .inline-element {
-      color: #007BFF;
-      font-weight: bold;
-    }
-
-    /* Styling Using Class */
-    .highlight {
-      background-color: #ce62bf5d;
-      padding: 3px 5px;
-      border-radius: 4px;
-    }
-
-    /* Styling Using ID */
-    #unique-section {
-      background-color: #9958d6;
-      border: 2px dashed #00796b;
-      padding: 15px;
-      margin: 20px 0;
-    }
-  </style>
+  <title>HTML and CSS Example</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header id="unique-section">
-    <h1>Welcome!</h1>
-    <p>This is Block, Inline, class, ID implementation</p>
+  <header id="main-header">
+    <h1>Welcome to My Website</h1>
+    <p class="description">This is a simple webpage demonstrating block, inline, ID, and class in HTML and CSS.</p>
   </header>
 
-  <main>
-    <!-- Block Element -->
-    <div class="block-element">
-      <h2>Block Element</h2>
-      <p>This is a block-level element. Block elements take up the full width available.</p>
-    </div>
+  <div class="content">
+    <h2 class="content-title">Content Section</h2>
+    <p>This is a paragraph inside a content section. It’s a block element that takes up the full width.</p>
+    <span class="highlight-text">This is an inline element (highlighted).</span>
+  </div>
 
-    <!-- Inline Element -->
-    <p>
-      This is an inline element: 
-      <span class="inline-element">Important Text</span>. Inline elements flow within a line.
-    </p>
-
-    <!-- Using Class -->
-    <p>
-      You can reuse <span class="highlight">classes</span> for consistent styling across elements.
-    </p>
-
-    <!-- Using ID -->
-    <div id="unique-section">
-      <h2>Unique Section</h2>
-      <p>This section is styled using an <strong>ID</strong>, which is unique for this element.</p>
-    </div>
-  </main>
-
-  <footer class="block-element">
-    <p>Created with <span class="inline-element">love</span> and attention to detail.</p>
-  </footer>
+  <div class="footer">
+    <p id="footer-text">This is a footer with an ID applied to its text.</p>
+  </div>
 </body>
 </html>
