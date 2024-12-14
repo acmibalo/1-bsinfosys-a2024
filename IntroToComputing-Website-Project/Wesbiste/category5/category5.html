@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countryside Homes</title>
+    <link rel="icon" type="image/png" href="icon.png">
+    <link rel="stylesheet" href="category5.css">
+</head>
+<body>
+    <div class="wrapper">
+
+        <nav class="sidebar">
+            <div class="logo">
+                <h2>Navigation</h2>
+            </div>
+            <ul>
+                <a href="file:///C:/Users/Administrator/Documents/Wesbiste/home.html"><button class="hover-button">Home</button></a>
+                <a href="file:///C:/Users/Administrator/Documents/Wesbiste/Challenge%20%239.html"><button class="hover-button">About Me</button></a>
+                <a href="file:///C:/Users/Administrator/Documents/Wesbiste/category1/category%201.html"><button class="hover-button">Luxury Homes</button></a>
+                <a href="file:///C:/Users/Administrator/Documents/Wesbiste/category2/category2.html"><button class="hover-button">Family Homes</button></a>
+                <a href="file:///C:/Users/Administrator/Documents/Wesbiste/category3/category3.html"><button class="hover-button">Starter Homes</button></a>
+                <a href="file:///C:/Users/Administrator/Documents/Wesbiste/category4/category4.html"><button class="hover-button">Modern Apartments</button></a>
+            </ul>
+        </nav>
+
+        <div class="content">
+            <section class="banner">
+                <h1>Welcome to Countryside Homes</h1>
+                <p>Peaceful rural properties for ultimate relaxation.</p>
+            </section>
+
+            <section class="properties">
+                <div class="property">
+                    <p class="price">$5,200,000</p>
+                    <button class="buy-button" onclick="showEmailForm('house1')">Buy</button>
+                </div>
+                <div class="property">
+                    <p class="price">$4,800,000</p>
+                    <button class="buy-button" onclick="showEmailForm('house2')">Buy</button>
+                </div>
+                <div class="property">
+                    <p class="price">$3,000,000</p>
+                    <button class="buy-button" onclick="showEmailForm('house3')">Buy</button>
+                </div>
+                <div class="property">
+                    <p class="price">$1,000,000</p>
+                    <button class="buy-button" onclick="showEmailForm('house4')">Buy</button>
+                </div>
+                <div class="property">
+                    <p class="price">$8,200,000</p>
+                    <button class="buy-button" onclick="showEmailForm('house5')">Buy</button>
+                </div>
+                <div class="property">
+                    <p class="price">$4,100,000</p>
+                    <button class="buy-button" onclick="showEmailForm('house6')">Buy</button>
+                </div>
+                <div class="property">
+                    <p class="price">$6,000,000</p>
+                    <button class="buy-button" onclick="showEmailForm('house7')">Buy</button>
+                </div>
+                <div class="property">
+                    <p class="price">$5,990,000</p>
+                    <button class="buy-button" onclick="showEmailForm('house8')">Buy</button>
+                </div>
+                <div class="property">
+                    <p class="price">$3,000,000</p>
+                    <button class="buy-button" onclick="showEmailForm('house9')">Buy</button>
+                </div>
+                <div class="property">
+                    <p class="price">$6,000,000</p>
+                    <button class="buy-button" onclick="showEmailForm('house10')">Buy</button>
+                </div>
+
+                <div id="myModal" class="modal">
+                    <div class="modal-content">
+                        <span class="close" onclick="closeModal()">&times;</span>
+                        <h2>Contact Details</h2>
+                        <form id="emailForm">
+                            <label for="name">Full Name:</label>
+                            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                            
+                            <label for="email">Email Address:</label>
+                            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                            
+                            <label for="message">Message:</label>
+                            <textarea id="message" name="message" placeholder="Write your message here..." rows="5" required></textarea>
+                            
+                            <button type="submit">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <script>
+        function showEmailForm(houseId) {
+            var modal = document.getElementById('myModal');
+            modal.classList.add('show');
+        }
+        
+        function closeModal() {
+            var modal = document.getElementById('myModal');
+            modal.classList.remove('show');
+        }
+
+        document.getElementById('emailForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            alert('Message Sent! Thank you for reaching out.');
+            closeModal();
+        });
+    </script>
+</body>
+</html>
