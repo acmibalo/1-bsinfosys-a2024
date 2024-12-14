@@ -36,6 +36,7 @@ section{
 .heading span {
     color: rgb(167, 110, 110);
 }
+
 .btn {
     display: inline-block;
     margin-top: 1rem;
@@ -187,6 +188,29 @@ header .fa-bars {
     padding: .5rem 0;
     padding-top: 1rem;
     line-height: 1.5;
+}
+
+
+button {
+    background-color: #b81aaa
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color:#e84393; 
+    transform: scale(1.05); 
+}
+
+button:active {
+    background-color: #e84393; 
+    transform: scale(0.95); 
 }
 
 .icons-container {
@@ -545,4 +569,9 @@ section {
     }
     
     }
-/* #region */
+    @media (max-width: 600px) {
+        button {
+            font-size: 14px;
+            padding: 8px 16px;
+        }
+    }
