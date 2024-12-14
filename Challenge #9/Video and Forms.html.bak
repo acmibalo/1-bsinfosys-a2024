@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>One Piece: Video and Forms</title>
+  <link rel="icon" type="image/x-icon" href="images/logo.ico">
+  <link rel="stylesheet" href="css/styles.css"> 
+</head>
+<body>
+
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#home">HOME</a></li>
+        <li><a href="#about">ABOUT</a></li>
+        <li><a href="#crew">CREW</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home">
+    <div class="hero">
+      <div class="hero-text">
+        <h1>ONE PIECE</h1> 
+        <p>Embark on an epic adventure!</p>
+        <button class="explore-button">Explore the Grand Line</button>
+      </div>
+      <div class="video-container">
+       <iframe width="560" height="315" src="https://www.youtube.com/embed/dM7x1PNZDo0?si=jWxVsJ3qoUA5OxwX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <h2>About One Piece</h2>
+    <p>One Piece is a manga and anime series...</p>
+  </section>
+
+  <section id="crew">
+    <h2>The Straw Hat Pirates</h2>
+    <div class="crew-container">
+      <div class="crew-member">
+        <img src="images/luffy.jpg" alt="Luffy">
+        <h3>Monkey D. Luffy</h3>
+        <p>The captain of the Straw Hat Pirates...</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <form action="#" method="post">
+      <label for="name">Your Name:</label>
+      <input type="text" id="name" name="name" required><br><br>
+      <label for="email">Your Email:</label>
+      <input type="email" id="email" name="email" required><br><br>
+      <input type="submit" value="Send Message">
+    </form>
+	<p>Y'all can contact me through facebook, just click the logo below</p>
+	<p>If you are a volleyball player can visit my website and it also below right side of the facebook logo.</p>
+    <div class="social-links">
+      <a href="https://www.facebook.com/yourfacebooklink" target="_blank"><img src="images/logo.jpg" alt="Facebook"></a>
+      <a href="https://www.yourwebsite.com" target="_blank"><img src="images/website.png" alt="Website"></a>
+  </section>
+
+  <footer>
+    <p>&copy; 2023 One Piece Website. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

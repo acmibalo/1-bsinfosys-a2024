@@ -1,0 +1,221 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f0f0f0; /* Light gray background */
+  color: #333; /* Dark gray text color */
+  margin: 0; /* Reset default margin */
+  padding: 0px; /* Reset default padding */
+  text-align: center;
+}
+
+/* Header Styles */
+header {
+  background-color: #282c34; /* Darker gray header background */
+  color: #fff; /* White header text */
+  padding: 20px 0;
+  position: fixed;
+  top: 2;
+  width: 100%;
+  z-index: 10; /* Ensure header stays on top */
+}
+
+/* Navigation Styles */
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 10px;
+  display: flex; /* Use flexbox for menu items */
+  align-items: center; /* Vertically center menu items */
+  text-align: center;
+}
+
+nav li {
+  margin: 0 20px; /* Add spacing between menu items */
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+/* Hero Section Styles */
+#home {
+  background-image: url("images/Thousand Sunny.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 60vh;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; /* Arrange hero-text and video vertically */
+  padding: 90px;
+}
+
+.hero-text {
+  text-align: center;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent black background */
+  border-radius: 10px;
+  margin-bottom: 20px; /* Add space between hero-text and video */
+}
+
+h1 {
+  font-size: 5em;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  margin-bottom: 20px;
+}
+
+.hero-text p {
+  font-size: 1.5em;
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
+
+/* Button Styles */
+.explore-button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Video Container Styles */
+.video-container {
+  width: 60%; /* Adjust the width as needed */
+  margin: 20px auto; /* Center the video horizontally */
+}
+
+/* Crew Member Styles */
+.crew-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.crew-member {
+  width: 25%;
+  margin: 20px;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  text-align: center;
+  background-color: #fff;
+  color: #333;
+}
+
+.crew-member img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+/* Contact Form Styles */
+#contact {
+  background-color: #fff; /* White background */
+}
+
+#contact form {
+  margin-top: 30px;
+  width: 80%; /* Adjust width for responsiveness */
+  max-width: 500px; /* Set a maximum width */
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #333; /* Dark gray form background */
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: #fff; 
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff; /* White input background */
+  color: #333; /* Dark gray text */
+}
+
+textarea {
+  height: 100px;
+}
+
+input[type="submit"] {
+  background-color: #fff; /* White button */
+  color: #333; /* Dark gray text */
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Footer Styles */
+footer {
+  background-color: #282c34; 
+  color: #fff; 
+  padding: 10px 0;
+  text-align: center;
+  bottom: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+/* Social Links Styles */
+#contact .social-links {
+  display: flex; 
+  justify-content: center; 
+  margin-top: 20px;
+}
+
+#contact .social-links a {
+  margin: 0 10px; 
+}
+
+#contact .social-links img {
+  height: 30px; /* Make social links smaller */
+  max-width: 100%; 
+}
+
+/* Responsiveness (Simple Approach) */
+@media (max-width: 600px) {
+  .crew-member {
+    width: 50%;
+  }
+  #contact form {
+    width: 90%;
+  }
+  .video-container {
+    width: 100%; /* Adjust video width for smaller screens */
+   position:center;
+  }
+}
+
+@media (max-width: 480px) {
+  .crew-member {
+    width: 100%;
+  }
+  h1 {
+    font-size: 3em;
+  }
+  .hero-text p {
+    font-size: 1em;
+  }
+  .video-container {
+    width: 100%; /* Full width video on mobile */
+    position: Center;
+  }
+}
