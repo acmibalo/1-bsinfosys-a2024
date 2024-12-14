@@ -5,6 +5,7 @@
     list-style: none;
     text-decoration: none;
     font-family: "Roboto", sans-serif;
+    
 }
 :root{
     --bg-color: #0c0c0c;
@@ -74,4 +75,18 @@ header{
     cursor: pointer;
     margin-left: 25px;
     display: none;
+}
+.section{
+    padding: 0 50%;
+}
+.hero{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 2rem;
 }
