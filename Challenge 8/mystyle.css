@@ -1,0 +1,235 @@
+/* General styles */
+body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f19e9e; /* Light Pinkish background */
+    color: #0f0101;
+  }
+  
+  h1, h2, h3 {
+    color: #0a0600; /* Dark Brown */
+  }
+  
+  p {
+    color: #080101;
+    font-size: 16px;
+    line-height: 1.7;
+  }
+  
+  /* Navbar styles */
+  .navbar {
+    background-color: #aeeef0; /* Golden Yellow */
+    overflow: hidden;
+  }
+  
+  .navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .navbar ul li {
+    text-align: center;
+  }
+  
+  .navbar ul li a {
+    display: block;
+    color: rgb(10, 1, 1);
+    padding: 16px 20px;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  
+  .navbar ul li a:hover {
+    background-color: #abbdf7; /* Darker Golden Yellow */
+    color: rgb(241, 182, 182);
+  }
+  
+  /* Header Section */
+  .header {
+    background-color: #f1abdc; /* Soft Red */
+    color: #fdcbcb;
+    text-align: center;
+    padding: 80px 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .header h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+  }
+  
+  .header p {
+    font-size: 1.3em;
+    margin-top: 10px;
+    font-weight: 300;
+  }
+  
+  /* About Section */
+  .about {
+    padding: 40px;
+    background-color: #c3fab7;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .about h2 {
+    font-size: 2em;
+    margin-bottom: 15px;
+  }
+  
+  .about p {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #0c0101;
+  }
+  
+  /* Menu Section */
+  .services {
+    padding: 40px;
+    background-color: #e2f3b1; /* Light Grey */
+    margin: 20px;
+  }
+  
+  .services h2 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 30px;
+    color: #020100; /* Dark Brown */
+  }
+  
+  .service-item {
+    background-color: #fdc2a7;
+    padding: 25px;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .service-item h3 {
+    font-size: 1.8em;
+    color: #0a0600; /* Dark Golden Yellow */
+    margin-bottom: 10px;
+  }
+  
+  .service-item p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #0f0101;
+  }
+  
+  /* Contact Section */
+  .contact {
+    padding: 40px;
+    background-color: #fdafaf;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .contact h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #0a0601;
+  }
+  
+  .contact form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .contact label {
+    font-weight: bold;
+    margin-top: 10px;
+    font-size: 1.2em;
+    color: #1a1001;
+  }
+  
+  .contact input, .contact textarea {
+    padding: 12px;
+    margin-top: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #e4b4ee; /* Very Light Grey */
+  }
+  
+  .contact button {
+    background-color: #f8b400;
+    color: rgb(252, 194, 194);
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 20px;
+    font-size: 1.2em;
+  }
+  
+  .contact button:hover {
+    background-color: #b198f5; /* Darker Golden Yellow */
+  }
+  
+  /* Footer styles */
+  .footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #6a4e23; /* Dark Brown */
+    color: rgb(151, 232, 243);
+    position: relative;
+    width: 100%;
+    bottom: 0;
+  }
+  
+  .footer p {
+    font-size: 14px;
+    margin: 0;
+  }
+  
+  /* Responsive Design */
+  @media screen and (max-width: 768px) {
+    /* Adjust navbar for smaller screens */
+    .navbar ul {
+      flex-direction: column;
+    }
+  
+    .navbar ul li {
+      width: 100%;
+      text-align: center;
+    }
+  
+    /* Adjust header text size for small screens */
+    .header h1 {
+      font-size: 2.5em;
+    }
+  
+    .header p {
+      font-size: 1.2em;
+    }
+  
+    /* Adjust section padding */
+    .about, .services, .contact {
+      margin: 10px;
+      padding: 20px;
+    }
+  
+    /* Stack the service items in a column */
+    .services {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .service-item {
+      margin: 10px 0;
+    }
+  
+    /* Make form inputs and button responsive */
+    .contact input, .contact textarea, .contact button {
+      width: 100%;
+      margin-top: 10px;
+    }
+  }
+  
