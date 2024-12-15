@@ -1,0 +1,83 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* header */
+header {
+  background-color: #75a84e;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: rgb(0, 0, 0);
+}
+
+/* two columns*/
+nav {
+  float: left;
+  width: 30%;
+  height: 300px; /* only for demonstration, should be removed */
+  background: #E6E6FA;
+  padding: 20px;
+}
+
+/*menu list */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: #fa6db8;
+  height: 300px; /* only for demonstration, should be removed */
+  overflow-y: scroll;
+}
+div {
+  padding: 30px 0 20px 0;
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* Style the footer */
+footer {
+  background-color: #75a84e;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/*center the video*/
+.video-container {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+.video-container{
+    width: 80%;
+    max-width: 800px;
+    height: 450px;
+    border: 5px solid #75a84e;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0,0,0.2);
+}
+
+/* Responsive layout - makes the two columns*/
+@media (max-width: 1000px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
