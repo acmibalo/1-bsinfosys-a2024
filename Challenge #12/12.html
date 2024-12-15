@@ -1,0 +1,226 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>My Website</title>
+    <link rel="icon" href="Favicon.png" type="image/png" />
+    <meta name="description" content="Explore our wide range of high-quality technology accessories, including leather wallets, wireless headphones, and more." />
+    <meta name="keywords" content="store, technology accessories, gadgets, leather wallets, wireless headphones, eco-friendly products" />
+    <meta name="author" content="Technology Accessories" />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <style>
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <h1>Welcome to Our Store</h1>
+      <nav>
+        <a href="#home">Home</a>
+        <a href="#products">Products</a>
+        <a href="#about">About Us</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <input type="text" id="product-search" placeholder="Search for products" oninput="searchProducts()">
+
+    <div class="slideshow-container">
+      <div class="mySlides fade">
+        <img src="Amazfit GTR-4.jpg" alt="Smartwatches">
+      </div>
+      <div class="mySlides fade">
+        <img src="Apple MacBook Air.jpg" alt="Laptops">
+      </div>
+      <div class="mySlides fade">
+        <img src="Beats Studio Buds.jpg" alt="Audio Devices">
+      </div>
+    </div>
+
+    <div id="home" class="home-section">
+      <h2>Technology Accessories</h2>
+      <p>We are delighted to have you here. Our store offers a wide range of high-quality products that are perfect for your everyday needs. Whether you're looking for stylish accessories, durable gadgets, or unique gift ideas, we have something for everyone.</p>
+    </div>
+
+    <div id="about" class="about-section">
+      <h2>About Us</h2>
+      <p>At Technology Accessories, we are passionate about providing the best in high-quality technology accessories. From leather wallets to the latest in wireless headphones, we carefully curate our product selection to ensure top-notch functionality and style. Our mission is to enhance your tech experience with practical, stylish, and affordable products.</p>
+      <p>We believe in sustainability and only source eco-friendly materials for our products, ensuring that you can shop with confidence, knowing your purchases make a positive impact. Whether you are looking for a new tech gadget or a thoughtful gift, we are here to serve you with excellence.</p>
+    </div>
+
+    <div class="container">
+      <section id="products" class="product-list">
+        <h2>Our Products</h2>
+        <select id="price-sort" onchange="sortProductsByPrice()">
+          <option value="asc">Price: Low to High</option>
+          <option value="desc">Price: High to Low</option>
+        </select>
+
+        <ul>
+          <li class="product-item">
+            <img src="Dell xps 13.jpg" alt="Laptop">
+            <div class="overlay">Quick View</div>
+            <button onclick="addToCart('Laptop')">Add Laptop to Cart</button>
+            <div id="rating1">
+              <span class="star" onclick="rateProduct(1)">&#9733;</span>
+              <span class="star" onclick="rateProduct(2)">&#9733;</span>
+              <span class="star" onclick="rateProduct(3)">&#9733;</span>
+              <span class="star" onclick="rateProduct(4)">&#9733;</span>
+              <span class="star" onclick="rateProduct(5)">&#9733;</span>
+            </div>
+          </li>
+          <li class="product-item">
+            <img src="Google Pixel 8 Pro.jpg" alt="Smartphone">
+            <div class="overlay">Quick View</div>
+            <button onclick="addToCart('Smartphone')">Add Smartphone to Cart</button>
+            <div id="rating2">
+              <span class="star" onclick="rateProduct(1)">&#9733;</span>
+              <span class="star" onclick="rateProduct(2)">&#9733;</span>
+              <span class="star" onclick="rateProduct(3)">&#9733;</span>
+              <span class="star" onclick="rateProduct(4)">&#9733;</span>
+              <span class="star" onclick="rateProduct(5)">&#9733;</span>
+            </div>
+          </li>
+          <li class="product-item">
+            <img src="headphones.jpg" alt="Headphones">
+            <div class="overlay">Quick View</div>
+            <button onclick="addToCart('Headphones')">Add Headphones to Cart</button>
+            <div id="rating3">
+              <span class="star" onclick="rateProduct(1)">&#9733;</span>
+              <span class="star" onclick="rateProduct(2)">&#9733;</span>
+              <span class="star" onclick="rateProduct(3)">&#9733;</span>
+              <span class="star" onclick="rateProduct(4)">&#9733;</span>
+              <span class="star" onclick="rateProduct(5)">&#9733;</span>
+            </div>
+          </li>
+        </ul>
+      </section>
+    </div>
+
+    <div id="productModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h3>Product Details</h3>
+        <p>Buy our newest products.</p>
+      </div>
+    </div>
+
+    <div id="contact-form">
+      <h3>Contact Us</h3>
+      <input type="text" id="name" placeholder="Your Name" required>
+      <input type="email" id="email" placeholder="Your Email" required>
+      <textarea id="message" placeholder="Your Message" required></textarea>
+      <button onclick="submitContactForm()">Submit</button>
+    </div>
+
+    <footer>
+      <p>&copy; 2024 Technology Accessories. All rights reserved.</p>
+    </footer>
+
+  <script>
+      let slideIndex = 0;
+      showSlides();
+      function showSlides() {
+        let slides = document.getElementsByClassName("mySlides");
+        for (let i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {
+          slideIndex = 1;
+        }
+        slides[slideIndex - 1].style.display = "block";
+        setTimeout(showSlides, 2000);
+      }
+
+      window.onscroll = function() {
+        if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+          document.getElementById("back-to-top").style.display = "block";
+        } else {
+          document.getElementById("back-to-top").style.display = "none";
+        }
+      };
+
+      function scrollToTop() {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      }
+
+      function subscribeNewsletter() {
+        let email = document.getElementById("newsletter-email").value;
+        if (email) {
+          alert("Thank you for subscribing!");
+        } else {
+          alert("Please enter a valid email address.");
+        }
+      }
+	  
+      function searchProducts() {
+        let query = document.getElementById('product-search').value.toLowerCase();
+        let products = document.querySelectorAll('.product-list li');
+        products.forEach(product => {
+          let productName = product.querySelector('img').alt.toLowerCase();
+          if (productName.includes(query)) {
+            product.style.display = 'list-item';
+          } else {
+            product.style.display = 'none';
+          }
+        });
+      }
+	  
+      let cart = [];
+      function addToCart(product) {
+        cart.push(product);
+        alert(product + " added to cart!");
+      }
+
+      function rateProduct(rating) {
+        alert('You rated this product ' + rating + ' stars!');
+      }
+
+      function sortProductsByPrice() {
+        let sortOrder = document.getElementById('price-sort').value;
+        let products = Array.from(document.querySelectorAll('.product-list li'));
+        products.sort((a, b) => {
+          let priceA = parseFloat(a.querySelector('p').innerText.replace('$', ''));
+          let priceB = parseFloat(b.querySelector('p').innerText.replace('$', ''));
+          return sortOrder === 'asc' ? priceA - priceB : priceB - priceA;
+        });
+        let productList = document.querySelector('.product-list');
+        products.forEach(product => productList.appendChild(product));
+      }
+
+      function submitContactForm() {
+        let name = document.getElementById('name').value;
+        let email = document.getElementById('email').value;
+        let message = document.getElementById('message').value;
+        if (name && email && message) {
+          alert('Thank you for contacting us, ' + name + '! We will get back to you soon.');
+        } else {
+          alert('Please fill in all fields.');
+        }
+      }
+
+      let modal = document.getElementById("productModal");
+      let span = document.getElementsByClassName("close")[0];
+      let productItems = document.querySelectorAll(".product-item");
+
+      productItems.forEach(item => {
+        item.onclick = function() {
+          modal.style.display = "block";
+        }
+      });
+
+      span.onclick = function() {
+        modal.style.display = "none";
+      }
+
+      window.onclick = function(event) {
+        if (event.target === modal) {
+          modal.style.display = "none";
+        }
+      }
+    </script>
+  </body>
+</html>
+    </script>
+  </body>
+</html>
