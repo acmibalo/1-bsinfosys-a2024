@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Block, Inline, Class, ID</title>
+
+  <style>
+    
+    .block-element {
+      width: 100%;
+      background-color: #ce62bf5d;
+      padding: 15px;
+      margin: 10px 0;
+      border: 1px solid #128fa577;
+    }
+
+    
+    .inline-element {
+      color: #5d5fed;
+      font-weight: bold;
+    }
+
+   
+    .highlight {
+      background-color: #e63ecf5d;
+      padding: 3px 5px;
+      border-radius: 4px;
+    }
+
+    
+    #unique-section {
+      background-color: #9958d6;
+      border: 2px dashed #00796b;
+      padding: 15px;
+      margin: 20px 0;
+    }
+  </style>
+</head>
+<body>
+  <header id="unique-section">
+
+    <h1>Welcome!</h1>
+    <p>This is Block, Inline, class, ID implementation</p>
+  </header>
+
+  <main>
+    
+    <div class="block-element">
+      <h2>Block Element</h2>
+      <p>This is a block-level element. Block elements take up the full width available.</p>
+    </div>
+
+    
+    <p>
+      This is an inline element: 
+      <span class="inline-element">Important Text</span>. Inline elements flow within a line.
+    </p>
+
+   
+    <p>
+      You can reuse <span class="highlight">classes</span> for consistent styling across elements.
+    </p>
+
+    
+    <div id="unique-section">
+      <h2>Unique Section</h2>
+      <p>This section is styled using an <strong>ID</strong>, which is unique for this element.</p>
+    </div>
+  </main>
+
+  <footer class="block-element">
+    <p>Created with <span class="inline-element">love</span> and attention to detail.</p>
+  </footer>
+</body>
+</html>
