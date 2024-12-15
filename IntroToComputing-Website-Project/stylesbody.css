@@ -1,0 +1,31 @@
+body.Home, .About, .Contact, .Asik-asik, .Salukot, .Daday, .Funville, .Daltan{
+    margin: 0;
+    padding: 20px 50px; 
+    background: linear-gradient(135deg, #2c3e50, #7a8dbb);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
+
+}
+
+
+
+aside{
+    text-align: center;
+    margin: 1%;
+    color:#e1dddd;
+    font-size: 20px;
+    background: rgba(18, 18, 18, 0.7);
+    padding: 2%;
+    border-radius: 15px;
+}   
+
+footer {
+    text-align: center;
+    color: rgb(0, 0, 0);
+    padding: 1rem;
+    
+    border-radius: 10px;
+  }
