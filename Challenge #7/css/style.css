@@ -1,0 +1,14 @@
+<style>
+.block { 
+    background-color: lightblue; 
+    padding: 10px; 
+    margin-bottom: 10px;
+}
+.inline { 
+    color: green; 
+}
+#special { 
+    font-weight: bold; 
+    color: red;
+}
+</style>
