@@ -26,22 +26,22 @@ section {
 .heading {
     text-align: center;
     font-size: 4rem;
-    color: #333;
+    color: #0f0001;
     padding: 1rem;
     margin: 2rem 0;
     background: rgba(255, 51, 153, .05);
 }
 
 .heading span {
-    color: rgb(167, 110, 110);
+    color: rgb(211, 95, 95);
 }
 
 .btn {
     display: inline-block;
     margin-top: 1rem;
     border-radius: 5rem;
-    background: #333;
-    color: #fff;
+    background: #c56e6e;
+    color: #0c0105;
     padding: .9rem 3.5rem;
     cursor: pointer;
     font-size: 1.7rem;
@@ -56,7 +56,7 @@ header {
     top: 0;
     left: 0;
     right: 0;
-    background: #fff;
+    background: #d66868;
     padding: 2rem 9%;
     display: flex;
     align-items: center;
@@ -72,22 +72,22 @@ header .logo {
 }
 
 header .logo span {
-    color: rgba(204, 167, 152, 0.897);
+    color: rgba(153, 25, 36, 0.897);
 }
 
 header .navbar a {
     font-size: 2rem;
     padding: 0 1.5rem;
-    color: #e43812ee;
+    color: #0a0201ee;
 }
 
 header .navbar a:hover {
-    color: rgb(190, 168, 138);
+    color: rgb(196, 103, 134);
 }
 
 header .icons a {
     font-size: 3rem;
-    color: #333;
+    color: #55e4d1;
     margin-left: 1.5rem;
 }
 
@@ -101,7 +101,7 @@ header #toggler {
 
 header .fa-bars {
     font-size: 3rem;
-    color: #333;
+    color: #575256;
     border-radius: .5rem;
     padding: .5rem 1.5rem;
     cursor: pointer;
@@ -127,19 +127,19 @@ header .fa-bars {
 
 .home .content h3 {
     font-size: 6rem;
-    color: #333;
+    color: #0e0101;
 }
 
 .home .content span {
     font-size: 3.5rem;
-    color: var(--pink);
+    color: #642323;
     padding: 1rem 0;
     line-height: 1.5;
 }
 
 .home .content p {
     font-size: 2rem;
-    color: #999;
+    color: #080000;
     padding: 1rem 0;
     line-height: 1.5;
 }
@@ -159,7 +159,7 @@ header .fa-bars {
 
 .about .row .video-container video {
     width: 100%;
-    border: 1.5rem solid #fff;
+    border: 1.5rem solid #973737;
     border-radius: .5rem;
     box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
 }
@@ -169,7 +169,7 @@ header .fa-bars {
     top: 50%;
     transform: translateY(-50%);
     font-size: 3rem;
-    background: #fff;
+    background: #e4d3d3;
     width: 100%;
     padding: 1rem 2rem;
     text-align: center;
@@ -182,19 +182,19 @@ header .fa-bars {
 
 .about .row .content h3 {
     font-size: 3rem;
-    color: #333;
+    color: #080000;
 }
 
 .about .row .content p {
     font-size: 1.5rem;
-    color: #1a0e0e57;
+    color: #0e010157;
     padding: .5rem 0;
     padding-top: 1rem;
     line-height: 1.5;
 }
 
 button {
-    background-color: #b81aaa;
+    background-color: #cc414d;
     border-radius: 5px;
     padding: 10px 20px;
     font-size: 16px;
@@ -216,7 +216,7 @@ button:active {
 }
 
 .icons-container {
-    background: #ddd8db;
+    background: #b4333a;
     display: flex;
     flex-wrap: wrap;
     gap: 1.5rem;
@@ -225,7 +225,7 @@ button:active {
 }
 
 .icons-container .icons {
-    background: #ddd8db;
+    background: #a51357;
     border: .1rem solid rgba(0, 0, 0, .1);
     padding: 2rem;
     display: flex;
@@ -247,7 +247,7 @@ button:active {
 }
 
 .icons-container .icons span {
-    color: #999;
+    color: #ebe2e2;
     font-size: 1.3rem;
 }
 
@@ -261,14 +261,14 @@ button:active {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: #fff;
+    background: #c73131;
     padding: 1rem 2rem;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .products-header h1 {
     font-size: 2rem;
-    color: var(--gray);
+    color: #0e0101;
 }
 
 .products-header .shopping img {
@@ -277,11 +277,11 @@ button:active {
 }
 
 .products-header .quantity {
-    background: var(--highlight);
-    color: #fff;
+    background: #a51357;
+    color: #faf3f8;
     border-radius: 50%;
     padding: 0.5rem 1rem;
-    font-size: 1.2rem;
+    font-size: 1rem;
     margin-left: 0.5rem;
 }
 
@@ -297,13 +297,13 @@ button:active {
     top: 0;
     left: 100%;
     width: 500px;
-    background-color: #453e3b;
+    background-color: #453b3f;
     height: 100vh;
     transition: 0.5s;
 }
 
 .cart h1 {
-    color: #E8BC0E;
+    color: #0a0800;
     font-weight: 100;
     margin: 0;
     padding: 0 20px;
@@ -321,7 +321,7 @@ button:active {
 }
 
 .cart .checkOut div {
-    background-color: #E8BC0E;
+    background-color: #b8212d;
     width: 100%;
     height: 70px;
     display: flex;
@@ -332,13 +332,13 @@ button:active {
 }
 
 .cart .checkOut div:nth-child(2) {
-    background-color: #1C1F25;
-    color: #fff;
+    background-color: #e7556d;
+    color: #070101;
 }
 
 .active .cart {
     left: calc(100% - 500px);
-    color: #fff;
+    color: #130101;
 }
 
 .active .container {
@@ -347,9 +347,9 @@ button:active {
 
 .list .item {
     text-align: center;
-    background-color: #dce0e1;
+    background-color: #f5edf1;
     padding: 20px;
-    box-shadow: 0 50px 50px #776767;
+    box-shadow: 0 50px 50px #e48282;
     letter-spacing: 1px;
 }
 
@@ -366,8 +366,8 @@ button:active {
 }
 
 .list .item button {
-    background-color: #1C1F25;
-    color: #fff;
+    background-color: #c74153;
+    color: #0c0101;
     padding: 10px;
     width: 100%;
 }
@@ -375,7 +375,7 @@ button:active {
 .listCart li {
     display: grid;
     grid-template-columns: 100px repeat(3, 1fr);
-    color: #fff;
+    color: #f1e6e6;
     row-gap: 10px;
     margin-bottom: 20px;
 }
@@ -392,7 +392,7 @@ button:active {
 
 .listCart li button {
     width: auto;
-    background-color: #776767;
+    background-color: #eba1a1;
     border: none;
 }
 
@@ -409,7 +409,7 @@ button:active {
 
  .review .box-container .box {
     flex:  1 1 30rem;
-    box-shadow: 0 .5rem 1.5rem rgba(0,0,0, .1);
+    box-shadow: 0 .5rem 1.5rem rgba(134, 10, 10, 0.1);
     border-radius: .5rem;
     position: relative;
  }
@@ -418,7 +418,7 @@ button:active {
     position: absolute;
     bottom: 3rem; right: 3rem;
     font-size: 6rem;
-    color: #eee;
+    color: #da6060;
  }
 
  .review .box-container .box  .user {
@@ -433,7 +433,7 @@ button:active {
  }
 
  .review .box-container .box p {
-    color: #999;
+    color: #0c0101;
     font-size: 1.5rem;
     line-height: 1.5rem;
     padding-top: 2rem;
@@ -464,7 +464,7 @@ button:active {
     padding: 2rem 2.5rem;
     box-shadow: 0 .5rem 1.5rem rgba(0,0,0, .1);
     border: .1rem solid rgba(0,0,0, .1);
-    background: #fff;
+    background: #d34c4c;
     border-radius: .5rem;
  }
 
@@ -479,7 +479,7 @@ button:active {
  .contact .row form .box {
     pad: 1rem;
     font-size: 1.7rem;
-    color: #333;
+    color: #851a1a;
     text-transform: none;
     border: .1rem solid rgba(0,0,0, .1);
     border-radius: .5rem;
@@ -496,51 +496,62 @@ button:active {
     resize: none;
 }
 
-.footer .box-container {
+.footer {
+    background-color: #ec4a4a;
+    color: #110101;
+    padding: 40px 0;
+}
+
+.box-container {
     display: flex;
-    flex-wrap: wrap;
-    gap: 1.5rem;
+    justify-content: space-between;
 }
 
-.footer .box-container .box {
-    flex: 1 1 25rem;
+.box {
+    flex: 1;
+    margin: 0 20px;
+    display: flex; /* Add this to enable Flexbox inside the box */
+    flex-direction: column; /* Stack the children vertically */
+    align-items: center; /* Center the content horizontally */
 }
 
-.footer .box-container .box h3 {
-    color: #333;
-    font-size: 2.5rem;
-    padding: 1rem  0;
+h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #050000;
 }
 
-.footer .box-container .box a {
-    display: block;
-    color: #666;
-    font-size: 1.5rem;
-    padding: 1rem 0;
+ul {
+    list-style: none;
+    padding: 0;
+    text-align: center; /* This centers the list items */
 }
 
-.footer .box-container a:hover {
-    color: var(--pink);
+ul li {
+    margin: 10px 0;
+}
+
+ul li a {
+    color: #0a0000;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+ul li a:hover {
+    color: #b42574;
     text-decoration: underline;
 }
 
-.footer .box-container .box img {
-    margin-top: 1rem;
-}
-
-.footer .credit {
+.credit {
     text-align: center;
-    padding: 1.5rem;
-    margin-top: 1.5rem;
-    padding-top: 2.5rem;
-    font-size: 2rem;
-    color: #333;
-    border-top: .1rem solid rgba(0,0,0, .1);
+    margin-top: 20px;
+    font-size: 14px;
 }
 
-.footer .credit span {
-    color: var(--pink);
+.credit span {
+    font-weight: bold;
 }
+
 
 
 

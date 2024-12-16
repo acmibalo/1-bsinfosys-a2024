@@ -16,55 +16,49 @@ let products = [
     {
         id: 1,
         name: 'M11 COZY',
-        images: 'lip-1.jpg',
+        image: '1.PNG',
         price: 199
     },
     {
         id: 2,
         name: 'M12 COLD',
-        images: '2.PNG',
+        image: '2.PNG',
         price: 199
     },
     {
         id: 3,
         name: 'M13 SUNSET',
-        images: '3.PNG',
+        image: '3.PNG',
         price: 199
     },
     {
         id: 4,
         name: 'M14 MISS',
-        images: '4.PNG',
+        image: '4.PNG',
         price: 199
     },
     {
         id: 5,
         name: 'M15 CHERISH',
-        images: '5.PNG',
+        image: '5.PNG',
         price: 199
     },
     {
         id: 6,
         name: 'M16 WILD',
-        images: '6.PNG',
+        image: '6.PNG',
         price: 199
     },
     {
         id: 7,
         name: 'M17 REVOLT',
-        images: '7.PNG',
+        image: '7.PNG',
         price: 199
     },
     {
         id: 8,
         name: 'M18 DISGUST',
-        images: '8.PNG',
-        price: 199
-    },
-    {
-        id: 9,
-        name: 'M19 THROBBING',
-        images: '9.PNG',
+        image: '8.PNG',
         price: 199
     },   
 ];
@@ -74,7 +68,7 @@ function initApp(){
         let newDiv = document.createElement('div');
         newDiv.classList.add('item');
         newDiv.innerHTML = `
-        <img src="images/${value.images}"/>
+        <img src="image/${value.image}"/>
         <div class="title">${value.name}</div>
         <div class="price">${value.price.toLocaleString()}</div>
         <button onclick="addtoCart(${key})">Add to Cart</button>
@@ -101,7 +95,7 @@ function reloadCart(){
         if(value !=null){
             let newDiv = document.createElement('li');
             newDiv.innerHTML = `
-                <div><img src="images/${value.images}"/></div>
+                <div><img src="image/${value.image}"/></div>
                 <div>${value.name}</div>
                 <div>${value.price.toLocaleString()}</div>
                 <div>
