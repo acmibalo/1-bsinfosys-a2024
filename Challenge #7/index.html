@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Bleach Anime Fan Website</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="A fun and easy-to-use space for fans of the Bleach anime. Explore character profiles, abilities, and much more!" />
+    <meta name="keywords" content="Bleach, Anime, Characters, Powers, Fan Website" />
+    <meta name="author" content="Your Name" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <style type="text/css">
+        /* General styles for Block elements */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #444;
+            overflow: hidden;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 15px;
+            display: block;
+        }
+
+        nav ul li a:hover {
+            background-color: #575757;
+        }
+
+        main {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 20px;
+            margin: 20px;
+            padding: 20px;
+        }
+
+        main section {
+            border: 1px solid #ccc;
+            padding: 15px;
+            background-color: #f9f9f9;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        /* Styling for Class elements */
+        .sidebar {
+            border: 1px solid #ccc;
+            padding: 15px;
+            background-color: #f1f1f1;
+        }
+
+        /* Styling for Inline elements (links in this case) */
+        a {
+            text-decoration: none;
+            color: #007BFF;
+        }
+
+        a:hover {
+            color: #0056b3;
+        }
+
+        /* Styling for specific ID elements */
+        #contact {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Bleach Anime Fan Website</h1>
+        <p>A fun and easy-to-use space for fans of Bleach!</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#characters">Characters</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="sidebar">
+            <h2>Quick Links</h2>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#characters">Characters</a></li>
+                <li><a href="#features">Features</a></li>
+            </ul>
+        </div>
+
+        <section id="about">
+            <h2>About</h2>
+            <p>This website is dedicated to providing detailed information about the Bleach anime, its characters, and their unique powers.</p>
+        </section>
+
+        <section id="characters">
+            <h2>Characters</h2>
+            <p>Explore profiles of your favorite characters from Bleach, including their abilities and story arcs.</p>
+        </section>
+
+        <section id="features">
+            <h2>Features</h2>
+            <ul>
+                <li>Clean, modern design using HTML and CSS</li>
+                <li>Responsive layout with CSS Grid</li>
+                <li>Fast loading times with optimized images</li>
+                <li>Simple and intuitive navigation</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer id="contact">
+        <h2>Contact Us</h2>
+        <form action="#" method="post">
+            <p>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required="required" />
+            </p>
+            <p>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required="required" />
+            </p>
+            <p>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" cols="50"></textarea>
+            </p>
+            <p>
+                <input type="submit" value="Send Message" />
+            </p>
+        </form>
+        <p>&copy; 2024 Bleach Anime Fan Website</p>
+    </footer>
+</body>
+</html>
