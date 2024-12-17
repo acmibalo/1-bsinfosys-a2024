@@ -15,7 +15,7 @@
     transition: .2s linear;
 }
 html{
-    font-size: 62.5;
+    font-size: 62.5%;
     overflow: hidden;
     scroll-padding-top: 9rem;
     scroll-behavior: smooth;
@@ -66,10 +66,11 @@ body{
     margin:  0 1rem;
     font-size: 1.6rem;
     color:#fff;
+    transition: right 0.3ease;
     
 }
 
-.header .navbar a:hover{
+.header .navbar a:hover {
     color: var (--main-color);
     border-color: .1rem solid var(--main-color);
     padding-bottom: .5rem;
@@ -101,6 +102,11 @@ body{
     transform-origin: top;
 }
 
+.header .search-form.active {
+    transform: scaleY(1);
+}
+
+
 .header .search-form input{
     height: 100%;
     width: 100%;
@@ -125,13 +131,16 @@ body{
     position: absolute;
     top: 100%; right: -100%;
     height: calc(100vh - 9.5rem);
-    width: 26rem;
+    width: 35rem;
     background: #fff;
-    padding: 0 .5rem;
+    padding: 0 1.5rem;
+    transition: right 0.3s ease;
 }
-.header .cart-items-container.active{
+
+.header .cart-items-container.active {
     right: 0;
 }
+
 
 .header .cart-items-container .cart-item{
     position: relative;
@@ -173,7 +182,18 @@ body{
     text-align: center;
 }
 
+.home{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+}
 
+.home .img{
+    background-size: 100px;
+
+}
 
 
 
@@ -218,7 +238,7 @@ body{
     }
 } 
 
-@media (max-width:991px){
+@media (max-width:768px){
     #menu-btn{
         display: inline-block;
     }
@@ -230,9 +250,11 @@ body{
         width: 30rem;
         height: calc(100vh - 9.5rem);
     }
+
     .header .navbar.active{
         right: 0;
     }
+
     .header .navbar a{
         color: var(--black);
         display: block;
@@ -240,4 +262,16 @@ body{
         padding: .5rem;
         font-size: 2rem;
     }
+
+    .header .search-form{
+        width: 90%;
+        right: 2rem;
+    }
 } 
+
+@media (max-width:450px){
+    html{
+        font-size: 50%;
+    }
+} 
+
