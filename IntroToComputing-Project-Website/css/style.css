@@ -63,12 +63,10 @@ body{
     height: 4rem;
 }
 .header .navbar a{
-    margin: 5 1rem;
+    margin:  0 1rem;
     font-size: 1.6rem;
     color:#fff;
-    padding: 18px 20px;
-    text-decoration: none;
-    font-size: 16px;
+    
 }
 
 .header .navbar a:hover{
@@ -80,7 +78,7 @@ body{
 .header .icons div{
     color: #fff;
     cursor: pointer;
-    font-size: 1.5rem;
+    font-size: 2.5rem;
     margin-left: 2rem;
 }
 .header .icons div:hover{
@@ -95,8 +93,8 @@ body{
     position: absolute;
     top: 115%; right: 7%;
     background-color: #fff;
-    width: 30rem;
-    height: 3rem;
+    width: 50rem;
+    height: 5rem;
     display: flex;
     align-items: center;
     transform: scaleY(0);
@@ -121,7 +119,6 @@ body{
 
 .header .search-form label:hover{
     color: var(--main-color);
-
 }
 
 .header .cart-items-container{
@@ -131,6 +128,9 @@ body{
     width: 26rem;
     background: #fff;
     padding: 0 .5rem;
+}
+.header .cart-items-container.active{
+    right: 0;
 }
 
 .header .cart-items-container .cart-item{
@@ -206,6 +206,8 @@ body{
 
 
 
+
+
 @media (max-width:991px){
     html{
         font-size: 55%;
@@ -214,7 +216,7 @@ body{
     .header{
         padding: 1.5rem 2rem;
     }
-}
+} 
 
 @media (max-width:991px){
     #menu-btn{
@@ -228,12 +230,14 @@ body{
         width: 30rem;
         height: calc(100vh - 9.5rem);
     }
-
+    .header .navbar.active{
+        right: 0;
+    }
     .header .navbar a{
         color: var(--black);
+        display: block;
         margin: 1.5rem;
         padding: .5rem;
         font-size: 2rem;
     }
-
-}
+} 
