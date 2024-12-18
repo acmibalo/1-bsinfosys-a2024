@@ -60,7 +60,7 @@ body{
 }
 
 .header .logo img{
-    height: 4rem;
+    height: 6rem;
 }
 .header .navbar a{
     margin:  0 1rem;
@@ -102,11 +102,6 @@ body{
     transform-origin: top;
 }
 
-.header .search-form.active {
-    transform: scaleY(1);
-}
-
-
 .header .search-form input{
     height: 100%;
     width: 100%;
@@ -136,11 +131,6 @@ body{
     padding: 0 1.5rem;
     transition: right 0.3s ease;
 }
-
-.header .cart-items-container.active {
-    right: 0;
-}
-
 
 .header .cart-items-container .cart-item{
     position: relative;
@@ -251,16 +241,16 @@ body{
         height: calc(100vh - 9.5rem);
     }
 
-    .header .navbar.active{
-        right: 0;
-    }
-
     .header .navbar a{
         color: var(--black);
         display: block;
         margin: 1.5rem;
         padding: .5rem;
         font-size: 2rem;
+    }
+
+    .header .navbar.active{
+        right: 0%;
     }
 
     .header .search-form{
