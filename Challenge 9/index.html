@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dogs</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>All About Dogs</h1>
+        <p>Your guide to understanding and loving dogs.</p>
+    </header>
+
+    <main>
+        <section>
+            <h2>Embedded Video: Dog Training Tips</h2>
+            <iframe src=""></iframe>
+        </section>
+
+        <section>
+            <h2>Local Video: Funny Dogs Compilation</h2>
+            <video controls>
+                <source src="funny-dogs.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </section>
+
+        <section class="contact-form">
+            <h2>Contact Us</h2>
+            <form action="submit_form.php" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Your Email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Dogs Info. All rights reserved.</p>
+    </footer>
+</body>
+</html>
