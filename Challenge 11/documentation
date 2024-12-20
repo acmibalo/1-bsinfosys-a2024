@@ -1,0 +1,22 @@
+Main Idea:
+
+An educational website about different pharmaceutical medicines, their purpose, composition, dosage, how and when it should be taken.
+
+The design:
+1.	Medicines may have a menu assigning their different categories; 1) over-the- counter. 2) prescription drug
+2.	Must have a home page, containing, about the website, difference between ofc and prescription
+3.	A footer with the author’s name and year of published
+
+The code:
+1.	External CSS
+2.	Responsive
+3. Background color shade of purple
+4.	With comments to easily determine the usage of codes
+5.	Use of dropdown
+6.	Javascript
+7.	Hover
+8.	 Buttons
+9. Container
+10. Navigation bara
+11. Bootstrap 
+
