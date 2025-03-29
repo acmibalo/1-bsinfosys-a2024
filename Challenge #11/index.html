@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <!-- Meta Information -->
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <meta name="description" content="Anime Fans Hub - Discover, Watch, and Discuss Your Favorite Anime!" />
+    <meta name="keywords" content="Anime, Reviews, Community, Anime Fans, Discussions" />
+    <meta name="author" content="Wariloh" />
+    
+    <title>Anime Fan Website</title>
+    
+    <!-- Favicon Link -->
+    <link rel="icon" type="image/x-icon" href="favicon.png" />
+
+    <!-- Link to External CSS -->
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
+  <body>
+    <!-- Header Section -->
+    <header id="header">
+      <h1>Anime Fans Hub</h1>
+      <p>Discover, Watch, and Discuss Your Favorite Anime!</p>
+    </header>
+
+    <!-- Main Content Area -->
+    <div id="main">
+      <!-- Left Sidebar (Navigation) -->
+      <div id="leftcolumn">
+        <div class="menu">
+          <ul>
+            <li><a href="#home" class="nav-link">Home</a></li>
+            <li><a href="#reviews" class="nav-link">Reviews</a></li>
+            <li><a href="#forums" class="nav-link">Community</a></li>
+            <li><a href="#news" class="nav-link">News</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Right Main Content -->
+      <div id="rightcolumn">
+        <section id="home">
+          <h2>Welcome to Anime Fans Hub</h2>
+          <p>Discover, watch, and discuss your favorite anime with fellow enthusiasts!</p>
+        </section>
+
+        <section id="reviews">
+          <h2>Anime Reviews</h2>
+          <article class="review">
+            <h3>Top 5 Must-Watch Anime of 2024</h3>
+            <p>Explore the top anime releases for 2024, including new seasons of fan favorites!</p>
+          </article>
+        </section>
+
+        <section id="forums">
+          <h2>Join the Community</h2>
+          <p>Talk about your favorite anime, meet fellow fans, and discuss the latest episodes!</p>
+        </section>
+		
+		<!-- Local MP4 Video -->
+        <section id="local-video">
+          <h2>Watch Local Anime Video</h2>
+          <video width="720" controls>
+            <source src="anime-trailer.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </section>
+
+        <!-- Accordion Example -->
+        <section id="accordion">
+          <h2>Top Anime Genres</h2>
+          <button class="accordion">Action Anime</button>
+          <div class="accordion-content">
+            <p>Action anime is full of intense battles, superheroes, and adrenaline-pumping moments. Popular examples include "Naruto," "Attack on Titan," and "My Hero Academia."</p>
+          </div>
+
+          <button class="accordion">Romance Anime</button>
+          <div class="accordion-content">
+            <p>Romance anime tells heartfelt stories of love, relationships, and personal growth. Notable titles include "Your Name," "Toradora!" and "Clannad."</p>
+          </div>
+
+          <button class="accordion">Slice of Life Anime</button>
+          <div class="accordion-content">
+            <p>Slice of life anime depicts everyday life, focusing on characters and their personal development. Examples include "March Comes in Like a Lion" and "Barakamon."</p>
+          </div>
+        </section>
+
+        <!-- Modal Example -->
+        <section id="modal-example">
+          <h2>Exclusive Anime Announcement</h2>
+          <button id="myBtn">Click for an Announcement!</button>
+          
+          <!-- The Modal -->
+          <div id="myModal" class="modal">
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <h3>New Anime Release: "Demon Slayer: The Final Season"</h3>
+              <p>Get ready for the last season of the popular "Demon Slayer" series! Don't miss out on the action-packed finale.</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Tooltip Example -->
+        <section id="tooltip-example">
+          <h2>Did You Know?</h2>
+          <button title="The first anime ever made was 'Namakura Gatana' in 1917.">Hover over me for a fun fact!</button>
+        </section>
+
+        <!-- Sticky Navigation Example -->
+        <section id="sticky-nav-example">
+          <h2>Sticky Navigation</h2>
+          <p>Scroll down and see the left navigation bar stick to the top as you scroll!</p>
+        </section>
+
+        <!-- Tabs Example -->
+        <section id="tabs-example">
+          <h2>Popular Anime Categories</h2>
+          <div class="tabs">
+            <button class="tab-links active" onclick="openTab(event, 'Action')">Action</button>
+            <button class="tab-links" onclick="openTab(event, 'Romance')">Romance</button>
+            <button class="tab-links" onclick="openTab(event, 'Comedy')">Comedy</button>
+          </div>
+
+          <div id="Action" class="tab-content active">
+            <h3>Action Anime</h3>
+            <p>Popular action anime includes "Naruto," "One Piece," and "Dragon Ball Z."</p>
+          </div>
+
+          <div id="Romance" class="tab-content">
+            <h3>Romance Anime</h3>
+            <p>Popular romance anime includes "Your Name," "Fruits Basket," and "Clannad."</p>
+          </div>
+
+          <div id="Comedy" class="tab-content">
+            <h3>Comedy Anime</h3>
+            <p>Popular comedy anime includes "One Punch Man," "KonoSuba," and "Gintama."</p>
+          </div>
+        </section>
+
+        <!-- Contact Form Section -->
+        <section id="contact">
+          <h2>Contact Us</h2>
+          <form action="/submit_contact" method="POST" class="contact-form">
+            <div class="form-group">
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name" required />
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message:</label>
+              <textarea id="message" name="message" rows="4" required></textarea>
+            </div>
+
+            <button type="submit" class="submit-btn">Send Message</button>
+          </form>
+        </section>
+      </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer id="footer">
+      <p>&copy; 2024 Anime Fans Hub. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript for Interactivity -->
+    <script>
+      // Accordion functionality
+      const acc = document.getElementsByClassName("accordion");
+      for (let i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function() {
+          this.classList.toggle("active");
+          const panel = this.nextElementSibling;
+          if (panel.style.display === "block") {
+            panel.style.display = "none";
+          } else {
+            panel.style.display = "block";
+          }
+        });
+      }
+
+      // Modal functionality
+      var modal = document.getElementById("myModal");
+      var btn = document.getElementById("myBtn");
+      var span = document.getElementsByClassName("close")[0];
+
+      btn.onclick = function() {
+        modal.style.display = "block";
+      }
+
+      span.onclick = function() {
+        modal.style.display = "none";
+      }
+
+      window.onclick = function(event) {
+        if (event.target === modal) {
+          modal.style.display = "none";
+        }
+      }
+
+      // Tabs functionality
+      function openTab(evt, categoryName) {
+        let i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tab-content");
+        for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tab-links");
+        for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(categoryName).style.display = "block";
+        evt.currentTarget.className += " active";
+      }
+    </script>
+  </body>
+</html>
