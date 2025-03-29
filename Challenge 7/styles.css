@@ -1,0 +1,55 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+  }
+  
+  h1, h2 {
+    color: #0e0101;
+  }
+  
+  /* Block element styles */
+  header, .content, .footer {
+    display: block; /* These are block-level elements */
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+  }
+  
+  .content p {
+    margin-bottom: 10px;
+  }
+  
+  /* Class selector for description text */
+  .description {
+    color: #160216;
+    font-size: 16px;
+  }
+  
+  /* Inline element style */
+  .highlight-text {
+    color: #195b99;
+    font-weight: bold;
+    display: inline; /* Making this span inline, so it doesn't force new lines */
+  }
+  
+  /* ID selector for header */
+  #main-header {
+    background-color: #b4d4f3;
+    color: white;
+    text-align: center;
+    padding: 40px;
+  }
+  
+  #footer-text {
+    color: #001011;
+    font-size: 14px;
+    text-align: center;
+    padding: 10px;
+    background-color: #bfd7f0;
+    color: rgb(7, 0, 0);
+  }
+  

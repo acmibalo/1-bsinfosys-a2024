@@ -1,0 +1,254 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #fdf2f5;
+    color: #0a0101;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+h1, h2, h3, h4 {
+    margin-bottom: 15px;
+}
+
+/* Header Styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background: #ff5e78;
+    color: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+header .logo span {
+    color: #fff;
+}
+
+header .navbar {
+    display: flex;
+    gap: 20px;
+}
+
+header .navbar a {
+    color: #0c0101;
+    transition: color 0.3s;
+}
+
+header .navbar a:hover {
+    color: #ffe6eb;
+}
+
+header .fas {
+    display: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+input#toggler {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    header .navbar {
+        display: none;
+        flex-direction: column;
+        background: #ff5e78;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        width: 200px;
+        padding: 10px;
+        border-radius: 5px;
+    }
+
+    header .navbar a {
+        padding: 10px 0;
+    }
+
+    input#toggler:checked ~ .navbar {
+        display: flex;
+    }
+
+    header .fas {
+        display: block;
+    }
+}
+
+/* Home Section */
+.home {
+    background: url('/Challenge 11/images/home-bg.jpg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #110101;
+}
+
+.home .content h3 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.home .content span {
+    font-size: 24px;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.home .content p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.home .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #ff5e78;
+    color: #fff;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.home .btn:hover {
+    background: #ff3a59;
+}
+
+/* About Section */
+.about {
+    padding: 50px 20px;
+    background: #ffe6eb;
+    text-align: center;
+}
+
+.about .heading {
+    font-size: 36px;
+    margin-bottom: 30px;
+    color: #ff5e78;
+}
+
+.about .row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.about .content {
+    max-width: 800px;
+}
+
+.about button {
+    padding: 10px 20px;
+    background: #ff5e78;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.about button:hover {
+    background: #ff3a59;
+}
+
+/* Gallery Section */
+#gallery {
+    padding: 50px 20px;
+    background: #fff;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    justify-items: center;
+}
+
+.gallery-item img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.gallery-item img:hover {
+    transform: scale(1.05);
+}
+
+/* Contact Section */
+.contact {
+    padding: 50px 20px;
+    background: #fdf2f5;
+    text-align: center;
+}
+
+.contact h2 {
+    color: #ff5e78;
+}
+
+.contact form {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact label {
+    text-align: left;
+    font-weight: bold;
+}
+
+.contact input, .contact textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact button {
+    padding: 10px;
+    background: #ff5e78;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.contact button:hover {
+    background: #ff3a59;
+}
+
+/* Footer Section */
+.footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.footer p {
+    margin: 0;
+}
