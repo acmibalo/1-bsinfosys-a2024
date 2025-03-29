@@ -1,0 +1,76 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    min-height: 100vh;
+}
+
+/* Container for sidebar and gallery */
+.container {
+    display: flex;
+    flex: 1;
+}
+
+
+/* Gallery styles */
+.image-gallery {
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+/* Style for each image box */
+.image-box {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(33.33% - 20px); /* 3 images per row with gap adjustment */
+    padding: 10px;
+    transition: transform 0.3s ease; /* Smooth transition on hover */
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.image-box img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Description under each image */
+.description {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #333;
+}
+
+/* Hover effect to enlarge the box */
+.image-box:hover {
+    transform: scale(1.05); /* Slight enlargement on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .image-box {
+        width: calc(50% - 20px); /* 2 images per row on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .image-box {
+        width: 100%; /* 1 image per row on mobile screens */
+    }
+
+    .sidebar {
+        width: 200px; /* Sidebar width adjustment on small screens */
+    }
+}
+
