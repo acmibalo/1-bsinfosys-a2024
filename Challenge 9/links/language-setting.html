@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Language Settings</title>
+    <style>
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            text-align: center;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            font-family: Arial, sans-serif;
+        }
+        
+        select {
+            padding: 10px;
+            margin-top: 20px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 id="title">Language Settings</h1>
+        <select id="languageSelect">
+            <option value="en">English</option>
+            <option value="es">Spanish</option>
+            <option value="fr">French</option>
+            <!-- Add more languages as needed -->
+        </select>
+        <p id="description">Choose your preferred language from the dropdown above.</p>
+    </div>
+
+    <script>
+        const translations = {
+            en: {
+                title: "Language Settings",
+                description: "Choose your preferred language from the dropdown above."
+            },
+            es: {
+                title: "Configuración de idioma",
+                description: "Elija su idioma preferido del menú desplegable de arriba."
+            },
+            fr: {
+                title: "Paramètres de langue",
+                description: "Choisissez votre langue préférée dans le menu déroulant ci-dessus."
+            }
+            // Add more translations as needed
+        };
+
+        document.getElementById('languageSelect').addEventListener('change', function() {
+            const selectedLanguage = this.value;
+            translatePage(selectedLanguage);
+        });
+
+        function translatePage(language) {
+            document.getElementById('title').textContent = translations[language].title;
+            document.getElementById('description').textContent = translations[language].description;
+        }
+    </script>
+</body>
+</html>
