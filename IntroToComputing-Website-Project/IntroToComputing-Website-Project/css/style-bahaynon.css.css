@@ -1,0 +1,66 @@
+body,h1, h2, h3, h4, h5, h6{
+  font-family: 'Bebas Neue', sans-serif;
+  color: #E50914;
+ } 
+body,h3, h4, h5, h6 {
+  font-family: 'Montserrat', sans-serif;
+  color: #E50914;
+  
+}
+.w3-sidebar {
+  width: 100px;
+  background-color: #141414; /* Netflix-style dark background */
+  padding-top: 20px;
+}
+.w3-bar-item {
+  padding: 20px 0; /* Consistent spacing */
+  color: # E50914; /* Subtle text color */
+}
+.w3-bar-item:hover {
+  color: #E50914;
+  background-color: #E50914; 
+  transition: color 0.3s, background-color 0.3s;
+}
+.w3-bar-item .fa {
+  font-size: 24px;
+}
+.w3-sidebar img {
+  width: 60px;
+  border-radius: 50%; 
+  margin: 0 auto 20px; 
+}
+.w3-bar-item p {
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+.organization-entry {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+    padding: 8px 0;
+    border-bottom: 1px solid #444;
+}
+
+.organization-entry {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+    padding: 8px 0;
+    border-bottom: 1px solid #444;
+}
+
+organization-entry img {
+    width: 80px;
+    height: 80px;
+    margin-right: 16px;
+    flex-shrink: 0;
+}
+
+.organization-info {
+    color: #ccc;
+}
+
+.organization-info p {
+    margin: 4px 0;
+}

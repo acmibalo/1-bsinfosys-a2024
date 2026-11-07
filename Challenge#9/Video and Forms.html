@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Enhanced Project</title>
+  <link rel="icon" type="image/png" href="bunny-rockstar.png">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      background-color: #f8f9fa;
+    }
+
+    header {
+      background-color: #007BFF;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      margin-top: 20px;
+    }
+
+    section {
+      margin: 20px;
+      padding: 20px;
+      background-color: #ffffff;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+    }
+
+    .video-container iframe,
+    .video-container video {
+      width: 100%;
+      height: 360px;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+    }
+
+    .contact-form {
+      margin: 20px;
+      padding: 20px;
+      background-color: #ffffff;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+    }
+
+    .contact-form h2 {
+      margin-bottom: 15px;
+      color: #333;
+    }
+
+    .contact-form label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+    }
+
+    .contact-form button {
+      background-color: #007BFF;
+      color: white;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .contact-form button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Welcome to My Enhanced Project</h1>
+  </header>
+
+  <section>
+    <h2>Embedded Video Example</h2>
+    <div class="video-container">
+      <!-- Iframe video -->
+      <h3>Video from YouTube</h3>
+      <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
+      
+      <!-- Local video -->
+      <h3>Local Video File</h3>
+      <video controls>
+        <source src="sample-video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+  </section>
+
+  <section class="contact-form">
+    <h2>Contact Us</h2>
+    <form>
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" placeholder="Your name" required>
+      
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" placeholder="Your email" required>
+      
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="5" placeholder="Your message" required></textarea>
+      
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 Kier Benedict. All rights reserved.</p>
+  </footer>
+</body>
+</html>

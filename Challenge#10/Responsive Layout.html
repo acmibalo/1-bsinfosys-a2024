@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>SOLO.C</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="web/images">
+<link rel="stylesheet" href="css/style-bahaynon.css">
+<style>
+
+body,h1, h2, h3, h4, h5, h6{
+  font-family: 'Bebas Neue', sans-serif;
+  color: #E50914;
+} 
+
+body,h3, h4, h5, h6 {
+  font-family: 'Montserrat', sans-serif;
+  color: #E50914;
+}
+
+.w3-sidebar {
+  width: 100px;
+  background-color: #141414; 
+  padding-top: 20px;
+}
+
+.w3-bar-item {
+  padding: 20px 0; 
+  color: #E50914; 
+}
+
+.w3-bar-item:hover {
+  color: #E50914;
+  background-color: #E50914; 
+  transition: color 0.3s, background-color 0.3s;
+}
+
+.w3-bar-item .fa {
+  font-size: 24px;
+}
+
+.w3-sidebar img {
+  width: 60px;
+  border-radius: 50%; 
+  margin: 0 auto 20px; 
+}
+
+.w3-bar-item p {
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+.organization-entry {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+    padding: 8px 0;
+    border-bottom: 1px solid #444;
+}
+
+.organization-entry img {
+    margin-right: 16px;
+    flex-shrink: 0;
+}
+
+.organization-info {
+    color: #ccc;
+}
+
+.organization-info p {
+    margin: 4px 0;
+}
+
+
+@media screen and (max-width: 768px) {
+  /* Sidebar */
+  .w3-sidebar {
+    width: 50px;
+  }
+
+
+  .w3-top {
+    display: block;
+  }
+
+
+  header img {
+    width: 100%;
+    height: auto;
+  }
+
+ 
+  .w3-half {
+    width: 100%;
+    margin-bottom: 16px;
+  }
+
+
+  .w3-bar-item p {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+
+  h1, h2, h3, h4 {
+    font-size: smaller;
+  }
+
+
+  .w3-input {
+    font-size: 14px;
+    padding: 12px;
+  }
+}
+
+</style>
+</head>
+<body class="w3-black">
+
+
+<nav class="w3-sidebar w3-bar-block w3-center w3-hide-small">
+  <img src="images/mypic.jpg" style="width:100%">
+  <a href="#home" class="w3-bar-item w3-button">
+    <i class="fa fa-home"></i>
+    <p>Home</p>
+  </a>
+  <a href="#about" class="w3-bar-item w3-button">
+    <i class="fa fa-user"></i>
+    <p>About</p>
+  </a>
+  <a href="#photos" class="w3-bar-item w3-button">
+    <i class="fa fa-eye"></i>
+    <p>Works</p>
+  </a>
+  <a href="#contact" class="w3-bar-item w3-button">
+    <i class="fa fa-envelope"></i>
+    <p>Contact</p>
+  </a>
+</nav>
+
+
+<div class="w3-top w3-hide-large w3-hide-medium w3-black w3-center w3-small">
+  <div class="w3-bar w3-opacity w3-hover-opacity-off">
+    <a href="#home" class="w3-bar-item w3-button" style="width:25%;">Home</a>
+    <a href="#about" class="w3-bar-item w3-button" style="width:25%;">About</a>
+    <a href="#photos" class="w3-bar-item w3-button" style="width:25%;">Works</a>
+    <a href="#contact" class="w3-bar-item w3-button" style="width:25%;">Contact</a>
+  </div>
+</div>
+
+
+<div class="w3-padding-large" id="main">
+
+  <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
+    <h1 class="w3-jumbo"><span class="w3-hide-small">THIS IS</span> SOLO.C</h1>
+    <p>Photographer and Graphic Designer.</p>
+    <img src="images/mypic.jpg" alt="boy" class="w3-image" width="992" height="1108">
+  </header>
+
+
+  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
+    <h2 class="w3-text-light-grey">KIER BENEDICT BAHAYNON</h2>
+    <hr style="width:200px" class="w3-opacity">
+    <p>I’m Kier Benedict, a multimedia creative with skills in graphic design, photography, videography, art, and journalism...</p>
+ 
+    <h3 class="w3-padding-16 w3-text-light-grey">My Skills</h3>
+    <p class="w3-wide">Graphic Design</p>
+    <div class="w3-white">
+      <div class="w3-red" style="height:28px;width:95%"></div>
+    </div>
+    <p class="w3-wide">Photography</p>
+    <div class="w3-white">
+      <div class="w3-red" style="height:28px;width:85%"></div>
+    </div> <br>
+
+
+    <div class="w3-row w3-center w3-padding-16 w3-section w3-light-grey">
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">No</span><br> Partners
+      </div>
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">70++</span><br> Projects Done
+      </div>
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">89+</span><br> Happy Clients
+      </div>
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">33,090 Hours</span><br> Experience
+      </div>
+    </div>
+    
+    <button class="w3-button w3-light-grey w3-padding-large w3-section">
+      <i class="fa fa-download"></i> Download Resume
+    </button>
+  </div>
+
+
+  <div class="w3-padding-64 w3-content" id="photos">
+    <h2 class="w3-text-light-grey">My Photos</h2>
+    <hr style="width:200px" class="w3-opacity">
+    <div class="w3-row-padding" style="margin:0 -16px">
+      <div class="w3-half">
+        <img src="images/1st.jpg" style="width:100%">
+        <img src="images/2nd.jpg" style="width:100%">
+      </div>
+      <div class="w3-half">
+        <img src="images/3rd.jpg" style="width:100%">
+        <img src="images/8th.jpg" style="width:100%">
+      </div>
+    </div>
+  </div>
+
+  <!-- Contact Section -->
+  <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
+    <h2 class="w3-text-light-grey">Contact Me</h2>
+    <hr style="width:200px" class="w3-opacity">
+    <p><i class="fa fa-map-marker
